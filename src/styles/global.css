@@ -328,3 +328,117 @@ p { margin: 0 0 12px; }
 .pagination a:hover { border-color: var(--accent); color: var(--text); text-decoration: none; }
 .pagination .current { background: var(--accent); color: #04140a; border-color: var(--accent); font-weight: 600; }
 .pagination .disabled { opacity: 0.4; pointer-events: none; }
+
+/* ============================================================
+   MOBILE RESPONSIVE OVERRIDES
+   ============================================================ */
+@media (max-width: 720px) {
+  html, body { font-size: 15px; }
+  .container { padding: 0 14px; }
+  .main { padding: 18px 14px 60px; }
+
+  /* Header: stack brand on top, nav scrolls horizontally below */
+  .site-header { position: static; }
+  .site-header .container {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    gap: 0;
+    padding: 0;
+  }
+  .brand {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    justify-content: flex-start;
+  }
+  .nav {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 6px;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a {
+    flex: 0 0 auto;
+    padding: 12px 14px;
+    font-size: 14px;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+  }
+  .nav a:hover { border-bottom-color: var(--accent); }
+
+  /* Headings: smaller, tighter */
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  .hero { padding: 12px 0 4px; margin-bottom: 16px; }
+  .hero h1 { font-size: 28px; line-height: 1.15; }
+  .lead { font-size: 15px; }
+
+  /* Stats: 2 columns on mobile, smaller numbers */
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 16px 0 24px;
+  }
+  .stat { padding: 12px 14px; }
+  .stat .num { font-size: 20px; }
+  .stat .label { font-size: 11px; }
+
+  /* Cards: tighter padding, stack amount under recipient */
+  .card { padding: 14px 16px; margin-bottom: 10px; }
+  .contract-card { gap: 6px; }
+  .contract-card .row1 { gap: 4px; }
+  .contract-card .recipient { font-size: 15px; }
+  .contract-card .amount { font-size: 17px; }
+  .contract-card .agency { font-size: 13px; }
+  .contract-card .desc { font-size: 13px; }
+  .contract-card .meta-row { gap: 8px; font-size: 11px; }
+
+  /* Detail key/value: stack instead of 140px column */
+  .kv {
+    grid-template-columns: 1fr;
+    gap: 4px 0;
+  }
+  .kv dt {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 10px;
+  }
+  .kv dd { font-size: 14px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+
+  /* Entity rows: keep horizontal but allow wrapping */
+  .entity-row { padding: 12px 14px; gap: 10px; }
+  .entity-row .name { font-size: 14px; }
+  .entity-row .meta { font-size: 12px; }
+
+  /* Filters: smaller padding */
+  .filters { padding: 10px; gap: 8px; }
+  .filters input, .filters select, .filters button {
+    padding: 10px 12px; font-size: 14px;
+  }
+
+  /* Pagination: smaller, scrollable if many pages */
+  .pagination { gap: 4px; margin: 16px 0; }
+  .pagination a, .pagination span { padding: 6px 10px; font-size: 13px; }
+
+  /* Footer */
+  .site-footer { padding: 20px 0 28px; font-size: 12px; margin-top: 32px; }
+
+  /* Hero CTA buttons: full-width stack */
+  .hero a[style*="background:var(--accent)"],
+  .hero a[style*="background:transparent"] {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .stats { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 24px; }
+  .contract-card .row1 { flex-direction: column; align-items: flex-start; }
+}
