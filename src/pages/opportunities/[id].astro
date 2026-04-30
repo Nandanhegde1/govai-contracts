@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllOpportunities, getOpportunityById } from '../../lib/data';
+import { formatDate } from '../../lib/types';
+
+export async function getStaticPaths() {
+  return getAllOpportunities().map((o) => ({ params: { id: o.id } }));
+}
+
+const { id } = Astro.params;
+const o = getOpportunityById(id!);
+if (!o) {
+  return Astro.redirect('/opportunities/');
+}
+
+const title = `${o.title} · ${o.agency_top}`;
+const description = `${o.agency_top} ${o.type}. ${o.description.slice(0, 160)}`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href="/opportunities/">← All opportunities</a></p>
+
+  <h1 style="margin-bottom: 4px;">{o.title}</h1>
+  <p class="lead" style="margin-bottom: 24px;">
+    {o.agency_top}
+    {o.solicitation_number && (<span> · Solicitation <code>{o.solicitation_number}</code></span>)}
+    {' · '}
+    {o.active ? <span class="pill">Active</span> : <span class="pill-muted pill">Closed</span>}
+  </p>
+
+  <div class="detail-grid">
+    <section class="card" style="padding: 24px;">
+      <h2 class="section-title">Description</h2>
+      <p style="white-space: pre-wrap;">{o.description}</p>
+
+      <h2 class="section-title" style="margin-top: 24px;">Matched keywords</h2>
+      <div style="display:flex; gap:6px; flex-wrap:wrap;">
+        {o.matched_keywords.map((k) => <span class="pill">{k}</span>)}
+      </div>
+    </section>
+
+    <aside class="card" style="padding: 24px; align-self: start;">
+      <h2 class="section-title">Details</h2>
+      <dl class="kv">
+        <dt>Type</dt><dd>{o.type}</dd>
+        <dt>Agency</dt><dd>{o.agency_path || o.agency_top}</dd>
+        {o.solicitation_number && (<><dt>Solicitation</dt><dd><code>{o.solicitation_number}</code></dd></>)}
+        <dt>Posted</dt><dd>{formatDate(o.posted_date)}</dd>
+        {o.response_deadline && (<><dt>Response due</dt><dd>{formatDate(o.response_deadline)}</dd></>)}
+        {o.archive_date && (<><dt>Archive date</dt><dd>{formatDate(o.archive_date)}</dd></>)}
+        {o.naics_code && (<><dt>NAICS</dt><dd>{o.naics_code}</dd></>)}
+        {o.psc_code && (<><dt>PSC</dt><dd>{o.psc_code}</dd></>)}
+        {o.pop_state && (<><dt>Place of perf.</dt><dd>{o.pop_state}</dd></>)}
+        {o.contact_email && (<><dt>Contact</dt><dd><a href={`mailto:${o.contact_email}`}>{o.contact_email}</a></dd></>)}
+      </dl>
+
+      {o.ui_link && (
+        <p style="margin-top: 18px;">
+          <a href={o.ui_link} rel="noopener" target="_blank">Open on SAM.gov →</a>
+        </p>
+      )}
+
+      <p style="margin-top: 18px; font-size: 12px; color: var(--text-dim);">
+        Source: <a href="https://sam.gov/" rel="noopener" target="_blank">SAM.gov</a> (public domain).
+      </p>
+    </aside>
+  </div>
+</Layout>

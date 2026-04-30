@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import { getStateList, getContractsByState } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+export async function getStaticPaths() {
+  return getStateList().map((s) => ({
+    params: { code: s.code.toLowerCase() },
+    props: { state: s },
+  }));
+}
+
+const { code } = Astro.params;
+const { state } = Astro.props;
+const contracts = getContractsByState(state.code).sort((a, b) => b.amount - a.amount);
+
+const title = `${state.name} federal AI contracts`;
+const description = `${state.count} federal AI/ML contracts performed in ${state.name} totaling ${formatMoney(state.total_amount)}.`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href="/states/">← All states</a></p>
+  <section class="hero">
+    <h1>{state.name}</h1>
+    <p class="lead">
+      {state.count} federal AI/ML contracts performed in {state.name} · {formatMoney(state.total_amount)} total.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {contracts.map((c) => <ContractCard contract={c} />)}
+  </div>
+</Layout>

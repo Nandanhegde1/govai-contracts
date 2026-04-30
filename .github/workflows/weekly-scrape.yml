@@ -26,12 +26,17 @@ jobs:
       - name: Run scraper
         run: npm run scrape
 
+      - name: Run SAM.gov opportunities scraper
+        env:
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+        run: npm run scrape:opps
+
       - name: Commit changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain src/data/contracts.json)" ]]; then
-            git add src/data/contracts.json
+          if [[ -n "$(git status --porcelain src/data/)" ]]; then
+            git add src/data/
             git commit -m "chore(data): weekly scrape $(date -u +%Y-%m-%d)"
             git push
           else

@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getNaicsList } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+const naics = getNaicsList();
+---
+<Layout
+  title="Federal AI contracts by NAICS code"
+  description="Browse federal AI/ML contracts grouped by NAICS classification code."
+>
+  <section class="hero">
+    <h1>AI contracts by NAICS code</h1>
+    <p class="lead">
+      Federal AI/ML contracts grouped by North American Industry Classification System (NAICS) code.
+      Useful for vendors targeting specific code sets.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {
+      naics.map((n) => (
+        <div class="entity-row">
+          <div>
+            <div class="name"><a href={`/naics/${n.code}/`}>{n.code} — {n.label}</a></div>
+            <div class="meta">{n.count} contracts</div>
+          </div>
+          <div class="amount">{formatMoney(n.total_amount)}</div>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

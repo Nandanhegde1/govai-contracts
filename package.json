@@ -8,6 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "scrape": "tsx scripts/scrape.ts",
+    "scrape:opps": "tsx scripts/scrape-opportunities.ts",
+    "scrape:all": "npm run scrape && npm run scrape:opps",
     "astro": "astro"
   },
   "dependencies": {

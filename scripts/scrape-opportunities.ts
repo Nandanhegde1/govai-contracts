@@ -1,0 +1,242 @@
+/**
+ * Scraper: open federal AI/ML opportunities from SAM.gov.
+ * Pre-award (RFPs, sources sought, etc.) — the high-value pre-decision intel.
+ *
+ * Requires SAM.gov API key (free at https://sam.gov/data-services).
+ * Set env var SAM_API_KEY. If missing, this script no-ops gracefully so the
+ * site still builds and the awards dataset still refreshes.
+ *
+ * Docs: https://open.gsa.gov/api/get-opportunities-public-api/
+ */
+import { writeFileSync, mkdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUT_PATH = join(__dirname, '..', 'src', 'data', 'opportunities.json');
+
+const API = 'https://api.sam.gov/opportunities/v2/search';
+
+const NAICS_CODES = [
+  '541511',
+  '541512',
+  '541513',
+  '541519',
+  '541715',
+  '518210',
+];
+
+const AI_KEYWORDS = [
+  'artificial intelligence',
+  'machine learning',
+  'deep learning',
+  'large language model',
+  'generative ai',
+  'natural language processing',
+  ' ai ',
+  ' ml ',
+  ' llm ',
+  'mlops',
+  'computer vision',
+  'predictive analytics',
+  'neural network',
+];
+
+interface Raw {
+  noticeId: string;
+  title: string;
+  solicitationNumber?: string;
+  fullParentPathName?: string;
+  fullParentPathCode?: string;
+  postedDate: string;
+  type?: string;
+  baseType?: string;
+  archiveDate?: string;
+  responseDeadLine?: string;
+  naicsCode?: string;
+  classificationCode?: string;
+  active?: string;
+  description?: string;
+  uiLink?: string;
+  organizationType?: string;
+  officeAddress?: { city?: string; state?: string };
+  placeOfPerformance?: { city?: { name?: string }; state?: { code?: string; name?: string } };
+  pointOfContact?: Array<{ fullName?: string; email?: string; title?: string }>;
+}
+
+export interface Opportunity {
+  id: string;
+  title: string;
+  solicitation_number?: string;
+  agency_path: string;
+  agency_top: string;
+  agency_top_slug: string;
+  type: string;
+  posted_date: string;
+  response_deadline?: string;
+  archive_date?: string;
+  naics_code?: string;
+  psc_code?: string;
+  active: boolean;
+  description: string;
+  ui_link?: string;
+  pop_state?: string;
+  contact_email?: string;
+  matched_keywords: string[];
+}
+
+const slugify = (s: string): string =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80);
+
+function matchKeywords(text: string): string[] {
+  const t = ` ${text.toLowerCase()} `;
+  return AI_KEYWORDS.filter((kw) => t.includes(kw)).map((kw) => kw.trim());
+}
+
+function fmtDate(d: Date): string {
+  // SAM expects MM/dd/yyyy
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${m}/${day}/${d.getFullYear()}`;
+}
+
+async function fetchPage(
+  apiKey: string,
+  naics: string,
+  postedFrom: string,
+  postedTo: string,
+  offset: number,
+  limit = 100
+): Promise<{ raw: Raw[]; total: number }> {
+  const url = new URL(API);
+  url.searchParams.set('api_key', apiKey);
+  url.searchParams.set('postedFrom', postedFrom);
+  url.searchParams.set('postedTo', postedTo);
+  url.searchParams.set('ncode', naics);
+  url.searchParams.set('limit', String(limit));
+  url.searchParams.set('offset', String(offset));
+
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const res = await fetch(url.toString());
+      if (!res.ok) throw new Error(`HTTP ${res.status} ${await res.text().then((t) => t.slice(0, 200))}`);
+      const data = (await res.json()) as { opportunitiesData?: Raw[]; totalRecords?: number };
+      return { raw: data.opportunitiesData ?? [], total: data.totalRecords ?? 0 };
+    } catch (err) {
+      if (attempt === 2) throw err;
+      await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
+    }
+  }
+  return { raw: [], total: 0 };
+}
+
+function normalize(raw: Raw): Opportunity | null {
+  const blob = `${raw.title ?? ''} ${raw.description ?? ''}`;
+  const matched = matchKeywords(blob);
+  if (matched.length === 0) return null;
+
+  const path = raw.fullParentPathName ?? '';
+  const top = path.split('.')[0]?.trim() || 'Unknown';
+
+  const contact = raw.pointOfContact?.find((p) => p.email)?.email;
+
+  return {
+    id: raw.noticeId,
+    title: raw.title,
+    solicitation_number: raw.solicitationNumber,
+    agency_path: path,
+    agency_top: top,
+    agency_top_slug: slugify(top),
+    type: raw.type ?? raw.baseType ?? 'Unknown',
+    posted_date: raw.postedDate,
+    response_deadline: raw.responseDeadLine,
+    archive_date: raw.archiveDate,
+    naics_code: raw.naicsCode,
+    psc_code: raw.classificationCode,
+    active: (raw.active ?? '').toLowerCase() === 'yes',
+    description: (raw.description ?? '').slice(0, 4000),
+    ui_link: raw.uiLink,
+    pop_state: raw.placeOfPerformance?.state?.code,
+    contact_email: contact,
+    matched_keywords: matched,
+  };
+}
+
+function writeEmpty(reason: string): void {
+  mkdirSync(dirname(OUT_PATH), { recursive: true });
+  const payload = {
+    generated_at: new Date().toISOString(),
+    count: 0,
+    note: reason,
+    opportunities: [] as Opportunity[],
+  };
+  writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2), 'utf8');
+  console.log(`[sam] wrote empty dataset → ${OUT_PATH}`);
+}
+
+async function main(): Promise<void> {
+  const apiKey = process.env.SAM_API_KEY;
+  if (!apiKey) {
+    console.warn('[sam] SAM_API_KEY not set — writing empty opportunities dataset.');
+    writeEmpty('SAM_API_KEY not configured. Get a free key at https://sam.gov/data-services and set the SAM_API_KEY env var.');
+    return;
+  }
+
+  const now = new Date();
+  const from = new Date(now);
+  from.setDate(from.getDate() - 60); // last 60 days of postings
+  const postedFrom = fmtDate(from);
+  const postedTo = fmtDate(now);
+  console.log(`[sam] window: ${postedFrom} → ${postedTo}`);
+
+  const seen = new Map<string, Opportunity>();
+
+  for (const naics of NAICS_CODES) {
+    console.log(`[sam] naics=${naics}`);
+    let offset = 0;
+    const PAGE = 100;
+    const MAX_PAGES = 10;
+    for (let page = 0; page < MAX_PAGES; page++) {
+      const { raw, total } = await fetchPage(apiKey, naics, postedFrom, postedTo, offset, PAGE);
+      console.log(`  offset=${offset} got=${raw.length} total=${total}`);
+      let added = 0;
+      for (const r of raw) {
+        const o = normalize(r);
+        if (!o) continue;
+        if (!seen.has(o.id)) {
+          seen.set(o.id, o);
+          added++;
+        }
+      }
+      console.log(`  +${added} kept (total ${seen.size})`);
+      offset += raw.length;
+      if (raw.length < PAGE || offset >= total) break;
+      await new Promise((r) => setTimeout(r, 600));
+    }
+  }
+
+  const all = [...seen.values()].sort(
+    (a, b) => new Date(b.posted_date).getTime() - new Date(a.posted_date).getTime()
+  );
+  console.log(`[sam] DONE. ${all.length} opportunities kept.`);
+
+  mkdirSync(dirname(OUT_PATH), { recursive: true });
+  const payload = {
+    generated_at: new Date().toISOString(),
+    count: all.length,
+    window: { posted_from: postedFrom, posted_to: postedTo },
+    opportunities: all,
+  };
+  writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2), 'utf8');
+  console.log(`[sam] wrote ${OUT_PATH}`);
+}
+
+main().catch((err) => {
+  console.error(err);
+  // Don't fail the build pipeline if SAM is having a bad day.
+  writeEmpty(`Scrape failed: ${(err as Error).message}`);
+});

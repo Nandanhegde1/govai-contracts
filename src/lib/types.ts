@@ -1,3 +1,24 @@
+export interface Opportunity {
+  id: string;
+  title: string;
+  solicitation_number?: string;
+  agency_path: string;
+  agency_top: string;
+  agency_top_slug: string;
+  type: string;
+  posted_date: string;
+  response_deadline?: string;
+  archive_date?: string;
+  naics_code?: string;
+  psc_code?: string;
+  active: boolean;
+  description: string;
+  ui_link?: string;
+  pop_state?: string;
+  contact_email?: string;
+  matched_keywords: string[];
+}
+
 export interface Contract {
   id: string;
   award_id: string;

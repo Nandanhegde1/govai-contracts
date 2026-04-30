@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import { getNaicsList, getContractsByNaics } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+export async function getStaticPaths() {
+  return getNaicsList().map((n) => ({ params: { code: n.code }, props: { naics: n } }));
+}
+
+const { code } = Astro.params;
+const { naics } = Astro.props;
+const contracts = getContractsByNaics(code!).sort((a, b) => b.amount - a.amount);
+
+const title = `NAICS ${naics.code} federal AI contracts — ${naics.label}`;
+const description = `${naics.count} federal AI/ML contracts under NAICS ${naics.code} (${naics.label}) totaling ${formatMoney(naics.total_amount)}.`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href="/naics/">← All NAICS codes</a></p>
+  <section class="hero">
+    <h1>NAICS {naics.code}</h1>
+    <p class="lead">
+      {naics.label}. {naics.count} AI/ML contracts · {formatMoney(naics.total_amount)} total.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {contracts.map((c) => <ContractCard contract={c} />)}
+  </div>
+</Layout>

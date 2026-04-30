@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// formsubmit.co: free, no account. First submission triggers an email confirmation
+// to the destination address. Replace ALERTS_EMAIL with your inbox before launch.
+const ALERTS_EMAIL = 'nandanhegde1096@gmail.com';
+const action = `https://formsubmit.co/${ALERTS_EMAIL}`;
+---
+<Layout
+  title="Free email alerts for federal AI contracts &amp; RFPs"
+  description="Get a weekly email when new federal AI/ML contracts are awarded or new RFPs are posted. Free, no spam, unsubscribe anytime."
+>
+  <section class="hero">
+    <h1>Get federal AI contract alerts</h1>
+    <p class="lead">
+      One email a week with new AI/ML federal contract awards and open RFPs in your niche. Free.
+      No spam. Unsubscribe anytime.
+    </p>
+  </section>
+
+  <div class="detail-grid">
+    <section class="card" style="padding: 28px;">
+      <form action={action} method="POST">
+        <input type="hidden" name="_subject" value="New GovAI Contracts alert signup" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" value="https://govai-contracts.pages.dev/alerts/?ok=1" />
+
+        <label style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
+          Your email
+        </label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="you@company.com"
+          style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px; width:100%; margin-bottom: 14px;"
+        />
+
+        <label style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
+          What kinds of contracts? (optional)
+        </label>
+        <input
+          type="text"
+          name="interests"
+          placeholder="e.g., DoD computer vision, HHS LLM RFPs, &lt; $1M small biz set-asides"
+          style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px; width:100%; margin-bottom: 14px;"
+        />
+
+        <label style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
+          Who are you? (optional, helps us prioritize features)
+        </label>
+        <select
+          name="role"
+          style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px; width:100%; margin-bottom: 18px;"
+        >
+          <option value="">— select —</option>
+          <option>Founder / sales at vendor</option>
+          <option>BD / capture manager</option>
+          <option>Researcher / journalist</option>
+          <option>Investor / analyst</option>
+          <option>Government employee</option>
+          <option>Other</option>
+        </select>
+
+        <button
+          type="submit"
+          style="background:var(--accent); color:#04140a; border:0; border-radius:4px; padding:12px 22px; font-weight:700; font-size:15px; cursor:pointer;"
+        >
+          Get free alerts →
+        </button>
+
+        <p style="margin-top: 14px; font-size: 12px; color: var(--text-dim);">
+          We use your email only to send the alerts. No third parties. One-click unsubscribe in every email.
+        </p>
+      </form>
+    </section>
+
+    <aside>
+      <h2 class="section-title">What you get</h2>
+      <ul style="color: var(--text-muted); font-size: 14px; line-height: 1.7; padding-left: 18px;">
+        <li>New federal AI/ML contract awards every week</li>
+        <li>Open RFPs and sources-sought notices from SAM.gov</li>
+        <li>Filter by agency, NAICS, and dollar range</li>
+        <li>Plain-text emails — no marketing fluff</li>
+      </ul>
+
+      <h2 class="section-title" style="margin-top: 24px;">Why bother?</h2>
+      <p style="color: var(--text-muted); font-size: 14px;">
+        Tools like Deltek GovWin and GovTribe charge $10K–$30K/year for the same data.
+        We index it from public sources and email it to you for free.
+      </p>
+    </aside>
+  </div>
+</Layout>
+
+<script is:inline>
+  if (new URLSearchParams(location.search).get('ok')) {
+    const main = document.querySelector('.main');
+    if (main) {
+      const banner = document.createElement('div');
+      banner.style.cssText = 'background:rgba(74,222,128,0.12); border:1px solid rgba(74,222,128,0.3); color:#4ade80; padding:14px 18px; border-radius:8px; margin-bottom:18px; font-size:14px;';
+      banner.innerHTML = '✓ Thanks — check your inbox to confirm and you\\'re in.';
+      main.insertBefore(banner, main.firstChild);
+    }
+  }
+</script>

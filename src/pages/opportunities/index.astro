@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllOpportunities, getOpportunityMeta } from '../../lib/data';
+import { formatDate } from '../../lib/types';
+
+const opps = getAllOpportunities();
+const meta = getOpportunityMeta();
+const active = opps.filter((o) => o.active);
+---
+<Layout
+  title="Open federal AI opportunities (RFPs &amp; sources sought)"
+  description="Open U.S. federal AI/ML solicitations, RFPs and sources-sought notices from SAM.gov. Pre-award intel, free."
+>
+  <section class="hero">
+    <h1>Open federal AI opportunities</h1>
+    <p class="lead">
+      Pre-award AI/ML solicitations, RFPs and sources-sought notices pulled from SAM.gov.
+      The early-warning data competitors charge $10K+/yr for. Updated weekly.
+    </p>
+  </section>
+
+  {opps.length === 0 ? (
+    <div class="empty">
+      <p><strong>No opportunities indexed yet.</strong></p>
+      <p style="margin-top:8px;">{meta.note}</p>
+      <p style="margin-top:16px;">
+        <a href="/alerts/">Get notified</a> the moment new AI RFPs drop.
+      </p>
+    </div>
+  ) : (
+    <>
+      <p class="result-count">
+        {active.length} active · {opps.length} total in the last 60 days
+      </p>
+      <div class="list-grid">
+        {opps.map((o) => (
+          <article class="card contract-card">
+            <div class="row1">
+              <div class="recipient">
+                <a class="title-link" href={`/opportunities/${encodeURIComponent(o.id)}/`}>
+                  {o.title}
+                </a>
+              </div>
+              <div class="amount" style="font-size:14px;">
+                {o.active ? <span class="pill">Active</span> : <span class="pill-muted pill">Closed</span>}
+              </div>
+            </div>
+            <div class="agency">{o.agency_top}</div>
+            <div class="desc">{o.description}</div>
+            <div class="meta-row">
+              <span class="pill-muted pill">{o.type}</span>
+              {o.naics_code && <span class="pill-muted pill">NAICS {o.naics_code}</span>}
+              {o.pop_state && <span class="pill-muted pill">{o.pop_state}</span>}
+              <span>Posted {formatDate(o.posted_date)}</span>
+              {o.response_deadline && <span>Due {formatDate(o.response_deadline)}</span>}
+            </div>
+          </article>
+        ))}
+      </div>
+    </>
+  )}
+</Layout>

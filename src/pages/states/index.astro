@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getStateList } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+const states = getStateList();
+---
+<Layout
+  title="Federal AI contracts by state"
+  description="Federal AI/ML contract awards grouped by place-of-performance state."
+>
+  <section class="hero">
+    <h1>AI contracts by state</h1>
+    <p class="lead">
+      Where federal AI work actually gets performed. Grouped by place-of-performance state.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {
+      states.map((s) => (
+        <div class="entity-row">
+          <div>
+            <div class="name"><a href={`/states/${s.code.toLowerCase()}/`}>{s.name}</a></div>
+            <div class="meta">{s.count} contracts</div>
+          </div>
+          <div class="amount">{formatMoney(s.total_amount)}</div>
+        </div>
+      ))
+    }
+  </div>
+</Layout>
