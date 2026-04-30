@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://govai-contract.pages.dev/sitemap-index.xml
+Sitemap: https://govai-contracts.nandanhegde1096.workers.dev/sitemap-index.xml

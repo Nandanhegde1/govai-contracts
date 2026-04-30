@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Page not found" description="The page you're looking for doesn't exist.">
+  <section class="hero" style="text-align:center; padding: 80px 0;">
+    <h1 style="font-size: 96px; margin: 0; color: var(--accent); line-height: 1;">404</h1>
+    <p class="lead" style="margin: 16px auto 32px; max-width: 520px;">
+      We couldn't find that page. It may have been moved, or the link may be broken.
+    </p>
+    <p style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="/" style="background:var(--accent); color:#04140a; padding:10px 18px; border-radius:6px; font-weight:600; text-decoration:none;">Home</a>
+      <a href="/contracts/" style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:10px 18px; border-radius:6px; text-decoration:none;">Browse contracts</a>
+      <a href="/agencies/" style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:10px 18px; border-radius:6px; text-decoration:none;">Agencies</a>
+    </p>
+  </section>
+</Layout>

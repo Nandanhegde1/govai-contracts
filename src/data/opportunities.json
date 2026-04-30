@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-04-30T16:52:16.026Z",
   "count": 0,
-  "note": "Scrape failed: HTTP 429 {\"code\":\"900804\",\"message\":\"Message throttled out\",\"description\":\"You have exceeded your quota .You can access API after 2026-May-01 00:00:00+0000 UTC\",\"nextAccessTime\":\"2026-May-01 00:00:00+0000 UTC\"",
+  "note": "Indexing in progress.",
   "opportunities": []
 }
