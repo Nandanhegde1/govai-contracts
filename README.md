@@ -2,7 +2,7 @@
 
 A free, independent index of every U.S. federal **AI / ML / data-science** contract award.
 
-- **Live site:** https://govai-contracts.pages.dev (after deploy)
+- **Live site:** https://govai-contract.pages.dev (after deploy)
 - **Data source:** [USAspending.gov](https://api.usaspending.gov/) (public domain)
 - **Refresh cadence:** weekly via GitHub Actions
 
@@ -43,3 +43,4 @@ npm run build     # production build → dist/
 ## Disclaimer
 
 GovAI Contracts is an independent project and is not affiliated with, endorsed by, or connected to any U.S. government agency. Data is provided as-is for informational purposes.
+
