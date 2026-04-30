@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-30T16:34:23.236Z",
+  "generated_at": "2026-04-30T16:52:16.026Z",
   "count": 0,
-  "note": "SAM_API_KEY not configured. Get a free key at https://sam.gov/data-services and set the SAM_API_KEY env var.",
+  "note": "Scrape failed: HTTP 429 {\"code\":\"900804\",\"message\":\"Message throttled out\",\"description\":\"You have exceeded your quota .You can access API after 2026-May-01 00:00:00+0000 UTC\",\"nextAccessTime\":\"2026-May-01 00:00:00+0000 UTC\"",
   "opportunities": []
 }

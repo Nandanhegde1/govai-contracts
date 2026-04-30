@@ -134,8 +134,29 @@ async function fetchPage(
   return { raw: [], total: 0 };
 }
 
-function normalize(raw: Raw): Opportunity | null {
-  const blob = `${raw.title ?? ''} ${raw.description ?? ''}`;
+async function fetchDescription(apiKey: string, descUrlOrText: string): Promise<string> {
+  if (!descUrlOrText) return '';
+  // SAM returns the description as a URL string when not inlined
+  if (!/^https?:\/\//i.test(descUrlOrText)) return descUrlOrText;
+  try {
+    const u = new URL(descUrlOrText);
+    u.searchParams.set('api_key', apiKey);
+    const res = await fetch(u.toString());
+    if (!res.ok) return '';
+    const data = (await res.json().catch(() => null)) as { description?: string } | null;
+    return data?.description ?? '';
+  } catch {
+    return '';
+  }
+}
+
+function normalize(raw: Raw, fetchedDesc: string): Opportunity | null {
+  const rawDesc = raw.description ?? '';
+  // SAM returns description as a URL stub when not fetched separately. Don't show that.
+  const isUrl = /^https?:\/\//i.test(rawDesc);
+  const desc = fetchedDesc || (isUrl ? '' : rawDesc);
+  // Match keywords on title + any usable description
+  const blob = `${raw.title ?? ''} ${desc}`;
   const matched = matchKeywords(blob);
   if (matched.length === 0) return null;
 
@@ -143,6 +164,17 @@ function normalize(raw: Raw): Opportunity | null {
   const top = path.split('.')[0]?.trim() || 'Unknown';
 
   const contact = raw.pointOfContact?.find((p) => p.email)?.email;
+
+  // Strip HTML tags from description, collapse whitespace
+  const cleanDesc = desc
+    .replace(/<\/?[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 4000);
 
   return {
     id: raw.noticeId,
@@ -158,7 +190,7 @@ function normalize(raw: Raw): Opportunity | null {
     naics_code: raw.naicsCode,
     psc_code: raw.classificationCode,
     active: (raw.active ?? '').toLowerCase() === 'yes',
-    description: (raw.description ?? '').slice(0, 4000),
+    description: cleanDesc,
     ui_link: raw.uiLink,
     pop_state: raw.placeOfPerformance?.state?.code,
     contact_email: contact,
@@ -205,7 +237,10 @@ async function main(): Promise<void> {
       console.log(`  offset=${offset} got=${raw.length} total=${total}`);
       let added = 0;
       for (const r of raw) {
-        const o = normalize(r);
+        // Title-only match: SAM listing API returns description as a URL stub,
+        // not text. Fetching each blows our daily 1k-request quota fast.
+        // Title matching catches all explicitly-AI RFPs, which is what users want.
+        const o = normalize(r, '');
         if (!o) continue;
         if (!seen.has(o.id)) {
           seen.set(o.id, o);
@@ -237,6 +272,18 @@ async function main(): Promise<void> {
 
 main().catch((err) => {
   console.error(err);
-  // Don't fail the build pipeline if SAM is having a bad day.
-  writeEmpty(`Scrape failed: ${(err as Error).message}`);
+  // Don't wipe an existing dataset on a transient error (rate limits, network, etc.)
+  // Only seed an empty file if none exists yet.
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const fs = require('node:fs') as typeof import('node:fs');
+    if (!fs.existsSync(OUT_PATH)) {
+      writeEmpty(`Scrape failed: ${(err as Error).message}`);
+    } else {
+      console.warn(`[sam] keeping existing dataset at ${OUT_PATH} (scrape failed: ${(err as Error).message})`);
+    }
+  } catch {
+    writeEmpty(`Scrape failed: ${(err as Error).message}`);
+  }
+  process.exit(0);
 });

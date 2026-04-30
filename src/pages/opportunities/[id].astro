@@ -30,7 +30,14 @@ const description = `${o.agency_top} ${o.type}. ${o.description.slice(0, 160)}`;
   <div class="detail-grid">
     <section class="card" style="padding: 24px;">
       <h2 class="section-title">Description</h2>
-      <p style="white-space: pre-wrap;">{o.description}</p>
+      {o.description ? (
+        <p style="white-space: pre-wrap;">{o.description}</p>
+      ) : (
+        <p style="color: var(--text-muted);">
+          Full description not available in our index.
+          {o.ui_link && (<> <a href={o.ui_link} rel="noopener" target="_blank">View on SAM.gov →</a></>)}
+        </p>
+      )}
 
       <h2 class="section-title" style="margin-top: 24px;">Matched keywords</h2>
       <div style="display:flex; gap:6px; flex-wrap:wrap;">
