@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import { getAgencies, getContractsByAgency } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+export async function getStaticPaths() {
+  return getAgencies().map((a) => ({ params: { slug: a.slug }, props: { agency: a } }));
+}
+
+const { slug } = Astro.params;
+const { agency } = Astro.props;
+const contracts = getContractsByAgency(slug!).sort((a, b) => b.amount - a.amount);
+
+const title = `${agency.name} AI/ML contracts`;
+const description = `${agency.name} has awarded ${agency.count} AI/ML contracts worth ${formatMoney(agency.total_amount)}. See every contract, vendor, and dollar amount.`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href="/agencies/">← All agencies</a></p>
+  <section class="hero">
+    <h1>{agency.name}</h1>
+    <p class="lead">
+      {agency.count} AI/ML contracts · {formatMoney(agency.total_amount)} total awarded.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {contracts.map((c) => <ContractCard contract={c} />)}
+  </div>
+</Layout>

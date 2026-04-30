@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getMeta } from '../lib/data';
+import { formatDate } from '../lib/types';
+
+const meta = getMeta();
+---
+<Layout
+  title="About"
+  description="GovAI Contracts is a free, independent index of federal AI/ML contract awards built from public USAspending.gov data."
+>
+  <h1>About GovAI Contracts</h1>
+  <p class="lead">
+    GovAI Contracts is a free, independent index of every federal AI and machine-learning
+    contract award we can identify in the public record.
+  </p>
+
+  <h2>Where the data comes from</h2>
+  <p>
+    All award data is pulled directly from
+    <a href="https://api.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov</a>,
+    which is in the public domain. We filter for AI-relevant NAICS codes
+    (541511, 541512, 541513, 541519, 541715, 518210) and require an explicit
+    AI/ML keyword match in the contract description so the dataset stays focused.
+  </p>
+
+  <h2>How fresh is it?</h2>
+  <p>
+    The dataset rebuilds automatically every week. Last refresh:
+    <strong>{formatDate(meta.generated_at)}</strong>.
+  </p>
+
+  <h2>Who is this for?</h2>
+  <ul>
+    <li><strong>Founders and BD teams</strong> looking for federal AI buyers.</li>
+    <li><strong>Researchers and journalists</strong> tracking federal AI spend.</li>
+    <li><strong>Vendors</strong> sizing up competitors and partner opportunities.</li>
+    <li><strong>Policy folks</strong> watching how AI dollars actually flow.</li>
+  </ul>
+
+  <h2>What's coming</h2>
+  <ul>
+    <li>Open opportunities (pre-award) from SAM.gov.</li>
+    <li>Email alerts for new contracts in your niche.</li>
+    <li>JSON / CSV API for the full dataset.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    Questions, corrections, feature requests — open an issue on the
+    <a href="https://github.com/Nandanhegde1/govai-contracts" rel="noopener" target="_blank">GitHub repo</a>.
+  </p>
+
+  <p class="meta" style="margin-top: 32px; color: var(--text-dim); font-size: 12px;">
+    GovAI Contracts is an independent project and is not affiliated with, endorsed by, or
+    connected to any U.S. government agency.
+  </p>
+</Layout>

@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = 'Track federal AI and machine learning contracts. Find who is winning AI work at DoD, DHS, NIH, NASA and more. Free, weekly updated.',
+  canonical,
+  ogImage = '/og-default.png',
+} = Astro.props;
+
+const siteName = 'GovAI Contracts';
+const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
+const url = canonical ?? Astro.url.href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={url} />
+
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).toString()} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site).toString()} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="/">
+          <span class="brand-mark">⚙</span>
+          <span class="brand-name">GovAI Contracts</span>
+        </a>
+        <nav class="nav">
+          <a href="/contracts/">Contracts</a>
+          <a href="/agencies/">Agencies</a>
+          <a href="/vendors/">Vendors</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          GovAI Contracts · Federal AI/ML award intelligence · Data from
+          <a href="https://api.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov</a>
+          (public domain). Independent project, not affiliated with the U.S. government.
+        </p>
+        <p class="meta">Updated weekly · Built by an indie dev · <a href="/about/">About this site</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

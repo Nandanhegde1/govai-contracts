@@ -1,0 +1,29 @@
+---
+import type { Contract } from '../lib/types';
+import { formatMoney, formatDate } from '../lib/types';
+
+export interface Props {
+  contract: Contract;
+}
+
+const { contract } = Astro.props;
+const detailHref = `/contracts/${encodeURIComponent(contract.id)}/`;
+---
+<article class="card contract-card">
+  <div class="row1">
+    <div class="recipient">
+      <a class="title-link" href={detailHref}>{contract.recipient}</a>
+    </div>
+    <div class="amount">{formatMoney(contract.amount)}</div>
+  </div>
+  <div class="agency">
+    {contract.agency}{contract.sub_agency ? ` · ${contract.sub_agency}` : ''}
+  </div>
+  <div class="desc">{contract.description}</div>
+  <div class="meta-row">
+    {contract.naics_code && <span class="pill-muted pill">NAICS {contract.naics_code}</span>}
+    {contract.pop_state && <span class="pill-muted pill">{contract.pop_state}</span>}
+    <span>Award {contract.award_id}</span>
+    <span>{formatDate(contract.start_date)} → {formatDate(contract.end_date)}</span>
+  </div>
+</article>

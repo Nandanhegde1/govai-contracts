@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import { getAll, getAgencies } from '../../lib/data';
+
+const contracts = getAll();
+const agencies = getAgencies();
+---
+<Layout
+  title="Browse all federal AI contracts"
+  description="Search and filter every federal AI/ML contract. Filter by agency, NAICS, vendor, dollar amount."
+>
+  <section class="hero">
+    <h1>All federal AI contracts</h1>
+    <p class="lead">
+      {contracts.length.toLocaleString('en-US')} contracts. Search by vendor, agency or keyword.
+      Filter by agency. Sort by amount or date.
+    </p>
+  </section>
+
+  <form id="filters" class="filters" onsubmit="return false;">
+    <input id="q" type="search" placeholder="Search vendor, agency, or keyword…" autocomplete="off" />
+    <select id="agency">
+      <option value="">All agencies</option>
+      {agencies.map((a) => <option value={a.slug}>{a.name}</option>)}
+    </select>
+    <select id="sort">
+      <option value="amount-desc">Largest first</option>
+      <option value="amount-asc">Smallest first</option>
+      <option value="date-desc">Newest first</option>
+      <option value="date-asc">Oldest first</option>
+    </select>
+    <select id="min">
+      <option value="0">Any amount</option>
+      <option value="100000">≥ $100K</option>
+      <option value="1000000">≥ $1M</option>
+      <option value="10000000">≥ $10M</option>
+      <option value="100000000">≥ $100M</option>
+    </select>
+    <button type="button" id="reset" class="secondary">Reset</button>
+  </form>
+
+  <p class="result-count" id="count"></p>
+
+  <div id="list" class="list-grid">
+    {contracts.map((c) => <ContractCard contract={c} />)}
+  </div>
+
+  <div id="empty" class="empty" hidden>No contracts match your filters.</div>
+
+  <div class="pagination" id="pagination"></div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const PAGE_SIZE = 30;
+    const list = document.getElementById('list');
+    const all = Array.from(list.children).map((el) => {
+      const recipient = el.querySelector('.recipient')?.textContent?.toLowerCase() || '';
+      const agency = el.querySelector('.agency')?.textContent?.toLowerCase() || '';
+      const desc = el.querySelector('.desc')?.textContent?.toLowerCase() || '';
+      const amountText = el.querySelector('.amount')?.textContent || '';
+      const meta = el.querySelector('.meta-row')?.textContent || '';
+      // Parse amount from formatted text "$120.58M"
+      const m = amountText.match(/\$([\d.]+)\s*([KMB]?)/);
+      let amount = 0;
+      if (m) {
+        amount = parseFloat(m[1]);
+        if (m[2] === 'K') amount *= 1e3;
+        else if (m[2] === 'M') amount *= 1e6;
+        else if (m[2] === 'B') amount *= 1e9;
+      }
+      // Parse start date from meta-row
+      const dm = meta.match(/(\w+ \d+, \d{4})/);
+      const date = dm ? new Date(dm[1]).getTime() : 0;
+      // Find href to derive agency slug from list (Astro put it in card; we find anchor href -> not present, infer instead by select option list).
+      return { el, hay: recipient + ' ' + agency + ' ' + desc, agency, amount, date };
+    });
+
+    const agencySelect = document.getElementById('agency');
+    const agencyMap = new Map(); // slug -> name (lowercased)
+    Array.from(agencySelect.options).forEach((o) => {
+      if (o.value) agencyMap.set(o.value, (o.textContent || '').toLowerCase());
+    });
+
+    const $q = document.getElementById('q');
+    const $agency = document.getElementById('agency');
+    const $sort = document.getElementById('sort');
+    const $min = document.getElementById('min');
+    const $reset = document.getElementById('reset');
+    const $count = document.getElementById('count');
+    const $empty = document.getElementById('empty');
+    const $pag = document.getElementById('pagination');
+
+    // URL state
+    const params = new URLSearchParams(location.search);
+    if (params.get('q')) $q.value = params.get('q');
+    if (params.get('agency')) $agency.value = params.get('agency');
+    if (params.get('sort')) $sort.value = params.get('sort');
+    if (params.get('min')) $min.value = params.get('min');
+    let page = parseInt(params.get('page') || '1', 10);
+
+    function syncUrl() {
+      const p = new URLSearchParams();
+      if ($q.value) p.set('q', $q.value);
+      if ($agency.value) p.set('agency', $agency.value);
+      if ($sort.value && $sort.value !== 'amount-desc') p.set('sort', $sort.value);
+      if ($min.value && $min.value !== '0') p.set('min', $min.value);
+      if (page > 1) p.set('page', String(page));
+      const qs = p.toString();
+      history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+    }
+
+    function render() {
+      const q = $q.value.toLowerCase().trim();
+      const agSlug = $agency.value;
+      const agName = agSlug ? agencyMap.get(agSlug) : '';
+      const min = parseFloat($min.value) || 0;
+
+      let filtered = all.filter((c) => {
+        if (q && !c.hay.includes(q)) return false;
+        if (agName && !c.agency.includes(agName)) return false;
+        if (c.amount < min) return false;
+        return true;
+      });
+
+      const sort = $sort.value;
+      if (sort === 'amount-desc') filtered.sort((a, b) => b.amount - a.amount);
+      else if (sort === 'amount-asc') filtered.sort((a, b) => a.amount - b.amount);
+      else if (sort === 'date-desc') filtered.sort((a, b) => b.date - a.date);
+      else if (sort === 'date-asc') filtered.sort((a, b) => a.date - b.date);
+
+      const total = filtered.length;
+      const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+      if (page > totalPages) page = totalPages;
+      if (page < 1) page = 1;
+      const start = (page - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      const visible = new Set(filtered.slice(start, end).map((c) => c.el));
+
+      // Hide all, then show in order
+      all.forEach((c) => (c.el.style.display = 'none'));
+      list.innerHTML = '';
+      filtered.slice(start, end).forEach((c) => {
+        c.el.style.display = '';
+        list.appendChild(c.el);
+      });
+
+      $count.textContent = total + ' contract' + (total === 1 ? '' : 's') +
+        (total > PAGE_SIZE ? ' · page ' + page + ' of ' + totalPages : '');
+      $empty.hidden = total > 0;
+
+      // Pagination
+      $pag.innerHTML = '';
+      if (totalPages > 1) {
+        const mk = (label, p, opts) => {
+          opts = opts || {};
+          const a = document.createElement(opts.disabled ? 'span' : 'a');
+          a.textContent = label;
+          if (opts.current) a.className = 'current';
+          if (opts.disabled) a.className = 'disabled';
+          if (!opts.disabled && !opts.current) {
+            a.href = '#';
+            a.addEventListener('click', (e) => {
+              e.preventDefault();
+              page = p;
+              syncUrl();
+              render();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+          }
+          return a;
+        };
+        $pag.appendChild(mk('← Prev', page - 1, { disabled: page === 1 }));
+        // Show window of 5 pages around current
+        const wStart = Math.max(1, page - 2);
+        const wEnd = Math.min(totalPages, wStart + 4);
+        for (let i = wStart; i <= wEnd; i++) {
+          $pag.appendChild(mk(String(i), i, { current: i === page }));
+        }
+        $pag.appendChild(mk('Next →', page + 1, { disabled: page === totalPages }));
+      }
+
+      syncUrl();
+    }
+
+    [$q, $agency, $sort, $min].forEach((el) =>
+      el.addEventListener('input', () => {
+        page = 1;
+        render();
+      })
+    );
+    $reset.addEventListener('click', () => {
+      $q.value = '';
+      $agency.value = '';
+      $sort.value = 'amount-desc';
+      $min.value = '0';
+      page = 1;
+      render();
+    });
+
+    render();
+  })();
+</script>

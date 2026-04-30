@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAll, getById } from '../../lib/data';
+import { formatMoney, formatDate } from '../../lib/types';
+
+export async function getStaticPaths() {
+  return getAll().map((c) => ({ params: { id: c.id } }));
+}
+
+const { id } = Astro.params;
+const c = getById(id!);
+if (!c) {
+  return Astro.redirect('/contracts/');
+}
+
+const title = `${c.recipient} · ${formatMoney(c.amount)} AI contract from ${c.agency}`;
+const description = `${c.recipient} won a ${formatMoney(c.amount)} federal AI/ML contract from ${c.agency}${c.sub_agency ? ' (' + c.sub_agency + ')' : ''}. ${c.description.slice(0, 160)}`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;">
+    <a href="/contracts/">← All contracts</a>
+  </p>
+
+  <div class="row1" style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:16px;">
+    <h1 style="margin-bottom: 4px;">{c.recipient}</h1>
+    <div style="font-size: 28px; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums;">
+      {formatMoney(c.amount)}
+    </div>
+  </div>
+  <p class="lead" style="margin-bottom: 24px;">
+    Awarded by <a href={`/agencies/${c.agency_slug}/`}>{c.agency}</a>
+    {c.sub_agency && (<span> · {c.sub_agency}</span>)}
+    · Award ID <code>{c.award_id}</code>
+  </p>
+
+  <div class="detail-grid">
+    <section class="card" style="padding: 24px;">
+      <h2 class="section-title">Description</h2>
+      <p style="white-space: pre-wrap;">{c.description}</p>
+
+      <h2 class="section-title" style="margin-top: 24px;">Matched keywords</h2>
+      <div style="display:flex; gap:6px; flex-wrap:wrap;">
+        {c.matched_keywords.map((k) => <span class="pill">{k}</span>)}
+      </div>
+    </section>
+
+    <aside class="card" style="padding: 24px; align-self: start;">
+      <h2 class="section-title">Details</h2>
+      <dl class="kv">
+        <dt>Vendor</dt>
+        <dd><a href={`/vendors/${c.recipient_slug}/`}>{c.recipient}</a></dd>
+
+        <dt>Agency</dt>
+        <dd><a href={`/agencies/${c.agency_slug}/`}>{c.agency}</a></dd>
+
+        {c.sub_agency && (<><dt>Sub-agency</dt><dd>{c.sub_agency}</dd></>)}
+
+        <dt>Award ID</dt>
+        <dd><code>{c.award_id}</code></dd>
+
+        <dt>Amount</dt>
+        <dd>${c.amount.toLocaleString('en-US', { maximumFractionDigits: 0 })}</dd>
+
+        <dt>Period</dt>
+        <dd>{formatDate(c.start_date)} → {formatDate(c.end_date)}</dd>
+
+        {c.naics_code && (<><dt>NAICS</dt><dd>{c.naics_code} · {c.naics_desc}</dd></>)}
+
+        {c.psc_code && (<><dt>PSC</dt><dd>{c.psc_code} · {c.psc_desc}</dd></>)}
+
+        {c.pop_state && (<><dt>Place of Perf.</dt><dd>{c.pop_state}</dd></>)}
+      </dl>
+
+      <p style="margin-top: 18px; font-size: 12px; color: var(--text-dim);">
+        Source: <a href="https://www.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov</a> (public domain).
+      </p>
+    </aside>
+  </div>
+</Layout>

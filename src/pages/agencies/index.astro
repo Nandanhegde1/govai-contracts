@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAgencies } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+const agencies = getAgencies();
+---
+<Layout
+  title="Federal agencies buying AI"
+  description="Every U.S. federal agency awarding AI/ML contracts. Ranked by total dollars spent."
+>
+  <section class="hero">
+    <h1>Agencies buying AI</h1>
+    <p class="lead">
+      {agencies.length} federal agencies and sub-agencies have awarded AI or machine-learning
+      contracts in our dataset. Click any agency to see every AI contract they've awarded.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {
+      agencies.map((a) => (
+        <div class="entity-row">
+          <div>
+            <div class="name"><a href={`/agencies/${a.slug}/`}>{a.name}</a></div>
+            <div class="meta">{a.count} contracts</div>
+          </div>
+          <div class="amount">{formatMoney(a.total_amount)}</div>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

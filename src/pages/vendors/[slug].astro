@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import { getVendors, getContractsByVendor } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+export async function getStaticPaths() {
+  return getVendors().map((v) => ({ params: { slug: v.slug }, props: { vendor: v } }));
+}
+
+const { slug } = Astro.params;
+const { vendor } = Astro.props;
+const contracts = getContractsByVendor(slug!).sort((a, b) => b.amount - a.amount);
+
+const title = `${vendor.name} federal AI/ML contracts`;
+const description = `${vendor.name} has won ${vendor.count} federal AI/ML contracts worth ${formatMoney(vendor.total_amount)} from ${vendor.agencies.length} agencies.`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href="/vendors/">← All vendors</a></p>
+  <section class="hero">
+    <h1>{vendor.name}</h1>
+    <p class="lead">
+      {vendor.count} federal AI/ML contracts · {formatMoney(vendor.total_amount)} total ·
+      {vendor.agencies.length} agencies served.
+    </p>
+  </section>
+
+  <h2 class="section-title">Agencies</h2>
+  <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom: 24px;">
+    {vendor.agencies.map((a) => <span class="pill-muted pill">{a}</span>)}
+  </div>
+
+  <h2 class="section-title">Contracts</h2>
+  <div class="list-grid">
+    {contracts.map((c) => <ContractCard contract={c} />)}
+  </div>
+</Layout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://govai-contracts.pages.dev/sitemap-index.xml

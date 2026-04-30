@@ -1,0 +1,39 @@
+name: Weekly scrape
+
+on:
+  schedule:
+    # Sundays at 04:17 UTC
+    - cron: '17 4 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Run scraper
+        run: npm run scrape
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain src/data/contracts.json)" ]]; then
+            git add src/data/contracts.json
+            git commit -m "chore(data): weekly scrape $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No changes."
+          fi

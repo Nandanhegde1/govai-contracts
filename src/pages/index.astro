@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContractCard from '../components/ContractCard.astro';
+import { getAll, getMeta, getAgencies, getVendors } from '../lib/data';
+import { formatMoney, formatDate } from '../lib/types';
+
+const all = getAll();
+const meta = getMeta();
+const agencies = getAgencies();
+const vendors = getVendors();
+
+const totalAmount = all.reduce((s, c) => s + c.amount, 0);
+const recent = [...all]
+  .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
+  .slice(0, 10);
+const topVendors = vendors.slice(0, 5);
+const topAgencies = agencies.slice(0, 5);
+---
+<Layout
+  title="Federal AI &amp; ML Contracts · GovAI Contracts"
+  description="Track every federal AI and machine learning contract awarded since 2023. Search vendors, agencies, and dollar amounts. Free, weekly updated, public-domain data."
+>
+  <section class="hero">
+    <h1>Federal AI &amp; ML contracts, made searchable.</h1>
+    <p class="lead">
+      Every U.S. government contract for artificial intelligence, machine learning, LLMs and
+      data-science work — pulled directly from USAspending.gov, filtered, deduplicated, and
+      updated every week. Free to browse. No signup.
+    </p>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <div class="num">{all.length.toLocaleString('en-US')}</div>
+      <div class="label">Contracts tracked</div>
+    </div>
+    <div class="stat">
+      <div class="num">{formatMoney(totalAmount)}</div>
+      <div class="label">Total awarded</div>
+    </div>
+    <div class="stat">
+      <div class="num">{agencies.length.toLocaleString('en-US')}</div>
+      <div class="label">Agencies buying AI</div>
+    </div>
+    <div class="stat">
+      <div class="num">{vendors.length.toLocaleString('en-US')}</div>
+      <div class="label">Vendors winning AI work</div>
+    </div>
+  </section>
+
+  <div class="detail-grid">
+    <section>
+      <h2>Most recent awards</h2>
+      <p class="result-count">
+        Showing 10 most recent. <a href="/contracts/">Browse all →</a>
+      </p>
+      {
+        recent.length === 0 ? (
+          <div class="empty">
+            <p>Dataset not yet generated. Run <code>npm run scrape</code>.</p>
+          </div>
+        ) : (
+          recent.map((c) => <ContractCard contract={c} />)
+        )
+      }
+    </section>
+
+    <aside>
+      <h2 class="section-title">Top agencies</h2>
+      <div class="list-grid" style="margin-bottom: 24px;">
+        {
+          topAgencies.map((a) => (
+            <div class="entity-row">
+              <div>
+                <div class="name"><a href={`/agencies/${a.slug}/`}>{a.name}</a></div>
+                <div class="meta">{a.count} contracts</div>
+              </div>
+              <div class="amount">{formatMoney(a.total_amount)}</div>
+            </div>
+          ))
+        }
+      </div>
+
+      <h2 class="section-title">Top vendors</h2>
+      <div class="list-grid">
+        {
+          topVendors.map((v) => (
+            <div class="entity-row">
+              <div>
+                <div class="name"><a href={`/vendors/${v.slug}/`}>{v.name}</a></div>
+                <div class="meta">{v.count} contracts</div>
+              </div>
+              <div class="amount">{formatMoney(v.total_amount)}</div>
+            </div>
+          ))
+        }
+      </div>
+
+      <p class="meta" style="margin-top:18px; color: var(--text-dim); font-size: 12px;">
+        Last updated {formatDate(meta.generated_at)}
+      </p>
+    </aside>
+  </div>
+</Layout>

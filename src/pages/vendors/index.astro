@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getVendors } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+const vendors = getVendors();
+---
+<Layout
+  title="Top federal AI vendors"
+  description="Companies winning federal AI/ML contracts. Ranked by total dollars won."
+>
+  <section class="hero">
+    <h1>Federal AI vendors</h1>
+    <p class="lead">
+      {vendors.length} companies have won AI or machine-learning contracts from the U.S. federal
+      government. Sorted by total dollars awarded.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {
+      vendors.map((v) => (
+        <div class="entity-row">
+          <div>
+            <div class="name"><a href={`/vendors/${v.slug}/`}>{v.name}</a></div>
+            <div class="meta">{v.count} contracts · {v.agencies.length} agencies</div>
+          </div>
+          <div class="amount">{formatMoney(v.total_amount)}</div>
+        </div>
+      ))
+    }
+  </div>
+</Layout>
