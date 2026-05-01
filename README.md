@@ -1,10 +1,12 @@
 # GovAI Contracts
 
-A free, independent index of every U.S. federal **AI / ML / data-science** contract award.
+A free, independent index of every U.S. federal **AI / ML / data-science** contract award and open opportunity.
 
-- **Live site:** https://govai-contract.pages.dev (after deploy)
-- **Data source:** [USAspending.gov](https://api.usaspending.gov/) (public domain)
-- **Refresh cadence:** weekly via GitHub Actions
+- **Live site:** https://govai-contracts.nandanhegde1096.workers.dev/
+- **Data sources:** [USAspending.gov](https://api.usaspending.gov/) (awards) and [SAM.gov](https://sam.gov/data-services) (open opportunities) — both public domain
+- **Refresh cadence:** every 6 hours via GitHub Actions cron
+- **License:** MIT (code) · CC0 1.0 (dataset). See [LICENSE](./LICENSE).
+- **Free downloads:** [/export/all.csv](https://govai-contracts.nandanhegde1096.workers.dev/export/all.csv) · [/export/all.json](https://govai-contracts.nandanhegde1096.workers.dev/export/all.json)
 
 ## Why
 
@@ -12,33 +14,46 @@ Federal AI contract intelligence is locked behind enterprise tools (Deltek GovWi
 
 ## Stack
 
-- [Astro 5](https://astro.build) — static site
+- [Astro 5](https://astro.build) — static site, file-based routing
 - TypeScript
-- USAspending.gov public API (no auth required)
-- GitHub Actions weekly cron
-- Cloudflare Pages (free hosting)
+- [USAspending.gov](https://api.usaspending.gov/) public API (no auth)
+- [SAM.gov](https://open.gsa.gov/api/get-opportunities-public-api/) opportunities API (free key, ~1k req/day)
+- GitHub Actions scheduled cron (every 6h)
+- Cloudflare Workers (free tier, static assets via `wrangler deploy`)
 
 ## Local dev
 
 ```bash
 npm install
-npm run scrape    # pulls latest contracts → src/data/contracts.json
-npm run dev       # http://localhost:4321
-npm run build     # production build → dist/
+npm run scrape         # awards → src/data/contracts.json
+SAM_API_KEY=xxx npm run scrape:opps   # opportunities → src/data/opportunities.json
+npm run dev            # http://localhost:4321
+npm run build          # production build → dist/
 ```
 
 ## How it works
 
 1. `scripts/scrape.ts` queries USAspending.gov for awards in AI-relevant NAICS codes (`541511`, `541512`, `541513`, `541519`, `541715`, `518210`).
 2. It then filters by AI/ML keyword presence in each award's description (so generic IT contracts are excluded).
-3. Deduplicated results are written to `src/data/contracts.json`.
-4. Astro builds static pages at build time:
+3. `scripts/scrape-opportunities.ts` does the same for active SAM.gov solicitations (last 60 days). Skips gracefully if `SAM_API_KEY` is not set or daily quota is exhausted.
+4. Deduplicated results are written to `src/data/contracts.json` and `src/data/opportunities.json`.
+5. Astro builds ~1,200+ static pages at build time:
    - `/` — landing + recent awards
    - `/contracts/` — searchable list (URL-state filters)
-   - `/contracts/[id]/` — programmatic SEO detail page per contract
-   - `/agencies/` and `/agencies/[slug]/`
-   - `/vendors/` and `/vendors/[slug]/`
-5. GitHub Actions reruns the scraper every Sunday and commits the refreshed dataset.
+   - `/contracts/[id]/` — programmatic SEO detail page per award
+   - `/agencies/`, `/agencies/[slug]/`, `/agencies/[slug]/vendors/`
+   - `/vendors/`, `/vendors/[slug]/`
+   - `/naics/`, `/naics/[code]/`, `/naics/[code]/vendors/`
+   - `/opportunities/`, `/opportunities/[id]/`
+   - `/export/all.csv`, `/export/all.json`, `/export/{agency,vendor,naics}/{slug}.csv`
+   - `/pricing/`, `/alerts/`, `/claim/`, `/about/`
+6. GitHub Actions reruns both scrapers every 6 hours and commits the refreshed datasets.
+
+## API quota usage (SAM.gov)
+
+- Free public quota: **1,000 requests/day per IP**
+- Per cron run: 6 NAICS × up to 10 pages = **≤ 60 requests**
+- 4 runs/day = **~240 requests/day** (~24% of quota). Headroom for backfills and retries.
 
 ## Disclaimer
 

@@ -17,16 +17,19 @@ const meta = getMeta();
 
   <h2>Where the data comes from</h2>
   <p>
-    All award data is pulled directly from
-    <a href="https://api.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov</a>,
-    which is in the public domain. We filter for AI-relevant NAICS codes
+    Award data comes from
+    <a href="https://api.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov</a>;
+    open opportunities (pre-award RFPs and sources sought) come from
+    <a href="https://sam.gov/data-services" rel="noopener" target="_blank">SAM.gov</a>.
+    Both are in the public domain. We filter for AI-relevant NAICS codes
     (541511, 541512, 541513, 541519, 541715, 518210) and require an explicit
-    AI/ML keyword match in the contract description so the dataset stays focused.
+    AI/ML keyword match so the dataset stays focused.
   </p>
 
   <h2>How fresh is it?</h2>
   <p>
-    The dataset rebuilds automatically every week. Last refresh:
+    The dataset rebuilds automatically every <strong>6 hours</strong> via a scheduled
+    GitHub Actions cron. Last refresh:
     <strong>{formatDate(meta.generated_at)}</strong>.
   </p>
 
@@ -40,10 +43,24 @@ const meta = getMeta();
 
   <h2>What's coming</h2>
   <ul>
-    <li>Open opportunities (pre-award) from SAM.gov.</li>
-    <li>Email alerts for new contracts in your niche.</li>
-    <li>JSON / CSV API for the full dataset.</li>
+    <li>Email alerts for new contracts in your niche (<a href="/alerts/">join waitlist</a>).</li>
+    <li>Daily-refresh API tier (<a href="/pricing/">see pricing</a>).</li>
   </ul>
+
+  <h2>Free downloads</h2>
+  <p>
+    The full dataset is free and downloadable: <a href="/export/all.csv">CSV</a> · <a href="/export/all.json">JSON</a>.
+    Per-agency, per-vendor, and per-NAICS exports are linked from each detail page.
+  </p>
+
+  <h2>License</h2>
+  <p>
+    Source code is <strong>MIT</strong>. The aggregated dataset is released under
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a>
+    — use it commercially without attribution. See the
+    <a href="https://github.com/Nandanhegde1/govai-contracts/blob/main/LICENSE" target="_blank" rel="noopener">LICENSE file</a>
+    for full terms.
+  </p>
 
   <h2>Contact</h2>
   <p>
