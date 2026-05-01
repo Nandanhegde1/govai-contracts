@@ -1,6 +1,223 @@
 {
-  "generated_at": "2026-04-30T19:51:55.526Z",
-  "count": 0,
-  "note": "Scrape failed: HTTP 429 {\"code\":\"900804\",\"message\":\"Message throttled out\",\"description\":\"You have exceeded your quota .You can access API after 2026-May-01 00:00:00+0000 UTC\",\"nextAccessTime\":\"2026-May-01 00:00:00+0000 UTC\"",
-  "opportunities": []
+  "generated_at": "2026-05-01T04:32:08.702Z",
+  "count": 10,
+  "window": {
+    "posted_from": "03/02/2026",
+    "posted_to": "05/01/2026"
+  },
+  "opportunities": [
+    {
+      "id": "c63acf15d20a42deba7be2f3b9f1f3eb",
+      "title": "Brand Name or Equal ScanWriter AI",
+      "solicitation_number": "5000225848",
+      "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE.OPERATION SERVICES",
+      "agency_top": "TREASURY, DEPARTMENT OF THE",
+      "agency_top_slug": "treasury-department-of-the",
+      "type": "Sources Sought",
+      "posted_date": "2026-04-29",
+      "response_deadline": "2026-05-05T14:00:00-07:00",
+      "archive_date": "2026-05-20",
+      "naics_code": "541519",
+      "psc_code": "DA01",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/c63acf15d20a42deba7be2f3b9f1f3eb/view",
+      "pop_state": "DC",
+      "contact_email": "parvinder.s.brar@irs.gov",
+      "matched_keywords": [
+        "ai"
+      ]
+    },
+    {
+      "id": "993a9d98cd9444c3bfcfd6856eca90a1",
+      "title": "Decentralized Artificial Intelligence through Controlled Emergence (DICE) Proposers Day",
+      "solicitation_number": "DARPA-SN-26-72",
+      "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+      "agency_top": "DEPT OF DEFENSE",
+      "agency_top_slug": "dept-of-defense",
+      "type": "Special Notice",
+      "posted_date": "2026-04-29",
+      "response_deadline": "2026-05-19T17:00:00-04:00",
+      "archive_date": "2026-05-30",
+      "naics_code": "541715",
+      "psc_code": "AC11",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/993a9d98cd9444c3bfcfd6856eca90a1/view",
+      "contact_email": "DICE@darpa.mil",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "fb9b90efedbd4bae9548a98c75d8fd55",
+      "title": "Future Program: Decentralized Artificial Intelligence through Controlled Emergence (DICE)",
+      "solicitation_number": "DARPA-SN-26-65",
+      "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+      "agency_top": "DEPT OF DEFENSE",
+      "agency_top_slug": "dept-of-defense",
+      "type": "Special Notice",
+      "posted_date": "2026-04-21",
+      "response_deadline": "2026-05-29T23:59:00",
+      "archive_date": "2026-05-30",
+      "naics_code": "541715",
+      "psc_code": "AC11",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/fb9b90efedbd4bae9548a98c75d8fd55/view",
+      "contact_email": "DICE@darpa.mil",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "d12ea89b94104a5c941231517f69e011",
+      "title": "D--Peace Corp AI ChatBot",
+      "solicitation_number": "140D0426Q0324",
+      "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+      "agency_top": "INTERIOR, DEPARTMENT OF THE",
+      "agency_top_slug": "interior-department-of-the",
+      "type": "Solicitation",
+      "posted_date": "2026-04-20",
+      "response_deadline": "2026-05-04T10:00:00-04:00",
+      "archive_date": "2026-05-19",
+      "naics_code": "541519",
+      "psc_code": "DA10",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/d12ea89b94104a5c941231517f69e011/view",
+      "contact_email": "MIKE_MCGUIRE@IBC.DOI.GOV",
+      "matched_keywords": [
+        "ai"
+      ]
+    },
+    {
+      "id": "ab45acd73664492bb82d5c76c740e035",
+      "title": "7A20--Agentic AI (VA-25-00075915) (VA-25-00104844)",
+      "solicitation_number": "36C10B26Q0115",
+      "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+      "agency_top": "VETERANS AFFAIRS, DEPARTMENT OF",
+      "agency_top_slug": "veterans-affairs-department-of",
+      "type": "Special Notice",
+      "posted_date": "2026-04-15",
+      "response_deadline": "2026-04-15T15:00:00-04:00",
+      "archive_date": "2026-07-23",
+      "naics_code": "541519",
+      "psc_code": "7A20",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/ab45acd73664492bb82d5c76c740e035/view",
+      "contact_email": "Ethan.Goldring@va.gov",
+      "matched_keywords": [
+        "ai"
+      ]
+    },
+    {
+      "id": "cf1582a74f23402fb6a299db214644f8",
+      "title": "RFI for HRD AI Tools and Automations ",
+      "solicitation_number": "140D0426R0032",
+      "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+      "agency_top": "INTERIOR, DEPARTMENT OF THE",
+      "agency_top_slug": "interior-department-of-the",
+      "type": "Solicitation",
+      "posted_date": "2026-04-09",
+      "response_deadline": "2026-04-17T17:00:00-04:00",
+      "archive_date": "2026-05-02",
+      "naics_code": "541511",
+      "psc_code": "DA10",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/cf1582a74f23402fb6a299db214644f8/view",
+      "contact_email": "christina_lene@ibc.doi.gov",
+      "matched_keywords": [
+        "ai"
+      ]
+    },
+    {
+      "id": "ed634c7caae44ea19bfbefef912862f4",
+      "title": "Compositional Learning-And-Reasoning for AI Complex Systems Engineering (CLARA)",
+      "solicitation_number": "DARPA-PA-25-07-02",
+      "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+      "agency_top": "DEPT OF DEFENSE",
+      "agency_top_slug": "dept-of-defense",
+      "type": "Solicitation",
+      "posted_date": "2026-04-09",
+      "response_deadline": "2026-04-17T16:00:00",
+      "archive_date": "2026-05-10",
+      "naics_code": "541715",
+      "psc_code": "AC11",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/ed634c7caae44ea19bfbefef912862f4/view",
+      "contact_email": "CLARA@darpa.mil",
+      "matched_keywords": [
+        "ai"
+      ]
+    },
+    {
+      "id": "7dc605c65757438182dd397148777baa",
+      "title": "Sources Sought: Commercial Space Domain Awareness (SDA), Training Large Language Model (LLM) Module",
+      "solicitation_number": "FA882026PKLBAS2",
+      "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPACE COMMAND.SPACE AND MISSILE CENTER.SPACE SYSTEMS2.FA8820  SUSTAINMENT SDACP SSC/PKL",
+      "agency_top": "DEPT OF DEFENSE",
+      "agency_top_slug": "dept-of-defense",
+      "type": "Sources Sought",
+      "posted_date": "2026-04-08",
+      "response_deadline": "2026-04-30T17:00:00-06:00",
+      "archive_date": "2026-05-15",
+      "naics_code": "541512",
+      "psc_code": null,
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/7dc605c65757438182dd397148777baa/view",
+      "pop_state": "CO",
+      "contact_email": "victoria.lloyd@spaceforce.mil",
+      "matched_keywords": [
+        "large language model"
+      ]
+    },
+    {
+      "id": "e307b75073844e5dbb5eda97b10c92fd",
+      "title": "R&D LLM Foundational Model Alignment",
+      "solicitation_number": "476774",
+      "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.BROOKHAVEN NATL LAB -DOE CONTRACTOR",
+      "agency_top": "ENERGY, DEPARTMENT OF",
+      "agency_top_slug": "energy-department-of",
+      "type": "Sources Sought",
+      "posted_date": "2026-03-30",
+      "response_deadline": "2026-04-29T16:00:00-04:00",
+      "archive_date": "2026-05-14",
+      "naics_code": "541715",
+      "psc_code": "AJ11",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/e307b75073844e5dbb5eda97b10c92fd/view",
+      "pop_state": "KY",
+      "contact_email": "jblood@bnl.gov",
+      "matched_keywords": [
+        "llm"
+      ]
+    },
+    {
+      "id": "01a3cc367c76483cbcdbf6b00fb5512c",
+      "title": "Agile Software for Chief Digital and Artificial Intelligence (CDAO) Operations",
+      "solicitation_number": "N6523626RE004",
+      "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR LANT.NIWC ATLANTIC",
+      "agency_top": "DEPT OF DEFENSE",
+      "agency_top_slug": "dept-of-defense",
+      "type": "Solicitation",
+      "posted_date": "2026-03-18",
+      "response_deadline": "2026-03-25T13:00:00-05:00",
+      "archive_date": "2026-11-04",
+      "naics_code": "541715",
+      "psc_code": "AC13",
+      "active": true,
+      "description": "",
+      "ui_link": "https://sam.gov/workspace/contract/opp/01a3cc367c76483cbcdbf6b00fb5512c/view",
+      "contact_email": "jessie.m.rehwoldt.civ@us.navy.mil",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    }
+  ]
 }

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-30T19:51:48.807Z",
-  "count": 648,
+  "generated_at": "2026-05-01T04:32:02.675Z",
+  "count": 647,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-04-30"
+    "end": "2026-05-01"
   },
   "contracts": [
     {
@@ -410,6 +410,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX24C0009_9700_-NONE-_-NONE-",
+      "award_id": "W911QX24C0009",
+      "recipient": "EXPEDITION TECHNOLOGY, INC.",
+      "recipient_slug": "expedition-technology-inc",
+      "amount": 12703859.64,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE TITLED SPOONMAN UNDER BAA TOPIC ID: ARL-BAA-0037",
+      "start_date": "2024-04-05",
+      "end_date": "2029-04-04",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC35",
+      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
       "award_id": "W519TC25F0241",
       "recipient": "BYTECUBED, LLC",
@@ -685,28 +707,6 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX24C0009_9700_-NONE-_-NONE-",
-      "award_id": "W911QX24C0009",
-      "recipient": "EXPEDITION TECHNOLOGY, INC.",
-      "recipient_slug": "expedition-technology-inc",
-      "amount": 9441359.64,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE TITLED SPOONMAN UNDER BAA TOPIC ID: ARL-BAA-0037",
-      "start_date": "2024-04-05",
-      "end_date": "2029-04-04",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC35",
-      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -2283,6 +2283,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865023F6535_9700_FA865020D6207_9700",
+      "award_id": "FA865023F6535",
+      "recipient": "DCS CORPORATION",
+      "recipient_slug": "dcs-corporation",
+      "amount": 2290588,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "CALIBRATED RELIANCE IN ARTIFICIAL INTELLIGENCE MACHINE LEARNING",
+      "start_date": "2023-06-21",
+      "end_date": "2027-02-22",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_75FCMC26C0007_7530_-NONE-_-NONE-",
       "award_id": "75FCMC26C0007",
       "recipient": "EPATHUSA, INC.",
@@ -2346,28 +2368,6 @@
       "matched_keywords": [
         "large language model",
         "ai"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865023F6535_9700_FA865020D6207_9700",
-      "award_id": "FA865023F6535",
-      "recipient": "DCS CORPORATION",
-      "recipient_slug": "dcs-corporation",
-      "amount": 2270588,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "CALIBRATED RELIANCE IN ARTIFICIAL INTELLIGENCE MACHINE LEARNING",
-      "start_date": "2023-06-21",
-      "end_date": "2027-02-22",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -7928,27 +7928,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA860426FB054_9700_FA800322D0003_9700",
-      "award_id": "FA860426FB054",
-      "recipient": "VANA SOLUTIONS LLC",
-      "recipient_slug": "vana-solutions-llc",
-      "amount": 520034.82,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MASINT, ANALYTICS, DATA - ARTIFICIAL INTELLIGENCE (MAD-AI)",
-      "start_date": "2026-02-01",
-      "end_date": "2026-07-31",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R423",
-      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W912CG25FA011_9700_W912CG24D0001_9700",
       "award_id": "W912CG25FA011",
       "recipient": "UNIVERSITY OF SOUTHERN CALIFORNIA",
@@ -8496,6 +8475,27 @@
       "pop_state": "OH",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911QX25FA013_9700_W911QX24D0009_9700",
+      "award_id": "W911QX25FA013",
+      "recipient": "CARNEGIE MELLON UNIVERSITY",
+      "recipient_slug": "carnegie-mellon-university",
+      "amount": 350000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "RESEARCH AND DEVELOPMENT - TRANSFORMING AERIAL VEHICLE DETECTION WITH GENERATIVE ARTIFICIAL INTELLIGENCE (AI): SYNTHETIC DATA AND FAILURE ANALYSIS INNOVATIONS",
+      "start_date": "2025-05-22",
+      "end_date": "2027-01-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "PA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -9668,27 +9668,6 @@
       "pop_state": "MA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX25FA013_9700_W911QX24D0009_9700",
-      "award_id": "W911QX25FA013",
-      "recipient": "CARNEGIE MELLON UNIVERSITY",
-      "recipient_slug": "carnegie-mellon-university",
-      "amount": 200000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "RESEARCH AND DEVELOPMENT - TRANSFORMING AERIAL VEHICLE DETECTION WITH GENERATIVE ARTIFICIAL INTELLIGENCE (AI): SYNTHETIC DATA AND FAILURE ANALYSIS INNOVATIONS",
-      "start_date": "2025-05-22",
-      "end_date": "2026-11-21",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
