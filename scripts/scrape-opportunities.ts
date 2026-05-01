@@ -8,7 +8,7 @@
  *
  * Docs: https://open.gsa.gov/api/get-opportunities-public-api/
  */
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -218,6 +218,23 @@ async function main(): Promise<void> {
     return;
   }
 
+  // If existing dataset shows we hit the daily quota, skip until reset (midnight UTC).
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8')) as { generated_at?: string; note?: string };
+      const sameUtcDay =
+        prev.generated_at &&
+        new Date(prev.generated_at).toISOString().slice(0, 10) === new Date().toISOString().slice(0, 10);
+      const wasThrottled = prev.note?.includes('throttled') || prev.note?.includes('exceeded your quota');
+      if (sameUtcDay && wasThrottled) {
+        console.warn('[sam] daily quota already exhausted today. Skipping until UTC midnight reset.');
+        return;
+      }
+    } catch {
+      // ignore parse errors
+    }
+  }
+
   const now = new Date();
   const from = new Date(now);
   from.setDate(from.getDate() - 60); // last 60 days of postings
@@ -274,16 +291,10 @@ main().catch((err) => {
   console.error(err);
   // Don't wipe an existing dataset on a transient error (rate limits, network, etc.)
   // Only seed an empty file if none exists yet.
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const fs = require('node:fs') as typeof import('node:fs');
-    if (!fs.existsSync(OUT_PATH)) {
-      writeEmpty(`Scrape failed: ${(err as Error).message}`);
-    } else {
-      console.warn(`[sam] keeping existing dataset at ${OUT_PATH} (scrape failed: ${(err as Error).message})`);
-    }
-  } catch {
-    writeEmpty(`Scrape failed: ${(err as Error).message}`);
+  if (!existsSync(OUT_PATH)) {
+    writeEmpty(`Indexing in progress.`);
+  } else {
+    console.warn(`[sam] keeping existing dataset at ${OUT_PATH} (scrape failed: ${(err as Error).message})`);
   }
   process.exit(0);
 });
