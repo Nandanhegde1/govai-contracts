@@ -22,6 +22,10 @@ const description = `${agency.name} has awarded ${agency.count} AI/ML contracts 
     <p class="lead">
       {agency.count} AI/ML contracts · {formatMoney(agency.total_amount)} total awarded.
     </p>
+    <p style="margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a href={`/agencies/${slug}/vendors/`} style="background:var(--accent); color:#04140a; padding:8px 14px; border-radius:6px; font-weight:600; font-size:14px; text-decoration:none;">Top vendors at {agency.name} →</a>
+      <a href={`/export/agency/${slug}.csv`} style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:8px 14px; border-radius:6px; font-size:14px; text-decoration:none;">↓ Download CSV</a>
+    </p>
   </section>
 
   <div class="list-grid">

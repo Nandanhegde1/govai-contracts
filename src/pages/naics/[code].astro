@@ -22,6 +22,10 @@ const description = `${naics.count} federal AI/ML contracts under NAICS ${naics.
     <p class="lead">
       {naics.label}. {naics.count} AI/ML contracts · {formatMoney(naics.total_amount)} total.
     </p>
+    <p style="margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a href={`/naics/${code}/vendors/`} style="background:var(--accent); color:#04140a; padding:8px 14px; border-radius:6px; font-weight:600; font-size:14px; text-decoration:none;">Top vendors in NAICS {code} →</a>
+      <a href={`/export/naics/${code}.csv`} style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:8px 14px; border-radius:6px; font-size:14px; text-decoration:none;">↓ Download CSV</a>
+    </p>
   </section>
 
   <div class="list-grid">

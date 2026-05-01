@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const ALERTS_EMAIL = 'nandanhegde1096@gmail.com';
+const action = `https://formsubmit.co/${ALERTS_EMAIL}`;
+---
+<Layout
+  title="Pricing · Free, Pro, and API"
+  description="Free forever for browsing. Optional paid alerts and full data API for power users — BD teams, vendors, researchers."
+>
+  <section class="hero">
+    <h1>Simple pricing</h1>
+    <p class="lead">
+      Browsing is free forever. Pay only when you need real-time alerts or bulk data access.
+    </p>
+  </section>
+
+  <div style="display:grid; grid-template-columns: 1fr; gap: 18px; margin-top: 12px;" class="pricing-grid">
+    <section class="card" style="padding: 28px;">
+      <h2 style="margin-bottom: 4px;">Free</h2>
+      <p style="font-size: 32px; font-weight: 800; color: var(--accent); margin: 0;">$0<span style="font-size: 14px; color: var(--text-muted); font-weight: 400;"> / forever</span></p>
+      <ul style="color: var(--text-muted); font-size: 14px; line-height: 1.8; padding-left: 18px; margin-top: 14px;">
+        <li>Browse all 600+ AI contracts</li>
+        <li>Filter by agency, NAICS, vendor, state</li>
+        <li>CSV export per agency / vendor / NAICS</li>
+        <li>Updated every 6 hours</li>
+      </ul>
+      <a href="/contracts/" style="display:inline-block; margin-top:14px; padding:10px 18px; background:transparent; color:var(--text); border:1px solid var(--border-strong); border-radius:6px; text-decoration:none;">Browse →</a>
+    </section>
+
+    <section class="card" style="padding: 28px; border-color: var(--accent);">
+      <h2 style="margin-bottom: 4px;">Pro Alerts</h2>
+      <p style="font-size: 32px; font-weight: 800; color: var(--accent); margin: 0;">$19<span style="font-size: 14px; color: var(--text-muted); font-weight: 400;"> / month</span></p>
+      <p style="color: var(--text-dim); font-size: 12px; margin-top: 4px;">Free during beta · join the waitlist</p>
+      <ul style="color: var(--text-muted); font-size: 14px; line-height: 1.8; padding-left: 18px; margin-top: 14px;">
+        <li>Real-time email alerts (within 1 hour of post)</li>
+        <li>Custom keyword + agency + dollar filters</li>
+        <li>SAM.gov RFP alerts before they get noticed</li>
+        <li>Slack & Teams webhook delivery</li>
+        <li>Historical search beyond rolling window</li>
+      </ul>
+      <form action={action} method="POST" style="margin-top:14px;">
+        <input type="hidden" name="_subject" value="Pro Alerts waitlist signup" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" value="https://govai-contracts.nandanhegde1096.workers.dev/pricing/?ok=pro" />
+        <input type="hidden" name="plan" value="Pro Alerts" />
+        <input type="email" name="email" required placeholder="you@company.com"
+          style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:10px 12px; font-size:14px; width:100%; margin-bottom: 8px;" />
+        <button type="submit" style="background:var(--accent); color:#04140a; border:0; border-radius:4px; padding:10px 18px; font-weight:700; font-size:14px; cursor:pointer; width:100%;">
+          Join Pro waitlist →
+        </button>
+      </form>
+    </section>
+
+    <section class="card" style="padding: 28px;">
+      <h2 style="margin-bottom: 4px;">Data API</h2>
+      <p style="font-size: 32px; font-weight: 800; color: var(--accent); margin: 0;">$99<span style="font-size: 14px; color: var(--text-muted); font-weight: 400;"> / month</span></p>
+      <p style="color: var(--text-dim); font-size: 12px; margin-top: 4px;">For BD tools, agencies, internal dashboards</p>
+      <ul style="color: var(--text-muted); font-size: 14px; line-height: 1.8; padding-left: 18px; margin-top: 14px;">
+        <li>JSON API access — query anything</li>
+        <li>Webhook on new contract / RFP</li>
+        <li>10,000 requests/day</li>
+        <li>Bulk historical exports</li>
+        <li>Email support</li>
+      </ul>
+      <form action={action} method="POST" style="margin-top:14px;">
+        <input type="hidden" name="_subject" value="Data API waitlist signup" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" value="https://govai-contracts.nandanhegde1096.workers.dev/pricing/?ok=api" />
+        <input type="hidden" name="plan" value="Data API" />
+        <input type="email" name="email" required placeholder="you@company.com"
+          style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:10px 12px; font-size:14px; width:100%; margin-bottom: 8px;" />
+        <input type="text" name="use_case" placeholder="What will you use the data for?"
+          style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:10px 12px; font-size:14px; width:100%; margin-bottom: 8px;" />
+        <button type="submit" style="background:var(--accent); color:#04140a; border:0; border-radius:4px; padding:10px 18px; font-weight:700; font-size:14px; cursor:pointer; width:100%;">
+          Request API access →
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <section style="margin-top: 48px;">
+    <h2>Already free</h2>
+    <p style="color: var(--text-muted);">
+      The complete contracts dataset is downloadable as <a href="/export/all.csv">CSV</a> or <a href="/export/all.json">JSON</a>, no signup required, public domain (USAspending.gov).
+    </p>
+  </section>
+</Layout>
+
+<style>
+  @media (min-width: 720px) {
+    .pricing-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  }
+</style>
+
+<script is:inline>
+  const ok = new URLSearchParams(location.search).get('ok');
+  if (ok) {
+    const main = document.querySelector('.main');
+    if (main) {
+      const div = document.createElement('div');
+      div.style.cssText = 'background: rgba(74,222,128,0.12); border: 1px solid #4ade80; color: #4ade80; padding: 14px 18px; border-radius: 6px; margin-bottom: 18px;';
+      div.textContent = `✓ You're on the waitlist for ${ok === 'pro' ? 'Pro Alerts' : 'Data API'}. We'll email when it launches.`;
+      main.insertBefore(div, main.firstChild);
+    }
+  }
+</script>

@@ -23,6 +23,10 @@ const description = `${vendor.name} has won ${vendor.count} federal AI/ML contra
       {vendor.count} federal AI/ML contracts · {formatMoney(vendor.total_amount)} total ·
       {vendor.agencies.length} agencies served.
     </p>
+    <p style="margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a href={`/claim/?vendor=${encodeURIComponent(vendor.name)}`} style="background:var(--accent); color:#04140a; padding:8px 14px; border-radius:6px; font-weight:600; font-size:14px; text-decoration:none;">Are you {vendor.name}? Claim this profile →</a>
+      <a href={`/export/vendor/${slug}.csv`} style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:8px 14px; border-radius:6px; font-size:14px; text-decoration:none;">↓ Download CSV</a>
+    </p>
   </section>
 
   <h2 class="section-title">Agencies</h2>

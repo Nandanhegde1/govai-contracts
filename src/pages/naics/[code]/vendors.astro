@@ -1,0 +1,50 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getNaicsList, getContractsByNaics } from '../../../lib/data';
+import { formatMoney } from '../../../lib/types';
+
+export async function getStaticPaths() {
+  return getNaicsList().map((n) => ({ params: { code: n.code }, props: { naics: n } }));
+}
+
+const { code } = Astro.params;
+const { naics } = Astro.props;
+const contracts = getContractsByNaics(code!);
+
+const map = new Map<string, { name: string; slug: string; count: number; total: number }>();
+for (const c of contracts) {
+  const cur = map.get(c.recipient_slug) ?? { name: c.recipient, slug: c.recipient_slug, count: 0, total: 0 };
+  cur.count += 1;
+  cur.total += c.amount;
+  map.set(c.recipient_slug, cur);
+}
+const vendors = [...map.values()].sort((a, b) => b.total - a.total);
+
+const title = `Top vendors winning NAICS ${code} (${naics.label}) AI contracts`;
+const description = `${vendors.length} vendors have won federal AI/ML contracts under NAICS ${code} — ${naics.label}. Ranked by total award value.`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href={`/naics/${code}/`}>← NAICS {code} contracts</a></p>
+  <section class="hero">
+    <h1>Top vendors · NAICS {code}</h1>
+    <p class="lead">
+      {naics.label}. {vendors.length} vendors · {formatMoney(naics.total_amount)} total awarded.
+      <a href={`/export/naics/${code}.csv`} style="margin-left:8px; color: var(--accent);">↓ CSV</a>
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {vendors.map((v, i) => (
+      <div class="entity-row">
+        <div>
+          <div class="name">
+            <span style="color: var(--text-dim); margin-right: 6px;">#{i + 1}</span>
+            <a href={`/vendors/${v.slug}/`}>{v.name}</a>
+          </div>
+          <div class="meta">{v.count} contract{v.count === 1 ? '' : 's'}</div>
+        </div>
+        <div class="amount">{formatMoney(v.total)}</div>
+      </div>
+    ))}
+  </div>
+</Layout>

@@ -1,0 +1,51 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getAgencies, getContractsByAgency } from '../../../lib/data';
+import { formatMoney } from '../../../lib/types';
+
+export async function getStaticPaths() {
+  return getAgencies().map((a) => ({ params: { slug: a.slug }, props: { agency: a } }));
+}
+
+const { slug } = Astro.params;
+const { agency } = Astro.props;
+const contracts = getContractsByAgency(slug!);
+
+// Aggregate vendors winning at this agency
+const map = new Map<string, { name: string; slug: string; count: number; total: number }>();
+for (const c of contracts) {
+  const cur = map.get(c.recipient_slug) ?? { name: c.recipient, slug: c.recipient_slug, count: 0, total: 0 };
+  cur.count += 1;
+  cur.total += c.amount;
+  map.set(c.recipient_slug, cur);
+}
+const vendors = [...map.values()].sort((a, b) => b.total - a.total);
+
+const title = `Top AI vendors winning at ${agency.name}`;
+const description = `${vendors.length} vendors have won AI/ML contracts from ${agency.name}, totaling ${formatMoney(agency.total_amount)}. Ranked by award amount.`;
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href={`/agencies/${slug}/`}>← {agency.name} contracts</a></p>
+  <section class="hero">
+    <h1>Top AI vendors at {agency.name}</h1>
+    <p class="lead">
+      {vendors.length} vendors winning AI/ML work from {agency.name}. Total awarded: {formatMoney(agency.total_amount)}.
+      <a href={`/export/agency/${slug}.csv`} style="margin-left:8px; color: var(--accent);">↓ CSV</a>
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {vendors.map((v, i) => (
+      <div class="entity-row">
+        <div>
+          <div class="name">
+            <span style="color: var(--text-dim); margin-right: 6px;">#{i + 1}</span>
+            <a href={`/vendors/${v.slug}/`}>{v.name}</a>
+          </div>
+          <div class="meta">{v.count} contract{v.count === 1 ? '' : 's'}</div>
+        </div>
+        <div class="amount">{formatMoney(v.total)}</div>
+      </div>
+    ))}
+  </div>
+</Layout>
