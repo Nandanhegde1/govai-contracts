@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getVendors, getMeta } from '../../lib/data';
+import { formatMoney, formatDate } from '../../lib/types';
+
+const top = getVendors().slice(0, 25);
+const meta = getMeta();
+const totalTop = top.reduce((s, v) => s + v.total_amount, 0);
+---
+<Layout
+  title="Top vendors winning federal AI contracts (live ranking)"
+  description="The 25 companies winning the most federal AI/ML contract dollars. Auto-ranked from USAspending.gov, updated every 6 hours."
+>
+  <p style="margin-bottom: 8px;"><a href="/insights/">← All insights</a></p>
+  <article>
+    <h1>Top vendors winning federal AI contracts</h1>
+    <p style="color: var(--text-dim); font-size: 13px;">Updated {formatDate(meta.generated_at)} · Live data</p>
+
+    <p class="lead" style="margin-top: 18px;">
+      The federal AI/ML market is consolidating fast. The top 25 vendors below have collectively won
+      <strong>{formatMoney(totalTop)}</strong> in AI-related awards since FY2024 — pulled live from
+      USAspending.gov and ranked by total dollars awarded.
+    </p>
+
+    <h2 class="section-title">The top 25</h2>
+    <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+      <thead>
+        <tr style="border-bottom: 1px solid var(--border-strong); text-align: left;">
+          <th style="padding: 10px 8px;">#</th>
+          <th style="padding: 10px 8px;">Vendor</th>
+          <th style="padding: 10px 8px; text-align: right;">Contracts</th>
+          <th style="padding: 10px 8px; text-align: right;">Total awarded</th>
+        </tr>
+      </thead>
+      <tbody>
+        {top.map((v, i) => (
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 8px; color: var(--text-dim);">{i + 1}</td>
+            <td style="padding: 10px 8px;">
+              <a href={`/vendors/${v.slug}/`} style="color: var(--text);">{v.name}</a>
+              <div style="color: var(--text-muted); font-size: 12px;">{v.agencies.length} agencies served</div>
+            </td>
+            <td style="padding: 10px 8px; text-align: right; font-variant-numeric: tabular-nums;">{v.count}</td>
+            <td style="padding: 10px 8px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--accent);">{formatMoney(v.total_amount)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2 class="section-title" style="margin-top: 32px;">How this list is built</h2>
+    <p>
+      Source: <a href="https://www.usaspending.gov/" target="_blank" rel="noopener">USAspending.gov</a>.
+      We pull awards in AI-relevant NAICS codes (541511, 541512, 541513, 541519, 541715, 518210)
+      and require an AI/ML keyword in the description. Total = sum of award amounts; rankings
+      refresh every 6 hours.
+    </p>
+
+    <p style="margin-top: 18px;">
+      Want the full list? <a href="/vendors/">Browse all {top.length}+ vendors →</a>
+      or <a href="/export/all.csv">download the raw CSV</a>.
+    </p>
+  </article>
+</Layout>

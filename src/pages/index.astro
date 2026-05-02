@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ContractCard from '../components/ContractCard.astro';
+import FreshnessBadge from '../components/FreshnessBadge.astro';
 import { getAll, getMeta, getAgencies, getVendors } from '../lib/data';
+import { getTrending, getBiggest } from '../lib/related';
 import { formatMoney, formatDate } from '../lib/types';
 
 const all = getAll();
@@ -13,14 +15,35 @@ const totalAmount = all.reduce((s, c) => s + c.amount, 0);
 const recent = [...all]
   .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
   .slice(0, 10);
+const trending = getTrending(6);
+const biggest = getBiggest(6);
 const topVendors = vendors.slice(0, 5);
 const topAgencies = agencies.slice(0, 5);
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'GovAI Contracts — U.S. Federal AI/ML Contract Awards',
+  description: `${all.length.toLocaleString('en-US')} federal AI and machine-learning contract awards (${formatMoney(totalAmount)} total) from ${agencies.length} agencies and ${vendors.length} vendors. Updated every 6 hours from USAspending.gov.`,
+  url: 'https://govai-contracts.nandanhegde1096.workers.dev/',
+  keywords: ['federal AI contracts', 'machine learning', 'USAspending', 'SAM.gov', 'government contracts'],
+  license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+  isAccessibleForFree: true,
+  creator: { '@type': 'Organization', name: 'GovAI Contracts' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://govai-contracts.nandanhegde1096.workers.dev/export/all.csv' },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://govai-contracts.nandanhegde1096.workers.dev/export/all.json' },
+  ],
+  dateModified: meta.generated_at,
+};
 ---
 <Layout
   title="Federal AI &amp; ML Contracts · GovAI Contracts"
   description="Track every federal AI and machine learning contract awarded since 2023. Search vendors, agencies, and dollar amounts. Free, weekly updated, public-domain data."
+  jsonLd={datasetSchema}
 >
   <section class="hero">
+    <p style="margin-bottom: 12px;"><FreshnessBadge generatedAt={meta.generated_at} /></p>
     <h1>Federal AI &amp; ML contracts, made searchable.</h1>
     <p class="lead">
       Every U.S. government contract for artificial intelligence, machine learning, LLMs and
@@ -68,6 +91,18 @@ const topAgencies = agencies.slice(0, 5);
           recent.map((c) => <ContractCard contract={c} />)
         )
       }
+
+      {trending.length > 0 && (
+        <>
+          <h2 style="margin-top: 36px;">Trending this month</h2>
+          <p class="result-count">Largest awards started in the last 30 days.</p>
+          {trending.map((c) => <ContractCard contract={c} />)}
+        </>
+      )}
+
+      <h2 style="margin-top: 36px;">Biggest awards of all time</h2>
+      <p class="result-count">Top 6 by dollar amount across the dataset.</p>
+      {biggest.map((c) => <ContractCard contract={c} />)}
     </section>
 
     <aside>

@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const posts = [
+  {
+    slug: 'top-vendors-winning-federal-ai-contracts',
+    title: 'Top vendors winning federal AI contracts (live ranking)',
+    excerpt: 'Auto-ranked from USAspending.gov: who is winning the most federal AI/ML dollars right now, by total awarded.',
+    date: '2026-01-15',
+  },
+  {
+    slug: 'top-agencies-buying-ai',
+    title: 'Top federal agencies buying AI &amp; machine learning',
+    excerpt: 'DoD dominates, but DHS, HHS, and VA are catching up fast. Live ranking by total AI/ML spend.',
+    date: '2026-01-10',
+  },
+  {
+    slug: 'federal-ai-contracts-by-state',
+    title: 'Where federal AI contracts go: state-by-state breakdown',
+    excerpt: 'Virginia and Maryland soak up the lion\'s share. Full per-state ranking with dollar amounts.',
+    date: '2026-01-05',
+  },
+];
+---
+<Layout
+  title="Insights — Federal AI Contract Trends"
+  description="Data-driven analysis of who is winning federal AI/ML contracts, which agencies are buying, and where the money flows."
+>
+  <section class="hero">
+    <h1>Insights</h1>
+    <p class="lead">
+      Data-driven breakdowns of the federal AI/ML market — auto-generated from the live dataset
+      and refreshed every 6 hours. No spin, no paywalls.
+    </p>
+  </section>
+
+  <div class="list-grid">
+    {posts.map((p) => (
+      <article class="card" style="padding: 22px;">
+        <h2 style="margin: 0 0 8px 0; font-size: 20px;">
+          <a href={`/insights/${p.slug}/`} style="color: var(--text); text-decoration: none;" set:html={p.title} />
+        </h2>
+        <p style="color: var(--text-muted); margin: 0 0 12px 0;" set:html={p.excerpt} />
+        <p style="margin:0; font-size: 12px; color: var(--text-dim);">{p.date}</p>
+      </article>
+    ))}
+  </div>
+
+  <p style="margin-top: 28px; color: var(--text-muted);">
+    Want the raw data? <a href="/export/all.csv">Download the full CSV</a> or
+    <a href="/export/all.json">JSON export</a> — both free, both CC0.
+  </p>
+</Layout>

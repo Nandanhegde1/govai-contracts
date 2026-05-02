@@ -6,6 +6,7 @@ export interface Props {
   description?: string;
   canonical?: string;
   ogImage?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
@@ -13,11 +14,24 @@ const {
   description = 'Track federal AI and machine learning contracts. Find who is winning AI work at DoD, DHS, NIH, NASA and more. Free, weekly updated.',
   canonical,
   ogImage = '/og-default.svg',
+  jsonLd,
 } = Astro.props;
 
 const siteName = 'GovAI Contracts';
 const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
 const url = canonical ?? Astro.url.href;
+
+// Default org schema always present; pages can pass page-specific schema via `jsonLd`.
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: siteName,
+  url: 'https://govai-contracts.nandanhegde1096.workers.dev/',
+  description: 'Free, independent index of every U.S. federal AI/ML contract award.',
+  sameAs: ['https://github.com/Nandanhegde1/govai-contracts'],
+};
+const extraSchemas = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
+const allSchemas = [orgSchema, ...extraSchemas];
 ---
 <!doctype html>
 <html lang="en">
@@ -42,6 +56,14 @@ const url = canonical ?? Astro.url.href;
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site).toString()} />
+
+    <link rel="alternate" type="application/rss+xml" title="GovAI Contracts — Latest awards" href="/rss.xml" />
+
+    {allSchemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
+
+    <script defer data-domain="govai-contracts.nandanhegde1096.workers.dev" src="https://plausible.io/js/script.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -55,6 +77,7 @@ const url = canonical ?? Astro.url.href;
           <a href="/opportunities/">Opportunities</a>
           <a href="/agencies/">Agencies</a>
           <a href="/vendors/">Vendors</a>
+          <a href="/insights/">Insights</a>
           <a href="/alerts/">Alerts</a>
           <a href="/pricing/">Pricing</a>
         </nav>
@@ -74,7 +97,7 @@ const url = canonical ?? Astro.url.href;
           <a href="https://sam.gov/data-services" rel="noopener" target="_blank">SAM.gov</a>
           (public domain). Independent project, not affiliated with the U.S. government.
         </p>
-        <p class="meta">Updated every 6 hours · <a href="/about/">About</a> · <a href="/pricing/">Pricing</a> · <a href="https://github.com/Nandanhegde1/govai-contracts" rel="noopener" target="_blank">Source on GitHub</a></p>
+        <p class="meta">Updated every 6 hours · <a href="/about/">About</a> · <a href="/insights/">Insights</a> · <a href="/pricing/">Pricing</a> · <a href="/rss.xml">RSS</a> · <a href="https://github.com/Nandanhegde1/govai-contracts" rel="noopener" target="_blank">Source on GitHub</a></p>
       </div>
     </footer>
   </body>

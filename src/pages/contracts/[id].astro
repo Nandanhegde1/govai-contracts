@@ -1,6 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 import { getAll, getById } from '../../lib/data';
+import { getRelatedContracts } from '../../lib/related';
 import { formatMoney, formatDate } from '../../lib/types';
 
 export async function getStaticPaths() {
@@ -15,8 +18,33 @@ if (!c) {
 
 const title = `${c.recipient} · ${formatMoney(c.amount)} AI contract from ${c.agency}`;
 const description = `${c.recipient} won a ${formatMoney(c.amount)} federal AI/ML contract from ${c.agency}${c.sub_agency ? ' (' + c.sub_agency + ')' : ''}. ${c.description.slice(0, 160)}`;
+const related = getRelatedContracts(c, 6);
+const shareUrl = Astro.url.href;
+
+// JSON-LD: GovernmentService schema (closest fit for an award) + BreadcrumbList
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'GovernmentService',
+    name: `${c.recipient} — ${c.agency} AI/ML contract`,
+    description: c.description.slice(0, 500),
+    provider: { '@type': 'GovernmentOrganization', name: c.agency },
+    serviceType: 'Federal AI/ML contract award',
+    areaServed: c.pop_state ? { '@type': 'State', name: c.pop_state } : undefined,
+    identifier: c.award_id,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Contracts', item: `${Astro.site}contracts/` },
+      { '@type': 'ListItem', position: 2, name: c.agency, item: `${Astro.site}agencies/${c.agency_slug}/` },
+      { '@type': 'ListItem', position: 3, name: c.recipient, item: shareUrl },
+    ],
+  },
+];
 ---
-<Layout title={title} description={description}>
+<Layout title={title} description={description} jsonLd={jsonLd}>
   <p style="margin-bottom: 8px;">
     <a href="/contracts/">← All contracts</a>
   </p>
@@ -74,6 +102,20 @@ const description = `${c.recipient} won a ${formatMoney(c.amount)} federal AI/ML
       <p style="margin-top: 18px; font-size: 12px; color: var(--text-dim);">
         Source: <a href="https://www.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov</a> (public domain).
       </p>
+
+      <div style="margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border-strong);">
+        <ShareButtons url={shareUrl} title={`${c.recipient} won ${formatMoney(c.amount)} from ${c.agency}`} />
+      </div>
     </aside>
   </div>
+
+  {related.length > 0 && (
+    <section style="margin-top: 32px;">
+      <h2 class="section-title">Related contracts</h2>
+      <p class="result-count">More awards from {c.recipient}, {c.agency}, and similar NAICS codes.</p>
+      <div class="list-grid">
+        {related.map((r) => <ContractCard contract={r} />)}
+      </div>
+    </section>
+  )}
 </Layout>

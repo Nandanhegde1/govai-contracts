@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAgencies, getMeta, getAll } from '../../lib/data';
+import { formatMoney, formatDate } from '../../lib/types';
+
+const top = getAgencies().slice(0, 20);
+const meta = getMeta();
+const totalAll = getAll().reduce((s, c) => s + c.amount, 0);
+const topShare = top.reduce((s, a) => s + a.total_amount, 0) / totalAll;
+---
+<Layout
+  title="Top federal agencies buying AI & machine learning"
+  description="Which U.S. federal agencies are buying the most AI? Live ranking by total contract dollars, updated every 6 hours."
+>
+  <p style="margin-bottom: 8px;"><a href="/insights/">← All insights</a></p>
+  <article>
+    <h1>Top federal agencies buying AI &amp; machine learning</h1>
+    <p style="color: var(--text-dim); font-size: 13px;">Updated {formatDate(meta.generated_at)} · Live data</p>
+
+    <p class="lead" style="margin-top: 18px;">
+      The Department of Defense unsurprisingly tops the list, but civilian agencies like
+      Health &amp; Human Services, Veterans Affairs, and Homeland Security are scaling AI
+      procurement aggressively. The top 20 agencies below account for
+      <strong>{(topShare * 100).toFixed(1)}%</strong> of all federal AI/ML contract dollars in the dataset.
+    </p>
+
+    <h2 class="section-title">Top 20 agencies by AI/ML spend</h2>
+    <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+      <thead>
+        <tr style="border-bottom: 1px solid var(--border-strong); text-align: left;">
+          <th style="padding: 10px 8px;">#</th>
+          <th style="padding: 10px 8px;">Agency</th>
+          <th style="padding: 10px 8px; text-align: right;">Contracts</th>
+          <th style="padding: 10px 8px; text-align: right;">Total awarded</th>
+        </tr>
+      </thead>
+      <tbody>
+        {top.map((a, i) => (
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 8px; color: var(--text-dim);">{i + 1}</td>
+            <td style="padding: 10px 8px;"><a href={`/agencies/${a.slug}/`} style="color: var(--text);">{a.name}</a></td>
+            <td style="padding: 10px 8px; text-align: right; font-variant-numeric: tabular-nums;">{a.count}</td>
+            <td style="padding: 10px 8px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--accent);">{formatMoney(a.total_amount)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <p style="margin-top: 24px;">
+      <a href="/agencies/">Browse all agencies →</a>
+    </p>
+  </article>
+</Layout>

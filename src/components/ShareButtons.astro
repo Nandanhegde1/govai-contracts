@@ -1,0 +1,19 @@
+---
+interface Props {
+  url: string;
+  title: string;
+}
+const { url, title } = Astro.props;
+const enc = (s: string): string => encodeURIComponent(s);
+const tw = `https://twitter.com/intent/tweet?text=${enc(title)}&url=${enc(url)}`;
+const ln = `https://www.linkedin.com/sharing/share-offsite/?url=${enc(url)}`;
+const rd = `https://www.reddit.com/submit?url=${enc(url)}&title=${enc(title)}`;
+const em = `mailto:?subject=${enc(title)}&body=${enc(url)}`;
+---
+<div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; font-size:13px;">
+  <span style="color: var(--text-muted);">Share:</span>
+  <a href={tw} target="_blank" rel="noopener" style="padding:4px 10px; border:1px solid var(--border-strong); border-radius:4px; color:var(--text); text-decoration:none;">Twitter / X</a>
+  <a href={ln} target="_blank" rel="noopener" style="padding:4px 10px; border:1px solid var(--border-strong); border-radius:4px; color:var(--text); text-decoration:none;">LinkedIn</a>
+  <a href={rd} target="_blank" rel="noopener" style="padding:4px 10px; border:1px solid var(--border-strong); border-radius:4px; color:var(--text); text-decoration:none;">Reddit</a>
+  <a href={em} style="padding:4px 10px; border:1px solid var(--border-strong); border-radius:4px; color:var(--text); text-decoration:none;">Email</a>
+</div>
