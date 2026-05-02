@@ -123,10 +123,15 @@ async function fetchPage(
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const res = await fetch(url.toString());
+      if (res.status === 429 || res.status === 403) {
+        const body = await res.text().catch(() => '');
+        throw new Error(`THROTTLED: HTTP ${res.status} ${body.slice(0, 200)}`);
+      }
       if (!res.ok) throw new Error(`HTTP ${res.status} ${await res.text().then((t) => t.slice(0, 200))}`);
       const data = (await res.json()) as { opportunitiesData?: Raw[]; totalRecords?: number };
       return { raw: data.opportunitiesData ?? [], total: data.totalRecords ?? 0 };
     } catch (err) {
+      if ((err as Error).message?.startsWith('THROTTLED')) throw err; // bubble up immediately
       if (attempt === 2) throw err;
       await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
     }
@@ -242,6 +247,30 @@ async function main(): Promise<void> {
   const postedTo = fmtDate(now);
   console.log(`[sam] window: ${postedFrom} → ${postedTo}`);
 
+  // Quota plan per run (free SAM API: 1,000 req/day per IP, ~250/run @ 4 runs/day):
+  //   - List requests:        6 NAICS × ≤10 pages = ≤60
+  //   - Description fetches:  capped at MAX_DESC_FETCHES (default 150)
+  //   - Total per run: ≤210 req. Daily: ≤840 (≤84% of quota).
+  const MAX_DESC_FETCHES = 150;
+  let descFetches = 0;
+
+  // Incremental: load existing dataset and reuse cached descriptions.
+  // Drop entries whose archive_date is in the past to keep the index fresh.
+  const cached = new Map<string, Opportunity>();
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8')) as { opportunities?: Opportunity[] };
+      const today = now.toISOString().slice(0, 10);
+      for (const o of prev.opportunities ?? []) {
+        const stillActive = !o.archive_date || o.archive_date.slice(0, 10) >= today;
+        if (stillActive) cached.set(o.id, o);
+      }
+      console.log(`[sam] loaded ${cached.size} cached opportunities (skipping their description re-fetch)`);
+    } catch {
+      // ignore parse errors; treat as fresh run
+    }
+  }
+
   const seen = new Map<string, Opportunity>();
 
   for (const naics of NAICS_CODES) {
@@ -254,27 +283,71 @@ async function main(): Promise<void> {
       console.log(`  offset=${offset} got=${raw.length} total=${total}`);
       let added = 0;
       for (const r of raw) {
-        // Title-only match: SAM listing API returns description as a URL stub,
-        // not text. Fetching each blows our daily 1k-request quota fast.
-        // Title matching catches all explicitly-AI RFPs, which is what users want.
-        const o = normalize(r, '');
+        if (!r.noticeId) continue;
+
+        // 1) If we already have this notice cached with a usable description, reuse it.
+        const prior = cached.get(r.noticeId);
+        if (prior && prior.description && prior.description.length > 50) {
+          if (!seen.has(prior.id)) {
+            seen.set(prior.id, prior);
+            added++;
+          }
+          continue;
+        }
+
+        // 2) Cheap path: try title-only match first (no extra API call).
+        const titleMatch = matchKeywords(r.title ?? '');
+        let desc = '';
+        if (titleMatch.length === 0) {
+          // 3) Title didn't match. Spend a description request to check the body —
+          // but only up to MAX_DESC_FETCHES per run.
+          if (descFetches >= MAX_DESC_FETCHES) continue;
+          if (r.description && /^https?:\/\//i.test(r.description)) {
+            desc = await fetchDescription(apiKey, r.description);
+            descFetches++;
+            await new Promise((res) => setTimeout(res, 250));
+          } else {
+            desc = r.description ?? '';
+          }
+        } else {
+          // Title matches — still fetch description for the detail page (worth the quota).
+          if (descFetches < MAX_DESC_FETCHES && r.description && /^https?:\/\//i.test(r.description)) {
+            desc = await fetchDescription(apiKey, r.description);
+            descFetches++;
+            await new Promise((res) => setTimeout(res, 250));
+          } else {
+            desc = r.description && !/^https?:\/\//i.test(r.description) ? r.description : '';
+          }
+        }
+
+        const o = normalize(r, desc);
         if (!o) continue;
         if (!seen.has(o.id)) {
           seen.set(o.id, o);
           added++;
         }
       }
-      console.log(`  +${added} kept (total ${seen.size})`);
+      console.log(`  +${added} kept (total ${seen.size}, descFetches=${descFetches}/${MAX_DESC_FETCHES})`);
       offset += raw.length;
       if (raw.length < PAGE || offset >= total) break;
+      if (descFetches >= MAX_DESC_FETCHES) {
+        console.warn('  description fetch budget exhausted for this run; remaining results will be picked up next cron');
+        break;
+      }
       await new Promise((r) => setTimeout(r, 600));
     }
+  }
+
+  // Carry over any still-active cached opportunities the listing didn't return this run
+  // (e.g. dropped off the window). Avoids losing data between runs.
+  for (const [id, o] of cached) {
+    if (!seen.has(id)) seen.set(id, o);
   }
 
   const all = [...seen.values()].sort(
     (a, b) => new Date(b.posted_date).getTime() - new Date(a.posted_date).getTime()
   );
-  console.log(`[sam] DONE. ${all.length} opportunities kept.`);
+  console.log(`[sam] DONE. ${all.length} opportunities kept. (description fetches this run: ${descFetches})`);
 
   mkdirSync(dirname(OUT_PATH), { recursive: true });
   const payload = {
@@ -289,12 +362,29 @@ async function main(): Promise<void> {
 
 main().catch((err) => {
   console.error(err);
+  const msg = (err as Error).message ?? String(err);
+  const throttled = msg.startsWith('THROTTLED') || msg.includes('exceeded your quota') || msg.includes('OVER_RATE_LIMIT');
+
+  if (throttled && existsSync(OUT_PATH)) {
+    // Tag the existing dataset so we skip until UTC midnight on the next run.
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8')) as Record<string, unknown>;
+      prev.generated_at = new Date().toISOString();
+      prev.note = `throttled: ${msg.slice(0, 200)}`;
+      writeFileSync(OUT_PATH, JSON.stringify(prev, null, 2), 'utf8');
+      console.warn('[sam] tagged dataset as throttled; will skip until UTC midnight.');
+    } catch (e) {
+      console.warn(`[sam] could not tag dataset: ${(e as Error).message}`);
+    }
+    process.exit(0);
+  }
+
   // Don't wipe an existing dataset on a transient error (rate limits, network, etc.)
   // Only seed an empty file if none exists yet.
   if (!existsSync(OUT_PATH)) {
-    writeEmpty(`Indexing in progress.`);
+    writeEmpty(throttled ? `throttled: ${msg.slice(0, 200)}` : `Indexing in progress.`);
   } else {
-    console.warn(`[sam] keeping existing dataset at ${OUT_PATH} (scrape failed: ${(err as Error).message})`);
+    console.warn(`[sam] keeping existing dataset at ${OUT_PATH} (scrape failed: ${msg})`);
   }
   process.exit(0);
 });
