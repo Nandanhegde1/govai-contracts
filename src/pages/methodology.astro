@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getMeta } from '../lib/data';
+
+const m = getMeta();
+const BASE = 'https://govai-contracts.nandanhegde1096.workers.dev';
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'GovAI Contracts — Federal AI/ML Award Dataset',
+  description: `Compiled, normalized index of every U.S. federal AI/ML contract award (${m.count.toLocaleString()} records). Sourced from USAspending.gov; updated every 6 hours.`,
+  url: BASE,
+  license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+  creator: {
+    '@type': 'Person',
+    name: 'Nandan Hegde',
+    url: 'https://github.com/NandanHegde10',
+  },
+  isAccessibleForFree: true,
+  keywords: ['federal contracts', 'AI', 'machine learning', 'government', 'USAspending', 'SAM.gov'],
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'CSV', contentUrl: `${BASE}/export/all.csv` },
+    { '@type': 'DataDownload', encodingFormat: 'JSON', contentUrl: `${BASE}/api/v1/contracts.json` },
+  ],
+  citation: `Hegde, N. (2026). GovAI Contracts: Federal AI/ML Award Dataset. ${BASE}`,
+};
+
+const title = 'Methodology, sources & how to cite';
+const description = 'How GovAI Contracts compiles its dataset: sources, AI/ML keyword filter, refresh cadence, license, and citation format.';
+---
+<Layout title={title} description={description} jsonLd={datasetSchema}>
+  <section class="hero">
+    <h1>Methodology</h1>
+    <p class="lead">How we build and maintain the dataset — and how you can cite it.</p>
+  </section>
+
+  <article style="margin-top: 32px; max-width: 760px; line-height: 1.7;">
+    <h2>Sources</h2>
+    <ul>
+      <li><strong><a href="https://api.usaspending.gov/" rel="noopener" target="_blank">USAspending.gov API</a></strong> — primary source for awarded contracts. Public domain.</li>
+      <li><strong><a href="https://sam.gov/data-services" rel="noopener" target="_blank">SAM.gov Opportunities API</a></strong> — open pre-award solicitations (RFPs, sources sought). Public domain.</li>
+    </ul>
+
+    <h2>AI/ML keyword filter</h2>
+    <p>
+      Contracts are included when the award description matches one of these terms (case-insensitive substring):
+      <em>artificial intelligence, machine learning, deep learning, large language model, generative AI, natural language processing, computer vision, predictive analytics, neural network, MLOps, AI, ML, LLM</em>.
+    </p>
+    <p>
+      The filter is intentionally broad to capture both pure-play AI work and AI-enabled systems (e.g. predictive maintenance, autonomous platforms). False positives are minimized by also requiring NAICS codes in the IT/R&D family.
+    </p>
+
+    <h2>Refresh cadence</h2>
+    <p>The full pipeline runs every 6 hours via GitHub Actions cron. Static pages rebuild on each run; live data is at most 6 hours old.</p>
+
+    <h2>License</h2>
+    <p>
+      Underlying federal data is public domain. Our compiled, normalized dataset is released under
+      <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">CC0 1.0 Universal</a>
+      — no attribution required, though appreciated.
+    </p>
+
+    <h2>How to cite</h2>
+    <p>For academic and journalistic use, please cite as:</p>
+    <pre style="background: #0d1f17; border: 1px solid var(--border); padding: 16px; border-radius: 6px; overflow-x: auto;"><code>Hegde, N. ({new Date().getFullYear()}). GovAI Contracts: Federal AI/ML Award Dataset.
+{BASE}
+Last updated: {new Date(m.generated_at).toISOString().slice(0, 10)}.
+Records: {m.count.toLocaleString()}.</code></pre>
+
+    <h2>Bulk download</h2>
+    <ul>
+      <li><a href="/export/all.csv" style="color: var(--accent);">CSV (all contracts)</a></li>
+      <li><a href="/api/v1/contracts.json" style="color: var(--accent);">JSON (all contracts)</a></li>
+      <li><a href="/api/" style="color: var(--accent);">Public REST API</a></li>
+      <li><a href="/api/openapi.json" style="color: var(--accent);">OpenAPI 3.1 spec</a></li>
+    </ul>
+
+    <h2>Reporting issues</h2>
+    <p>
+      Found a bug, missing data, or wrong classification?
+      <a href="https://github.com/Nandanhegde1/govai-contracts/issues/new" rel="noopener" target="_blank">Open a GitHub issue</a>.
+    </p>
+
+    <h2>Independence</h2>
+    <p>
+      This is an independent project. Not affiliated with the U.S. government, USAspending.gov, SAM.gov, or any vendor listed.
+    </p>
+  </article>
+</Layout>

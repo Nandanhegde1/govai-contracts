@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAll } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+const byYear = new Map<string, { count: number; amount: number }>();
+for (const c of getAll()) {
+  const y = (c.start_date || '').slice(0, 4);
+  if (!/^\d{4}$/.test(y)) continue;
+  const cur = byYear.get(y) ?? { count: 0, amount: 0 };
+  cur.count += 1; cur.amount += c.amount;
+  byYear.set(y, cur);
+}
+const years = [...byYear.entries()].sort(([a], [b]) => b.localeCompare(a));
+
+const title = 'Federal AI contracts by year — annual reports';
+const description = 'Year-by-year totals of federal AI/ML contract awards. Compare AI spending across fiscal years.';
+---
+<Layout title={title} description={description}>
+  <section class="hero">
+    <h1>AI contracts by year</h1>
+    <p class="lead">Federal AI/ML spending broken down by year of award start.</p>
+  </section>
+  <section style="margin-top: 32px;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead><tr style="border-bottom: 2px solid var(--border-strong);"><th style="text-align:left; padding: 12px;">Year</th><th style="text-align:right; padding: 12px;">Contracts</th><th style="text-align:right; padding: 12px;">Total awarded</th><th></th></tr></thead>
+      <tbody>
+        {years.map(([y, agg]) => (
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px; font-weight: 600;">{y}</td>
+            <td style="text-align:right; padding: 12px;">{agg.count.toLocaleString()}</td>
+            <td style="text-align:right; padding: 12px;">{formatMoney(agg.amount)}</td>
+            <td style="text-align:right; padding: 12px;"><a href={`/years/${y}/`} style="color: var(--accent);">View report →</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+</Layout>

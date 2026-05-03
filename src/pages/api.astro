@@ -6,8 +6,19 @@ const m = getMeta();
 const title = 'Free public API — federal AI contracts data';
 const description = `Free, no-auth JSON API with all ${m.count.toLocaleString()} federal AI/ML contracts. CC0 license. Cached at the edge by Cloudflare.`;
 const BASE = 'https://govai-contracts.nandanhegde1096.workers.dev';
+
+const apiSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebAPI',
+  name: 'GovAI Contracts API',
+  description,
+  url: `${BASE}/api/`,
+  documentation: `${BASE}/api/`,
+  termsOfService: `${BASE}/methodology/`,
+  provider: { '@type': 'Organization', name: 'GovAI Contracts', url: BASE },
+};
 ---
-<Layout title={title} description={description}>
+<Layout title={title} description={description} jsonLd={apiSchema}>
   <section class="hero">
     <h1>Public API</h1>
     <p class="lead">
@@ -63,6 +74,11 @@ const BASE = 'https://govai-contracts.nandanhegde1096.workers.dev';
   <section style="margin-top: 32px;">
     <h2>Example</h2>
 <pre style="background: #0d1f17; border: 1px solid var(--border); padding: 16px; border-radius: 6px; overflow-x: auto;"><code>curl {BASE}/api/v1/vendors.json | jq '.vendors[0]'</code></pre>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>OpenAPI specification</h2>
+    <p><a href="/api/openapi.json" style="color: var(--accent);"><code>GET /api/openapi.json</code></a> — Machine-readable OpenAPI 3.1 spec. Drop into Postman, Insomnia, or any API client.</p>
   </section>
 
   <section style="margin-top: 32px;">

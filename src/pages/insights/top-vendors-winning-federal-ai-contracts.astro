@@ -6,10 +6,38 @@ import { formatMoney, formatDate } from '../../lib/types';
 const top = getVendors().slice(0, 25);
 const meta = getMeta();
 const totalTop = top.reduce((s, v) => s + v.total_amount, 0);
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Who is the top federal AI contractor?',
+      acceptedAnswer: { '@type': 'Answer', text: `${top[0]?.name} currently leads with ${formatMoney(top[0]?.total_amount ?? 0)} in federal AI/ML awards across ${top[0]?.count ?? 0} contracts.` },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is the ranking calculated?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Vendors are ranked by total dollar value of federal contracts where the description matches AI/ML keywords (artificial intelligence, machine learning, deep learning, LLM, computer vision, NLP, etc.). Source: USAspending.gov.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How often is this list updated?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The data is refreshed every 6 hours from the USAspending.gov public API.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is this data free to use?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. The underlying data is public domain (USAspending.gov is a U.S. government source). Our compiled dataset is released under CC0 1.0 — no attribution required, though appreciated.' },
+    },
+  ],
+};
 ---
 <Layout
   title="Top vendors winning federal AI contracts (live ranking)"
   description="The 25 companies winning the most federal AI/ML contract dollars. Auto-ranked from USAspending.gov, updated every 6 hours."
+  jsonLd={faqSchema}
 >
   <p style="margin-bottom: 8px;"><a href="/insights/">← All insights</a></p>
   <article>

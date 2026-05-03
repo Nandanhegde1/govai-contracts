@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAll } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+import { TOPICS } from '../../lib/topics';
+
+const all = getAll();
+const stats = TOPICS.map((t) => {
+  const matches = all.filter((c) => {
+    const blob = `${c.description ?? ''} ${(c.matched_keywords ?? []).join(' ')}`.toLowerCase();
+    return t.searchTerms.some((s) => blob.includes(s));
+  });
+  return { ...t, count: matches.length, amount: matches.reduce((s, c) => s + c.amount, 0) };
+}).sort((a, b) => b.amount - a.amount);
+
+const title = 'Federal AI contracts by topic — LLM, computer vision, NLP & more';
+const description = 'Browse federal AI/ML contracts by capability area: large language models, generative AI, computer vision, NLP, MLOps, autonomous systems, and AI cybersecurity.';
+---
+<Layout title={title} description={description}>
+  <section class="hero">
+    <h1>AI contracts by topic</h1>
+    <p class="lead">Federal AI/ML spending broken down by capability area.</p>
+  </section>
+  <section style="margin-top: 32px; display: grid; gap: 14px;">
+    {stats.map((t) => (
+      <a href={`/topics/${t.slug}/`} style="display:block; padding: 18px; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text);">
+        <h3 style="margin: 0; color: var(--accent);">{t.name}</h3>
+        <p style="margin: 6px 0 0; opacity: .85;">{t.description}</p>
+        <p style="margin: 8px 0 0; font-size: 14px; opacity: .7;">{t.count.toLocaleString()} contracts · {formatMoney(t.amount)}</p>
+      </a>
+    ))}
+  </section>
+</Layout>
