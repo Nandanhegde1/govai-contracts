@@ -79,6 +79,7 @@ export interface Opportunity {
   psc_code?: string;
   active: boolean;
   description: string;
+  description_url?: string;
   ui_link?: string;
   pop_state?: string;
   contact_email?: string;
@@ -147,10 +148,32 @@ async function fetchDescription(apiKey: string, descUrlOrText: string): Promise<
     const u = new URL(descUrlOrText);
     u.searchParams.set('api_key', apiKey);
     const res = await fetch(u.toString());
-    if (!res.ok) return '';
-    const data = (await res.json().catch(() => null)) as { description?: string } | null;
-    return data?.description ?? '';
-  } catch {
+    if (res.status === 429 || res.status === 403) {
+      throw new Error(`THROTTLED: HTTP ${res.status}`);
+    }
+    if (!res.ok) {
+      const sample = await res.text().catch(() => '');
+      console.warn(`[desc] HTTP ${res.status} ${u.host}${u.pathname}: ${sample.slice(0, 150)}`);
+      return '';
+    }
+    const ct = res.headers.get('content-type') || '';
+    const body = await res.text();
+    if (!body) return '';
+    // Path 1: JSON with { description }
+    if (ct.includes('json') || body.trimStart().startsWith('{')) {
+      try {
+        const data = JSON.parse(body) as { description?: string };
+        if (data.description) return data.description;
+      } catch {
+        // fall through to raw
+      }
+    }
+    // Path 2: raw HTML/text body IS the description (SAM noticedesc returns raw HTML)
+    return body;
+  } catch (e) {
+    const msg = (e as Error).message;
+    if (msg.startsWith('THROTTLED')) throw e;
+    console.warn(`[desc] fetch error: ${msg}`);
     return '';
   }
 }
@@ -196,6 +219,7 @@ function normalize(raw: Raw, fetchedDesc: string): Opportunity | null {
     psc_code: raw.classificationCode,
     active: (raw.active ?? '').toLowerCase() === 'yes',
     description: cleanDesc,
+    description_url: rawDesc && /^https?:\/\//i.test(rawDesc) ? rawDesc : undefined,
     ui_link: raw.uiLink,
     pop_state: raw.placeOfPerformance?.state?.code,
     contact_email: contact,
@@ -279,16 +303,14 @@ async function main(): Promise<void> {
   // This guarantees we slowly fill in description gaps over multiple runs even if today's
   // listing returns mostly the same notices.
   const needsBackfill = [...cached.values()].filter(
-    (o) => (!o.description || o.description.length <= 50) && o.ui_link
+    (o) => (!o.description || o.description.length <= 50) && o.description_url
   );
   if (needsBackfill.length > 0) {
     console.log(`[sam] backfill: ${needsBackfill.length} cached opps need descriptions (budget ${MAX_DESC_FETCHES})`);
     for (const o of needsBackfill) {
       if (descFetches >= MAX_DESC_FETCHES) break;
-      // The SAM description endpoint pattern: derive from noticeId
-      const descUrl = `https://api.sam.gov/opportunities/v1/noticedesc?noticeid=${o.id}`;
       try {
-        const desc = await fetchDescription(apiKey, descUrl);
+        const desc = await fetchDescription(apiKey, o.description_url!);
         descFetches++;
         if (desc && desc.length > 50) {
           const cleanDesc = desc
@@ -304,6 +326,8 @@ async function main(): Promise<void> {
           cached.set(o.id, updated);
           seen.set(o.id, updated);
           console.log(`  backfilled ${o.id} (${cleanDesc.length} chars)`);
+        } else {
+          console.warn(`  backfill empty for ${o.id} (got ${desc.length} chars)`);
         }
       } catch (e) {
         const msg = (e as Error).message;

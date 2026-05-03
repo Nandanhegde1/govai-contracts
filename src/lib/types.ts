@@ -13,6 +13,7 @@ export interface Opportunity {
   psc_code?: string;
   active: boolean;
   description: string;
+  description_url?: string;
   ui_link?: string;
   pop_state?: string;
   contact_email?: string;
