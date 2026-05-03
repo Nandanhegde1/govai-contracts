@@ -1,0 +1,113 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContractCard from '../../components/ContractCard.astro';
+import { getVendors, getContractsByVendor } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+export async function getStaticPaths() {
+  const top = getVendors().slice(0, 15);
+  const paths: Array<{ params: { slug: string }; props: { a: typeof top[0]; b: typeof top[0] } }> = [];
+  for (let i = 0; i < top.length; i++) {
+    for (let j = i + 1; j < top.length; j++) {
+      const a = top[i];
+      const b = top[j];
+      paths.push({
+        params: { slug: `${a.slug}-vs-${b.slug}` },
+        props: { a, b },
+      });
+    }
+  }
+  return paths;
+}
+
+const { a, b } = Astro.props;
+const aContracts = getContractsByVendor(a.slug).sort((x, y) => y.amount - x.amount);
+const bContracts = getContractsByVendor(b.slug).sort((x, y) => y.amount - x.amount);
+
+const title = `${a.name} vs ${b.name} — federal AI contracts compared`;
+const description = `Side-by-side comparison: ${a.name} (${formatMoney(a.total_amount)}, ${a.count} contracts) vs ${b.name} (${formatMoney(b.total_amount)}, ${b.count} contracts) on federal AI/ML work.`;
+
+const winner = a.total_amount >= b.total_amount ? a : b;
+const loser = winner.slug === a.slug ? b : a;
+const ratio = (winner.total_amount / Math.max(loser.total_amount, 1)).toFixed(1);
+---
+<Layout title={title} description={description}>
+  <p style="margin-bottom: 8px;"><a href="/vendors/">← All vendors</a></p>
+  <section class="hero">
+    <h1>{a.name} <span style="opacity:.5;">vs</span> {b.name}</h1>
+    <p class="lead">
+      Side-by-side comparison of federal AI/ML contract awards.
+      <strong>{winner.name}</strong> leads with {ratio}× the total of {loser.name}.
+    </p>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="border-bottom: 2px solid var(--border-strong);">
+          <th style="text-align: left; padding: 12px;">Metric</th>
+          <th style="text-align: right; padding: 12px;"><a href={`/vendors/${a.slug}/`} style="color: var(--accent);">{a.name}</a></th>
+          <th style="text-align: right; padding: 12px;"><a href={`/vendors/${b.slug}/`} style="color: var(--accent);">{b.name}</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid var(--border);">
+          <td style="padding: 12px;">Total awarded</td>
+          <td style="text-align: right; padding: 12px; font-weight: 600;">{formatMoney(a.total_amount)}</td>
+          <td style="text-align: right; padding: 12px; font-weight: 600;">{formatMoney(b.total_amount)}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--border);">
+          <td style="padding: 12px;">Contract count</td>
+          <td style="text-align: right; padding: 12px;">{a.count}</td>
+          <td style="text-align: right; padding: 12px;">{b.count}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--border);">
+          <td style="padding: 12px;">Avg award size</td>
+          <td style="text-align: right; padding: 12px;">{formatMoney(a.total_amount / Math.max(a.count, 1))}</td>
+          <td style="text-align: right; padding: 12px;">{formatMoney(b.total_amount / Math.max(b.count, 1))}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--border);">
+          <td style="padding: 12px;">Agencies served</td>
+          <td style="text-align: right; padding: 12px;">{a.agencies.length}</td>
+          <td style="text-align: right; padding: 12px;">{b.agencies.length}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+    <div>
+      <h2>Top awards: {a.name}</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        {aContracts.slice(0, 5).map((c) => <ContractCard contract={c} />)}
+      </div>
+    </div>
+    <div>
+      <h2>Top awards: {b.name}</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        {bContracts.slice(0, 5).map((c) => <ContractCard contract={c} />)}
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Agency overlap</h2>
+    {(() => {
+      const aSet = new Set(a.agencies);
+      const overlap = b.agencies.filter((x) => aSet.has(x));
+      return overlap.length > 0 ? (
+        <p>Both vendors have won awards from: {overlap.join(', ')}.</p>
+      ) : (
+        <p>No common agencies — they serve different parts of the federal market.</p>
+      );
+    })()}
+  </section>
+</Layout>
+
+<style>
+  @media (max-width: 768px) {
+    section[style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

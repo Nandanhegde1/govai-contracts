@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getMeta } from '../lib/data';
+
+const m = getMeta();
+const title = 'Free public API — federal AI contracts data';
+const description = `Free, no-auth JSON API with all ${m.count.toLocaleString()} federal AI/ML contracts. CC0 license. Cached at the edge by Cloudflare.`;
+const BASE = 'https://govai-contracts.nandanhegde1096.workers.dev';
+---
+<Layout title={title} description={description}>
+  <section class="hero">
+    <h1>Public API</h1>
+    <p class="lead">
+      All endpoints return JSON. No auth, no rate limits, CORS open.
+      Data updates every 6 hours and is served from Cloudflare's edge cache.
+    </p>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Discovery</h2>
+    <p><a href="/api/v1/" style="color: var(--accent);"><code>GET /api/v1/</code></a> — Index of every endpoint, with current dataset stats.</p>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Contracts</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="/api/v1/contracts.json" style="color: var(--accent);"><code>GET /api/v1/contracts.json</code></a> — All {m.count.toLocaleString()} contracts</li>
+      <li><code>GET /api/v1/contracts/{`{id}`}.json</code> — Single contract by award ID</li>
+    </ul>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Vendors</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="/api/v1/vendors.json" style="color: var(--accent);"><code>GET /api/v1/vendors.json</code></a> — All vendors with totals</li>
+      <li><code>GET /api/v1/vendors/{`{slug}`}.json</code> — Single vendor + all their contracts</li>
+    </ul>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Agencies</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="/api/v1/agencies.json" style="color: var(--accent);"><code>GET /api/v1/agencies.json</code></a> — All agencies with totals</li>
+      <li><code>GET /api/v1/agencies/{`{slug}`}.json</code> — Single agency + all their awards</li>
+    </ul>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Opportunities (open RFPs)</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="/api/v1/opportunities.json" style="color: var(--accent);"><code>GET /api/v1/opportunities.json</code></a> — Active solicitations from SAM.gov</li>
+    </ul>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Bulk download (snapshot)</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="/export/all.csv" style="color: var(--accent);"><code>GET /export/all.csv</code></a> — Spreadsheet-ready CSV</li>
+      <li><a href="/export/all.json" style="color: var(--accent);"><code>GET /export/all.json</code></a> — JSON dump</li>
+    </ul>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>Example</h2>
+<pre style="background: #0d1f17; border: 1px solid var(--border); padding: 16px; border-radius: 6px; overflow-x: auto;"><code>curl {BASE}/api/v1/vendors.json | jq '.vendors[0]'</code></pre>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <h2>License & attribution</h2>
+    <p>
+      Data is in the public domain (CC0 1.0). Attribution appreciated but not required.
+      Suggested credit: <em>"Data via GovAI Contracts ({BASE})"</em>.
+    </p>
+  </section>
+</Layout>

@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getVendors } from '../../lib/data';
+import { formatMoney } from '../../lib/types';
+
+const top = getVendors().slice(0, 15);
+const pairs: Array<{ a: typeof top[0]; b: typeof top[0] }> = [];
+for (let i = 0; i < top.length; i++) {
+  for (let j = i + 1; j < top.length; j++) {
+    pairs.push({ a: top[i], b: top[j] });
+  }
+}
+const title = 'Compare federal AI vendors head-to-head';
+const description = `${pairs.length} side-by-side comparisons of the top 15 vendors winning federal AI/ML contracts. Total awarded, contract counts, agency reach.`;
+---
+<Layout title={title} description={description}>
+  <section class="hero">
+    <h1>Vendor comparisons</h1>
+    <p class="lead">
+      Pick any two of the top 15 vendors to see federal AI/ML totals, contract counts, and overlap.
+    </p>
+  </section>
+
+  <section style="margin-top: 32px;">
+    <ul style="list-style: none; padding: 0; display: grid; gap: 8px;">
+      {pairs.map(({ a, b }) => (
+        <li>
+          <a href={`/compare/${a.slug}-vs-${b.slug}/`} style="color: var(--accent);">
+            {a.name} vs {b.name}
+          </a>
+          <span style="opacity: .6; font-size: 14px;"> · {formatMoney(a.total_amount)} vs {formatMoney(b.total_amount)}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>

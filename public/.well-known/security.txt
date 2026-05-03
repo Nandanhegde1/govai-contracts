@@ -1,0 +1,4 @@
+Contact: https://github.com/Nandanhegde1/govai-contracts/issues/new
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://govai-contracts.nandanhegde1096.workers.dev/.well-known/security.txt

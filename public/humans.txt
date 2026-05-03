@@ -1,0 +1,15 @@
+/* TEAM */
+Maintainer: Nandan Hegde
+GitHub: https://github.com/NandanHegde10
+Site: https://github.com/Nandanhegde1/govai-contracts
+
+/* THANKS */
+USAspending.gov — public domain federal award data
+SAM.gov — public domain federal opportunity data
+Astro, Cloudflare Workers — free tier hosting
+
+/* SITE */
+Last updated: 2026
+Standards: HTML5, CSS3, ES2022
+Components: Astro 5
+Hosting: Cloudflare Workers

@@ -249,9 +249,11 @@ async function main(): Promise<void> {
 
   // Quota plan per run (free SAM API: 1,000 req/day per IP, ~250/run @ 4 runs/day):
   //   - List requests:        6 NAICS × ≤10 pages = ≤60
-  //   - Description fetches:  capped at MAX_DESC_FETCHES (default 150)
-  //   - Total per run: ≤210 req. Daily: ≤840 (≤84% of quota).
-  const MAX_DESC_FETCHES = 150;
+  //   - Description fetches:  capped at MAX_DESC_FETCHES (default 50)
+  //   - Total per run: ≤110 req. Daily: ≤440 (well under quota + room for burst).
+  // SAM also enforces a per-minute burst limit, so we sleep 1500ms between desc fetches.
+  const MAX_DESC_FETCHES = 50;
+  const DESC_SLEEP_MS = 1500;
   let descFetches = 0;
 
   // Incremental: load existing dataset and reuse cached descriptions.
@@ -272,6 +274,46 @@ async function main(): Promise<void> {
   }
 
   const seen = new Map<string, Opportunity>();
+
+  // PRIORITY PASS: backfill descriptions for cached opps that previously came back empty.
+  // This guarantees we slowly fill in description gaps over multiple runs even if today's
+  // listing returns mostly the same notices.
+  const needsBackfill = [...cached.values()].filter(
+    (o) => (!o.description || o.description.length <= 50) && o.ui_link
+  );
+  if (needsBackfill.length > 0) {
+    console.log(`[sam] backfill: ${needsBackfill.length} cached opps need descriptions (budget ${MAX_DESC_FETCHES})`);
+    for (const o of needsBackfill) {
+      if (descFetches >= MAX_DESC_FETCHES) break;
+      // The SAM description endpoint pattern: derive from noticeId
+      const descUrl = `https://api.sam.gov/opportunities/v1/noticedesc?noticeid=${o.id}`;
+      try {
+        const desc = await fetchDescription(apiKey, descUrl);
+        descFetches++;
+        if (desc && desc.length > 50) {
+          const cleanDesc = desc
+            .replace(/<\/?[^>]+>/g, ' ')
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .slice(0, 4000);
+          const updated = { ...o, description: cleanDesc };
+          cached.set(o.id, updated);
+          seen.set(o.id, updated);
+          console.log(`  backfilled ${o.id} (${cleanDesc.length} chars)`);
+        }
+      } catch (e) {
+        const msg = (e as Error).message;
+        if (msg.startsWith('THROTTLED')) throw e;
+        console.warn(`  backfill failed for ${o.id}: ${msg}`);
+      }
+      await new Promise((r) => setTimeout(r, DESC_SLEEP_MS));
+    }
+    console.log(`[sam] backfill done. descFetches=${descFetches}/${MAX_DESC_FETCHES}`);
+  }
 
   for (const naics of NAICS_CODES) {
     console.log(`[sam] naics=${naics}`);
@@ -305,7 +347,7 @@ async function main(): Promise<void> {
           if (r.description && /^https?:\/\//i.test(r.description)) {
             desc = await fetchDescription(apiKey, r.description);
             descFetches++;
-            await new Promise((res) => setTimeout(res, 250));
+            await new Promise((res) => setTimeout(res, DESC_SLEEP_MS));
           } else {
             desc = r.description ?? '';
           }
@@ -314,7 +356,7 @@ async function main(): Promise<void> {
           if (descFetches < MAX_DESC_FETCHES && r.description && /^https?:\/\//i.test(r.description)) {
             desc = await fetchDescription(apiKey, r.description);
             descFetches++;
-            await new Promise((res) => setTimeout(res, 250));
+            await new Promise((res) => setTimeout(res, DESC_SLEEP_MS));
           } else {
             desc = r.description && !/^https?:\/\//i.test(r.description) ? r.description : '';
           }
