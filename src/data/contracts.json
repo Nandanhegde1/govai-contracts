@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-08T19:46:38.117Z",
+  "generated_at": "2026-05-09T03:59:07.153Z",
   "count": 649,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-08"
+    "end": "2026-05-09"
   },
   "contracts": [
     {
@@ -7271,6 +7271,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W912CG25C0001_9700_-NONE-_-NONE-",
+      "award_id": "W912CG25C0001",
+      "recipient": "RTX BBN TECHNOLOGIES, INC.",
+      "recipient_slug": "rtx-bbn-technologies-inc",
+      "amount": 822817.99,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "AWARDED TO RAYTHEON TECHNOLOGIES TO DEVELOP MEDICAL ARTIFICIAL INTELLIGENCE (AI) AGENTS TO OBSERVE, DETECT, AND EVALUATE MEDICAL PERFORMANCE IN TRAINING.",
+      "start_date": "2024-12-19",
+      "end_date": "2027-02-04",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "MN",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80TECH24FA045_8000_NNG15SD22B_8000",
       "award_id": "80TECH24FA045",
       "recipient": "FOUR POINTS TECHNOLOGY, L.L.C.",
@@ -7923,27 +7944,6 @@
       "psc_code": "DB10",
       "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
       "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W912CG25C0001_9700_-NONE-_-NONE-",
-      "award_id": "W912CG25C0001",
-      "recipient": "RTX BBN TECHNOLOGIES, INC.",
-      "recipient_slug": "rtx-bbn-technologies-inc",
-      "amount": 522817.99,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Contract Management Agency",
-      "description": "AWARDED TO RAYTHEON TECHNOLOGIES TO DEVELOP MEDICAL ARTIFICIAL INTELLIGENCE (AI) AGENTS TO OBSERVE, DETECT, AND EVALUATE MEDICAL PERFORMANCE IN TRAINING.",
-      "start_date": "2024-12-19",
-      "end_date": "2025-12-18",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "MN",
       "matched_keywords": [
         "artificial intelligence"
       ]
