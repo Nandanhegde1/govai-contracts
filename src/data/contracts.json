@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-12T20:11:33.003Z",
+  "generated_at": "2026-05-13T04:15:07.742Z",
   "count": 649,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-12"
+    "end": "2026-05-13"
   },
   "contracts": [
     {
@@ -1287,6 +1287,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865022F6403_9700_FA865022D6401_9700",
+      "award_id": "FA865022F6403",
+      "recipient": "PARALLAX ADVANCED RESEARCH CORP",
+      "recipient_slug": "parallax-advanced-research-corp",
+      "amount": 4762191,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MACHINE LEARNING ANALYTICS",
+      "start_date": "2022-05-06",
+      "end_date": "2027-05-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_N0001420C1099_9700_-NONE-_-NONE-",
       "award_id": "N0001420C1099",
       "recipient": "PACMAR TECHNOLOGIES LLC",
@@ -1348,27 +1369,6 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865022F6403_9700_FA865022D6401_9700",
-      "award_id": "FA865022F6403",
-      "recipient": "PARALLAX ADVANCED RESEARCH CORP",
-      "recipient_slug": "parallax-advanced-research-corp",
-      "amount": 4612191,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MACHINE LEARNING ANALYTICS",
-      "start_date": "2022-05-06",
-      "end_date": "2027-05-05",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "machine learning"
       ]
     },
     {
