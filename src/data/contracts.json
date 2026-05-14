@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-13T20:13:02.768Z",
+  "generated_at": "2026-05-14T04:14:52.608Z",
   "count": 649,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-13"
+    "end": "2026-05-14"
   },
   "contracts": [
     {
@@ -4584,8 +4584,8 @@
     {
       "id": "CONT_AWD_HT942525C0009_9700_-NONE-_-NONE-",
       "award_id": "HT942525C0009",
-      "recipient": "LUMIA HEALTH, INC.",
-      "recipient_slug": "lumia-health-inc",
+      "recipient": "STAT HEALTH INFORMATICS, INC.",
+      "recipient_slug": "stat-health-informatics-inc",
       "amount": 1299698,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -5183,7 +5183,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "USING ARTIFICIAL INTELLIGENCE TO INCREASE AIRCRAFT PARTS AVAILABILITY WITH ADDITIVE MANUFACTURING",
       "start_date": "2024-09-19",
-      "end_date": "2026-06-25",
+      "end_date": "2026-11-25",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -6870,8 +6870,8 @@
     {
       "id": "CONT_AWD_W911NF25CA035_9700_-NONE-_-NONE-",
       "award_id": "W911NF25CA035",
-      "recipient": "CAESAR CREEK SOFTWARE INC",
-      "recipient_slug": "caesar-creek-software-inc",
+      "recipient": "CAESAR CREEK SOFTWARE, LLC",
+      "recipient_slug": "caesar-creek-software-llc",
       "amount": 997247.76,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -11389,8 +11389,8 @@
     {
       "id": "CONT_AWD_FA864924P0814_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0814",
-      "recipient": "LUMIA HEALTH, INC.",
-      "recipient_slug": "lumia-health-inc",
+      "recipient": "STAT HEALTH INFORMATICS, INC.",
+      "recipient_slug": "stat-health-informatics-inc",
       "amount": 109921,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -11983,7 +11983,7 @@
     {
       "id": "CONT_AWD_68HERC24C0021_6800_-NONE-_-NONE-",
       "award_id": "68HERC24C0021",
-      "recipient": "SAFETYSPECT INC",
+      "recipient": "SAFETYSPECT INC.",
       "recipient_slug": "safetyspect-inc",
       "amount": 99093,
       "agency": "Environmental Protection Agency",
@@ -12890,8 +12890,8 @@
     {
       "id": "CONT_AWD_FA864924P0651_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0651",
-      "recipient": "LUMIA HEALTH, INC.",
-      "recipient_slug": "lumia-health-inc",
+      "recipient": "STAT HEALTH INFORMATICS, INC.",
+      "recipient_slug": "stat-health-informatics-inc",
       "amount": 74550,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
