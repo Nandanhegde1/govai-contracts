@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-14T20:04:13.111Z",
+  "generated_at": "2026-05-15T04:30:40.996Z",
   "count": 649,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-14"
+    "end": "2026-05-15"
   },
   "contracts": [
     {
@@ -7335,6 +7335,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_69319525F10020N_6955_693JJ320A000016_6925",
+      "award_id": "69319525F10020N",
+      "recipient": "INCENTIVE TECHNOLOGY GROUP LLC",
+      "recipient_slug": "incentive-technology-group-llc",
+      "amount": 785212,
+      "agency": "Department of Transportation",
+      "agency_slug": "department-of-transportation",
+      "sub_agency": "Federal Transit Administration",
+      "description": "THE PURPOSE OF THIS CALL ORDER IS TO PROVIDE ARTIFICIAL INTELLIGENCE SUPPORT.",
+      "start_date": "2025-07-24",
+      "end_date": "2026-07-23",
+      "naics_code": "541513",
+      "naics_desc": "COMPUTER FACILITIES MANAGEMENT SERVICES",
+      "psc_code": "R408",
+      "psc_desc": "SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_9523ZY23C0008_9507_-NONE-_-NONE-",
       "award_id": "9523ZY23C0008",
       "recipient": "SOHUM SYSTEMS LLC",
@@ -7629,27 +7650,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_69319525F10020N_6955_693JJ320A000016_6925",
-      "award_id": "69319525F10020N",
-      "recipient": "INCENTIVE TECHNOLOGY GROUP LLC",
-      "recipient_slug": "incentive-technology-group-llc",
-      "amount": 667852,
-      "agency": "Department of Transportation",
-      "agency_slug": "department-of-transportation",
-      "sub_agency": "Federal Transit Administration",
-      "description": "THE PURPOSE OF THIS CALL ORDER IS TO PROVIDE ARTIFICIAL INTELLIGENCE SUPPORT.",
-      "start_date": "2025-07-24",
-      "end_date": "2026-07-23",
-      "naics_code": "541513",
-      "naics_desc": "COMPUTER FACILITIES MANAGEMENT SERVICES",
-      "psc_code": "R408",
-      "psc_desc": "SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
