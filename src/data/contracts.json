@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-17T19:39:05.982Z",
+  "generated_at": "2026-05-18T04:44:34.815Z",
   "count": 649,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-17"
+    "end": "2026-05-18"
   },
   "contracts": [
     {
@@ -222,6 +222,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_75FCMC23F0001_7530_75FCMC22A0018_7530",
+      "award_id": "75FCMC23F0001",
+      "recipient": "INDEX ANALYTICS LLC",
+      "recipient_slug": "index-analytics-llc",
+      "amount": 16567088.71,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "Centers for Medicare and Medicaid Services",
+      "description": "ARTIFICIAL INTELLIGENCE THROUGH MACHINE LEARNED MODELING (AIMM)",
+      "start_date": "2023-09-28",
+      "end_date": "2026-09-27",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DF01",
+      "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_N6600125C0019_9700_-NONE-_-NONE-",
       "award_id": "N6600125C0019",
       "recipient": "DOMINO DATA LAB INC",
@@ -261,27 +282,6 @@
       "pop_state": "WV",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75FCMC23F0001_7530_75FCMC22A0018_7530",
-      "award_id": "75FCMC23F0001",
-      "recipient": "INDEX ANALYTICS LLC",
-      "recipient_slug": "index-analytics-llc",
-      "amount": 15932044.68,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "Centers for Medicare and Medicaid Services",
-      "description": "ARTIFICIAL INTELLIGENCE THROUGH MACHINE LEARNED MODELING (AIMM)",
-      "start_date": "2023-09-28",
-      "end_date": "2026-09-27",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DF01",
-      "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
