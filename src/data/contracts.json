@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-18T20:03:58.072Z",
-  "count": 649,
+  "generated_at": "2026-05-19T04:35:36.728Z",
+  "count": 651,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-18"
+    "end": "2026-05-19"
   },
   "contracts": [
     {
@@ -651,7 +651,7 @@
       "award_id": "FA239125CB010",
       "recipient": "UNIVERSITY OF DAYTON",
       "recipient_slug": "university-of-dayton",
-      "amount": 9587215.4,
+      "amount": 9526055.4,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Air Force",
@@ -2755,6 +2755,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ086026CE012_9700_-NONE-_-NONE-",
+      "award_id": "HQ086026CE012",
+      "recipient": "CORNERSTONE RESEARCH GROUP INC",
+      "recipient_slug": "cornerstone-research-group-inc",
+      "amount": 1958007,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Missile Defense Agency",
+      "description": "ACTIVE PHYSICS-INFORMED GENERATIVE ARTIFICIAL INTELLIGENCE HYPERSONIC",
+      "start_date": "2026-02-06",
+      "end_date": "2028-02-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA237724CB048_9700_-NONE-_-NONE-",
       "award_id": "FA237724CB048",
       "recipient": "TOYON RESEARCH CORPORATION",
@@ -3784,7 +3805,7 @@
       "amount": 1747883.73,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
+      "sub_agency": "Defense Contract Management Agency",
       "description": "MACHINE LEARNING DRIVEN DATA COMPRESSION FOR SPACE WEATHER ENVIRONMENTAL MODEL DATA STORAGE AND DISTRIBUTION",
       "start_date": "2023-02-24",
       "end_date": "2025-11-30",
@@ -7944,6 +7965,27 @@
       "psc_code": "DB10",
       "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
       "pop_state": "PA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA860426FB054_9700_FA800322D0003_9700",
+      "award_id": "FA860426FB054",
+      "recipient": "VANA SOLUTIONS LLC",
+      "recipient_slug": "vana-solutions-llc",
+      "amount": 520034.82,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MASINT, ANALYTICS, DATA - ARTIFICIAL INTELLIGENCE (MAD-AI)",
+      "start_date": "2026-02-04",
+      "end_date": "2026-09-04",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R423",
+      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
+      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
