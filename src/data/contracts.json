@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-19T20:06:06.210Z",
+  "generated_at": "2026-05-20T04:39:18.517Z",
   "count": 651,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-19"
+    "end": "2026-05-20"
   },
   "contracts": [
     {
@@ -8927,6 +8927,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_1305M325C0032_1330_-NONE-_-NONE-",
+      "award_id": "1305M325C0032",
+      "recipient": "KITWARE INC",
+      "recipient_slug": "kitware-inc",
+      "amount": 264000,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Oceanic and Atmospheric Administration",
+      "description": "STELLER SEA LION ARTIFICIAL INTELLIGENCE (AI) IMAGE PROCESSING AND COUNTING EFFORT (OR-25-01283)",
+      "start_date": "2025-08-15",
+      "end_date": "2027-08-14",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA10",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA865021C6300_9700_-NONE-_-NONE-",
       "award_id": "FA865021C6300",
       "recipient": "SHADOWBOX LLC",
@@ -11169,27 +11190,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_1305M325C0032_1330_-NONE-_-NONE-",
-      "award_id": "1305M325C0032",
-      "recipient": "KITWARE INC",
-      "recipient_slug": "kitware-inc",
-      "amount": 137000,
-      "agency": "Department of Commerce",
-      "agency_slug": "department-of-commerce",
-      "sub_agency": "National Oceanic and Atmospheric Administration",
-      "description": "STELLER SEA LION ARTIFICIAL INTELLIGENCE (AI) IMAGE PROCESSING AND COUNTING EFFORT (OR-25-01283)",
-      "start_date": "2025-08-15",
-      "end_date": "2026-08-14",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DA10",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
