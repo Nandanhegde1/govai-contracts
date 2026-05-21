@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-20T20:31:41.196Z",
+  "generated_at": "2026-05-21T04:47:12.874Z",
   "count": 651,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-20"
+    "end": "2026-05-21"
   },
   "contracts": [
     {
@@ -13372,6 +13372,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_N0017325C2408_9700_-NONE-_-NONE-",
+      "award_id": "N0017325C2408",
+      "recipient": "THE UNIVERSITY OF SOUTHERN MISSISSIPPI",
+      "recipient_slug": "the-university-of-southern-mississippi",
+      "amount": 70000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Navy",
+      "description": "COASTAL AND LITTORAL GEOSPATIAL DATA AND ARTIFICIAL INTELLIGENCE INTEGRATION BAA TOPIC 74-24-02",
+      "start_date": "2024-12-20",
+      "end_date": "2029-12-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "MS",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA800325F0009_9700_47QTCH18D0014_4732",
       "award_id": "FA800325F0009",
       "recipient": "EPSILON INC",
@@ -13668,27 +13689,6 @@
       "psc_code": "AJ11",
       "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
       "pop_state": "MA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_N0017325C2408_9700_-NONE-_-NONE-",
-      "award_id": "N0017325C2408",
-      "recipient": "THE UNIVERSITY OF SOUTHERN MISSISSIPPI",
-      "recipient_slug": "the-university-of-southern-mississippi",
-      "amount": 20000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Navy",
-      "description": "COASTAL AND LITTORAL GEOSPATIAL DATA AND ARTIFICIAL INTELLIGENCE INTEGRATION BAA TOPIC 74-24-02",
-      "start_date": "2024-12-20",
-      "end_date": "2029-12-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "MS",
       "matched_keywords": [
         "artificial intelligence"
       ]
