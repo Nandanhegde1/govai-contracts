@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-21T20:13:06.261Z",
+  "generated_at": "2026-05-22T04:37:55.970Z",
   "count": 651,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-21"
+    "end": "2026-05-22"
   },
   "contracts": [
     {
@@ -604,6 +604,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
+      "award_id": "FA239125CB010",
+      "recipient": "UNIVERSITY OF DAYTON",
+      "recipient_slug": "university-of-dayton",
+      "amount": 9767131.19,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
+      "start_date": "2025-08-25",
+      "end_date": "2028-02-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA875024CB040_9700_-NONE-_-NONE-",
       "award_id": "FA875024CB040",
       "recipient": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
@@ -642,27 +663,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "TX",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
-      "award_id": "FA239125CB010",
-      "recipient": "UNIVERSITY OF DAYTON",
-      "recipient_slug": "university-of-dayton",
-      "amount": 9526055.4,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
-      "start_date": "2025-08-25",
-      "end_date": "2028-02-24",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -7970,6 +7970,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB044_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB044",
+      "recipient": "SRC INC",
+      "recipient_slug": "src-inc",
+      "amount": 545000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "GROOVY CHAMELEON, DISCOVER, DEVELOP NOVEL ALGORITHMS, TECHNIQUES THAT ENABLE ROBUST, RESILIENT ARTIFICIAL INTELLIGENCE, MACHINE LEARNING APPLICATIONS FOR INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE MISSIONS UTILIZING MULTIPLE SENSOR MODALITIES.",
+      "start_date": "2025-06-03",
+      "end_date": "2028-08-02",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA860426FB054_9700_FA800322D0003_9700",
       "award_id": "FA860426FB054",
       "recipient": "VANA SOLUTIONS LLC",
@@ -8221,28 +8243,6 @@
       "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB044_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB044",
-      "recipient": "SRC INC",
-      "recipient_slug": "src-inc",
-      "amount": 445000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "GROOVY CHAMELEON, DISCOVER, DEVELOP NOVEL ALGORITHMS, TECHNIQUES THAT ENABLE ROBUST, RESILIENT ARTIFICIAL INTELLIGENCE, MACHINE LEARNING APPLICATIONS FOR INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE MISSIONS UTILIZING MULTIPLE SENSOR MODALITIES.",
-      "start_date": "2025-06-03",
-      "end_date": "2028-08-02",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
