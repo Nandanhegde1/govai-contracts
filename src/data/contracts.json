@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T20:13:07.563Z",
-  "count": 651,
+  "generated_at": "2026-05-23T04:10:23.448Z",
+  "count": 652,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-22"
+    "end": "2026-05-23"
   },
   "contracts": [
     {
@@ -4258,6 +4258,28 @@
       "psc_code": "AC13",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "AL",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_75R60226F80041_7526_47QTCA21D001U_4732",
+      "award_id": "75R60226F80041",
+      "recipient": "NODE.DIGITAL LLC",
+      "recipient_slug": "node-digital-llc",
+      "amount": 1471680,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "Health Resources and Services Administration",
+      "description": "4CAST ID: OO68 C 7549 TITLE: FRAUD DETECTION AND MANAGEMENT PLATFORM: ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING SUPPORT SERVICES AWARD TYPE: FIRM FIXED PRICE",
+      "start_date": "2026-05-22",
+      "end_date": "2027-05-21",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
