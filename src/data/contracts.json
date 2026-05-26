@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-25T20:00:56.143Z",
+  "generated_at": "2026-05-26T04:36:56.922Z",
   "count": 652,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-25"
+    "end": "2026-05-26"
   },
   "contracts": [
     {
@@ -201,6 +201,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA873023CB027_9700_-NONE-_-NONE-",
+      "award_id": "FA873023CB027",
+      "recipient": "NEXTGEN FEDERAL SYSTEMS LLC",
+      "recipient_slug": "nextgen-federal-systems-llc",
+      "amount": 17057046.7,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "WEATHER MACHINE LEARNING PLATFORM OPERATIONS (WXMLP OPS)",
+      "start_date": "2023-09-25",
+      "end_date": "2026-03-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "WV",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0090_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0090",
       "recipient": "PERATON LABS INC",
@@ -259,27 +280,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "CA",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA873023CB027_9700_-NONE-_-NONE-",
-      "award_id": "FA873023CB027",
-      "recipient": "NEXTGEN FEDERAL SYSTEMS LLC",
-      "recipient_slug": "nextgen-federal-systems-llc",
-      "amount": 16334283.61,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "WEATHER MACHINE LEARNING PLATFORM OPERATIONS (WXMLP OPS)",
-      "start_date": "2023-09-25",
-      "end_date": "2026-03-24",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "WV",
       "matched_keywords": [
         "machine learning"
       ]
