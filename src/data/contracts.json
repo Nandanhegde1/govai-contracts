@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-27T20:30:37.668Z",
-  "count": 652,
+  "generated_at": "2026-05-28T04:43:42.184Z",
+  "count": 653,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-27"
+    "end": "2026-05-28"
   },
   "contracts": [
     {
@@ -813,6 +813,27 @@
       "psc_code": "AD92",
       "psc_desc": "R&D- DEFENSE OTHER: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
       "pop_state": "VA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QFCA26F0018_4732_47QTCK18D0004_4732",
+      "award_id": "47QFCA26F0018",
+      "recipient": "BOOZ ALLEN HAMILTON INC",
+      "recipient_slug": "booz-allen-hamilton-inc",
+      "amount": 6998425,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THE PURPOSE OF THIS CONTRACT ACTION IS TO AWARD AND INCREMENTALLY FUND THE ENTERPRISE MACHINE LEARNING ANALYTICS AND PERSISTENT SERVICES 3 (EMAPS 3) TASK ORDER.",
+      "start_date": "2026-06-15",
+      "end_date": "2027-06-14",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "NC",
       "matched_keywords": [
         "machine learning"
       ]
@@ -2203,7 +2224,7 @@
       "award_id": "FA875024CB037",
       "recipient": "CACI, INC. - FEDERAL",
       "recipient_slug": "caci-inc-federal",
-      "amount": 2459064,
+      "amount": 2473064,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Air Force",
@@ -7357,6 +7378,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB072",
+      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
+      "recipient_slug": "black-river-systems-company-inc",
+      "amount": 800690,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
+      "start_date": "2025-09-04",
+      "end_date": "2028-11-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NSSC23CA003_8000_-NONE-_-NONE-",
       "award_id": "80NSSC23CA003",
       "recipient": "MOSAIC ATM, INC.",
@@ -7693,27 +7735,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB072",
-      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
-      "recipient_slug": "black-river-systems-company-inc",
-      "amount": 659890,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
-      "start_date": "2025-09-04",
-      "end_date": "2028-11-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
