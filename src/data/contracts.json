@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-28T20:38:49.232Z",
-  "count": 653,
+  "generated_at": "2026-05-29T04:45:32.283Z",
+  "count": 654,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-28"
+    "end": "2026-05-29"
   },
   "contracts": [
     {
@@ -76,7 +76,7 @@
       "award_id": "W911QX25C0002",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 53374183.13,
+      "amount": 57850069.13,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -3967,6 +3967,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_N0017325C2428_9700_-NONE-_-NONE-",
+      "award_id": "N0017325C2428",
+      "recipient": "STRATEGIC ANALYSIS, INC.",
+      "recipient_slug": "strategic-analysis-inc",
+      "amount": 1580854.79,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Navy",
+      "description": "HUMAN SYSTEMS INTEGRATION CONSIDERATIONS WITH ARTIFICIAL INTELLIGENCE / MACHINE LEARNING TECHNOLOGIES",
+      "start_date": "2025-05-30",
+      "end_date": "2026-05-29",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC11",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_W15QKN22C0047_9700_-NONE-_-NONE-",
       "award_id": "W15QKN22C0047",
       "recipient": "AURA TECHNOLOGIES, LLC",
@@ -6718,28 +6740,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_N0017325C2428_9700_-NONE-_-NONE-",
-      "award_id": "N0017325C2428",
-      "recipient": "STRATEGIC ANALYSIS, INC.",
-      "recipient_slug": "strategic-analysis-inc",
-      "amount": 1015474.85,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Navy",
-      "description": "HUMAN SYSTEMS INTEGRATION CONSIDERATIONS WITH ARTIFICIAL INTELLIGENCE / MACHINE LEARNING TECHNOLOGIES",
-      "start_date": "2025-05-30",
-      "end_date": "2026-05-29",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC11",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA881025CB001_9700_-NONE-_-NONE-",
       "award_id": "FA881025CB001",
       "recipient": "TOYON RESEARCH CORPORATION",
@@ -7041,7 +7041,7 @@
       "award_id": "70RSAT22C00000016",
       "recipient": "SECURELOGIX CORPORATION",
       "recipient_slug": "securelogix-corporation",
-      "amount": 963212.43,
+      "amount": 963212.42,
       "agency": "Department of Homeland Security",
       "agency_slug": "department-of-homeland-security",
       "sub_agency": "Office of Procurement Operations",
@@ -11212,6 +11212,28 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA930226P0013_9700_-NONE-_-NONE-",
+      "award_id": "FA930226P0013",
+      "recipient": "ATAC",
+      "recipient_slug": "atac",
+      "amount": 139976.18,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ATAC CORPORATION IMPROVED NATIONAL ENVIRONMENTAL POLICY ACT (NEPA) PROCESSES USING ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML)",
+      "start_date": "2026-03-02",
+      "end_date": "2026-09-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC22",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; ATOMIC ENERGY DEFENSE ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
