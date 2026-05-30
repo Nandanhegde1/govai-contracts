@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-29T20:39:08.916Z",
-  "count": 654,
+  "generated_at": "2026-05-30T04:28:40.879Z",
+  "count": 657,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-29"
+    "end": "2026-05-30"
   },
   "contracts": [
     {
@@ -480,7 +480,7 @@
       "award_id": "HQ003425CE092",
       "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
       "recipient_slug": "leisnoi-professional-services-llc",
-      "amount": 12377632.2,
+      "amount": 12336663.15,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Washington Headquarters Services",
@@ -1164,7 +1164,7 @@
       "award_id": "36C10B25F0039",
       "recipient": "THUNDERCAT TECHNOLOGY, LLC",
       "recipient_slug": "thundercat-technology-llc",
-      "amount": 5150000,
+      "amount": 5100000,
       "agency": "Department of Veterans Affairs",
       "agency_slug": "department-of-veterans-affairs",
       "sub_agency": "Department of Veterans Affairs",
@@ -2473,6 +2473,27 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911SR25C0004_9700_-NONE-_-NONE-",
+      "award_id": "W911SR25C0004",
+      "recipient": "SPECTRAL SENSOR SOLUTIONS, LLC",
+      "recipient_slug": "spectral-sensor-solutions-llc",
+      "amount": 2091490.04,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "WILL ENGAGE EXPERT OPTICAL, ELECTRICAL, AND SIGNAL PROCESSING ENGINEERS TO DEVELOP AN ARTIFICIAL INTELLIGENCE (AI) ANALYSIS ENGINE THAT PROCESSES LIGHT DETECTION",
+      "start_date": "2024-12-27",
+      "end_date": "2027-02-26",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ13",
+      "psc_desc": "GENERAL SCIENCE & TECHNOLOGY R&D SVCS; GENERAL SCIENCE & TECHNOLOGY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "NM",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -3840,6 +3861,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
+      "award_id": "W909MY26F0009",
+      "recipient": "ENLIGHTEN IT CONSULTING LLC",
+      "recipient_slug": "enlighten-it-consulting-llc",
+      "amount": 1745173.12,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-31",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DJ01",
+      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HQ086022C7403_9700_-NONE-_-NONE-",
       "award_id": "HQ086022C7403",
       "recipient": "NIMBIS SERVICES INC",
@@ -4558,27 +4601,6 @@
       "psc_code": "7A21",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "TX",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911SR25C0004_9700_-NONE-_-NONE-",
-      "award_id": "W911SR25C0004",
-      "recipient": "SPECTRAL SENSOR SOLUTIONS, LLC",
-      "recipient_slug": "spectral-sensor-solutions-llc",
-      "amount": 1319444.04,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "WILL ENGAGE EXPERT OPTICAL, ELECTRICAL, AND SIGNAL PROCESSING ENGINEERS TO DEVELOP AN ARTIFICIAL INTELLIGENCE (AI) ANALYSIS ENGINE THAT PROCESSES LIGHT DETECTION",
-      "start_date": "2024-12-27",
-      "end_date": "2026-06-26",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ13",
-      "psc_desc": "GENERAL SCIENCE & TECHNOLOGY R&D SVCS; GENERAL SCIENCE & TECHNOLOGY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "NM",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -6169,6 +6191,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0002_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0002",
+      "recipient": "PROTOPIA AI INC",
+      "recipient_slug": "protopia-ai-inc",
+      "amount": 1240140,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "BRINGING SECURE ARTIFICIAL INTELLIGENCE TO FLIGHTLINE QUALITY ASSURANCE",
+      "start_date": "2026-02-27",
+      "end_date": "2027-06-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864923P0008_9700_-NONE-_-NONE-",
       "award_id": "FA864923P0008",
       "recipient": "ANALYTICAL AI, INC.",
@@ -7484,6 +7527,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B26C0045_3600_-NONE-_-NONE-",
+      "award_id": "36C10B26C0045",
+      "recipient": "HUNTRIDGE LABS, LLC",
+      "recipient_slug": "huntridge-labs-llc",
+      "amount": 762575,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "ARTIFICIAL INTELLIGENCE LITERACY SUPPORT",
+      "start_date": "2026-05-29",
+      "end_date": "2026-11-28",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "U012",
+      "psc_desc": "EDUCATION/TRAINING- INFORMATION TECHNOLOGY/TELECOMMUNICATIONS TRAINING",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_36C10B24F0110_3600_NNG15SD26B_8000",
       "award_id": "36C10B24F0110",
       "recipient": "THUNDERCAT TECHNOLOGY, LLC",
@@ -7612,6 +7676,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_80GSFC25F7023_8000_80GSFC21A0004_8000",
+      "award_id": "80GSFC25F7023",
+      "recipient": "TMC TECHNOLOGIES OF WEST VIRGINIA CORP",
+      "recipient_slug": "tmc-technologies-of-west-virginia-corp",
+      "amount": 738855.85,
+      "agency": "National Aeronautics and Space Administration",
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "sub_agency": "National Aeronautics and Space Administration",
+      "description": "SET2 TO 37 AI THE CONTRACTOR SHALL WORK WITH THE GOVERNMENT TO SUPPORT THE NASA IV&V PROGRAMS ARTIFICIAL INTELLIGENCE INITIATIVES AS DESCRIBED IN THE SOW.",
+      "start_date": "2025-03-28",
+      "end_date": "2026-05-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
+      "pop_state": "WV",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
+      ]
+    },
+    {
       "id": "CONT_AWD_1333ND21FNB770254_1341_DOCSB134118CQ0004_1341",
       "award_id": "1333ND21FNB770254",
       "recipient": "HII MISSION TECHNOLOGIES CORP",
@@ -7735,28 +7821,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_80GSFC25F7023_8000_80GSFC21A0004_8000",
-      "award_id": "80GSFC25F7023",
-      "recipient": "TMC TECHNOLOGIES OF WEST VIRGINIA CORP",
-      "recipient_slug": "tmc-technologies-of-west-virginia-corp",
-      "amount": 655000,
-      "agency": "National Aeronautics and Space Administration",
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "sub_agency": "National Aeronautics and Space Administration",
-      "description": "SET2 TO 37 AI THE CONTRACTOR SHALL WORK WITH THE GOVERNMENT TO SUPPORT THE NASA IV&V PROGRAMS ARTIFICIAL INTELLIGENCE INITIATIVES AS DESCRIBED IN THE SOW.",
-      "start_date": "2025-03-28",
-      "end_date": "2026-05-31",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "R425",
-      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
-      "pop_state": "WV",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
       ]
     },
     {
