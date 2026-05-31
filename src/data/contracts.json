@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-30T19:42:54.923Z",
-  "count": 657,
+  "generated_at": "2026-05-31T04:54:20.093Z",
+  "count": 658,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-05-30"
+    "end": "2026-05-31"
   },
   "contracts": [
     {
@@ -7196,7 +7196,7 @@
       "sub_agency": "National Aeronautics and Space Administration",
       "description": "SBIR PHASE II - SATELLITE COLLISION AND RISK ASSESSMENT USING MACHINE LEARNING (SCRAM)",
       "start_date": "2024-06-07",
-      "end_date": "2026-06-06",
+      "end_date": "2026-08-05",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AJ14",
@@ -9968,6 +9968,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_1333ND26FNB770050_1341_1333ND21DNB770022_1341",
+      "award_id": "1333ND26FNB770050",
+      "recipient": "PROMETHEUS COMPUTING, LLC",
+      "recipient_slug": "prometheus-computing-llc",
+      "amount": 196648.54,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Institute of Standards and Technology",
+      "description": "ARTIFICIAL INTELLIGENCE FOR VIDEO PROCESSING AND THE CUSTOMIZABLE DATA CURATION SYSTEM SUPPORT SERVICES- OU77-FY26-037-NEW",
+      "start_date": "2026-06-01",
+      "end_date": "2027-05-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DD01",
+      "psc_desc": "IT AND TELECOM - SERVICE DELIVERY SUPPORT SERVICES: ITSM, OPERATIONS CENTER, PROJECT/PM (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_1333ND25FNB770062_1341_1333ND21DNB770020_1341",
       "award_id": "1333ND25FNB770062",
       "recipient": "CHAKRA CONSULTING, INC.",
@@ -10619,6 +10640,27 @@
       "pop_state": "CO",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_75N92024P00156_7529_-NONE-_-NONE-",
+      "award_id": "75N92024P00156",
+      "recipient": "CATHOLIC UNIVERSITY OF AMERICA (THE)",
+      "recipient_slug": "catholic-university-of-america-the",
+      "amount": 155656,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "National Institutes of Health",
+      "description": "ARTIFICIAL INTELLIGENCE ALGORITHM AND COMPUTER SOFTWARE DEVELOPMENT FOR CARDIOVASCULAR COMPUTED TOMOGRAPHY IMAGE QUANTIFICATION AND ANALYSIS",
+      "start_date": "2024-06-01",
+      "end_date": "2027-05-31",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -11979,27 +12021,6 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75N92024P00156_7529_-NONE-_-NONE-",
-      "award_id": "75N92024P00156",
-      "recipient": "CATHOLIC UNIVERSITY OF AMERICA (THE)",
-      "recipient_slug": "catholic-university-of-america-the",
-      "amount": 106280,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "National Institutes of Health",
-      "description": "ARTIFICIAL INTELLIGENCE ALGORITHM AND COMPUTER SOFTWARE DEVELOPMENT FOR CARDIOVASCULAR COMPUTED TOMOGRAPHY IMAGE QUANTIFICATION AND ANALYSIS",
-      "start_date": "2024-06-01",
-      "end_date": "2026-05-31",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
