@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-01T18:17:37.856Z",
-  "count": 658,
+  "generated_at": "2026-06-02T05:02:04.907Z",
+  "count": 659,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-01"
+    "end": "2026-06-02"
   },
   "contracts": [
     {
@@ -285,6 +285,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001124C0310_9700_-NONE-_-NONE-",
+      "award_id": "HR001124C0310",
+      "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+      "recipient_slug": "northrop-grumman-systems-corporation",
+      "amount": 15915495,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "ARTIFICIAL INTELLIGENCE REINFORCEMENTS (AIR)",
+      "start_date": "2024-02-07",
+      "end_date": "2028-02-06",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA865021C6271_9700_-NONE-_-NONE-",
       "award_id": "FA865021C6271",
       "recipient": "MILE TWO LLC",
@@ -325,27 +346,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "ai"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001124C0310_9700_-NONE-_-NONE-",
-      "award_id": "HR001124C0310",
-      "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
-      "recipient_slug": "northrop-grumman-systems-corporation",
-      "amount": 13852711,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "ARTIFICIAL INTELLIGENCE REINFORCEMENTS (AIR)",
-      "start_date": "2024-02-07",
-      "end_date": "2028-02-06",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -8582,6 +8582,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "neural network"
+      ]
+    },
+    {
+      "id": "CONT_AWD_H9224026FE126_9700_W519TC23G0033_9700",
+      "award_id": "H9224026FE126",
+      "recipient": "REDHORSE CORPORATION",
+      "recipient_slug": "redhorse-corporation",
+      "amount": 369159.76,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "U.S. Special Operations Command",
+      "description": "ENGINEERING FTE UNDER THE ARTIFICIAL INTELLIGENCE (AI) TALENT 2.0 BASIC ORDERING AGREEMENT (BOA) FOR NAVAL SPECIAL WARFARE COMMAND (NSWC) SYSTEMS ENGINEERING AND TECHNICAL ASSISTANCE (SETA) SUPPORT.",
+      "start_date": "2026-03-09",
+      "end_date": "2027-03-08",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
