@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-02T21:25:16.936Z",
+  "generated_at": "2026-06-03T05:19:58.303Z",
   "count": 659,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-02"
+    "end": "2026-06-03"
   },
   "contracts": [
     {
@@ -327,6 +327,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
+      "award_id": "HQ003425CE092",
+      "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
+      "recipient_slug": "leisnoi-professional-services-llc",
+      "amount": 14358632.8,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Washington Headquarters Services",
+      "description": "THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE INFORMATION TECHNOLOGY, ARTIFICIAL INTELLIGENCE, AND MACHINE LEARNING PROGRAM SUPPORT SERVICES.",
+      "start_date": "2025-09-11",
+      "end_date": "2026-04-10",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
       "award_id": "W519TC25F0241",
       "recipient": "BYTECUBED, LLC",
@@ -470,28 +492,6 @@
       "psc_code": "AC35",
       "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
-      "award_id": "HQ003425CE092",
-      "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
-      "recipient_slug": "leisnoi-professional-services-llc",
-      "amount": 12336663.15,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Washington Headquarters Services",
-      "description": "THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE INFORMATION TECHNOLOGY, ARTIFICIAL INTELLIGENCE, AND MACHINE LEARNING PROGRAM SUPPORT SERVICES.",
-      "start_date": "2025-09-11",
-      "end_date": "2026-03-10",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
@@ -6286,7 +6286,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "CUTLASS ADVANCED ARTIFICIAL INTELLIGENCE FOR MARITIME SURVEILLANCE",
       "start_date": "2022-05-06",
-      "end_date": "2025-07-01",
+      "end_date": "2026-04-28",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
