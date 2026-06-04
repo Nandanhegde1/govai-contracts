@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-03T21:31:07.141Z",
+  "generated_at": "2026-06-04T05:11:44.646Z",
   "count": 659,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-03"
+    "end": "2026-06-04"
   },
   "contracts": [
     {
@@ -349,6 +349,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W31P4Q21F0332_9700_W31P4Q18D0002_9700",
+      "award_id": "W31P4Q21F0332",
+      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
+      "recipient_slug": "georgia-tech-applied-research-corp",
+      "amount": 14030509.79,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "NAVAL AIR WARFARE CENTER WEAPONS DIVISION (NAWCWD) AIRBORNE ELECTRONIC ATTACK INTEGRATED PRODUCT TEAM (AEA IPT) MACHINE LEARNING SUPPORT",
+      "start_date": "2021-09-24",
+      "end_date": "2026-09-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
       "award_id": "W519TC25F0241",
       "recipient": "BYTECUBED, LLC",
@@ -387,27 +408,6 @@
       "psc_code": "AC13",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "AL",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W31P4Q21F0332_9700_W31P4Q18D0002_9700",
-      "award_id": "W31P4Q21F0332",
-      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
-      "recipient_slug": "georgia-tech-applied-research-corp",
-      "amount": 13481333.79,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "NAVAL AIR WARFARE CENTER WEAPONS DIVISION (NAWCWD) AIRBORNE ELECTRONIC ATTACK INTEGRATED PRODUCT TEAM (AEA IPT) MACHINE LEARNING SUPPORT",
-      "start_date": "2021-09-24",
-      "end_date": "2026-09-24",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "GA",
       "matched_keywords": [
         "machine learning"
       ]
@@ -757,7 +757,7 @@
       "award_id": "SP470125C0100",
       "recipient": "CREDENCE MANAGEMENT SOLUTIONS LIMITED LIABILITY COMPANY",
       "recipient_slug": "credence-management-solutions-limited-liability-company",
-      "amount": 7309272.69,
+      "amount": 8275478.4,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Defense Logistics Agency",
@@ -1372,6 +1372,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875021C1509_9700_-NONE-_-NONE-",
+      "award_id": "FA875021C1509",
+      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
+      "recipient_slug": "georgia-tech-applied-research-corp",
+      "amount": 4671495,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING-ENABLED AUTONOMOUS",
+      "start_date": "2021-04-20",
+      "end_date": "2026-04-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001122C0007_9700_-NONE-_-NONE-",
       "award_id": "HR001122C0007",
       "recipient": "KITWARE INC",
@@ -1498,28 +1520,6 @@
       "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875021C1509_9700_-NONE-_-NONE-",
-      "award_id": "FA875021C1509",
-      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
-      "recipient_slug": "georgia-tech-applied-research-corp",
-      "amount": 4371495,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING-ENABLED AUTONOMOUS",
-      "start_date": "2021-04-20",
-      "end_date": "2026-04-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "GA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
