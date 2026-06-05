@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T20:26:18.182Z",
-  "count": 659,
+  "generated_at": "2026-06-05T04:49:28.137Z",
+  "count": 662,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-04"
+    "end": "2026-06-05"
   },
   "contracts": [
     {
@@ -6741,6 +6741,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_2032L226F00064_2001_2032L226A00003_2050",
+      "award_id": "2032L226F00064",
+      "recipient": "SMOOTHSTACK, INC",
+      "recipient_slug": "smoothstack-inc",
+      "amount": 1082560,
+      "agency": "Department of the Treasury",
+      "agency_slug": "department-of-the-treasury",
+      "sub_agency": "Departmental Offices",
+      "description": "TECHNICAL WORKFORCE DEVELOPMENT & TRAINING - ARTIFICIAL INTELLIGENCE ENGINEER WORKFORCE DEVELOPMENT",
+      "start_date": "2026-05-28",
+      "end_date": "2027-05-27",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "R431",
+      "psc_desc": "SUPPORT- PROFESSIONAL: HUMAN RESOURCES",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_47QACA26F0068_4732_47QTSA25A0030_4732",
       "award_id": "47QACA26F0068",
       "recipient": "EXCELLA, LLC",
@@ -8204,6 +8225,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_2032L226F00061_2001_2032L226A00008_2001",
+      "award_id": "2032L226F00061",
+      "recipient": "FEARLESS SOLUTIONS, LLC",
+      "recipient_slug": "fearless-solutions-llc",
+      "amount": 496800,
+      "agency": "Department of the Treasury",
+      "agency_slug": "department-of-the-treasury",
+      "sub_agency": "Departmental Offices",
+      "description": "TECHNICAL WORKFORCE DEVELOPMENT & TRAINING - ARTIFICIAL INTELLIGENCE ENGINEER WORKFORCE DEVELOPMENT",
+      "start_date": "2026-05-28",
+      "end_date": "2027-05-27",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R431",
+      "psc_desc": "SUPPORT- PROFESSIONAL: HUMAN RESOURCES",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_68HERC21C0045_6800_-NONE-_-NONE-",
       "award_id": "68HERC21C0045",
       "recipient": "AQUAREALTIME, INC.",
@@ -8601,6 +8643,27 @@
       "psc_code": "R425",
       "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
       "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_2032L226F00063_2001_2032L226A00010_2001",
+      "award_id": "2032L226F00063",
+      "recipient": "SOKAT CONSULTING LLC",
+      "recipient_slug": "sokat-consulting-llc",
+      "amount": 368240,
+      "agency": "Department of the Treasury",
+      "agency_slug": "department-of-the-treasury",
+      "sub_agency": "Departmental Offices",
+      "description": "TECHNICAL WORKFORCE DEVELOPMENT & TRAINING - ARTIFICIAL INTELLIGENCE ENGINEER WORKFORCE DEVELOPMENT",
+      "start_date": "2026-05-28",
+      "end_date": "2027-05-27",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R431",
+      "psc_desc": "SUPPORT- PROFESSIONAL: HUMAN RESOURCES",
+      "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
       ]
