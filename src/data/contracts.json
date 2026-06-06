@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-05T20:15:32.065Z",
-  "count": 662,
+  "generated_at": "2026-06-06T04:30:32.685Z",
+  "count": 663,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-05"
+    "end": "2026-06-06"
   },
   "contracts": [
     {
@@ -3904,6 +3904,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W56KGU24C0023_9700_-NONE-_-NONE-",
+      "award_id": "W56KGU24C0023",
+      "recipient": "SYSTEMS & TECHNOLOGY RESEARCH LLC",
+      "recipient_slug": "systems-technology-research-llc",
+      "amount": 1669519,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CPFF BAA AWARD FOR COLLABORATIVE ARTIFICIAL INTELLIGENCE TASK EXECUTION ENGINE FOR DISTRIBUTED ELECTRONIC WARFARE (CAITEE-DEW)",
+      "start_date": "2024-05-14",
+      "end_date": "2027-01-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_70B06C25F00000621_7014_70B06C20A00000036_7014",
       "award_id": "70B06C25F00000621",
       "recipient": "ELDER RESEARCH, INC.",
@@ -3963,27 +3984,6 @@
       "psc_code": "AN11",
       "psc_desc": "HEALTH R&D SERVICES; HEALTH CARE SERVICES; BASIC RESEARCH",
       "pop_state": "TX",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W56KGU24C0023_9700_-NONE-_-NONE-",
-      "award_id": "W56KGU24C0023",
-      "recipient": "SYSTEMS & TECHNOLOGY RESEARCH LLC",
-      "recipient_slug": "systems-technology-research-llc",
-      "amount": 1594519,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CPFF BAA AWARD FOR COLLABORATIVE ARTIFICIAL INTELLIGENCE TASK EXECUTION ENGINE FOR DISTRIBUTED ELECTRONIC WARFARE (CAITEE-DEW)",
-      "start_date": "2024-05-14",
-      "end_date": "2027-01-09",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "MA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -9091,6 +9091,27 @@
       "psc_code": "AN11",
       "psc_desc": "HEALTH R&D SERVICES; HEALTH CARE SERVICES; BASIC RESEARCH",
       "pop_state": "CA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_693JJ620C000028_6930_-NONE-_-NONE-",
+      "award_id": "693JJ620C000028",
+      "recipient": "VIRGINIA POLYTECHNIC INSTITUTE & STATE UNIVERSITY",
+      "recipient_slug": "virginia-polytechnic-institute-state-university",
+      "amount": 271043.49,
+      "agency": "Department of Transportation",
+      "agency_slug": "department-of-transportation",
+      "sub_agency": "Federal Railroad Administration",
+      "description": "THE OBJECTIVE OF THIS PROJECT IS TO DEVELOP A DATA ANALYSIS PLATFORM TO FACILITATE THE ASSESSMENT OF DEFECT DETECTION ON TRACK SYSTEMS BY (1) INVESTIGATING MACHINE LEARNING TECHNIQUES TO ENHANCE AUTOMATION AND FACILITATE REDUCED MANUAL LABOR FOR TRAC",
+      "start_date": "2020-08-17",
+      "end_date": "2023-04-21",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AZ12",
+      "psc_desc": "R&D- OTHER RESEARCH AND DEVELOPMENT (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
+      "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
       ]
