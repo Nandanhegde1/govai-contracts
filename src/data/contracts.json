@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-08T20:36:02.869Z",
+  "generated_at": "2026-06-09T04:38:25.902Z",
   "count": 663,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-08"
+    "end": "2026-06-09"
   },
   "contracts": [
     {
@@ -146,7 +146,7 @@
       "sub_agency": "Department of the Army",
       "description": "ADVANCED TEST AND EVALUATION (T&E) FOR THE EXPONENTIAL PACE OF ARTIFICIAL INTELLIGENCE / MACHINE LEARNING (AI/ML) PROGRESS.",
       "start_date": "2022-08-26",
-      "end_date": "2026-03-31",
+      "end_date": "2026-09-30",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AJ11",
@@ -1944,6 +1944,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
+      "award_id": "HQ086026FE001",
+      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
+      "recipient_slug": "modern-technology-solutions-inc",
+      "amount": 2969971,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Missile Defense Agency",
+      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
+      "start_date": "2026-02-02",
+      "end_date": "2028-02-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "AL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W911QX23C0003_9700_-NONE-_-NONE-",
       "award_id": "W911QX23C0003",
       "recipient": "CALNET INC",
@@ -2072,6 +2093,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875024CB037_9700_-NONE-_-NONE-",
+      "award_id": "FA875024CB037",
+      "recipient": "CACI, INC. - FEDERAL",
+      "recipient_slug": "caci-inc-federal",
+      "amount": 2659664,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "PLANNING AND ARTIFICIAL INTELLIGENCE MODEL SHARING",
+      "start_date": "2024-05-21",
+      "end_date": "2028-07-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_75R60225F80058_7526_HHSN316201200089W_7529",
       "award_id": "75R60225F80058",
       "recipient": "MINDPETAL SOFTWARE SOLUTIONS, INC AND LINKVISUM CONSULTING GROUP, INC.",
@@ -2130,27 +2172,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "AZ",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
-      "award_id": "HQ086026FE001",
-      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
-      "recipient_slug": "modern-technology-solutions-inc",
-      "amount": 2589971,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Missile Defense Agency",
-      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
-      "start_date": "2026-02-02",
-      "end_date": "2028-02-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "AL",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2217,27 +2238,6 @@
       "pop_state": "CA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875024CB037_9700_-NONE-_-NONE-",
-      "award_id": "FA875024CB037",
-      "recipient": "CACI, INC. - FEDERAL",
-      "recipient_slug": "caci-inc-federal",
-      "amount": 2473064,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "PLANNING AND ARTIFICIAL INTELLIGENCE MODEL SHARING",
-      "start_date": "2024-05-21",
-      "end_date": "2028-07-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
