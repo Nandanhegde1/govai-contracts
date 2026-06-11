@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-10T20:46:58.510Z",
+  "generated_at": "2026-06-11T05:00:42.421Z",
   "count": 663,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-10"
+    "end": "2026-06-11"
   },
   "contracts": [
     {
@@ -7336,6 +7336,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB072",
+      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
+      "recipient_slug": "black-river-systems-company-inc",
+      "amount": 860690,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
+      "start_date": "2025-09-04",
+      "end_date": "2028-11-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NSSC24CA098_8000_-NONE-_-NONE-",
       "award_id": "80NSSC24CA098",
       "recipient": "STOTTLER HENKE ASSOCIATES, INC",
@@ -7439,27 +7460,6 @@
       "matched_keywords": [
         "machine learning",
         "ai"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB072",
-      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
-      "recipient_slug": "black-river-systems-company-inc",
-      "amount": 800690,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
-      "start_date": "2025-09-04",
-      "end_date": "2028-11-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
