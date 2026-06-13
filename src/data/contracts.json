@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-12T20:28:33.456Z",
-  "count": 663,
+  "generated_at": "2026-06-13T04:54:03.564Z",
+  "count": 664,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-12"
+    "end": "2026-06-13"
   },
   "contracts": [
     {
@@ -7357,6 +7357,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B24F0110_3600_NNG15SD26B_8000",
+      "award_id": "36C10B24F0110",
+      "recipient": "THUNDERCAT TECHNOLOGY, LLC",
+      "recipient_slug": "thundercat-technology-llc",
+      "amount": 860231.77,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "VETERANS INTEGRATED SERVICE NETWORK (VISN) 21 RADIOLOGY ARTIFICIAL INTELLIGENCE (AI) PLATFORM",
+      "start_date": "2024-04-11",
+      "end_date": "2027-02-14",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA10",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NSSC24CA098_8000_-NONE-_-NONE-",
       "award_id": "80NSSC24CA098",
       "recipient": "STOTTLER HENKE ASSOCIATES, INC",
@@ -7564,27 +7585,6 @@
       "psc_code": "U012",
       "psc_desc": "EDUCATION/TRAINING- INFORMATION TECHNOLOGY/TELECOMMUNICATIONS TRAINING",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_36C10B24F0110_3600_NNG15SD26B_8000",
-      "award_id": "36C10B24F0110",
-      "recipient": "THUNDERCAT TECHNOLOGY, LLC",
-      "recipient_slug": "thundercat-technology-llc",
-      "amount": 759261.5,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "VETERANS INTEGRATED SERVICE NETWORK (VISN) 21 RADIOLOGY ARTIFICIAL INTELLIGENCE (AI) PLATFORM",
-      "start_date": "2024-04-11",
-      "end_date": "2027-02-14",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA10",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
-      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -8264,6 +8264,28 @@
       "pop_state": "CO",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_36C10B26C0053_3600_-NONE-_-NONE-",
+      "award_id": "36C10B26C0053",
+      "recipient": "ZCORE GROUP LLC",
+      "recipient_slug": "zcore-group-llc",
+      "amount": 495213.6,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "ARTIFICIAL INTELLIGENCE LLM API",
+      "start_date": "2026-06-12",
+      "end_date": "2026-12-12",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence",
+        "llm"
       ]
     },
     {
