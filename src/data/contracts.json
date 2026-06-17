@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-16T21:21:35.668Z",
-  "count": 664,
+  "generated_at": "2026-06-17T05:18:56.949Z",
+  "count": 665,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-16"
+    "end": "2026-06-17"
   },
   "contracts": [
     {
@@ -4541,6 +4541,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA877326F0039_9700_NNG15SD65B_8000",
+      "award_id": "FA877326F0039",
+      "recipient": "BETTER DIRECT, LLC",
+      "recipient_slug": "better-direct-llc",
+      "amount": 1341229.26,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE SERVERS1 10U B200 GOLD SERIES GPU SERVER SYS-A21GE-NBRT-G1 QTY 2 2 QSFP OPTICAL CABLE QSFP-100-G-AOC10M QTY2  3 QSFP OPTICAL CABLE QSFP-100G-AOC8M QTY 2",
+      "start_date": "2026-03-17",
+      "end_date": "2026-04-27",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "7B22",
+      "psc_desc": "IT AND TELECOM - COMPUTE: SERVERS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA865124FB014_9700_FA865121D0062_9700",
       "award_id": "FA865124FB014",
       "recipient": "DYNETICS, INC.",
@@ -8311,6 +8332,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_1333ND25FNB770130_1341_1333ND21DNB770022_1341",
+      "award_id": "1333ND25FNB770130",
+      "recipient": "PROMETHEUS COMPUTING, LLC",
+      "recipient_slug": "prometheus-computing-llc",
+      "amount": 483059.76,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Institute of Standards and Technology",
+      "description": "OU77-25-NEW-040 SCIENTIFIC DATA CURATION, DISCOVERY SERVICES, AND LARGE LANGUAGE MODEL (LLM) INTEGRATION",
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "large language model"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA865022C5295_9700_-NONE-_-NONE-",
       "award_id": "FA865022C5295",
       "recipient": "UNIVERSITY OF UTAH",
@@ -9090,7 +9132,7 @@
       "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
       "psc_code": "R799",
       "psc_desc": "SUPPORT- MANAGEMENT: OTHER",
-      "pop_state": "UT",
+      "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence",
         "ai"
@@ -9603,27 +9645,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_1333ND25FNB770130_1341_1333ND21DNB770022_1341",
-      "award_id": "1333ND25FNB770130",
-      "recipient": "PROMETHEUS COMPUTING, LLC",
-      "recipient_slug": "prometheus-computing-llc",
-      "amount": 238248.24,
-      "agency": "Department of Commerce",
-      "agency_slug": "department-of-commerce",
-      "sub_agency": "National Institute of Standards and Technology",
-      "description": "OU77-25-NEW-040 SCIENTIFIC DATA CURATION, DISCOVERY SERVICES, AND LARGE LANGUAGE MODEL (LLM) INTEGRATION",
-      "start_date": "2025-10-01",
-      "end_date": "2026-09-30",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "large language model"
       ]
     },
     {
