@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-17T20:31:30.858Z",
+  "generated_at": "2026-06-18T05:05:44.315Z",
   "count": 665,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-17"
+    "end": "2026-06-18"
   },
   "contracts": [
     {
@@ -815,6 +815,27 @@
       "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
+      "award_id": "HQ086026FE001",
+      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
+      "recipient_slug": "modern-technology-solutions-inc",
+      "amount": 7204883.89,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Missile Defense Agency",
+      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
+      "start_date": "2026-02-02",
+      "end_date": "2028-02-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "AL",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -1962,27 +1983,6 @@
       "pop_state": "OH",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
-      "award_id": "HQ086026FE001",
-      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
-      "recipient_slug": "modern-technology-solutions-inc",
-      "amount": 2969971,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Missile Defense Agency",
-      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
-      "start_date": "2026-02-02",
-      "end_date": "2028-02-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "AL",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
