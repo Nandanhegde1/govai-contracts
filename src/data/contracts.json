@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-18T20:40:03.175Z",
+  "generated_at": "2026-06-19T05:27:44.664Z",
   "count": 665,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-18"
+    "end": "2026-06-19"
   },
   "contracts": [
     {
@@ -2818,6 +2818,29 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865124FB014_9700_FA865121D0062_9700",
+      "award_id": "FA865124FB014",
+      "recipient": "DYNETICS, INC.",
+      "recipient_slug": "dynetics-inc",
+      "amount": 1932900,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE, DEEP LEARNING, AND MACHINE LEARNING FOR MUNITIONS AUTONOMOUS TARGET ACQUISITION",
+      "start_date": "2024-04-12",
+      "end_date": "2028-04-10",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "FL",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning",
+        "deep learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA237724CB048_9700_-NONE-_-NONE-",
       "award_id": "FA237724CB048",
       "recipient": "TOYON RESEARCH CORPORATION",
@@ -4559,29 +4582,6 @@
       "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865124FB014_9700_FA865121D0062_9700",
-      "award_id": "FA865124FB014",
-      "recipient": "DYNETICS, INC.",
-      "recipient_slug": "dynetics-inc",
-      "amount": 1339500,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "ARTIFICIAL INTELLIGENCE, DEEP LEARNING, AND MACHINE LEARNING FOR MUNITIONS AUTONOMOUS TARGET ACQUISITION",
-      "start_date": "2024-04-12",
-      "end_date": "2028-04-10",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "FL",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning",
-        "deep learning"
       ]
     },
     {
