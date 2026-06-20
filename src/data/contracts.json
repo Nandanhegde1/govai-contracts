@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-19T20:05:08.261Z",
+  "generated_at": "2026-06-20T04:42:40.496Z",
   "count": 665,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-19"
+    "end": "2026-06-20"
   },
   "contracts": [
     {
@@ -572,7 +572,7 @@
       "sub_agency": "Department of the Army",
       "description": "QUANTUM & ARTIFICIAL INTELLIGENCE TECHNOLOGIES FOR NEXT GENERATION ARMAMENT SYSTEMS",
       "start_date": "2023-10-23",
-      "end_date": "2026-03-22",
+      "end_date": "2026-12-22",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
@@ -4711,6 +4711,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HT942525CE036_9700_-NONE-_-NONE-",
+      "award_id": "HT942525CE036",
+      "recipient": "ARASH KALANTARI",
+      "recipient_slug": "arash-kalantari",
+      "amount": 1299824.72,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Health Agency",
+      "description": "A RUGGED TACTICAL PERCEPTION SYSTEM FOR ARTIFICIAL INTELLIGENCE (AI)-DRIVEN CASUALTY REGISTRATION AND MEDICAL SCENE AWARENESS",
+      "start_date": "2025-09-15",
+      "end_date": "2028-01-14",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AN12",
+      "psc_desc": "HEALTH R&D SERVICES; HEALTH CARE SERVICES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_HT942525C0009_9700_-NONE-_-NONE-",
       "award_id": "HT942525C0009",
       "recipient": "STAT HEALTH INFORMATICS, INC.",
@@ -7777,27 +7798,6 @@
       "psc_code": "DF01",
       "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HT942525CE036_9700_-NONE-_-NONE-",
-      "award_id": "HT942525CE036",
-      "recipient": "ARASH KALANTARI",
-      "recipient_slug": "arash-kalantari",
-      "amount": 700214.61,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Health Agency",
-      "description": "A RUGGED TACTICAL PERCEPTION SYSTEM FOR ARTIFICIAL INTELLIGENCE (AI)-DRIVEN CASUALTY REGISTRATION AND MEDICAL SCENE AWARENESS",
-      "start_date": "2025-09-15",
-      "end_date": "2028-01-14",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AN12",
-      "psc_desc": "HEALTH R&D SERVICES; HEALTH CARE SERVICES; APPLIED RESEARCH",
-      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
