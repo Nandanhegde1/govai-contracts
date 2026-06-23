@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T21:15:10.986Z",
-  "count": 665,
+  "generated_at": "2026-06-23T04:31:46.717Z",
+  "count": 666,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-22"
+    "end": "2026-06-23"
   },
   "contracts": [
     {
@@ -2380,7 +2380,7 @@
       "sub_agency": "Defense Logistics Agency",
       "description": "BASE YEAR TASK ORDER AWARDED TO SCALE AI UNDER THEIR INDEFINITE DELIVERY INDEFINITE QUANTITY IDIQ FOR EMERGENT IVBAA0001-22 HACKATHON AMENDMENT 15 FOR LARGE LANGUAGE MODELS (LLM) FOR THE DEFENSE LOGISTICS AGENCY (DLA)",
       "start_date": "2024-09-27",
-      "end_date": "2026-03-26",
+      "end_date": "2026-04-09",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC33",
@@ -3076,6 +3076,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_HQ003425FE152_9700_HQ003424D0023_9700",
+      "award_id": "HQ003425FE152",
+      "recipient": "THE TRUSTEES OF THE STEVENS INSTITUTE OF TECHNOLOGY",
+      "recipient_slug": "the-trustees-of-the-stevens-institute-of-technology",
+      "amount": 1859786.77,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Washington Headquarters Services",
+      "description": "PROVIDE OUTCOMES AND FINDINGS THAT INFORM THE DEPARTMENT ABOUT THE FEASIBILITY, PERFORMANCE, RISKS, AND ATTENDANT INVESTMENT STRATEGIES ASSOCIATED WITH FRONTIER ARTIFICIAL INTELLIGENCE CAPABILITIES.",
+      "start_date": "2025-06-12",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
+      "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -4179,6 +4200,29 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911W626FA004_9700_W911W626DA001_9700",
+      "award_id": "W911W626FA004",
+      "recipient": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+      "recipient_slug": "the-johns-hopkins-university-applied-physics-laboratory-llc",
+      "amount": 1500000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "PAALE ALE WILL INVESTIGATE APPROACHES TO INTEGRATE, TEST, AND EVALUATE AI INCLUDING NEURAL NETWORK MACHINE LEARNING AT SPEEDS FASTER THAN REAL TIME AND PROBABILITY BASED SOLUTIONS IAW THE GOVERNMENTS MODULAR OPEN SYSTEMS APPROACH PRINCIPLES",
+      "start_date": "2026-03-25",
+      "end_date": "2027-09-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "machine learning",
+        "ai",
+        "neural network"
       ]
     },
     {
@@ -6546,27 +6590,6 @@
       "psc_code": "AC31",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; BASIC RESEARCH",
       "pop_state": "NE",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ003425FE152_9700_HQ003424D0023_9700",
-      "award_id": "HQ003425FE152",
-      "recipient": "THE TRUSTEES OF THE STEVENS INSTITUTE OF TECHNOLOGY",
-      "recipient_slug": "the-trustees-of-the-stevens-institute-of-technology",
-      "amount": 1159786.76,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Washington Headquarters Services",
-      "description": "PROVIDE OUTCOMES AND FINDINGS THAT INFORM THE DEPARTMENT ABOUT THE FEASIBILITY, PERFORMANCE, RISKS, AND ATTENDANT INVESTMENT STRATEGIES ASSOCIATED WITH FRONTIER ARTIFICIAL INTELLIGENCE CAPABILITIES.",
-      "start_date": "2025-06-12",
-      "end_date": "2026-09-30",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "R425",
-      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
-      "pop_state": "NJ",
       "matched_keywords": [
         "artificial intelligence"
       ]
