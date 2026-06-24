@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-23T20:24:31.977Z",
-  "count": 666,
+  "generated_at": "2026-06-24T04:39:19.997Z",
+  "count": 667,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-23"
+    "end": "2026-06-24"
   },
   "contracts": [
     {
@@ -1266,6 +1266,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865022F6403_9700_FA865022D6401_9700",
+      "award_id": "FA865022F6403",
+      "recipient": "PARALLAX ADVANCED RESEARCH CORP",
+      "recipient_slug": "parallax-advanced-research-corp",
+      "amount": 4982508,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MACHINE LEARNING ANALYTICS",
+      "start_date": "2022-05-06",
+      "end_date": "2027-05-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0055_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0055",
       "recipient": "KITWARE INC",
@@ -1324,27 +1345,6 @@
       "psc_code": "AC22",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; ATOMIC ENERGY DEFENSE ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NM",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865022F6403_9700_FA865022D6401_9700",
-      "award_id": "FA865022F6403",
-      "recipient": "PARALLAX ADVANCED RESEARCH CORP",
-      "recipient_slug": "parallax-advanced-research-corp",
-      "amount": 4762191,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MACHINE LEARNING ANALYTICS",
-      "start_date": "2022-05-06",
-      "end_date": "2027-05-05",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "OH",
       "matched_keywords": [
         "machine learning"
       ]
@@ -2156,6 +2156,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865023F6535_9700_FA865020D6207_9700",
+      "award_id": "FA865023F6535",
+      "recipient": "DCS CORPORATION",
+      "recipient_slug": "dcs-corporation",
+      "amount": 2605588,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "CALIBRATED RELIANCE IN ARTIFICIAL INTELLIGENCE MACHINE LEARNING",
+      "start_date": "2023-06-21",
+      "end_date": "2027-02-22",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_SP470125C0049_9700_-NONE-_-NONE-",
       "award_id": "SP470125C0049",
       "recipient": "HARRISBURG UNIVERSITY OF SCIENCE & TECHNOLOGY",
@@ -2301,28 +2323,6 @@
       "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865023F6535_9700_FA865020D6207_9700",
-      "award_id": "FA865023F6535",
-      "recipient": "DCS CORPORATION",
-      "recipient_slug": "dcs-corporation",
-      "amount": 2290588,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "CALIBRATED RELIANCE IN ARTIFICIAL INTELLIGENCE MACHINE LEARNING",
-      "start_date": "2023-06-21",
-      "end_date": "2027-02-22",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -6232,6 +6232,28 @@
       "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA701426C0017_9700_-NONE-_-NONE-",
+      "award_id": "FA701426C0017",
+      "recipient": "KONIAG TECHNOLOGY SOLUTIONS INC",
+      "recipient_slug": "koniag-technology-solutions-inc",
+      "amount": 1243148.04,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE (AI) AND MACHINE LEARNING (ML) SOLUTION THAT PROACTIVELY IDENTIFIES INDIVIDUALS AT RISK OF ATTRITION AND RECOMMENDS TARGETED RETENTION STRATEGIES.",
+      "start_date": "2026-04-01",
+      "end_date": "2027-09-30",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "AC11",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
