@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-24T20:12:37.446Z",
-  "count": 667,
+  "generated_at": "2026-06-25T04:35:59.399Z",
+  "count": 669,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-24"
+    "end": "2026-06-25"
   },
   "contracts": [
     {
@@ -205,13 +205,13 @@
       "award_id": "FA873023CB027",
       "recipient": "NEXTGEN FEDERAL SYSTEMS LLC",
       "recipient_slug": "nextgen-federal-systems-llc",
-      "amount": 17057046.7,
+      "amount": 20822196.92,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Air Force",
       "description": "WEATHER MACHINE LEARNING PLATFORM OPERATIONS (WXMLP OPS)",
       "start_date": "2023-09-25",
-      "end_date": "2026-03-24",
+      "end_date": "2027-03-24",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AJ12",
@@ -219,6 +219,28 @@
       "pop_state": "WV",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
+      "award_id": "W519TC25F0241",
+      "recipient": "BYTECUBED, LLC",
+      "recipient_slug": "bytecubed-llc",
+      "amount": 17601475.32,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "12MONTH BASE PERIOD 12MONTH OP. EST ACCELERATING DATA AND ARTIFICIAL INTELLIGENCE(ADA)INCIDENT RESPONSE(IR)TEAMS SUPPORT DATA DRIVEN DECISION MAKING TO SCALE DATA, ANALYTICS, AND AI AT THE CHIEF DIGITAL AND ARTIFICIAL INTELLIGENCE (AI) OFFICE (CDAO)",
+      "start_date": "2025-06-03",
+      "end_date": "2026-06-02",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "R423",
+      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
       ]
     },
     {
@@ -353,7 +375,7 @@
       "award_id": "W31P4Q21F0332",
       "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
       "recipient_slug": "georgia-tech-applied-research-corp",
-      "amount": 14030509.79,
+      "amount": 14268709.79,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -367,28 +389,6 @@
       "pop_state": "GA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
-      "award_id": "W519TC25F0241",
-      "recipient": "BYTECUBED, LLC",
-      "recipient_slug": "bytecubed-llc",
-      "amount": 13888125.58,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "12MONTH BASE PERIOD 12MONTH OP. EST ACCELERATING DATA AND ARTIFICIAL INTELLIGENCE(ADA)INCIDENT RESPONSE(IR)TEAMS SUPPORT DATA DRIVEN DECISION MAKING TO SCALE DATA, ANALYTICS, AND AI AT THE CHIEF DIGITAL AND ARTIFICIAL INTELLIGENCE (AI) OFFICE (CDAO)",
-      "start_date": "2025-06-03",
-      "end_date": "2026-06-02",
-      "naics_code": "518210",
-      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
-      "psc_code": "R423",
-      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
       ]
     },
     {
@@ -520,6 +520,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
+      "award_id": "FA239125CB010",
+      "recipient": "UNIVERSITY OF DAYTON",
+      "recipient_slug": "university-of-dayton",
+      "amount": 11267487.19,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
+      "start_date": "2025-08-25",
+      "end_date": "2028-02-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_H9240124C0002_9700_-NONE-_-NONE-",
       "award_id": "H9240124C0002",
       "recipient": "YURTS TECHNOLOGIES, INC.",
@@ -599,27 +620,6 @@
       "psc_code": "AC13",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "MA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
-      "award_id": "FA239125CB010",
-      "recipient": "UNIVERSITY OF DAYTON",
-      "recipient_slug": "university-of-dayton",
-      "amount": 9767131.19,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
-      "start_date": "2025-08-25",
-      "end_date": "2028-02-24",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -6181,7 +6181,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "AI (ARTIFICIAL INTELLIGENCE) VISION BASED GUIDANCE",
       "start_date": "2024-06-27",
-      "end_date": "2026-03-30",
+      "end_date": "2026-06-01",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -9112,6 +9112,27 @@
       "psc_code": "R499",
       "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
       "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911NF26FA008_9700_W911NF23D0002_9700",
+      "award_id": "W911NF26FA008",
+      "recipient": "NATIONAL ACADEMY OF SCIENCES",
+      "recipient_slug": "national-academy-of-sciences",
+      "amount": 295200,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "GENERATIVE ARTIFICIAL INTELLIGENCE FOR DEFENSE SOFTWARE ENGINEERING PWS",
+      "start_date": "2026-04-01",
+      "end_date": "2026-11-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -14055,6 +14076,28 @@
       "pop_state": "FL",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_1333MF26F0025_1330_NNG15SD38B_8000",
+      "award_id": "1333MF26F0025",
+      "recipient": "REDHAWK IT SOLUTIONS, LLC",
+      "recipient_slug": "redhawk-it-solutions-llc",
+      "amount": 19102.6,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Oceanic and Atmospheric Administration",
+      "description": "REQUIREMENTS-26-0833  PROCUREMENT APPROVAL: OR-FY26-00727 (PRIOR APPROVAL OR-25-02994)  ACQUIRE LICENSES AND ACCESS TO ADVANCED ARTIFICIAL INTELLIGENCE (AI) POWERED CODE ASSISTANCE TOOLS.  AI TOOLKIT - JETBRAINS AI PRO  POP: 6/24/2026 - 6/23/20",
+      "start_date": "2026-06-24",
+      "end_date": "2027-06-23",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "7A21",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
       ]
     },
     {
