@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T20:23:22.993Z",
+  "generated_at": "2026-06-26T04:42:16.704Z",
   "count": 669,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-25"
+    "end": "2026-06-26"
   },
   "contracts": [
     {
@@ -1138,6 +1138,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865020C1140_9700_-NONE-_-NONE-",
+      "award_id": "FA865020C1140",
+      "recipient": "LONGSHORTWAY INC.",
+      "recipient_slug": "longshortway-inc",
+      "amount": 5289176.44,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MACHINE LEARNING FOR INTELLIGENCE COMMUNITY",
+      "start_date": "2020-09-08",
+      "end_date": "2027-12-04",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC62",
+      "psc_desc": "R&D- DEFENSE SYSTEM: ELECTRONICS/COMMUNICATION EQUIPMENT (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA875020C0537_9700_-NONE-_-NONE-",
       "award_id": "FA875020C0537",
       "recipient": "VANDERBILT UNIVERSITY",
@@ -1454,27 +1475,6 @@
       "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865020C1140_9700_-NONE-_-NONE-",
-      "award_id": "FA865020C1140",
-      "recipient": "LONGSHORTWAY INC.",
-      "recipient_slug": "longshortway-inc",
-      "amount": 4563821,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MACHINE LEARNING FOR INTELLIGENCE COMMUNITY",
-      "start_date": "2020-09-08",
-      "end_date": "2027-12-04",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC62",
-      "psc_desc": "R&D- DEFENSE SYSTEM: ELECTRONICS/COMMUNICATION EQUIPMENT (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
-      "pop_state": "MA",
-      "matched_keywords": [
         "machine learning"
       ]
     },
@@ -3502,28 +3502,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA864924P1125_9700_-NONE-_-NONE-",
-      "award_id": "FA864924P1125",
-      "recipient": "AI2 INCORPORATED",
-      "recipient_slug": "ai2-incorporated",
-      "amount": 1799592,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "SECURE LARGE LANGUAGE MODELS TO ENABLE GENERAL ARTIFICIAL INTELLIGENCE FOR CRITICAL DEPARTMENT OF THE AIR FORCE APPLICATIONS",
-      "start_date": "2024-08-16",
-      "end_date": "2025-12-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "large language model"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA940123C0008_9700_-NONE-_-NONE-",
       "award_id": "FA940123C0008",
       "recipient": "BARN OWL TECH, INC.",
@@ -4605,6 +4583,28 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864924P1125_9700_-NONE-_-NONE-",
+      "award_id": "FA864924P1125",
+      "recipient": "AI2 INCORPORATED",
+      "recipient_slug": "ai2-incorporated",
+      "amount": 1349694,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SECURE LARGE LANGUAGE MODELS TO ENABLE GENERAL ARTIFICIAL INTELLIGENCE FOR CRITICAL DEPARTMENT OF THE AIR FORCE APPLICATIONS",
+      "start_date": "2024-08-16",
+      "end_date": "2025-12-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "large language model"
       ]
     },
     {
@@ -7858,7 +7858,7 @@
       "sub_agency": "Department of the Army",
       "description": "ARTIFICIAL INTELLIGENCE SMART CONTRACTING INITIATIVE PILOT",
       "start_date": "2025-09-30",
-      "end_date": "2026-03-30",
+      "end_date": "2026-05-15",
       "naics_code": "541511",
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
       "psc_code": "7A20",
