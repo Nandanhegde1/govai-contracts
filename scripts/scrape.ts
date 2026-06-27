@@ -7,7 +7,7 @@
  * No API key required. Public endpoint.
  * Docs: https://api.usaspending.gov/
  */
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -219,6 +219,27 @@ async function main(): Promise<void> {
 
   const all = [...seen.values()].sort((a, b) => b.amount - a.amount);
   console.log(`[scrape] DONE. ${all.length} contracts kept.`);
+
+  // Sanity gate: never overwrite a healthy dataset with an empty or drastically
+  // smaller result (e.g. an API outage or a transient zero-result fetch).
+  if (all.length === 0) {
+    console.error('[scrape] ABORT: 0 contracts fetched — keeping existing data.');
+    process.exit(1);
+  }
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8'));
+      const prevCount = Array.isArray(prev?.contracts) ? prev.contracts.length : 0;
+      if (prevCount > 0 && all.length < prevCount * 0.5) {
+        console.error(
+          `[scrape] ABORT: new count ${all.length} < 50% of existing ${prevCount} — likely a bad fetch. Keeping existing data.`,
+        );
+        process.exit(1);
+      }
+    } catch {
+      // existing file unreadable/corrupt — fall through and write fresh data
+    }
+  }
 
   mkdirSync(dirname(OUT_PATH), { recursive: true });
   const payload = {
