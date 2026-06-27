@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-26T20:12:46.628Z",
-  "count": 669,
+  "generated_at": "2026-06-27T04:18:31.535Z",
+  "count": 670,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-26"
+    "end": "2026-06-27"
   },
   "contracts": [
     {
@@ -732,6 +732,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
+      "award_id": "HQ086026FE001",
+      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
+      "recipient_slug": "modern-technology-solutions-inc",
+      "amount": 8404883.89,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Missile Defense Agency",
+      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
+      "start_date": "2026-02-02",
+      "end_date": "2028-02-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "AL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_15F06725F0001855_1549_15F06724A0000296_1549",
       "award_id": "15F06725F0001855",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
@@ -815,27 +836,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
-      "award_id": "HQ086026FE001",
-      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
-      "recipient_slug": "modern-technology-solutions-inc",
-      "amount": 7204883.89,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Missile Defense Agency",
-      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
-      "start_date": "2026-02-02",
-      "end_date": "2028-02-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "AL",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -1238,6 +1238,27 @@
       "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
       "psc_code": "DD01",
       "psc_desc": "IT AND TELECOM - SERVICE DELIVERY SUPPORT SERVICES: ITSM, OPERATIONS CENTER, PROJECT/PM (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA489026C0006_9700_-NONE-_-NONE-",
+      "award_id": "FA489026C0006",
+      "recipient": "KONIAG IT SYSTEMS, LLC",
+      "recipient_slug": "koniag-it-systems-llc",
+      "amount": 5060186.92,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "THIS REQUIREMENT PROVIDES ENTERPRISE-LEVEL SERVICES TO ACCELERATE THE ADOPTION, TRAINING, GOVERNANCE, AND OPERATIONAL INTEGRATION OF ARTIFICIAL INTELLIGENCE (AI) AND ROBOTIC PROCESS AUTOMATION (RPA) CAPABILITIES ACROSS ACC.",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
@@ -1691,11 +1712,32 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B26F0046_3600_NNG15SD26B_8000",
+      "award_id": "36C10B26F0046",
+      "recipient": "THUNDERCAT TECHNOLOGY, LLC",
+      "recipient_slug": "thundercat-technology-llc",
+      "amount": 3892500,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "REFLEXAI FY26 BASE. THE CONTRACTOR SHALL PROVIDE TECHNICAL AND FUNCTIONAL SUPPORT TO THE OFFICE OF SUICIDE PREVENTION (OSP) INCLUDING THE VETERAN CRISIS LINE (VCL) CALL CENTER, IN ARTIFICIAL INTELLIGENCE (AI) POWERED ROLEPLAYING SIMULATION TRAINING.",
+      "start_date": "2025-12-15",
+      "end_date": "2026-12-14",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA10",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W912CG24C0002_9700_-NONE-_-NONE-",
       "award_id": "W912CG24C0002",
       "recipient": "ACCELINT AI, LLC",
       "recipient_slug": "accelint-ai-llc",
-      "amount": 3775655,
+      "amount": 3890655,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -1859,27 +1901,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_36C10B26F0046_3600_NNG15SD26B_8000",
-      "award_id": "36C10B26F0046",
-      "recipient": "THUNDERCAT TECHNOLOGY, LLC",
-      "recipient_slug": "thundercat-technology-llc",
-      "amount": 3285000,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "REFLEXAI FY26 BASE. THE CONTRACTOR SHALL PROVIDE TECHNICAL AND FUNCTIONAL SUPPORT TO THE OFFICE OF SUICIDE PREVENTION (OSP) INCLUDING THE VETERAN CRISIS LINE (VCL) CALL CENTER, IN ARTIFICIAL INTELLIGENCE (AI) POWERED ROLEPLAYING SIMULATION TRAINING.",
-      "start_date": "2025-12-15",
-      "end_date": "2026-12-14",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA10",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA864923P1066_9700_-NONE-_-NONE-",
       "award_id": "FA864923P1066",
       "recipient": "REDACTABLE INC.",
@@ -1898,6 +1919,28 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911QX23C0003_9700_-NONE-_-NONE-",
+      "award_id": "W911QX23C0003",
+      "recipient": "CALNET INC",
+      "recipient_slug": "calnet-inc",
+      "amount": 3108057.56,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING - BASE YEAR PLUS THREE (3) OPTION YEARS",
+      "start_date": "2023-05-23",
+      "end_date": "2026-07-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -1982,28 +2025,6 @@
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "OH",
       "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX23C0003_9700_-NONE-_-NONE-",
-      "award_id": "W911QX23C0003",
-      "recipient": "CALNET INC",
-      "recipient_slug": "calnet-inc",
-      "amount": 2963827,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING - BASE YEAR PLUS THREE (3) OPTION YEARS",
-      "start_date": "2023-05-23",
-      "end_date": "2026-07-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
         "machine learning"
       ]
     },
