@@ -13,7 +13,7 @@ const { agency } = Astro.props;
 const contracts = getContractsByAgency(slug!).sort((a, b) => b.amount - a.amount);
 
 const title = `${agency.name} AI/ML contracts`;
-const description = `${agency.name} has awarded ${agency.count} AI/ML contracts worth ${formatMoney(agency.total_amount)}. See every contract, vendor, and dollar amount.`;
+const description = `${agency.name} has awarded ${agency.count} AI/ML contracts worth ${formatMoney(agency.total_amount)}. See the contracts, vendors, and dollar amounts.`;
 ---
 <Layout title={title} description={description}>
   <p style="margin-bottom: 8px;"><a href="/agencies/">← All agencies</a></p>
