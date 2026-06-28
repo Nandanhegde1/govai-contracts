@@ -3,7 +3,7 @@
 // With ANTHROPIC_API_KEY set it prints a grounded, cited answer.
 
 import { retrieve } from './retrieve.ts';
-import { answer } from './answer.ts';
+import { answer, hasLLM } from './answer.ts';
 
 const query = process.argv.slice(2).join(' ').trim();
 if (!query) {
@@ -11,9 +11,9 @@ if (!query) {
   process.exit(1);
 }
 
-if (!process.env.ANTHROPIC_API_KEY) {
-  console.log('No ANTHROPIC_API_KEY set — showing retrieved contracts only.');
-  console.log('Set the key for a synthesized, cited answer.\n');
+if (!hasLLM()) {
+  console.log('No LLM key set — showing retrieved contracts only.');
+  console.log('Set GEMINI_API_KEY (free) or ANTHROPIC_API_KEY for a synthesized, cited answer.\n');
   for (const h of retrieve(query, 8)) {
     const c = h.contract;
     console.log(
@@ -24,5 +24,5 @@ if (!process.env.ANTHROPIC_API_KEY) {
   const r = await answer(query, 8);
   console.log(r.text);
   const tok = r.usage ? `${r.usage.input} in / ${r.usage.output} out tokens` : '';
-  console.log(`\n— ${r.ms}ms · ${tok}`);
+  console.log(`\n— ${r.provider} · ${r.ms}ms · ${tok}`);
 }

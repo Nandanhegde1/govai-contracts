@@ -10,7 +10,7 @@
 
 import { readFileSync } from 'node:fs';
 import { retrieve } from '../retrieve.ts';
-import { answer } from '../answer.ts';
+import { answer, hasLLM } from '../answer.ts';
 
 interface Gold {
   question: string;
@@ -20,7 +20,7 @@ interface Gold {
 
 const gold = JSON.parse(readFileSync(new URL('./gold.json', import.meta.url), 'utf8')) as Gold[];
 const K = 8;
-const hasKey = !!process.env.ANTHROPIC_API_KEY;
+const hasKey = hasLLM();
 
 // Illustrative pricing — PLACEHOLDER, verify current rates and override via env.
 const PRICE_IN = Number(process.env.ASK_PRICE_IN ?? 1) / 1e6; // $/input token
@@ -71,5 +71,5 @@ if (hasKey) {
     `Latency: avg ${(totalMs / (ansTotal || 1)).toFixed(0)}ms · tokens ${totalIn} in / ${totalOut} out · est cost $${cost.toFixed(4)} (~$${(cost / (ansTotal || 1)).toFixed(5)}/query, placeholder pricing)`,
   );
 } else {
-  console.log('Answer accuracy + latency + cost: SKIPPED — set ANTHROPIC_API_KEY to run the full eval.');
+  console.log('Answer accuracy + latency + cost: SKIPPED — set GEMINI_API_KEY (free) or ANTHROPIC_API_KEY to run the full eval.');
 }

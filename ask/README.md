@@ -17,17 +17,19 @@ The deliberate call: **don't pay a model to find documents a ranking function ca
 find.** Retrieval is plain BM25 over the contract text (description, vendor,
 agency, NAICS, PSC, location, matched keywords) — it runs offline, for free, in
 milliseconds. The LLM is used only for the one thing it's uniquely good at:
-synthesizing a grounded answer from the retrieved records. Synthesis defaults to a
-cheap/fast tier (`claude-haiku-4-5`, override with `ASK_MODEL`).
+synthesizing a grounded answer from the retrieved records. **Synthesis is
+provider-agnostic** — point it at a free **Gemini** key or a paid **Claude** key
+(`GEMINI_API_KEY` / `ANTHROPIC_API_KEY`; models via `GEMINI_MODEL` /
+`ANTHROPIC_MODEL`), both cheap/fast tiers by default.
 
 ## Run
 ```bash
 # Retrieval works with no key:
 npm run ask -- "which vendors won the biggest DoD AI contracts?"
 
-# Grounded, cited answers + the full eval need a key:
-ANTHROPIC_API_KEY=sk-ant-... npm run ask -- "who supports the DoD JAIC?"
-ANTHROPIC_API_KEY=sk-ant-... npm run ask:eval
+# Grounded, cited answers + the full eval need ONE key (free Gemini OR paid Claude):
+GEMINI_API_KEY=...           npm run ask -- "who supports the DoD JAIC?"   # free: aistudio.google.com (no card)
+ANTHROPIC_API_KEY=sk-ant-... npm run ask:eval                              # or pay-as-you-go Claude
 ```
 
 ## Evaluation
