@@ -1,0 +1,16 @@
+[
+  { "question": "What is the largest federal AI/ML contract in the dataset and who won it?", "expectAwardIds": ["W911QX20C0023"], "answerMustInclude": ["ECS"] },
+  { "question": "What AI work did Scale AI win from the Department of Defense?", "expectAwardIds": ["W911QX20C0051"], "answerMustInclude": ["Scale AI"] },
+  { "question": "Which vendor provides AI/ML support to the DoD Joint Artificial Intelligence Center (JAIC)?", "expectAwardIds": ["140D0421C0002"], "answerMustInclude": ["Tuknik"] },
+  { "question": "Which company won an AIOps (AI operations) contract at the Department of Veterans Affairs?", "expectAwardIds": ["36C10B20F0417"], "answerMustInclude": ["Swish"] },
+  { "question": "Who is improving patent search with artificial intelligence for the Department of Commerce?", "expectAwardIds": ["1333BJ20F00280017"], "answerMustInclude": ["Accenture"] },
+  { "question": "Which vendor does AI/ML modeling work for the Department of Health and Human Services?", "expectAwardIds": ["75FCMC23F0001"], "answerMustInclude": ["Index Analytics"] },
+  { "question": "Which company won an AI exploitation contract at the Department of Justice?", "expectAwardIds": ["15F06725F0001855"], "answerMustInclude": ["Accenture"] },
+  { "question": "Does Booz Allen Hamilton have an AI contract with the General Services Administration?", "expectAwardIds": ["47QFCA26F0018"], "answerMustInclude": ["Booz Allen"] },
+  { "question": "Which vendor supports taxpayer services with AI at the Department of the Treasury?", "expectAwardIds": ["2032H524F00705"], "answerMustInclude": ["ATI"] },
+  { "question": "Which contract funds research and development of prototype AI/ML algorithms for the Army?", "expectAwardIds": ["W911QX20C0023"], "answerMustInclude": ["ECS"] },
+  { "question": "Which vendors hold the largest AI contracts at the Department of Defense?", "expectAwardIds": ["W911QX20C0023", "W911QX20C0051"] },
+  { "question": "Which AI/ML contracts fall under NAICS 541715, R&D in the physical and engineering sciences?", "expectAwardIds": ["W911QX20C0023"] },
+  { "question": "What AI contracts has Accenture Federal Services won across agencies?", "expectAwardIds": ["1333BJ20F00280017", "15F06725F0001855"] },
+  { "question": "Does the dataset include SpaceX contracts for a Mars rover AI?", "answerMustInclude": ["don't have"] }
+]

@@ -10,6 +10,8 @@
     "scrape": "tsx scripts/scrape.ts",
     "scrape:opps": "tsx scripts/scrape-opportunities.ts",
     "scrape:all": "npm run scrape && npm run scrape:opps",
+    "ask": "tsx ask/ask.ts",
+    "ask:eval": "tsx ask/eval/run-eval.ts",
     "astro": "astro"
   },
   "dependencies": {
