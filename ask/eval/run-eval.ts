@@ -21,6 +21,21 @@ interface Gold {
 const gold = JSON.parse(readFileSync(new URL('./gold.json', import.meta.url), 'utf8')) as Gold[];
 const K = 8;
 const hasKey = hasLLM();
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+// Free LLM tiers rate-limit aggressively; pace calls and retry once on 429/503.
+async function answerWithRetry(q: string, k: number) {
+  try {
+    return await answer(q, k);
+  } catch (e) {
+    const s = String(e);
+    if (s.includes('429') || s.includes('503')) {
+      await sleep(20000);
+      return await answer(q, k);
+    }
+    throw e;
+  }
+}
 
 // Illustrative pricing — PLACEHOLDER, verify current rates and override via env.
 const PRICE_IN = Number(process.env.ASK_PRICE_IN ?? 1) / 1e6; // $/input token
@@ -45,7 +60,7 @@ for (const g of gold) {
 
   if (hasKey && g.answerMustInclude?.length) {
     try {
-      const r = await answer(g.question, K);
+      const r = await answerWithRetry(g.question, K);
       totalMs += r.ms;
       if (r.usage) {
         totalIn += r.usage.input;
@@ -56,6 +71,7 @@ for (const g of gold) {
       const ok = g.answerMustInclude.every((s) => lc.includes(s.toLowerCase()));
       if (ok) ansCorrect++;
       console.log(`${ok ? 'PASS' : 'FAIL'} [answer]   ${g.question}`);
+      await sleep(4500); // stay under free-tier RPM
     } catch (e) {
       console.log(`ERR  [answer]   ${g.question} — ${String(e).slice(0, 80)}`);
     }

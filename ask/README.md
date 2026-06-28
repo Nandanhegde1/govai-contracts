@@ -30,6 +30,7 @@ npm run ask -- "which vendors won the biggest DoD AI contracts?"
 # Grounded, cited answers + the full eval need ONE key (free Gemini OR paid Claude):
 GEMINI_API_KEY=...           npm run ask -- "who supports the DoD JAIC?"   # free: aistudio.google.com (no card)
 ANTHROPIC_API_KEY=sk-ant-... npm run ask:eval                              # or pay-as-you-go Claude
+# Free-tier 429s? The eval self-paces (~5s/call) + retries once; if they persist set GEMINI_MODEL=gemini-1.5-flash
 ```
 
 ## Evaluation
