@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-27T19:47:14.018Z",
-  "count": 670,
+  "generated_at": "2026-06-28T04:53:55.224Z",
+  "count": 672,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-27"
+    "end": "2026-06-28"
   },
   "contracts": [
     {
@@ -389,6 +389,27 @@
       "pop_state": "GA",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_1333BJ26F00284002_1344_1333LB24A00000001_1323",
+      "award_id": "1333BJ26F00284002",
+      "recipient": "FOUR POINTS TECHNOLOGY, L.L.C.",
+      "recipient_slug": "four-points-technology-l-l-c",
+      "amount": 13651931,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "U.S. Patent and Trademark Office",
+      "description": "ARTIFICIAL INTELLIGENCE (AI) ASSISTANT TOOLS PATENT EXAMINATION MODERNIZATION (PATENT AI)",
+      "start_date": "2026-06-29",
+      "end_date": "2027-06-28",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -3880,6 +3901,27 @@
       "pop_state": "NY",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_1333ND26FNB770130_1341_47QTCB21D0005_4732",
+      "award_id": "1333ND26FNB770130",
+      "recipient": "GBS SOLUTIONS CORP",
+      "recipient_slug": "gbs-solutions-corp",
+      "amount": 1753826.1,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Institute of Standards and Technology",
+      "description": "OU77-FY26-064-NEW - NIST ARTIFICIAL INTELLIGENCE STANDARDS DEVELOPMENT ORGANIZATION AND RISK MANAGEMENT FRAMEWORK SUPPORT SERVICES",
+      "start_date": "2026-09-30",
+      "end_date": "2027-09-30",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R799",
+      "psc_desc": "SUPPORT- MANAGEMENT: OTHER",
+      "pop_state": "UT",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
