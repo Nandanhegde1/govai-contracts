@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-29T20:17:07.891Z",
-  "count": 672,
+  "generated_at": "2026-06-30T04:36:10.580Z",
+  "count": 675,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-29"
+    "end": "2026-06-30"
   },
   "contracts": [
     {
@@ -76,7 +76,7 @@
       "award_id": "W911QX25C0002",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 57850069.13,
+      "amount": 67878357.2,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -2412,6 +2412,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001126CE029_9700_-NONE-_-NONE-",
+      "award_id": "HR001126CE029",
+      "recipient": "LOCKHEED MARTIN CORPORATION",
+      "recipient_slug": "lockheed-martin-corporation",
+      "amount": 2278726,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "SECURING ARTIFICIAL INTELLIGENCE FOR BATTLEFIELD EFFECTIVE ROBUSTNESS (SABER)",
+      "start_date": "2026-02-01",
+      "end_date": "2028-01-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_SP470124F0355_9700_SP470124D0004_9700",
       "award_id": "SP470124F0355",
       "recipient": "SCALE AI, INC.",
@@ -2752,6 +2773,27 @@
       "pop_state": "CA",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W5170126CA115_9700_-NONE-_-NONE-",
+      "award_id": "W5170126CA115",
+      "recipient": "XPERNO LP LLP",
+      "recipient_slug": "xperno-lp-llp",
+      "amount": 1999126.9,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "THE DEVELOPMENT OF A CLOUD NATIVE, ARTIFICIAL INTELLIGENCE ENABLED DIGITAL STEWARDSHIP AS A SERVICE PLATFORM THAT AUTOMATES THE DETECTION, TRIAGE, AND CORRECTION OF DATA QUALITY ISSUES WITHIN THE ARMY INTEGRATED PERSONNEL AND PAY SYSTEM.",
+      "start_date": "2026-04-06",
+      "end_date": "2028-04-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -3820,6 +3862,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W5170126CA114_9700_-NONE-_-NONE-",
+      "award_id": "W5170126CA114",
+      "recipient": "ARCH SYSTEMS LLC",
+      "recipient_slug": "arch-systems-llc",
+      "amount": 1763687.14,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "HAWKEYE DQ, WHICH IS AN ARTIFICIAL INTELLIGENCE, IMPACT LEVEL 5 DATA QUALITY PLATFORM THAT WILL IMPROVE ACCURACY, COMPLETENESS, AND AUDITABILITY OF ARMY HUMAN RESOURCES AND PAYROLL DATA IN THE ARMY INTEGRATED PERSONNEL AND PAY SYSTEM.",
+      "start_date": "2026-04-06",
+      "end_date": "2028-04-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA875024CB082_9700_-NONE-_-NONE-",
       "award_id": "FA875024CB082",
       "recipient": "STONEWALL DEFENSE LLC",
@@ -4540,27 +4603,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001126CE029_9700_-NONE-_-NONE-",
-      "award_id": "HR001126CE029",
-      "recipient": "LOCKHEED MARTIN CORPORATION",
-      "recipient_slug": "lockheed-martin-corporation",
-      "amount": 1419838,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "SECURING ARTIFICIAL INTELLIGENCE FOR BATTLEFIELD EFFECTIVE ROBUSTNESS (SABER)",
-      "start_date": "2026-02-01",
-      "end_date": "2028-01-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NJ",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -11595,6 +11637,27 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA239426PB005_9700_-NONE-_-NONE-",
+      "award_id": "FA239426PB005",
+      "recipient": "GREEN MOUNTAIN ELECTROMAGNETICS, INC",
+      "recipient_slug": "green-mountain-electromagnetics-inc",
+      "amount": 140000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ULTRA-WIDEBAND SENSOR SYSTEM FUSING NEAR-FIELD ELECTROMAGNETIC PULSES WITH MACHINE LEARNING ANALYTICS",
+      "start_date": "2026-03-30",
+      "end_date": "2026-12-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VT",
+      "matched_keywords": [
+        "machine learning"
       ]
     },
     {
