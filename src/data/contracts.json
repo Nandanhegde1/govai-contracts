@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-30T20:21:11.563Z",
-  "count": 675,
+  "generated_at": "2026-07-01T04:55:44.341Z",
+  "count": 674,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-06-30"
+    "end": "2026-07-01"
   },
   "contracts": [
     {
@@ -860,6 +860,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
+      "award_id": "W909MY26F0009",
+      "recipient": "ENLIGHTEN IT CONSULTING LLC",
+      "recipient_slug": "enlighten-it-consulting-llc",
+      "amount": 7189386.4,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
+      "start_date": "2026-03-01",
+      "end_date": "2027-02-28",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DJ01",
+      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_47QFCA26F0018_4732_47QTCK18D0004_4732",
       "award_id": "47QFCA26F0018",
       "recipient": "BOOZ ALLEN HAMILTON INC",
@@ -1413,6 +1435,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001122C0007_9700_-NONE-_-NONE-",
+      "award_id": "HR001122C0007",
+      "recipient": "KITWARE INC",
+      "recipient_slug": "kitware-inc",
+      "amount": 4841792,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "EO14042  PERCEPTUALLY-ENABLED TASK GUIDANCE (PTG) PROGRAM TECHNICAL AREA 1 FOUNDATIONAL KNOWLEDGE IN ARTIFICIAL INTELLIGENCE ASSISTANTS",
+      "start_date": "2021-11-10",
+      "end_date": "2024-12-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC11",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_N0001420C1099_9700_-NONE-_-NONE-",
       "award_id": "N0001420C1099",
       "recipient": "PACMAR TECHNOLOGIES LLC",
@@ -1475,27 +1518,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001122C0007_9700_-NONE-_-NONE-",
-      "award_id": "HR001122C0007",
-      "recipient": "KITWARE INC",
-      "recipient_slug": "kitware-inc",
-      "amount": 4621792,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "EO14042  PERCEPTUALLY-ENABLED TASK GUIDANCE (PTG) PROGRAM TECHNICAL AREA 1 FOUNDATIONAL KNOWLEDGE IN ARTIFICIAL INTELLIGENCE ASSISTANTS",
-      "start_date": "2021-11-10",
-      "end_date": "2024-12-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC11",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -4009,28 +4031,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
-      "award_id": "W909MY26F0009",
-      "recipient": "ENLIGHTEN IT CONSULTING LLC",
-      "recipient_slug": "enlighten-it-consulting-llc",
-      "amount": 1745173.12,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
-      "start_date": "2026-03-01",
-      "end_date": "2026-03-31",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DJ01",
-      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_HQ086022C7403_9700_-NONE-_-NONE-",
       "award_id": "HQ086022C7403",
       "recipient": "NIMBIS SERVICES INC",
@@ -4139,7 +4139,7 @@
     {
       "id": "CONT_AWD_W911QX21F0132_9700_W911QX20D0008_9700",
       "award_id": "W911QX21F0132",
-      "recipient": "CARNEGIE MELLON UNIVERSITY",
+      "recipient": "CARNEGIE-MELLON UNIVERSITY",
       "recipient_slug": "carnegie-mellon-university",
       "amount": 1590476,
       "agency": "Department of Defense",
@@ -8841,27 +8841,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_H9224026FE126_9700_W519TC23G0033_9700",
-      "award_id": "H9224026FE126",
-      "recipient": "REDHORSE CORPORATION",
-      "recipient_slug": "redhorse-corporation",
-      "amount": 369159.76,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "U.S. Special Operations Command",
-      "description": "ENGINEERING FTE UNDER THE ARTIFICIAL INTELLIGENCE (AI) TALENT 2.0 BASIC ORDERING AGREEMENT (BOA) FOR NAVAL SPECIAL WARFARE COMMAND (NSWC) SYSTEMS ENGINEERING AND TECHNICAL ASSISTANCE (SETA) SUPPORT.",
-      "start_date": "2026-03-09",
-      "end_date": "2027-03-08",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "R425",
-      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_2032L226F00063_2001_2032L226A00010_2001",
       "award_id": "2032L226F00063",
       "recipient": "SOKAT CONSULTING LLC",
@@ -8948,7 +8927,7 @@
     {
       "id": "CONT_AWD_W911QX25FA013_9700_W911QX24D0009_9700",
       "award_id": "W911QX25FA013",
-      "recipient": "CARNEGIE MELLON UNIVERSITY",
+      "recipient": "CARNEGIE-MELLON UNIVERSITY",
       "recipient_slug": "carnegie-mellon-university",
       "amount": 350000,
       "agency": "Department of Defense",
@@ -11815,7 +11794,7 @@
     {
       "id": "CONT_AWD_FA864925P0162_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0162",
-      "recipient": "ARITH INC",
+      "recipient": "ARITH INC.",
       "recipient_slug": "arith-inc",
       "amount": 109959,
       "agency": "Department of Defense",
