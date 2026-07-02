@@ -46,7 +46,7 @@ npm run build          # production build → dist/
 2. It then filters by AI/ML keyword presence in each award's description (so generic IT contracts are excluded).
 3. `scripts/scrape-opportunities.ts` does the same for active SAM.gov solicitations (last 60 days). Skips gracefully if `SAM_API_KEY` is not set or daily quota is exhausted.
 4. Deduplicated results are written to `src/data/contracts.json` and `src/data/opportunities.json`.
-5. Astro builds ~1,200+ static pages at build time:
+5. Astro builds ~1,400 static pages at build time:
    - `/` — landing + recent awards
    - `/contracts/` — searchable list (URL-state filters)
    - `/contracts/[id]/` — programmatic SEO detail page per award
@@ -55,7 +55,7 @@ npm run build          # production build → dist/
    - `/naics/`, `/naics/[code]/`, `/naics/[code]/vendors/`
    - `/opportunities/`, `/opportunities/[id]/`
    - `/export/all.csv`, `/export/all.json`, `/export/{agency,vendor,naics}/{slug}.csv`
-   - `/pricing/`, `/alerts/`, `/claim/`, `/about/`
+   - `/alerts/`, `/claim/`, `/about/`, `/methodology/`, `/insights/`
 6. GitHub Actions reruns both scrapers every 6 hours and commits the refreshed datasets.
 
 ## API quota usage (SAM.gov)

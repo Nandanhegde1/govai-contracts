@@ -1,0 +1,197 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Ask GovAI — a measured RAG over federal AI contracts"
+  description="Retrieval-augmented Q&A over 670+ federal AI/ML contract awards: a structured query router + BM25 retrieval feeding grounded, cited LLM synthesis — with a reproducible eval (recall@8 = 92%; 69% BM25 baseline). Try the retrieval live in your browser."
+>
+  <section class="hero">
+    <h1>Ask GovAI</h1>
+    <p class="lead">
+      A small, dependency-free <strong>RAG pipeline</strong> over this site's dataset — built to be
+      <em>measured, honest, and cheap</em>, not a demo. A structured query router + BM25 retrieval
+      (key-free) feed grounded LLM synthesis that cites award IDs and refuses to invent.
+      The retrieval below runs <strong>entirely in your browser</strong> — same algorithm as the repo, no API key, no server.
+    </p>
+  </section>
+
+  <section class="card" style="padding:28px; margin-bottom:24px;">
+    <h2 style="margin-top:0;">Try the retrieval — live</h2>
+    <form id="ask-form" style="display:flex; gap:10px; flex-wrap:wrap;">
+      <input
+        id="ask-q"
+        type="text"
+        placeholder='e.g. "which vendors hold the largest AI contracts at the DoD?"'
+        style="flex:1 1 340px; background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px;"
+      />
+      <button type="submit" class="btn" style="padding:12px 22px;">Retrieve</button>
+    </form>
+    <p id="ask-status" style="font-size:13px; color:var(--text-muted); margin:10px 0 0;">
+      Loads the full 670+-contract dataset (~650&nbsp;KB) on first search, then everything runs locally.
+    </p>
+    <div id="ask-strategy" style="display:none; font-family:monospace; font-size:12.5px; color:var(--text-muted); margin-top:14px;"></div>
+    <ol id="ask-results" style="list-style:none; padding:0; margin:10px 0 0;"></ol>
+    <p style="font-size:13px; color:var(--text-muted); margin-top:14px;">
+      This page demonstrates the <strong>retrieval</strong> half. The grounded, cited <strong>synthesis</strong> half
+      runs in the repo CLI with a free Gemini key or a Claude key —
+      <a href="https://github.com/Nandanhegde1/govai-contracts/tree/main/ask" rel="noopener" target="_blank">run it yourself</a>.
+    </p>
+  </section>
+
+  <div class="detail-grid">
+    <section class="card" style="padding:28px;">
+      <h2 style="margin-top:0;">How it works</h2>
+      <pre style="font-size:12.5px; overflow-x:auto; line-height:1.5;">question ─▶ query router ─▶ structured path
+               │              (superlative / NAICS →
+               ▼               filter + sort by amount)
+        BM25 retrieval ─▶ top-k contracts
+        (key-free, offline)     │
+                       grounded LLM synthesis ─▶ cited answer
+                       (cite award_ids, refuse
+                        if unsupported)</pre>
+      <p style="font-size:14px; color:var(--text-muted);">
+        The cost decision: <strong>don't pay a model to find documents a ranking function can find.</strong>
+        BM25 handles topical lookup for free; the router handles what lexical ranking <em>cannot</em> do by
+        construction (superlatives, explicit NAICS codes) by answering structurally against the data.
+        The LLM does only the one thing it's uniquely good at — synthesizing a grounded answer from the
+        retrieved records. Synthesis is provider-agnostic: free Gemini or paid Claude.
+      </p>
+    </section>
+
+    <section class="card" style="padding:28px;">
+      <h2 style="margin-top:0;">The eval — measure, diagnose, fix</h2>
+      <table style="width:100%; font-size:13.5px; border-collapse:collapse;">
+        <tr style="border-bottom:1px solid var(--border-strong);"><th style="text-align:left; padding:6px 4px;">Metric</th><th style="text-align:left; padding:6px 4px;">Result</th></tr>
+        <tr><td style="padding:6px 4px;"><strong>Retrieval recall@8 (routed)</strong></td><td style="padding:6px 4px;"><strong>92% (12/13)</strong></td></tr>
+        <tr><td style="padding:6px 4px;">Retrieval recall@8 (BM25 baseline)</td><td style="padding:6px 4px;">69% (9/13)</td></tr>
+        <tr><td style="padding:6px 4px;">Answer accuracy / latency / cost</td><td style="padding:6px 4px;">printed by <code>ask:eval</code> with a key</td></tr>
+      </table>
+      <p style="font-size:14px; color:var(--text-muted); margin-top:12px;">
+        The baseline measured <strong>69%</strong>. The misses were diagnosed, not hidden: superlative
+        queries ("largest contract…") and explicit NAICS codes are structurally unanswerable by term
+        overlap — so a thin router now answers those against the data (a general mechanism, gold set
+        frozen before it was built), taking recall to <strong>92%</strong>. The one remaining miss is a
+        semantic-disambiguation limit of lexical retrieval — that's the honest residual, and the
+        roadmap (dense embeddings) targets exactly it.
+      </p>
+      <p style="font-size:14px;">
+        <a href="https://github.com/Nandanhegde1/govai-contracts/blob/main/ask/README.md" rel="noopener" target="_blank">Full eval write-up →</a>
+      </p>
+    </section>
+  </div>
+
+  <section class="card" style="padding:28px; margin-top:24px;">
+    <h2 style="margin-top:0;">Run it yourself</h2>
+    <pre style="font-size:13px; overflow-x:auto;">git clone https://github.com/Nandanhegde1/govai-contracts && cd govai-contracts && npm install
+
+npm run ask -- "which vendors won the biggest DoD AI contracts?"   # retrieval — no key needed
+GEMINI_API_KEY=... npm run ask -- "who supports the DoD JAIC?"     # grounded, cited answer (free key)
+npm run ask:eval                                                    # reproduce the eval</pre>
+  </section>
+</Layout>
+
+<script>
+  // The same retrieval pipeline as ask/retrieve.ts, ported to the browser:
+  // BM25 (k1=1.5, b=0.75) + the structured query router. No key, no server.
+  type C = {
+    id: string; award_id: string; recipient: string; amount: number; agency: string;
+    sub_agency?: string; description: string; naics_code?: string; naics_desc?: string;
+    psc_desc?: string; pop_state?: string; matched_keywords?: string[];
+  };
+
+  const STOP = new Set(('the a an and or of to for in on with by is are be this that it as at from into ' +
+    'shall will contractor support services service contract award task order').split(' '));
+  const stem = (t: string) =>
+    t.length > 4 && t.endsWith('ies') ? t.slice(0, -3) + 'y'
+    : t.length > 4 && t.endsWith('es') ? t.slice(0, -2)
+    : t.length > 3 && t.endsWith('s') ? t.slice(0, -1) : t;
+  const tokenize = (s: string) => (s.toLowerCase().match(/[a-z0-9]+/g) ?? []).filter(t => t.length >= 2 && !STOP.has(t)).map(stem);
+  const docText = (c: C) => [c.description, c.recipient, c.agency, c.sub_agency, c.naics_desc, c.psc_desc, c.pop_state, (c.matched_keywords ?? []).join(' ')].filter(Boolean).join(' ');
+
+  let docs: C[] | null = null;
+  let idx: { tf: Map<string, number>[]; df: Map<string, number>; len: number[]; avg: number } | null = null;
+
+  async function load(status: HTMLElement): Promise<C[]> {
+    if (docs) return docs;
+    status.textContent = 'Loading dataset…';
+    const raw = await fetch('/export/all.json').then(r => r.json());
+    docs = (Array.isArray(raw) ? raw : raw.contracts) as C[];
+    const tf: Map<string, number>[] = []; const df = new Map<string, number>(); const len: number[] = [];
+    for (const d of docs) {
+      const toks = tokenize(docText(d)); const m = new Map<string, number>();
+      for (const t of toks) m.set(t, (m.get(t) ?? 0) + 1);
+      for (const t of m.keys()) df.set(t, (df.get(t) ?? 0) + 1);
+      tf.push(m); len.push(toks.length);
+    }
+    idx = { tf, df, len, avg: len.reduce((a, b) => a + b, 0) / (len.length || 1) };
+    status.textContent = `${docs.length} contracts indexed locally.`;
+    return docs;
+  }
+
+  function bm25(query: string, k: number): { c: C; score: number }[] {
+    const N = docs!.length; const q = [...new Set(tokenize(query))];
+    const scored = docs!.map((c, i) => {
+      let s = 0;
+      for (const t of q) {
+        const f = idx!.tf[i].get(t); if (!f) continue;
+        const n = idx!.df.get(t) ?? 0;
+        s += Math.log(1 + (N - n + 0.5) / (n + 0.5)) * (f * 2.5) / (f + 1.5 * (0.25 + 0.75 * idx!.len[i] / idx!.avg));
+      }
+      return { c, score: s };
+    });
+    return scored.filter(h => h.score > 0).sort((a, b) => b.score - a.score).slice(0, k);
+  }
+
+  const ALIASES: Record<string, string> = { dod: 'department of defense', doj: 'department of justice', hhs: 'health and human services', gsa: 'general services administration', nasa: 'aeronautics and space', dhs: 'homeland security', va: 'veterans affairs' };
+
+  function retrieveSmart(query: string, k = 8) {
+    const q = query.toLowerCase();
+    const naics = (q.match(/\b(\d{6})\b/) ?? [])[1];
+    let agency: string | undefined;
+    for (const a of new Set(docs!.map(d => d.agency))) if (q.includes(a.toLowerCase())) { agency = a.toLowerCase(); break; }
+    if (!agency) for (const [al, full] of Object.entries(ALIASES)) if (new RegExp('\\b' + al + '\\b').test(q)) { agency = full; break; }
+    const sup = /\b(largest|biggest|top|highest|most valuable|most expensive)\b/.test(q) ? 'desc' : /\b(smallest|lowest|cheapest)\b/.test(q) ? 'asc' : null;
+    if (!naics && !sup) return { hits: bm25(query, k), strategy: 'bm25' };
+    let pool = docs!; const parts: string[] = [];
+    if (naics) { pool = pool.filter(c => c.naics_code === naics); parts.push('naics=' + naics); }
+    if (agency) { const a = agency; pool = pool.filter(c => (c.agency + ' ' + (c.sub_agency ?? '')).toLowerCase().includes(a)); parts.push('agency~"' + a + '"'); }
+    if (!pool.length) return { hits: bm25(query, k), strategy: 'bm25 (structured pool empty)' };
+    const dir = sup === 'asc' ? 1 : -1;
+    const structured = [...pool].sort((a, b) => dir * (a.amount - b.amount)).slice(0, Math.ceil(k / 2)).map((c, i) => ({ c, score: 100 - i }));
+    parts.push('amount ' + (sup ?? 'desc'));
+    const seen = new Set(structured.map(h => h.c.award_id));
+    const fill = bm25(query, k).filter(h => !seen.has(h.c.award_id));
+    return { hits: [...structured, ...fill].slice(0, k), strategy: 'structured(' + parts.join(', ') + ') + bm25 fill' };
+  }
+
+  const form = document.getElementById('ask-form') as HTMLFormElement;
+  const input = document.getElementById('ask-q') as HTMLInputElement;
+  const status = document.getElementById('ask-status') as HTMLElement;
+  const stratEl = document.getElementById('ask-strategy') as HTMLElement;
+  const results = document.getElementById('ask-results') as HTMLElement;
+  const esc = (s: string) => s.replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch] as string));
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+    await load(status);
+    const t0 = performance.now();
+    const { hits, strategy } = retrieveSmart(q, 8);
+    const ms = (performance.now() - t0).toFixed(1);
+    stratEl.style.display = 'block';
+    stratEl.textContent = `retrieval: ${strategy} · ${ms}ms · in-browser`;
+    results.innerHTML = hits.length
+      ? hits.map(h => `
+        <li style="border:1px solid var(--border-strong); border-radius:6px; padding:12px 14px; margin-top:10px;">
+          <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; font-size:13.5px;">
+            <a href="/contracts/${esc(h.c.id)}/" style="font-weight:600;">[${esc(h.c.award_id)}] ${esc(h.c.recipient)}</a>
+            <span style="color:var(--text-muted); white-space:nowrap;">$${Math.round(h.c.amount).toLocaleString('en-US')}</span>
+          </div>
+          <div style="font-size:12.5px; color:var(--text-muted); margin-top:4px;">${esc(h.c.agency)}${h.c.sub_agency ? ' / ' + esc(h.c.sub_agency) : ''}</div>
+          <div style="font-size:13px; margin-top:6px;">${esc(h.c.description.slice(0, 220))}${h.c.description.length > 220 ? '…' : ''}</div>
+        </li>`).join('')
+      : '<li style="margin-top:10px; color:var(--text-muted);">No lexical matches — try vendor, agency, or mission terms.</li>';
+  });
+</script>

@@ -6,6 +6,8 @@ interface Props {
 }
 const { generatedAt } = Astro.props;
 
+// Build-time label is only the no-JS fallback — the real age is computed
+// client-side (a static build's "1h ago" would otherwise lie until redeploy).
 const ageMs = Date.now() - new Date(generatedAt).getTime();
 const ageHours = Math.max(0, Math.round(ageMs / (1000 * 60 * 60)));
 const fresh = ageHours < 12;
@@ -15,9 +17,32 @@ const label =
   : `Updated ${Math.round(ageHours / 24)}d ago`;
 ---
 <span
+  data-freshness-badge
+  data-generated-at={generatedAt}
   title={`Last data refresh: ${formatDate(generatedAt)}`}
   style={`display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:4px 10px; border-radius:999px; border:1px solid ${fresh ? '#4ade80' : 'var(--border-strong)'}; color:${fresh ? '#4ade80' : 'var(--text-muted)'}; background:${fresh ? 'rgba(74,222,128,0.08)' : 'transparent'};`}
 >
-  <span style={`width:6px; height:6px; border-radius:50%; background:${fresh ? '#4ade80' : 'var(--text-dim)'}; ${fresh ? 'box-shadow: 0 0 6px #4ade80;' : ''}`}></span>
-  {label}
+  <span data-dot style={`width:6px; height:6px; border-radius:50%; background:${fresh ? '#4ade80' : 'var(--text-dim)'}; ${fresh ? 'box-shadow: 0 0 6px #4ade80;' : ''}`}></span>
+  <span data-label>{label}</span>
 </span>
+
+<script>
+  // Recompute the age at view time so the badge never claims stale data is fresh.
+  for (const el of document.querySelectorAll<HTMLElement>('[data-freshness-badge]')) {
+    const ts = el.dataset.generatedAt;
+    if (!ts) continue;
+    const ageHours = Math.max(0, Math.round((Date.now() - new Date(ts).getTime()) / 36e5));
+    const label = ageHours < 1 ? 'Updated <1h ago' : ageHours < 24 ? `Updated ${ageHours}h ago` : `Updated ${Math.round(ageHours / 24)}d ago`;
+    const labelEl = el.querySelector('[data-label]');
+    if (labelEl) labelEl.textContent = label;
+    const fresh = ageHours < 12;
+    el.style.borderColor = fresh ? '#4ade80' : 'var(--border-strong)';
+    el.style.color = fresh ? '#4ade80' : 'var(--text-muted)';
+    el.style.background = fresh ? 'rgba(74,222,128,0.08)' : 'transparent';
+    const dot = el.querySelector<HTMLElement>('[data-dot]');
+    if (dot) {
+      dot.style.background = fresh ? '#4ade80' : 'var(--text-dim)';
+      dot.style.boxShadow = fresh ? '0 0 6px #4ade80' : 'none';
+    }
+  }
+</script>

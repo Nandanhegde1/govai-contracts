@@ -32,13 +32,28 @@ jobs:
         run: npm run scrape:opps
 
       - name: Commit changes
+        id: commit
         run: |
           git config user.name  "Nandan Hegde"
           git config user.email "37264314+Nandanhegde1@users.noreply.github.com"
           if [[ -n "$(git status --porcelain src/data/)" ]]; then
             git add src/data/
-            git commit -m "chore(data): weekly scrape $(date -u +%Y-%m-%d)"
+            git commit -m "chore(data): scheduled scrape $(date -u +%Y-%m-%d)"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Build & deploy to Cloudflare (skips until CLOUDFLARE_API_TOKEN secret is set)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
+            echo "CLOUDFLARE_API_TOKEN repo secret not set — skipping deploy. Add it (Workers Scripts:Edit scope) to publish fresh data automatically."
+            exit 0
+          fi
+          npm run build
+          npx wrangler deploy
