@@ -1,7 +1,7 @@
 # Ask GovAI — a measured RAG over the federal AI/ML contracts
 
 A small, dependency-free Retrieval-Augmented-Generation pipeline that answers
-natural-language questions about the 670 U.S. federal AI/ML contract awards this
+natural-language questions about the 670+ U.S. federal AI/ML contract awards this
 project already indexes — with **citations**, a **refuse-to-invent guardrail**, and
 a **measured eval**. Built to demonstrate the methodology (retrieval design +
 grounding + evaluation + cost strategy), not as a production service.
@@ -10,7 +10,7 @@ grounding + evaluation + cost strategy), not as a production service.
 ```
 question ──▶ BM25 lexical retrieval (key-free, offline) ──▶ top-k contracts
                                                               │
-                                          grounded Claude synthesis ──▶ cited answer
+                                    grounded LLM synthesis (Gemini/Claude) ──▶ cited answer
                                           (cite award_ids, refuse if unsupported)
 ```
 The deliberate call: **don't pay a model to find documents a ranking function can
@@ -30,7 +30,7 @@ npm run ask -- "which vendors won the biggest DoD AI contracts?"
 # Grounded, cited answers + the full eval need ONE key (free Gemini OR paid Claude):
 GEMINI_API_KEY=...           npm run ask -- "who supports the DoD JAIC?"   # free: aistudio.google.com (no card)
 ANTHROPIC_API_KEY=sk-ant-... npm run ask:eval                              # or pay-as-you-go Claude
-# Free-tier 429s? The eval self-paces (~5s/call) + retries once; if they persist set GEMINI_MODEL=gemini-1.5-flash
+# Free-tier 429s? The eval self-paces (~5s/call) + retries once; if they persist, let the per-minute quota reset or set GEMINI_MODEL to another free-tier model (see aistudio.google.com)
 ```
 
 ## Evaluation
@@ -52,7 +52,7 @@ retrieval recall measures real generalization, not a copy-match (non-circular).
 2. **NAICS 541715 (1 miss)** — dozens of awards share that code, so demanding one
    *specific* award is a flawed test, not a retriever failure. **Fix:** score the
    gold item as "any 541715 award retrieved," or drop it.
-3. **R&D-prototype query (1 miss)** — corpus homogeneity: 670 contracts that all
+3. **R&D-prototype query (1 miss)** — corpus homogeneity: 670+ contracts that all
    say "research / development / AI / ML," so generic terms don't isolate one
    award. **Fix:** embeddings for semantic disambiguation + entity-name handling
    (e.g. "Scale AI" the vendor vs "at scale" the phrase).

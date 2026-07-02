@@ -1,6 +1,6 @@
 // Measured eval for the Ask-GovAI RAG pipeline.
 //  - Retrieval recall@k  → runs with NO key (this is the honest, always-on metric).
-//  - Answer accuracy + latency + cost → runs only when ANTHROPIC_API_KEY is set.
+//  - Answer accuracy + latency + cost → runs when GEMINI_API_KEY (free) or ANTHROPIC_API_KEY is set.
 //
 // Run:  npm run ask:eval
 //

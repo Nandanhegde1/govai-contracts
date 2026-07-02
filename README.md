@@ -12,6 +12,15 @@ A free, independent index of every U.S. federal **AI / ML / data-science** contr
 
 Federal AI contract intelligence is locked behind enterprise tools (Deltek GovWin, GovTribe, etc.) costing $10K–$30K/year. This site does the obvious thing the public APIs already enable: aggregate, filter, and make every AI/ML award searchable for free.
 
+## Ask GovAI (RAG)
+
+[`ask/`](./ask/) is a small, dependency-free RAG layer over this dataset: **BM25 lexical retrieval** (key-free) feeds **grounded, provider-agnostic LLM synthesis** (free Gemini or paid Claude) with citations and a refuse-to-invent guardrail — backed by a **reproducible eval** (retrieval recall@8 = 69%, 9/13). See [`ask/README.md`](./ask/README.md).
+
+```bash
+npm run ask -- "which vendors won the biggest DoD AI contracts?"   # retrieval works with no key
+npm run ask:eval                                                    # the measured eval
+```
+
 ## Stack
 
 - [Astro 5](https://astro.build) — static site, file-based routing

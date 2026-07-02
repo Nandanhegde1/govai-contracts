@@ -1,6 +1,6 @@
 // CLI:  npm run ask -- "which vendors won the biggest DoD AI contracts?"
 // Without a key it prints the retrieved contracts (retrieval is key-free).
-// With ANTHROPIC_API_KEY set it prints a grounded, cited answer.
+// With GEMINI_API_KEY (free) or ANTHROPIC_API_KEY set it prints a grounded, cited answer.
 
 import { retrieve } from './retrieve.ts';
 import { answer, hasLLM } from './answer.ts';

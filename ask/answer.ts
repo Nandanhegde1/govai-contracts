@@ -98,6 +98,12 @@ export async function answer(query: string, k = 8): Promise<AnswerResult> {
   if (pv === 'none') {
     throw new Error('No LLM key set. Set GEMINI_API_KEY (free) or ANTHROPIC_API_KEY. Retrieval works without either.');
   }
+  if (pv === 'anthropic' && !ANTHROPIC_KEY) {
+    throw new Error('LLM_PROVIDER=anthropic but ANTHROPIC_API_KEY is not set. Set it, or unset LLM_PROVIDER to fall back to GEMINI_API_KEY.');
+  }
+  if (pv === 'gemini' && !GEMINI_KEY) {
+    throw new Error('LLM_PROVIDER=gemini but GEMINI_API_KEY is not set. Set it (free: https://aistudio.google.com), or unset LLM_PROVIDER.');
+  }
   const user = `Contracts:\n${formatContext(hits)}\n\nQuestion: ${query}`;
   const t0 = Date.now();
   const r = pv === 'anthropic' ? await callAnthropic(user) : await callGemini(user);
