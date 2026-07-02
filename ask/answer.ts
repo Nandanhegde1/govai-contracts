@@ -7,7 +7,7 @@
 // Force one with LLM_PROVIDER=gemini|anthropic. Retrieval works with neither.
 // Raw fetch, no SDKs.
 
-import { retrieve, type Hit } from './retrieve.ts';
+import { retrieveSmart, type Hit } from './retrieve.ts';
 
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY ?? '';
 const GEMINI_KEY = process.env.GEMINI_API_KEY ?? '';
@@ -90,10 +90,11 @@ export interface AnswerResult {
   usage?: { input: number; output: number };
   ms: number;
   provider: Provider;
+  retrievalStrategy: string;
 }
 
 export async function answer(query: string, k = 8): Promise<AnswerResult> {
-  const hits = retrieve(query, k);
+  const { hits, strategy } = retrieveSmart(query, k);
   const pv = provider();
   if (pv === 'none') {
     throw new Error('No LLM key set. Set GEMINI_API_KEY (free) or ANTHROPIC_API_KEY. Retrieval works without either.');
@@ -107,5 +108,5 @@ export async function answer(query: string, k = 8): Promise<AnswerResult> {
   const user = `Contracts:\n${formatContext(hits)}\n\nQuestion: ${query}`;
   const t0 = Date.now();
   const r = pv === 'anthropic' ? await callAnthropic(user) : await callGemini(user);
-  return { text: r.text, hits, usage: r.usage, ms: Date.now() - t0, provider: pv };
+  return { text: r.text, hits, usage: r.usage, ms: Date.now() - t0, provider: pv, retrievalStrategy: strategy };
 }

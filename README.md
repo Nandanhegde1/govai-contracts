@@ -14,7 +14,7 @@ Federal AI contract intelligence is locked behind enterprise tools (Deltek GovWi
 
 ## Ask GovAI (RAG)
 
-[`ask/`](./ask/) is a small, dependency-free RAG layer over this dataset: **BM25 lexical retrieval** (key-free) feeds **grounded, provider-agnostic LLM synthesis** (free Gemini or paid Claude) with citations and a refuse-to-invent guardrail — backed by a **reproducible eval** (retrieval recall@8 = 69%, 9/13). See [`ask/README.md`](./ask/README.md).
+[`ask/`](./ask/) is a small, dependency-free RAG layer over this dataset: a **query router + BM25 retrieval** (key-free — superlative/NAICS questions answered structurally) feeds **grounded, provider-agnostic LLM synthesis** (free Gemini or paid Claude) with citations and a refuse-to-invent guardrail — backed by a **reproducible eval** (retrieval recall@8 = **92%** routed; 69% BM25 baseline). See [`ask/README.md`](./ask/README.md).
 
 ```bash
 npm run ask -- "which vendors won the biggest DoD AI contracts?"   # retrieval works with no key

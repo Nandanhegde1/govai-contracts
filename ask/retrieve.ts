@@ -92,7 +92,7 @@ export interface Hit {
   score: number;
 }
 
-/** Classic BM25 (k1=1.5, b=0.75). Returns the top-k scoring contracts. */
+/** Classic BM25 (k1=1.5, b=0.75). Returns the top-k scoring contracts. Pure lexical baseline. */
 export function retrieve(query: string, k = 8): Hit[] {
   const docs = loadContracts();
   const idx = _index!;
@@ -117,4 +117,91 @@ export function retrieve(query: string, k = 8): Hit[] {
     .filter((h) => h.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, k);
+}
+
+// ---------------------------------------------------------------------------
+// Structured query routing.
+//
+// BM25 ranks by term overlap, so it cannot answer superlative/aggregate
+// questions ("largest contract at the DoD") by construction — the eval's
+// documented failure mode. The router detects two STRUCTURED signals and,
+// only then, answers them structurally against the data:
+//   - a superlative ("largest", "biggest", "top", ... / "smallest") → sort by amount
+//   - an explicit 6-digit NAICS code → filter by naics_code
+// An agency mention narrows the pool only when one of those signals is present;
+// plain topical queries (which BM25 already handles well) are untouched.
+// Structured hits fill the top half of k; BM25 fills the rest, deduped.
+// General mechanism — no per-question rules; see eval/gold.json + README.
+// ---------------------------------------------------------------------------
+
+const AGENCY_ALIASES: Record<string, string> = {
+  dod: 'department of defense',
+  doj: 'department of justice',
+  hhs: 'health and human services',
+  gsa: 'general services administration',
+  nasa: 'aeronautics and space',
+  dhs: 'homeland security',
+  va: 'veterans affairs',
+};
+
+interface Filters {
+  naics?: string;
+  agency?: string;
+  superlative: 'asc' | 'desc' | null;
+}
+
+function detectFilters(query: string, docs: Contract[]): Filters {
+  const q = query.toLowerCase();
+  const naics = (q.match(/\b(\d{6})\b/) ?? [])[1];
+  let agency: string | undefined;
+  for (const a of new Set(docs.map((d) => d.agency))) {
+    if (q.includes(a.toLowerCase())) { agency = a.toLowerCase(); break; }
+  }
+  if (!agency) {
+    for (const [alias, full] of Object.entries(AGENCY_ALIASES)) {
+      if (new RegExp(`\\b${alias}\\b`).test(q)) { agency = full; break; }
+    }
+  }
+  const superlative = /\b(largest|biggest|top|highest|most valuable|most expensive)\b/.test(q)
+    ? 'desc' as const
+    : /\b(smallest|lowest|cheapest)\b/.test(q)
+      ? 'asc' as const
+      : null;
+  return { naics, agency, superlative };
+}
+
+export interface Routed {
+  hits: Hit[];
+  /** How the result was produced, e.g. "structured(agency~\"department of defense\", amount desc) + bm25 fill" */
+  strategy: string;
+}
+
+/** Router + BM25 — the retrieval entry point the CLI, synthesis, and eval all use. */
+export function retrieveSmart(query: string, k = 8): Routed {
+  const docs = loadContracts();
+  const { naics, agency, superlative } = detectFilters(query, docs);
+
+  // No structured signal → pure BM25 (the common, already-working path).
+  if (!naics && !superlative) return { hits: retrieve(query, k), strategy: 'bm25' };
+
+  let pool = docs;
+  const parts: string[] = [];
+  if (naics) { pool = pool.filter((c) => c.naics_code === naics); parts.push(`naics=${naics}`); }
+  if (agency) {
+    const a = agency;
+    pool = pool.filter((c) => `${c.agency} ${c.sub_agency ?? ''}`.toLowerCase().includes(a));
+    parts.push(`agency~"${a}"`);
+  }
+  if (pool.length === 0) return { hits: retrieve(query, k), strategy: 'bm25 (structured pool empty)' };
+
+  const dir = superlative === 'asc' ? 1 : -1;
+  const structured: Hit[] = [...pool]
+    .sort((a, b) => dir * (a.amount - b.amount))
+    .slice(0, Math.ceil(k / 2))
+    .map((c, i) => ({ contract: c, score: 100 - i }));
+  parts.push(`amount ${superlative ?? 'desc'}`);
+
+  const seen = new Set(structured.map((h) => h.contract.award_id));
+  const fill = retrieve(query, k).filter((h) => !seen.has(h.contract.award_id));
+  return { hits: [...structured, ...fill].slice(0, k), strategy: `structured(${parts.join(', ')}) + bm25 fill` };
 }

@@ -9,7 +9,7 @@
 // so retrieval recall measures real lexical generalization, not a copy-match.
 
 import { readFileSync } from 'node:fs';
-import { retrieve } from '../retrieve.ts';
+import { retrieve, retrieveSmart } from '../retrieve.ts';
 import { answer, hasLLM } from '../answer.ts';
 
 interface Gold {
@@ -41,7 +41,8 @@ async function answerWithRetry(q: string, k: number) {
 const PRICE_IN = Number(process.env.ASK_PRICE_IN ?? 1) / 1e6; // $/input token
 const PRICE_OUT = Number(process.env.ASK_PRICE_OUT ?? 5) / 1e6; // $/output token
 
-let retHits = 0;
+let retHits = 0; // routed (retrieveSmart) — the pipeline's actual entry point
+let baseHits = 0; // pure-BM25 baseline, reported alongside for honesty
 let retTotal = 0;
 let ansCorrect = 0;
 let ansTotal = 0;
@@ -52,10 +53,14 @@ let totalOut = 0;
 for (const g of gold) {
   if (g.expectAwardIds?.length) {
     retTotal++;
-    const ids = new Set(retrieve(g.question, K).map((h) => h.contract.award_id));
+    const routed = retrieveSmart(g.question, K);
+    const ids = new Set(routed.hits.map((h) => h.contract.award_id));
     const hit = g.expectAwardIds.some((id) => ids.has(id));
     if (hit) retHits++;
-    console.log(`${hit ? 'PASS' : 'MISS'} [retrieve] ${g.question}`);
+    const baseIds = new Set(retrieve(g.question, K).map((h) => h.contract.award_id));
+    const baseHit = g.expectAwardIds.some((id) => baseIds.has(id));
+    if (baseHit) baseHits++;
+    console.log(`${hit ? 'PASS' : 'MISS'} [retrieve] ${g.question}${hit !== baseHit ? `  (bm25 alone: ${baseHit ? 'pass' : 'miss'}; ${routed.strategy})` : ''}`);
   }
 
   if (hasKey && g.answerMustInclude?.length) {
@@ -79,7 +84,8 @@ for (const g of gold) {
 }
 
 console.log('\n===== RESULTS =====');
-console.log(`Retrieval recall@${K}: ${retHits}/${retTotal} = ${((100 * retHits) / (retTotal || 1)).toFixed(0)}%`);
+console.log(`Retrieval recall@${K} (routed): ${retHits}/${retTotal} = ${((100 * retHits) / (retTotal || 1)).toFixed(0)}%`);
+console.log(`Retrieval recall@${K} (BM25 baseline): ${baseHits}/${retTotal} = ${((100 * baseHits) / (retTotal || 1)).toFixed(0)}%`);
 if (hasKey) {
   console.log(`Answer accuracy:      ${ansCorrect}/${ansTotal} = ${((100 * ansCorrect) / (ansTotal || 1)).toFixed(0)}%`);
   const cost = totalIn * PRICE_IN + totalOut * PRICE_OUT;
