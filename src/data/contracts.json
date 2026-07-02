@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-01T20:16:45.726Z",
-  "count": 674,
+  "generated_at": "2026-07-02T04:32:33.389Z",
+  "count": 676,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-01"
+    "end": "2026-07-02"
   },
   "contracts": [
     {
@@ -2047,6 +2047,28 @@
       "pop_state": "VA",
       "matched_keywords": [
         "large language model",
+        "ai"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864126CB001_9700_-NONE-_-NONE-",
+      "award_id": "FA864126CB001",
+      "recipient": "ILLUMINATION WORKS, LLC",
+      "recipient_slug": "illumination-works-llc",
+      "amount": 2999411,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "TOPIC AF221-DCSO1, PROPOSAL F2S-19474, SEQUENTIAL PHASE II SMALL BUSINESS INNOVATION RESEARCH (SBIR) - ODIN ARTIFICIAL INTELLIGENCE (AI) AI AUTOMATION AND INSIGHT GENERATOR",
+      "start_date": "2026-04-06",
+      "end_date": "2027-12-06",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence",
         "ai"
       ]
     },
@@ -8693,6 +8715,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911SD25CA014_9700_-NONE-_-NONE-",
+      "award_id": "W911SD25CA014",
+      "recipient": "FLYWHEEL DATA LLC",
+      "recipient_slug": "flywheel-data-llc",
+      "amount": 412060.55,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "NETWORK DETECTION AND RESPONSE (NDR) TOOL, AN ARTIFICIAL INTELLIGENCE (AI) POWERED CYBERSECURITY SOLUTION FOR THE UNITED STATES MILITARY ACADEMY (USMA), CYBERSECURITY DIVISION (G6) AT WEST POINT, NY.",
+      "start_date": "2025-04-01",
+      "end_date": "2027-03-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "7J20",
+      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W912CG25FA012_9700_W912CG24D0001_9700",
       "award_id": "W912CG25FA012",
       "recipient": "UNIVERSITY OF SOUTHERN CALIFORNIA",
@@ -9921,27 +9964,6 @@
       "psc_code": "AS11",
       "psc_desc": "TRANSPORTATION R&D SERVICES; SURFACE TRANSPORTATION, PUBLIC TRANSIT, AND RAIL; BASIC RESEARCH",
       "pop_state": "KY",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911SD25CA014_9700_-NONE-_-NONE-",
-      "award_id": "W911SD25CA014",
-      "recipient": "FLYWHEEL DATA LLC",
-      "recipient_slug": "flywheel-data-llc",
-      "amount": 223787.95,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "NETWORK DETECTION AND RESPONSE (NDR) TOOL, AN ARTIFICIAL INTELLIGENCE (AI) POWERED CYBERSECURITY SOLUTION FOR THE UNITED STATES MILITARY ACADEMY (USMA), CYBERSECURITY DIVISION (G6) AT WEST POINT, NY.",
-      "start_date": "2025-04-01",
-      "end_date": "2026-03-31",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7J20",
-      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -12340,6 +12362,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
+      "award_id": "47QFCA26F0023",
+      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
+      "recipient_slug": "accenture-federal-services-llc",
+      "amount": 102250,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
+      "start_date": "2026-07-28",
+      "end_date": "2027-07-27",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
