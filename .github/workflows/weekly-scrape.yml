@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   scrape:
@@ -30,6 +31,10 @@ jobs:
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
         run: npm run scrape:opps
+
+      # Verify BEFORE publishing: fresh data must not break retrieval quality.
+      - name: Retrieval eval gate
+        run: npm run ask:eval
 
       - name: Commit changes
         id: commit
@@ -57,3 +62,16 @@ jobs:
           fi
           npm run build
           npx wrangler deploy
+
+      - name: Open or update a failure issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "Scheduled scrape failed" --json number --jq '.[0].number // empty')
+          body="Scheduled scrape failed at $(date -u '+%Y-%m-%d %H:%M UTC') — [run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Scheduled scrape failed" --body "$body"
+          fi

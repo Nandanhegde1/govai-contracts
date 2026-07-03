@@ -27,10 +27,11 @@ const action = `https://formsubmit.co/${ALERTS_EMAIL}`;
         <input type="hidden" name="_captcha" value="true" />
         <input type="hidden" name="_next" value="https://govai-contracts.nandanhegde1096.workers.dev/alerts/?ok=1" />
 
-        <label style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
+        <label for="alert-email" style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
           Your email
         </label>
         <input
+          id="alert-email"
           type="email"
           name="email"
           required
@@ -38,20 +39,22 @@ const action = `https://formsubmit.co/${ALERTS_EMAIL}`;
           style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px; width:100%; margin-bottom: 14px;"
         />
 
-        <label style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
+        <label for="alert-interests" style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
           What kinds of contracts? (optional)
         </label>
         <input
+          id="alert-interests"
           type="text"
           name="interests"
           placeholder="e.g., DoD computer vision, HHS LLM RFPs, &lt; $1M small biz set-asides"
           style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px; width:100%; margin-bottom: 14px;"
         />
 
-        <label style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
+        <label for="alert-role" style="display:block; font-size:14px; color:var(--text-muted); margin-bottom:6px;">
           Who are you? (optional, helps us prioritize features)
         </label>
         <select
+          id="alert-role"
           name="role"
           style="background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px; width:100%; margin-bottom: 18px;"
         >
@@ -71,7 +74,7 @@ const action = `https://formsubmit.co/${ALERTS_EMAIL}`;
           Get free alerts →
         </button>
 
-        <p style="margin-top: 14px; font-size: 12px; color: var(--text-dim);">
+        <p style="margin-top: 14px; font-size: 12px; color: var(--text-muted);">
           We use your email only to send the alerts. No third parties. One-click unsubscribe in every email.
         </p>
       </form>

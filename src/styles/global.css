@@ -151,7 +151,12 @@ p { margin: 0 0 12px; }
 .card a.title-link { color: var(--text); }
 .card a.title-link:hover { color: var(--accent); text-decoration: none; }
 
-.contract-card { display: grid; gap: 8px; }
+.contract-card {
+  display: grid; gap: 8px;
+  /* /contracts/ lists hundreds of cards; skip layout/paint offscreen */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 160px;
+}
 .contract-card .row1 {
   display: flex;
   justify-content: space-between;

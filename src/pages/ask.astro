@@ -22,16 +22,17 @@ import Layout from '../layouts/Layout.astro';
       <input
         id="ask-q"
         type="text"
+        aria-label="Ask a question about federal AI/ML contracts"
         placeholder='e.g. "which vendors hold the largest AI contracts at the DoD?"'
         style="flex:1 1 340px; background:var(--bg); color:var(--text); border:1px solid var(--border-strong); border-radius:4px; padding:12px 14px; font-size:15px;"
       />
       <button type="submit" class="btn" style="padding:12px 22px;">Retrieve</button>
     </form>
-    <p id="ask-status" style="font-size:13px; color:var(--text-muted); margin:10px 0 0;">
+    <p id="ask-status" role="status" style="font-size:13px; color:var(--text-muted); margin:10px 0 0;">
       Loads the full 670+-contract dataset (~650&nbsp;KB) on first search, then everything runs locally.
     </p>
-    <div id="ask-strategy" style="display:none; font-family:monospace; font-size:12.5px; color:var(--text-muted); margin-top:14px;"></div>
-    <ol id="ask-results" style="list-style:none; padding:0; margin:10px 0 0;"></ol>
+    <div id="ask-strategy" aria-live="polite" style="display:none; font-family:monospace; font-size:12.5px; color:var(--text-muted); margin-top:14px;"></div>
+    <ol id="ask-results" role="list" style="list-style:none; padding:0; margin:10px 0 0;"></ol>
     <p style="font-size:13px; color:var(--text-muted); margin-top:14px;">
       This page demonstrates the <strong>retrieval</strong> half. The grounded, cited <strong>synthesis</strong> half
       runs in the repo CLI with a free Gemini key or a Claude key —

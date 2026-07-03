@@ -13,7 +13,7 @@ const {
   title,
   description = 'Track federal AI and machine learning contracts. Find who is winning AI work at DoD, DHS, NIH, NASA and more. Free, weekly updated.',
   canonical,
-  ogImage = '/og-default.svg',
+  ogImage = '/og-default.png',
   jsonLd,
 } = Astro.props;
 
@@ -51,6 +51,8 @@ const allSchemas = [orgSchema, ...extraSchemas];
     <meta property="og:description" content={description} />
     <meta property="og:url" content={url} />
     <meta property="og:image" content={new URL(ogImage, Astro.site).toString()} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
@@ -60,7 +62,8 @@ const allSchemas = [orgSchema, ...extraSchemas];
     <link rel="alternate" type="application/rss+xml" title="GovAI Contracts — Latest awards" href="/rss.xml" />
 
     {allSchemas.map((s) => (
-      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+      // <-escape keeps scraped contract text from closing the script tag (stored XSS)
+      <script type="application/ld+json" set:html={JSON.stringify(s).replace(/</g, '\\u003c')} />
     ))}
 
     <!-- Analytics intentionally absent: Plausible is paid and was never activated;

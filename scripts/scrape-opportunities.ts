@@ -242,7 +242,14 @@ function writeEmpty(reason: string): void {
 async function main(): Promise<void> {
   const apiKey = process.env.SAM_API_KEY;
   if (!apiKey) {
-    console.warn('[sam] SAM_API_KEY not set — writing empty opportunities dataset.');
+    // Never wipe a healthy published dataset just because the secret went missing
+    // (e.g. an expired/renamed repo secret) — that's a config failure, not empty data.
+    if (existsSync(OUT_PATH)) {
+      console.error('[sam] SAM_API_KEY not set — keeping the existing opportunities dataset untouched.');
+      if (process.env.CI) process.exit(1); // make the cron run red instead of silently publishing stale/no data
+      return;
+    }
+    console.warn('[sam] SAM_API_KEY not set — seeding an empty opportunities dataset (none exists yet).');
     writeEmpty('SAM_API_KEY not configured. Get a free key at https://sam.gov/data-services and set the SAM_API_KEY env var.');
     return;
   }
