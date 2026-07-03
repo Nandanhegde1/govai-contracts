@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T19:54:14.510Z",
-  "count": 676,
+  "generated_at": "2026-07-03T04:11:38.605Z",
+  "count": 679,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-02"
+    "end": "2026-07-03"
   },
   "contracts": [
     {
@@ -158,6 +158,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
+      "award_id": "W519TC25F0241",
+      "recipient": "BYTECUBED, LLC",
+      "recipient_slug": "bytecubed-llc",
+      "amount": 34571375.28,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "12MONTH BASE PERIOD 12MONTH OP. EST ACCELERATING DATA AND ARTIFICIAL INTELLIGENCE(ADA)INCIDENT RESPONSE(IR)TEAMS SUPPORT DATA DRIVEN DECISION MAKING TO SCALE DATA, ANALYTICS, AND AI AT THE CHIEF DIGITAL AND ARTIFICIAL INTELLIGENCE (AI) OFFICE (CDAO)",
+      "start_date": "2025-06-03",
+      "end_date": "2027-06-02",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "R423",
+      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
+      ]
+    },
+    {
       "id": "CONT_AWD_1333BJ24C00280005_1344_-NONE-_-NONE-",
       "award_id": "1333BJ24C00280005",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
@@ -219,28 +241,6 @@
       "pop_state": "WV",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W519TC25F0241_9700_W52P1J22G0174_9700",
-      "award_id": "W519TC25F0241",
-      "recipient": "BYTECUBED, LLC",
-      "recipient_slug": "bytecubed-llc",
-      "amount": 17601475.32,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "12MONTH BASE PERIOD 12MONTH OP. EST ACCELERATING DATA AND ARTIFICIAL INTELLIGENCE(ADA)INCIDENT RESPONSE(IR)TEAMS SUPPORT DATA DRIVEN DECISION MAKING TO SCALE DATA, ANALYTICS, AND AI AT THE CHIEF DIGITAL AND ARTIFICIAL INTELLIGENCE (AI) OFFICE (CDAO)",
-      "start_date": "2025-06-03",
-      "end_date": "2026-06-02",
-      "naics_code": "518210",
-      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
-      "psc_code": "R423",
-      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
       ]
     },
     {
@@ -1818,6 +1818,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_70CTD026C00000007_7012_-NONE-_-NONE-",
+      "award_id": "70CTD026C00000007",
+      "recipient": "STEAMPUNK, INC.",
+      "recipient_slug": "steampunk-inc",
+      "amount": 3696476.8,
+      "agency": "Department of Homeland Security",
+      "agency_slug": "department-of-homeland-security",
+      "sub_agency": "U.S. Immigration and Customs Enforcement",
+      "description": "THIS AWARD SUPPORTS THE IMMIGRATION AND CUSTOMS ENFORCEMENT, OFFICE OF THE CHIEF INFORMATION OFFICER THROUGH THE PROVISION OF SERVICES TO RAPIDLY DESIGN, DEVELOP, AND DELIVER MISSION-ALIGNED ARTIFICIAL INTELLIGENCE (AI) CAPABILITIES.",
+      "start_date": "2026-07-01",
+      "end_date": "2027-06-30",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
       "award_id": "75N97A26F10001",
       "recipient": "DELOITTE CONSULTING LLP",
@@ -2370,6 +2391,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX25FA054_9700_W911QX25DA011_9700",
+      "award_id": "W911QX25FA054",
+      "recipient": "SCALE AI, INC.",
+      "recipient_slug": "scale-ai-inc",
+      "amount": 2416184,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE SUPPORT FOR BASIC AND APPLIED RESEARCH OF THE ARMY RESEARCH LABORATORY",
+      "start_date": "2025-08-26",
+      "end_date": "2026-08-25",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W9128Z25C5002_9700_-NONE-_-NONE-",
       "award_id": "W9128Z25C5002",
       "recipient": "TRENCHANT ANALYTICS LLC",
@@ -2386,27 +2428,6 @@
       "psc_code": "7A20",
       "psc_desc": "IT AND TELECOM - APPLICATION DEVELOPMENT SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX25FA054_9700_W911QX25DA011_9700",
-      "award_id": "W911QX25FA054",
-      "recipient": "SCALE AI, INC.",
-      "recipient_slug": "scale-ai-inc",
-      "amount": 2316184,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE SUPPORT FOR BASIC AND APPLIED RESEARCH OF THE ARMY RESEARCH LABORATORY",
-      "start_date": "2025-08-26",
-      "end_date": "2026-08-25",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -3223,6 +3244,27 @@
       "psc_code": "R425",
       "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
       "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W5170126CA155_9700_-NONE-_-NONE-",
+      "award_id": "W5170126CA155",
+      "recipient": "PYTHO AI INC",
+      "recipient_slug": "pytho-ai-inc",
+      "amount": 1855923.3,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "A FUTURISTIC AGENTIC ARTIFICIAL INTELLIGENCE SYSTEM PURPOSE-BUILT TO PROCESS, FUSE, AND INTERPRET VAST, MULTIMODAL DATA STREAMS CONTINUOUSLY.",
+      "start_date": "2026-04-06",
+      "end_date": "2027-10-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -12593,6 +12635,27 @@
       "psc_code": "AJ12",
       "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
       "pop_state": "AZ",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_HC105026F0009_9700_HC105023D0003_9700",
+      "award_id": "HC105026F0009",
+      "recipient": "MICROSOFT CORPORATION",
+      "recipient_slug": "microsoft-corporation",
+      "amount": 97166.63,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Information Systems Agency",
+      "description": "DEFENSE INFORMATION SYSTEMS AGENCY (DISA) CONCIERGE ARTIFICIAL INTELLIGENCE-UNCLASSIFIED (DCAI-U)",
+      "start_date": "2026-04-06",
+      "end_date": "2027-03-31",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "DB10",
+      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
+      "pop_state": "PA",
       "matched_keywords": [
         "artificial intelligence"
       ]
