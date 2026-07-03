@@ -20,6 +20,10 @@
   },
   "devDependencies": {
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "wrangler": "^4.107.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -1,5 +1,7 @@
 # GovAI Contracts
 
+[![Retrieval eval](https://github.com/Nandanhegde1/govai-contracts/actions/workflows/eval.yml/badge.svg)](https://github.com/Nandanhegde1/govai-contracts/actions/workflows/eval.yml)
+
 A free, independent index of every U.S. federal **AI / ML / data-science** contract award and open opportunity.
 
 - **Live site:** https://govai-contracts.nandanhegde1096.workers.dev/

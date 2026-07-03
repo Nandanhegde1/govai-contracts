@@ -86,6 +86,13 @@ for (const g of gold) {
 console.log('\n===== RESULTS =====');
 console.log(`Retrieval recall@${K} (routed): ${retHits}/${retTotal} = ${((100 * retHits) / (retTotal || 1)).toFixed(0)}%`);
 console.log(`Retrieval recall@${K} (BM25 baseline): ${baseHits}/${retTotal} = ${((100 * baseHits) / (retTotal || 1)).toFixed(0)}%`);
+
+// CI gate: fail the build if routed recall regresses below the measured floor.
+const MIN_HITS = Number(process.env.EVAL_MIN_RECALL_HITS ?? 12);
+if (retHits < MIN_HITS) {
+  console.error(`\nEVAL GATE FAILED: routed recall ${retHits}/${retTotal} fell below the ${MIN_HITS}/${retTotal} floor.`);
+  process.exit(1);
+}
 if (hasKey) {
   console.log(`Answer accuracy:      ${ansCorrect}/${ansTotal} = ${((100 * ansCorrect) / (ansTotal || 1)).toFixed(0)}%`);
   const cost = totalIn * PRICE_IN + totalOut * PRICE_OUT;
