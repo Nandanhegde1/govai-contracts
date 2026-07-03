@@ -63,7 +63,9 @@ const allSchemas = [orgSchema, ...extraSchemas];
       <script type="application/ld+json" set:html={JSON.stringify(s)} />
     ))}
 
-    <script defer data-domain="govai-contracts.nandanhegde1096.workers.dev" src="https://plausible.io/js/script.js"></script>
+    <!-- Analytics intentionally absent: Plausible is paid and was never activated;
+         the dead script cost a blocked request on every page. Re-add a provider
+         here once one is chosen (see repo issues). -->
   </head>
   <body>
     <header class="site-header">
