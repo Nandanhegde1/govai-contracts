@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-03T19:53:17.789Z",
-  "count": 679,
+  "generated_at": "2026-07-05T04:32:20.258Z",
+  "count": 680,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-03"
+    "end": "2026-07-05"
   },
   "contracts": [
     {
@@ -1372,6 +1372,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875021C1509_9700_-NONE-_-NONE-",
+      "award_id": "FA875021C1509",
+      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
+      "recipient_slug": "georgia-tech-applied-research-corp",
+      "amount": 4971495,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING-ENABLED AUTONOMOUS",
+      "start_date": "2021-04-20",
+      "end_date": "2026-04-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0055_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0055",
       "recipient": "KITWARE INC",
@@ -1493,28 +1515,6 @@
       "psc_code": "AC12",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875021C1509_9700_-NONE-_-NONE-",
-      "award_id": "FA875021C1509",
-      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
-      "recipient_slug": "georgia-tech-applied-research-corp",
-      "amount": 4671495,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING-ENABLED AUTONOMOUS",
-      "start_date": "2021-04-20",
-      "end_date": "2026-04-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "GA",
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
@@ -4752,6 +4752,28 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W5170126CA076_9700_-NONE-_-NONE-",
+      "award_id": "W5170126CA076",
+      "recipient": "R-DEX SYSTEMS, INC.",
+      "recipient_slug": "r-dex-systems-inc",
+      "amount": 1362986.26,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "SMALL BUSINESS TECHNOLOGY TRANSFER (STTR) PHASE II, TOPIC A24B-T020, DRONE SWARM DETECTION USING ARTIFICIAL INTELLIGENCE BASED ON ULTRAFAST NEURAL NETWORKS. THIS CONTINUES THE EFFORT CONDUCTED UNDER PHASE I STTR W912CH-25-C-0043.",
+      "start_date": "2026-04-20",
+      "end_date": "2028-04-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "neural network"
       ]
     },
     {
