@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-06T20:15:32.965Z",
-  "count": 680,
+  "generated_at": "2026-07-07T04:18:23.972Z",
+  "count": 682,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-06"
+    "end": "2026-07-07"
   },
   "contracts": [
     {
@@ -3609,6 +3609,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875026CB005_9700_-NONE-_-NONE-",
+      "award_id": "FA875026CB005",
+      "recipient": "COHERE SOLUTIONS LLC",
+      "recipient_slug": "cohere-solutions-llc",
+      "amount": 1799804,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "EVALUATING DATA STRATEGIES IN TRAINING ARTIFICIAL INTELLIGENCE (AI) SOLUTIONS FOR SPACE COMMAND AND CONTROL (C2)",
+      "start_date": "2026-04-07",
+      "end_date": "2028-04-06",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P1099_9700_-NONE-_-NONE-",
       "award_id": "FA864924P1099",
       "recipient": "ADVANCED SIMULATION RESEARCH INC",
@@ -3916,7 +3937,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "LARGE LANGUAGE MODEL (LLM)-BASED ANALYSIS AND STRUCTURING OF MULTI-MODAL COMMAND, CONTROL, COMMUNICATIONS, COMPUTERS (C4) DATA WITH EXPLAINABLE REASONING FROM TRUSTWORTHY ADAPTATION AND GENERATION",
       "start_date": "2024-08-27",
-      "end_date": "2026-08-27",
+      "end_date": "2026-11-26",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
@@ -8018,6 +8039,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB044_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB044",
+      "recipient": "SRC INC",
+      "recipient_slug": "src-inc",
+      "amount": 718000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "GROOVY CHAMELEON, DISCOVER, DEVELOP NOVEL ALGORITHMS, TECHNIQUES THAT ENABLE ROBUST, RESILIENT ARTIFICIAL INTELLIGENCE, MACHINE LEARNING APPLICATIONS FOR INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE MISSIONS UTILIZING MULTIPLE SENSOR MODALITIES.",
+      "start_date": "2025-06-03",
+      "end_date": "2028-08-02",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_2031ZB25F00032_2041_47QTCA18D008L_4732",
       "award_id": "2031ZB25F00032",
       "recipient": "GARTNER, INC.",
@@ -8352,28 +8395,6 @@
       "pop_state": "PA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB044_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB044",
-      "recipient": "SRC INC",
-      "recipient_slug": "src-inc",
-      "amount": 545000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "GROOVY CHAMELEON, DISCOVER, DEVELOP NOVEL ALGORITHMS, TECHNIQUES THAT ENABLE ROBUST, RESILIENT ARTIFICIAL INTELLIGENCE, MACHINE LEARNING APPLICATIONS FOR INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE MISSIONS UTILIZING MULTIPLE SENSOR MODALITIES.",
-      "start_date": "2025-06-03",
-      "end_date": "2028-08-02",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -8945,6 +8966,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "neural network"
+      ]
+    },
+    {
+      "id": "CONT_AWD_H9224026FE195_9700_W519TC23G0023_9700",
+      "award_id": "H9224026FE195",
+      "recipient": "HELLOGOV LLC",
+      "recipient_slug": "hellogov-llc",
+      "amount": 369159.76,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "U.S. Special Operations Command",
+      "description": "NSW SETA SUPPORT; ENGINEERING FTE UNDER THE ARTIFICIAL INTELLIGENCE (AI) TALENT 2.0 BASIC ORDERING AGREEMENT (BOA) FOR NAVAL SPECIAL WARFARE COMMAND (NSWC) SYSTEMS ENGINEERING AND TECHNICAL ASSISTANCE (SETA) SUPPORT.",
+      "start_date": "2026-03-09",
+      "end_date": "2027-03-08",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
