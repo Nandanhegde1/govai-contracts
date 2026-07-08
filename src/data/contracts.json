@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-07T20:17:07.018Z",
+  "generated_at": "2026-07-08T03:47:53.432Z",
   "count": 682,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-07"
+    "end": "2026-07-08"
   },
   "contracts": [
     {
@@ -307,6 +307,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
+      "award_id": "HQ003425CE092",
+      "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
+      "recipient_slug": "leisnoi-professional-services-llc",
+      "amount": 16380602.45,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Washington Headquarters Services",
+      "description": "THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE INFORMATION TECHNOLOGY, ARTIFICIAL INTELLIGENCE, AND MACHINE LEARNING PROGRAM SUPPORT SERVICES.",
+      "start_date": "2025-09-11",
+      "end_date": "2026-05-10",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001124C0310_9700_-NONE-_-NONE-",
       "award_id": "HR001124C0310",
       "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
@@ -346,28 +368,6 @@
       "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
-      "award_id": "HQ003425CE092",
-      "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
-      "recipient_slug": "leisnoi-professional-services-llc",
-      "amount": 14358632.8,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Washington Headquarters Services",
-      "description": "THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE INFORMATION TECHNOLOGY, ARTIFICIAL INTELLIGENCE, AND MACHINE LEARNING PROGRAM SUPPORT SERVICES.",
-      "start_date": "2025-09-11",
-      "end_date": "2026-04-10",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
