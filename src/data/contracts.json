@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T19:57:19.961Z",
-  "count": 682,
+  "generated_at": "2026-07-09T04:21:07.523Z",
+  "count": 683,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-08"
+    "end": "2026-07-09"
   },
   "contracts": [
     {
@@ -2646,28 +2646,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA865825CB001_9700_-NONE-_-NONE-",
-      "award_id": "FA865825CB001",
-      "recipient": "UNIVERSITY OF FLORIDA",
-      "recipient_slug": "university-of-florida",
-      "amount": 2036676.5,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "CONTRACT ESTABLISHING SUPPORT FROM THE UNIVERSITY OF FLORIDA (UF) TO ASSESS WEAPON EFFICACY TO EXPAND CAPABILITIES OF MACHINE LEARNING (ML) TECHNOLOGIES ON CURRENT OPERATIONS TO RUN EXPERIMENTS AND TEST ON ARTIFICIAL INTELLIGENCE (AI) SYSTEMS.",
-      "start_date": "2025-04-01",
-      "end_date": "2028-12-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "1420",
-      "psc_desc": "GUIDED MISSILE COMPONENTS",
-      "pop_state": "FL",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA864922P1090_9700_-NONE-_-NONE-",
       "award_id": "FA864922P1090",
       "recipient": "WALLAROO LABS INC",
@@ -3373,6 +3351,28 @@
       "pop_state": "MN",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA865825CB001_9700_-NONE-_-NONE-",
+      "award_id": "FA865825CB001",
+      "recipient": "UNIVERSITY OF FLORIDA",
+      "recipient_slug": "university-of-florida",
+      "amount": 1814838.25,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "CONTRACT ESTABLISHING SUPPORT FROM THE UNIVERSITY OF FLORIDA (UF) TO ASSESS WEAPON EFFICACY TO EXPAND CAPABILITIES OF MACHINE LEARNING (ML) TECHNOLOGIES ON CURRENT OPERATIONS TO RUN EXPERIMENTS AND TEST ON ARTIFICIAL INTELLIGENCE (AI) SYSTEMS.",
+      "start_date": "2025-04-01",
+      "end_date": "2028-12-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "1420",
+      "psc_desc": "GUIDED MISSILE COMPONENTS",
+      "pop_state": "FL",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -4730,6 +4730,28 @@
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "FL",
       "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911SR26CA008_9700_-NONE-_-NONE-",
+      "award_id": "W911SR26CA008",
+      "recipient": "INTELLISENSE SYSTEMS INC",
+      "recipient_slug": "intellisense-systems-inc",
+      "amount": 1397158.8,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "THIS REQUIREMENT IS TO DEVELOP AND DEMONSTRATE A MULTIPLEX AGENT/CHEMICAL IDENTIFICATION DETECTOR BASED ON THE COMBINATION OF AN INFRARED CAVITY RING-DOWN SPECTROSCOPY TECHNIQUE AND ADVANCED ARTIFICIAL INTELLIGENCE/MACHINE LEARNING ALGORITHMS.",
+      "start_date": "2026-04-10",
+      "end_date": "2028-04-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence",
         "machine learning"
       ]
     },
@@ -7061,6 +7083,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB062_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB062",
+      "recipient": "EXPEDITION TECHNOLOGY, INC.",
+      "recipient_slug": "expedition-technology-inc",
+      "amount": 1082019,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARES. THE EFFORT WILL ADDRESS CRITICAL TECHNICAL GAPS FOR DAF CAPABILITY REQUIREMENTS THROUGH THE DEVELOPMENT OF NOVEL TECHNIQUES IN ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING.",
+      "start_date": "2025-07-16",
+      "end_date": "2027-09-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_47QACA26F0068_4732_47QTSA25A0030_4732",
       "award_id": "47QACA26F0068",
       "recipient": "EXCELLA, LLC",
@@ -8310,28 +8354,6 @@
       "pop_state": "AL",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB062_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB062",
-      "recipient": "EXPEDITION TECHNOLOGY, INC.",
-      "recipient_slug": "expedition-technology-inc",
-      "amount": 582019,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "ARES. THE EFFORT WILL ADDRESS CRITICAL TECHNICAL GAPS FOR DAF CAPABILITY REQUIREMENTS THROUGH THE DEVELOPMENT OF NOVEL TECHNIQUES IN ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING.",
-      "start_date": "2025-07-16",
-      "end_date": "2027-09-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
