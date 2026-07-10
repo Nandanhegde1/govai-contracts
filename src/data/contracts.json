@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T20:11:15.125Z",
+  "generated_at": "2026-07-10T04:18:37.519Z",
   "count": 683,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-09"
+    "end": "2026-07-10"
   },
   "contracts": [
     {
@@ -2072,6 +2072,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001125CE027_9700_-NONE-_-NONE-",
+      "award_id": "HR001125CE027",
+      "recipient": "PERATON LABS INC",
+      "recipient_slug": "peraton-labs-inc",
+      "amount": 3014687,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "MACHINE LEARNING AND OPTIMIZATION-GUIDED COMPILERS FOR HETEROGENEOUS ARCHITECTURES (MOCHA)",
+      "start_date": "2025-08-05",
+      "end_date": "2028-07-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NJ",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864126CB001_9700_-NONE-_-NONE-",
       "award_id": "FA864126CB001",
       "recipient": "ILLUMINATION WORKS, LLC",
@@ -2178,6 +2199,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875024CB037_9700_-NONE-_-NONE-",
+      "award_id": "FA875024CB037",
+      "recipient": "CACI, INC. - FEDERAL",
+      "recipient_slug": "caci-inc-federal",
+      "amount": 2794664,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "PLANNING AND ARTIFICIAL INTELLIGENCE MODEL SHARING",
+      "start_date": "2024-05-21",
+      "end_date": "2028-07-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W911QX20F0130_9700_W911QX18D0001_9700",
       "award_id": "W911QX20F0130",
       "recipient": "PARSONS GOVERNMENT SERVICES INC.",
@@ -2218,27 +2260,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "deep learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875024CB037_9700_-NONE-_-NONE-",
-      "award_id": "FA875024CB037",
-      "recipient": "CACI, INC. - FEDERAL",
-      "recipient_slug": "caci-inc-federal",
-      "amount": 2659664,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "PLANNING AND ARTIFICIAL INTELLIGENCE MODEL SHARING",
-      "start_date": "2024-05-21",
-      "end_date": "2028-07-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -2391,6 +2412,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_SP470124F0355_9700_SP470124D0004_9700",
+      "award_id": "SP470124F0355",
+      "recipient": "SCALE AI, INC.",
+      "recipient_slug": "scale-ai-inc",
+      "amount": 2473818,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Logistics Agency",
+      "description": "BASE YEAR TASK ORDER AWARDED TO SCALE AI UNDER THEIR INDEFINITE DELIVERY INDEFINITE QUANTITY IDIQ FOR EMERGENT IVBAA0001-22 HACKATHON AMENDMENT 15 FOR LARGE LANGUAGE MODELS (LLM) FOR THE DEFENSE LOGISTICS AGENCY (DLA)",
+      "start_date": "2024-09-27",
+      "end_date": "2026-10-08",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "large language model",
+        "ai"
+      ]
+    },
+    {
       "id": "CONT_AWD_W911QX25FA054_9700_W911QX25DA011_9700",
       "award_id": "W911QX25FA054",
       "recipient": "SCALE AI, INC.",
@@ -2498,28 +2541,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_SP470124F0355_9700_SP470124D0004_9700",
-      "award_id": "SP470124F0355",
-      "recipient": "SCALE AI, INC.",
-      "recipient_slug": "scale-ai-inc",
-      "amount": 2273818,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Logistics Agency",
-      "description": "BASE YEAR TASK ORDER AWARDED TO SCALE AI UNDER THEIR INDEFINITE DELIVERY INDEFINITE QUANTITY IDIQ FOR EMERGENT IVBAA0001-22 HACKATHON AMENDMENT 15 FOR LARGE LANGUAGE MODELS (LLM) FOR THE DEFENSE LOGISTICS AGENCY (DLA)",
-      "start_date": "2024-09-27",
-      "end_date": "2026-04-09",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "large language model",
-        "ai"
-      ]
-    },
-    {
       "id": "CONT_AWD_HR001125CE038_9700_-NONE-_-NONE-",
       "award_id": "HR001125CE038",
       "recipient": "AARNO LABS LLC",
@@ -2557,27 +2578,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "DC",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001125CE027_9700_-NONE-_-NONE-",
-      "award_id": "HR001125CE027",
-      "recipient": "PERATON LABS INC",
-      "recipient_slug": "peraton-labs-inc",
-      "amount": 2151684,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "MACHINE LEARNING AND OPTIMIZATION-GUIDED COMPILERS FOR HETEROGENEOUS ARCHITECTURES (MOCHA)",
-      "start_date": "2025-08-05",
-      "end_date": "2028-07-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NJ",
       "matched_keywords": [
         "machine learning"
       ]
@@ -8483,6 +8483,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_68HERC25C0007_6800_-NONE-_-NONE-",
+      "award_id": "68HERC25C0007",
+      "recipient": "VALIS INSIGHTS, INC.",
+      "recipient_slug": "valis-insights-inc",
+      "amount": 500000,
+      "agency": "Environmental Protection Agency",
+      "agency_slug": "environmental-protection-agency",
+      "sub_agency": "Environmental Protection Agency",
+      "description": "ENHANCED EFFICIENCY OF UBC RECYCLING POWERED BY ARTIFICIAL INTELLIGENCE",
+      "start_date": "2024-10-18",
+      "end_date": "2027-10-17",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_68HERC25C0004_6800_-NONE-_-NONE-",
       "award_id": "68HERC25C0004",
       "recipient": "HOLOCHIP CORP",
@@ -8880,27 +8901,6 @@
       "psc_code": "7F20",
       "psc_desc": "IT AND TELECOM - IT MANAGEMENT TOOLS/PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_68HERC25C0007_6800_-NONE-_-NONE-",
-      "award_id": "68HERC25C0007",
-      "recipient": "VALIS INSIGHTS, INC.",
-      "recipient_slug": "valis-insights-inc",
-      "amount": 400000,
-      "agency": "Environmental Protection Agency",
-      "agency_slug": "environmental-protection-agency",
-      "sub_agency": "Environmental Protection Agency",
-      "description": "ENHANCED EFFICIENCY OF UBC RECYCLING POWERED BY ARTIFICIAL INTELLIGENCE",
-      "start_date": "2024-10-18",
-      "end_date": "2026-10-17",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "MA",
       "matched_keywords": [
         "artificial intelligence"
       ]
