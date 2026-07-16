@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-15T19:38:10.273Z",
+  "generated_at": "2026-07-16T03:41:10.495Z",
   "count": 683,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-15"
+    "end": "2026-07-16"
   },
   "contracts": [
     {
@@ -4201,6 +4201,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001126CE030_9700_-NONE-_-NONE-",
+      "award_id": "HR001126CE030",
+      "recipient": "BAE SYSTEMS INFORMATION & ELECTRONIC SYSTEMS INTEGRATION INC",
+      "recipient_slug": "bae-systems-information-electronic-systems-integration-inc",
+      "amount": 1647757,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "SECURING ARTIFICIAL INTELLIGENCE FOR BATTLEFIELD EFFECTIVE ROBUSTNESS",
+      "start_date": "2026-02-01",
+      "end_date": "2028-01-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W81XWH21C0081_9700_-NONE-_-NONE-",
       "award_id": "W81XWH21C0081",
       "recipient": "SPECTRAL MD, INC.",
@@ -4644,27 +4665,6 @@
       "psc_code": "AC13",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001126CE030_9700_-NONE-_-NONE-",
-      "award_id": "HR001126CE030",
-      "recipient": "BAE SYSTEMS INFORMATION & ELECTRONIC SYSTEMS INTEGRATION INC",
-      "recipient_slug": "bae-systems-information-electronic-systems-integration-inc",
-      "amount": 1446679,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "SECURING ARTIFICIAL INTELLIGENCE FOR BATTLEFIELD EFFECTIVE ROBUSTNESS",
-      "start_date": "2026-02-01",
-      "end_date": "2028-01-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NH",
       "matched_keywords": [
         "artificial intelligence"
       ]
