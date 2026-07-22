@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-21T19:54:14.874Z",
+  "generated_at": "2026-07-22T03:50:13.746Z",
   "count": 685,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-21"
+    "end": "2026-07-22"
   },
   "contracts": [
     {
@@ -2008,6 +2008,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875024CB037_9700_-NONE-_-NONE-",
+      "award_id": "FA875024CB037",
+      "recipient": "CACI, INC. - FEDERAL",
+      "recipient_slug": "caci-inc-federal",
+      "amount": 3125964,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "PLANNING AND ARTIFICIAL INTELLIGENCE MODEL SHARING",
+      "start_date": "2024-05-21",
+      "end_date": "2028-07-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W911QX23C0003_9700_-NONE-_-NONE-",
       "award_id": "W911QX23C0003",
       "recipient": "CALNET INC",
@@ -2218,27 +2239,6 @@
       "pop_state": "MA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875024CB037_9700_-NONE-_-NONE-",
-      "award_id": "FA875024CB037",
-      "recipient": "CACI, INC. - FEDERAL",
-      "recipient_slug": "caci-inc-federal",
-      "amount": 2794664,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "PLANNING AND ARTIFICIAL INTELLIGENCE MODEL SHARING",
-      "start_date": "2024-05-21",
-      "end_date": "2028-07-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -8347,7 +8347,7 @@
       "sub_agency": "Departmental Offices",
       "description": "SBIR FAST TRACK ADVANCING MULTIMODAL INCLUSION AND GENERATIVE ADAPTATION ON ENHANCING AUGMENTATIVE AND ALTERNATIVE COMMUNICATION (AMIGA-AAC) FOR PEOPLE WITH AUTISM USING LARGE LANGUAGE MODELS",
       "start_date": "2026-02-26",
-      "end_date": "2028-08-31",
+      "end_date": "2028-09-30",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AN13",
@@ -9521,6 +9521,27 @@
       "pop_state": "CA",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_80NM0025F7022_8000_80NM0018D0004_8000",
+      "award_id": "80NM0025F7022",
+      "recipient": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "recipient_slug": "california-institute-of-technology",
+      "amount": 275000,
+      "agency": "National Aeronautics and Space Administration",
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "sub_agency": "National Aeronautics and Space Administration",
+      "description": "JPL SUPPORT FOR ARTIFICIAL INTELLIGENCE IN HELIOPHYSICS (70-223756)",
+      "start_date": "2025-01-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AR12",
+      "psc_desc": "SPACE R&D SERVICES; SPACE FLIGHT, RESEARCH AND SUPPORTING ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -12554,27 +12575,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_80NM0025F7022_8000_80NM0018D0004_8000",
-      "award_id": "80NM0025F7022",
-      "recipient": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-      "recipient_slug": "california-institute-of-technology",
-      "amount": 100000,
-      "agency": "National Aeronautics and Space Administration",
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "sub_agency": "National Aeronautics and Space Administration",
-      "description": "JPL SUPPORT FOR ARTIFICIAL INTELLIGENCE IN HELIOPHYSICS (70-223756)",
-      "start_date": "2025-01-30",
-      "end_date": "2026-09-30",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AR12",
-      "psc_desc": "SPACE R&D SERVICES; SPACE FLIGHT, RESEARCH AND SUPPORTING ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
