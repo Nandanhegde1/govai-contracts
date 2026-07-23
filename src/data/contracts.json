@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-22T19:46:45.864Z",
-  "count": 685,
+  "generated_at": "2026-07-23T03:48:09.583Z",
+  "count": 686,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-22"
+    "end": "2026-07-23"
   },
   "contracts": [
     {
@@ -7148,6 +7148,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HDTRA123C0029_9700_-NONE-_-NONE-",
+      "award_id": "HDTRA123C0029",
+      "recipient": "VERUS RESEARCH, LLC",
+      "recipient_slug": "verus-research-llc",
+      "amount": 1081878,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Contract Management Agency",
+      "description": "DEVELOPMENT OF EFFICIENT MACHINE LEARNING ALGORITHMS FOR INFORMATION FUSION FROM RADIATION DETECTORS",
+      "start_date": "2023-07-15",
+      "end_date": "2025-07-14",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "NM",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_47QACA26F0068_4732_47QTSA25A0030_4732",
       "award_id": "47QACA26F0068",
       "recipient": "EXCELLA, LLC",
@@ -8274,6 +8295,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875026CB011_9700_-NONE-_-NONE-",
+      "award_id": "FA875026CB011",
+      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
+      "recipient_slug": "black-river-systems-company-inc",
+      "amount": 611476,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "RAPID AGENTIC BATTLE-BREAKDOWN AND INTELLIGENT TARGETING (RABBIT) TO INTEGRATE NOVEL AGENTIC ARTIFICIAL INTELLIGENCE (AI) WORKFLOWS INTO THE AIR FORCE FIND, FIX, TRACK, TARGET, ENGAGE, ASSESS (F2T2EA) KILL CHAIN.",
+      "start_date": "2026-04-17",
+      "end_date": "2028-11-17",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NM0019F0009_8000_80NM0018D0004_8000",
       "award_id": "80NM0019F0009",
       "recipient": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
@@ -8458,27 +8500,6 @@
       "psc_code": "R423",
       "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
       "pop_state": "OH",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875026CB011_9700_-NONE-_-NONE-",
-      "award_id": "FA875026CB011",
-      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
-      "recipient_slug": "black-river-systems-company-inc",
-      "amount": 511476,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "RAPID AGENTIC BATTLE-BREAKDOWN AND INTELLIGENT TARGETING (RABBIT) TO INTEGRATE NOVEL AGENTIC ARTIFICIAL INTELLIGENCE (AI) WORKFLOWS INTO THE AIR FORCE FIND, FIX, TRACK, TARGET, ENGAGE, ASSESS (F2T2EA) KILL CHAIN.",
-      "start_date": "2026-04-17",
-      "end_date": "2028-11-17",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
       ]
