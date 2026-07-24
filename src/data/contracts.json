@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T19:48:14.299Z",
-  "count": 686,
+  "generated_at": "2026-07-24T03:46:59.772Z",
+  "count": 687,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-23"
+    "end": "2026-07-24"
   },
   "contracts": [
     {
@@ -1362,7 +1362,7 @@
       "sub_agency": "Department of Veterans Affairs",
       "description": "MEDICAL DISABILITY EXAMS (MDE) ACCEPTABLE CLINICAL EVIDENCE (ACE) ARTIFICIAL INTELLIGENCE (AI) PROOF-OF-CONCEPT PILOT",
       "start_date": "2025-08-04",
-      "end_date": "2026-08-03",
+      "end_date": "2026-10-02",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DB01",
@@ -2285,6 +2285,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_75N93026F00001_7529_75N93023D00001_7529",
+      "award_id": "75N93026F00001",
+      "recipient": "ADVANCED BIOSCIENCE LABORATORIES, INC.",
+      "recipient_slug": "advanced-bioscience-laboratories-inc",
+      "amount": 2674036,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "National Institutes of Health",
+      "description": "SCALABLE, RELIABLE ARTIFICIAL INTELLIGENCE (AI)/MACHINE LEARNING (ML)- DRIVEN INTEGRATION AND INTERROGATION TO MODERNIZE THE STEP PEDIATRIC EXCIPIENT DATABASE",
+      "start_date": "2026-08-01",
+      "end_date": "2027-07-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AN11",
+      "psc_desc": "HEALTH R&D SERVICES; HEALTH CARE SERVICES; BASIC RESEARCH",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_75R60225F80058_7526_HHSN316201200089W_7529",
       "award_id": "75R60225F80058",
       "recipient": "MINDPETAL SOFTWARE SOLUTIONS, INC AND LINKVISUM CONSULTING GROUP, INC.",
@@ -2301,6 +2323,27 @@
       "psc_code": "7A21",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_SP470125C0049_9700_-NONE-_-NONE-",
+      "award_id": "SP470125C0049",
+      "recipient": "HARRISBURG UNIVERSITY OF SCIENCE & TECHNOLOGY",
+      "recipient_slug": "harrisburg-university-of-science-technology",
+      "amount": 2656802.1,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Logistics Agency",
+      "description": "ENABLING MANUFACTURING, RE-MANUFACTURING, REPAIR AND EXPEDITIONARY MANUFACTURING THROUGH ARTIFICIAL INTELLIGENCE ASSISTED DIGITAL PROCESSES",
+      "start_date": "2025-04-02",
+      "end_date": "2027-03-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "PA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2325,27 +2368,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_SP470125C0049_9700_-NONE-_-NONE-",
-      "award_id": "SP470125C0049",
-      "recipient": "HARRISBURG UNIVERSITY OF SCIENCE & TECHNOLOGY",
-      "recipient_slug": "harrisburg-university-of-science-technology",
-      "amount": 2600000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Logistics Agency",
-      "description": "ENABLING MANUFACTURING, RE-MANUFACTURING, REPAIR AND EXPEDITIONARY MANUFACTURING THROUGH ARTIFICIAL INTELLIGENCE ASSISTED DIGITAL PROCESSES",
-      "start_date": "2025-04-02",
-      "end_date": "2027-03-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
