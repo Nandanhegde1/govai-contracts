@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-25T19:36:53.477Z",
-  "count": 687,
+  "generated_at": "2026-07-26T03:58:52.334Z",
+  "count": 688,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-25"
+    "end": "2026-07-26"
   },
   "contracts": [
     {
@@ -4178,6 +4178,28 @@
       "pop_state": "AZ",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_1305M426F0023_1330_1333LB24A00000001_1323",
+      "award_id": "1305M426F0023",
+      "recipient": "FOUR POINTS TECHNOLOGY, L.L.C.",
+      "recipient_slug": "four-points-technology-l-l-c",
+      "amount": 1676328.5,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Oceanic and Atmospheric Administration",
+      "description": "NMFS ARTIFICIAL INTELLIGENCE & AGENTIC AI",
+      "start_date": "2026-07-23",
+      "end_date": "2027-07-22",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DG01",
+      "psc_desc": "IT AND TELECOM - NETWORK SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
       ]
     },
     {
