@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-27T19:57:44.886Z",
-  "count": 688,
+  "generated_at": "2026-07-28T03:40:26.997Z",
+  "count": 689,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-27"
+    "end": "2026-07-28"
   },
   "contracts": [
     {
@@ -5446,7 +5446,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "BUILDING ARTIFICIAL INTELLIGENCE POWERED COMPETENCY ASSESSMENT AND CAREER MANAGEMENT TOOLS FOR THE AIR FORCES ENGINEERING AND TECHNICAL WORKFORCE",
       "start_date": "2024-08-13",
-      "end_date": "2026-05-13",
+      "end_date": "2026-08-13",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -9220,6 +9220,27 @@
       "psc_code": "AC12",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "PA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_N6133126P0100_9700_-NONE-_-NONE-",
+      "award_id": "N6133126P0100",
+      "recipient": "SNORKEL AI INC",
+      "recipient_slug": "snorkel-ai-inc",
+      "amount": 349999.98,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Navy",
+      "description": "ARTIFICIAL INTELLIGENCE SOFTWARE AND SUPPORT SERVICES TO ENABLE ANALYSIS OF LARGE DATASETS AND IMPROVE DECISION-MAKING CAPABILITIES.",
+      "start_date": "2026-04-29",
+      "end_date": "2026-11-05",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA10",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
+      "pop_state": "FL",
       "matched_keywords": [
         "artificial intelligence"
       ]
