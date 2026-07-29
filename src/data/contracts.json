@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T19:54:44.645Z",
+  "generated_at": "2026-07-29T03:44:04.030Z",
   "count": 689,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-28"
+    "end": "2026-07-29"
   },
   "contracts": [
     {
@@ -198,6 +198,28 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
+      "award_id": "W909MY26F0009",
+      "recipient": "ENLIGHTEN IT CONSULTING LLC",
+      "recipient_slug": "enlighten-it-consulting-llc",
+      "amount": 25745811.03,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
+      "start_date": "2026-03-01",
+      "end_date": "2027-02-28",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DJ01",
+      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -856,28 +878,6 @@
       "psc_desc": "R&D- DEFENSE OTHER: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
       "pop_state": "VA",
       "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
-      "award_id": "W909MY26F0009",
-      "recipient": "ENLIGHTEN IT CONSULTING LLC",
-      "recipient_slug": "enlighten-it-consulting-llc",
-      "amount": 7189386.4,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
-      "start_date": "2026-03-01",
-      "end_date": "2027-02-28",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DJ01",
-      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
         "machine learning"
       ]
     },
