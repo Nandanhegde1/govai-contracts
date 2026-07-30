@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-29T19:46:53.444Z",
-  "count": 689,
+  "generated_at": "2026-07-30T03:32:48.338Z",
+  "count": 690,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-29"
+    "end": "2026-07-30"
   },
   "contracts": [
     {
@@ -2285,6 +2285,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA237726CB019_9700_-NONE-_-NONE-",
+      "award_id": "FA237726CB019",
+      "recipient": "ETEGENT TECHNOLOGIES, LTD.",
+      "recipient_slug": "etegent-technologies-ltd",
+      "amount": 2700000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "GEOSPATIAL AUTOMATION USING MACHINE LEARNING FOR ELECTRO-OPTICAL AND SYNTHETIC APERTURE RADAR (GAMES)",
+      "start_date": "2026-04-30",
+      "end_date": "2031-04-29",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_75N93026F00001_7529_75N93023D00001_7529",
       "award_id": "75N93026F00001",
       "recipient": "ADVANCED BIOSCIENCE LABORATORIES, INC.",
@@ -2520,6 +2541,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001126CE029_9700_-NONE-_-NONE-",
+      "award_id": "HR001126CE029",
+      "recipient": "LOCKHEED MARTIN CORPORATION",
+      "recipient_slug": "lockheed-martin-corporation",
+      "amount": 2313263,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "SECURING ARTIFICIAL INTELLIGENCE FOR BATTLEFIELD EFFECTIVE ROBUSTNESS (SABER)",
+      "start_date": "2026-02-01",
+      "end_date": "2028-01-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_75FCMC26C0007_7530_-NONE-_-NONE-",
       "award_id": "75FCMC26C0007",
       "recipient": "EPATHUSA, INC.",
@@ -2559,27 +2601,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001126CE029_9700_-NONE-_-NONE-",
-      "award_id": "HR001126CE029",
-      "recipient": "LOCKHEED MARTIN CORPORATION",
-      "recipient_slug": "lockheed-martin-corporation",
-      "amount": 2278726,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "SECURING ARTIFICIAL INTELLIGENCE FOR BATTLEFIELD EFFECTIVE ROBUSTNESS (SABER)",
-      "start_date": "2026-02-01",
-      "end_date": "2028-01-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NJ",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -3663,7 +3684,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "EVALUATING DATA STRATEGIES IN TRAINING ARTIFICIAL INTELLIGENCE (AI) SOLUTIONS FOR SPACE COMMAND AND CONTROL (C2)",
       "start_date": "2026-04-07",
-      "end_date": "2028-04-06",
+      "end_date": "2028-04-07",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
