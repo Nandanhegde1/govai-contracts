@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-30T19:54:45.247Z",
+  "generated_at": "2026-07-31T03:53:25.840Z",
   "count": 690,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-30"
+    "end": "2026-07-31"
   },
   "contracts": [
     {
@@ -2541,6 +2541,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W56KGU24C0023_9700_-NONE-_-NONE-",
+      "award_id": "W56KGU24C0023",
+      "recipient": "SYSTEMS & TECHNOLOGY RESEARCH LLC",
+      "recipient_slug": "systems-technology-research-llc",
+      "amount": 2392843,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CPFF BAA AWARD FOR COLLABORATIVE ARTIFICIAL INTELLIGENCE TASK EXECUTION ENGINE FOR DISTRIBUTED ELECTRONIC WARFARE (CAITEE-DEW)",
+      "start_date": "2024-05-14",
+      "end_date": "2027-01-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001126CE029_9700_-NONE-_-NONE-",
       "award_id": "HR001126CE029",
       "recipient": "LOCKHEED MARTIN CORPORATION",
@@ -4221,27 +4242,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "ai"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W56KGU24C0023_9700_-NONE-_-NONE-",
-      "award_id": "W56KGU24C0023",
-      "recipient": "SYSTEMS & TECHNOLOGY RESEARCH LLC",
-      "recipient_slug": "systems-technology-research-llc",
-      "amount": 1669519,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CPFF BAA AWARD FOR COLLABORATIVE ARTIFICIAL INTELLIGENCE TASK EXECUTION ENGINE FOR DISTRIBUTED ELECTRONIC WARFARE (CAITEE-DEW)",
-      "start_date": "2024-05-14",
-      "end_date": "2027-01-09",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "MA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -6289,7 +6289,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "ENHANCING FLIGHT SAFETY AND MENTAL RESILIENCE THROUGH AI-DRIVEN (ARTIFICIAL INTELLIGENCE) ASSESSMENTS",
       "start_date": "2024-06-12",
-      "end_date": "2026-04-30",
+      "end_date": "2026-07-01",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
