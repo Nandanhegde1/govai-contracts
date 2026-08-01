@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-31T19:55:00.441Z",
+  "generated_at": "2026-08-01T03:53:36.758Z",
   "count": 690,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-07-31"
+    "end": "2026-08-01"
   },
   "contracts": [
     {
@@ -7829,6 +7829,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_693JJ325F00225N_6925_693JJ321D000010_6925",
+      "award_id": "693JJ325F00225N",
+      "recipient": "LEIDOS, INC.",
+      "recipient_slug": "leidos-inc",
+      "amount": 856721,
+      "agency": "Department of Transportation",
+      "agency_slug": "department-of-transportation",
+      "sub_agency": "Federal Highway Administration",
+      "description": "ARTIFICIAL INTELLIGENCE KNOWLEDGE & TECH TRANSFER STRATEGIES",
+      "start_date": "2025-09-23",
+      "end_date": "2027-07-21",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AS12",
+      "psc_desc": "TRANSPORTATION R&D SERVICES; SURFACE TRANSPORTATION, PUBLIC TRANSIT, AND RAIL; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NSSC24CA098_8000_-NONE-_-NONE-",
       "award_id": "80NSSC24CA098",
       "recipient": "STOTTLER HENKE ASSOCIATES, INC",
@@ -8588,27 +8609,6 @@
       "pop_state": "CA",
       "matched_keywords": [
         "large language model"
-      ]
-    },
-    {
-      "id": "CONT_AWD_693JJ325F00225N_6925_693JJ321D000010_6925",
-      "award_id": "693JJ325F00225N",
-      "recipient": "LEIDOS, INC.",
-      "recipient_slug": "leidos-inc",
-      "amount": 500000,
-      "agency": "Department of Transportation",
-      "agency_slug": "department-of-transportation",
-      "sub_agency": "Federal Highway Administration",
-      "description": "ARTIFICIAL INTELLIGENCE KNOWLEDGE & TECH TRANSFER STRATEGIES",
-      "start_date": "2025-09-23",
-      "end_date": "2027-07-21",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AS12",
-      "psc_desc": "TRANSPORTATION R&D SERVICES; SURFACE TRANSPORTATION, PUBLIC TRANSIT, AND RAIL; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
