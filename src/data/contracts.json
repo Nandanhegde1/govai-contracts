@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-04T19:59:12.044Z",
+  "generated_at": "2026-08-05T03:36:45.560Z",
   "count": 690,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-04"
+    "end": "2026-08-05"
   },
   "contracts": [
     {
@@ -498,6 +498,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX25F0024_9700_W911QX25D0007_9700",
+      "award_id": "W911QX25F0024",
+      "recipient": "MORSECORP, INC",
+      "recipient_slug": "morsecorp-inc",
+      "amount": 12865673.86,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "COMMERCIAL SOLUTIONS OPENING FOR RESEARCH AND DEVELOPMENT FOR SYSTEM-WIDE TEST AND EVALUATION (T&E) AND APPLIED ARTIFICIAL INTELLIGENCE (AI) AND MACHINE LEARNING (ML), TASK ORDER #1.",
+      "start_date": "2025-03-10",
+      "end_date": "2028-03-10",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC35",
+      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0089_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0089",
       "recipient": "RTX BBN TECHNOLOGIES, INC.",
@@ -833,28 +855,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX25F0024_9700_W911QX25D0007_9700",
-      "award_id": "W911QX25F0024",
-      "recipient": "MORSECORP, INC",
-      "recipient_slug": "morsecorp-inc",
-      "amount": 7301175.7,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "COMMERCIAL SOLUTIONS OPENING FOR RESEARCH AND DEVELOPMENT FOR SYSTEM-WIDE TEST AND EVALUATION (T&E) AND APPLIED ARTIFICIAL INTELLIGENCE (AI) AND MACHINE LEARNING (ML), TASK ORDER #1.",
-      "start_date": "2025-03-10",
-      "end_date": "2028-03-10",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC35",
-      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
-      "pop_state": "MA",
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
@@ -5255,7 +5255,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "ARTIFICIAL INTELLIGENCE DRIVEN BIOMETRIC MONITORING FOR ENHANCING WARFIGHTER RESILIENCE AND READINESS",
       "start_date": "2025-05-23",
-      "end_date": "2026-02-23",
+      "end_date": "2027-09-01",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
