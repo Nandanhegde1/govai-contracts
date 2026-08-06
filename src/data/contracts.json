@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-05T19:57:15.465Z",
+  "generated_at": "2026-08-06T03:42:39.902Z",
   "count": 690,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-05"
+    "end": "2026-08-06"
   },
   "contracts": [
     {
@@ -1543,6 +1543,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
+      "award_id": "75N97A26F10001",
+      "recipient": "DELOITTE CONSULTING LLP",
+      "recipient_slug": "deloitte-consulting-llp",
+      "amount": 4626626.41,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "National Institutes of Health",
+      "description": "PROFESSIONAL SERVICES FOR STRATEGIC IT COMMUNICATIONS, CHANGE MANAGEMENT, AND INTEGRATION OF SUCH WITH IT PLATFORMS, ADOPTION AND USE OF ARTIFICIAL INTELLIGENCE, AND BEST PRACTICES.",
+      "start_date": "2025-12-12",
+      "end_date": "2026-10-11",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_53987123F0014_5300_47QTCB22D0194_4732",
       "award_id": "53987123F0014",
       "recipient": "ZOLON PCS II, LLC",
@@ -1853,27 +1874,6 @@
       "end_date": "2027-06-30",
       "naics_code": "541511",
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
-      "award_id": "75N97A26F10001",
-      "recipient": "DELOITTE CONSULTING LLP",
-      "recipient_slug": "deloitte-consulting-llp",
-      "amount": 3519422.1,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "National Institutes of Health",
-      "description": "PROFESSIONAL SERVICES FOR STRATEGIC IT COMMUNICATIONS, CHANGE MANAGEMENT, AND INTEGRATION OF SUCH WITH IT PLATFORMS, ADOPTION AND USE OF ARTIFICIAL INTELLIGENCE, AND BEST PRACTICES.",
-      "start_date": "2025-12-12",
-      "end_date": "2026-08-11",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
@@ -6172,28 +6172,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA864924P0539_9700_-NONE-_-NONE-",
-      "award_id": "FA864924P0539",
-      "recipient": "RAGNAROK INDUSTRIES INC",
-      "recipient_slug": "ragnarok-industries-inc",
-      "amount": 1249240,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "SBIR D2P2 PHASE II PROPOSAL F2D-10399 - RADIATION-HARDENED STARTRACKER INCORPORATING MACHINE LEARNING NEURAL NETWORKS FOR ESPA MISSIONS ABOVE LEO (HODUR)",
-      "start_date": "2024-06-18",
-      "end_date": "2025-12-18",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "NJ",
-      "matched_keywords": [
-        "machine learning",
-        "neural network"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA864924P0450_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0450",
       "recipient": "VIVSOFT TECHNOLOGIES LLC",
@@ -8969,6 +8947,28 @@
       "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864924P0539_9700_-NONE-_-NONE-",
+      "award_id": "FA864924P0539",
+      "recipient": "RAGNAROK INDUSTRIES INC",
+      "recipient_slug": "ragnarok-industries-inc",
+      "amount": 416414,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SBIR D2P2 PHASE II PROPOSAL F2D-10399 - RADIATION-HARDENED STARTRACKER INCORPORATING MACHINE LEARNING NEURAL NETWORKS FOR ESPA MISSIONS ABOVE LEO (HODUR)",
+      "start_date": "2024-06-18",
+      "end_date": "2026-05-06",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "NJ",
+      "matched_keywords": [
+        "machine learning",
+        "neural network"
       ]
     },
     {
