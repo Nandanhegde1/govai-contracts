@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T07:44:19.018Z",
-  "count": 690,
+  "generated_at": "2026-08-07T13:41:13.289Z",
+  "count": 691,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-07"
@@ -266,6 +266,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
+      "award_id": "HQ003425CE092",
+      "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
+      "recipient_slug": "leisnoi-professional-services-llc",
+      "amount": 17447231.69,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Washington Headquarters Services",
+      "description": "THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE INFORMATION TECHNOLOGY, ARTIFICIAL INTELLIGENCE, AND MACHINE LEARNING PROGRAM SUPPORT SERVICES.",
+      "start_date": "2025-09-11",
+      "end_date": "2026-06-10",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0090_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0090",
       "recipient": "PERATON LABS INC",
@@ -325,28 +347,6 @@
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "CA",
       "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
-      "award_id": "HQ003425CE092",
-      "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
-      "recipient_slug": "leisnoi-professional-services-llc",
-      "amount": 16380602.45,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Washington Headquarters Services",
-      "description": "THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE INFORMATION TECHNOLOGY, ARTIFICIAL INTELLIGENCE, AND MACHINE LEARNING PROGRAM SUPPORT SERVICES.",
-      "start_date": "2025-09-11",
-      "end_date": "2026-05-10",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence",
         "machine learning"
       ]
     },
@@ -12001,6 +12001,27 @@
       "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_HC105026F0015_9700_HC105023D0003_9700",
+      "award_id": "HC105026F0015",
+      "recipient": "MICROSOFT CORPORATION",
+      "recipient_slug": "microsoft-corporation",
+      "amount": 136313.71,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Information Systems Agency",
+      "description": "DEFENSE INFORMATION SYSTEMS AGENCY (DISA) CONCIERGE ARTIFICIAL INTELLIGENCE-SECRET (DCAI-S)",
+      "start_date": "2026-05-11",
+      "end_date": "2027-05-10",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "DB10",
+      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
