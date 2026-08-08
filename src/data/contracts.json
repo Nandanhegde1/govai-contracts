@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T07:17:47.978Z",
-  "count": 691,
+  "generated_at": "2026-08-08T13:14:07.315Z",
+  "count": 692,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-08"
@@ -9647,6 +9647,27 @@
       "psc_code": "AR12",
       "psc_desc": "SPACE R&D SERVICES; SPACE FLIGHT, RESEARCH AND SUPPORTING ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QACA26F0333_4732_47QACA26A0010_4732",
+      "award_id": "47QACA26F0333",
+      "recipient": "KAIZEN LABORATORIES INC.",
+      "recipient_slug": "kaizen-laboratories-inc",
+      "amount": 273900,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "ARTIFICIAL INTELLIGENCE EXPORTS PROGRAM RESIDENT SERVICES PLATFORM ARTIFICIAL INTELLIGENCE CENTER",
+      "start_date": "2026-08-15",
+      "end_date": "2027-08-14",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
