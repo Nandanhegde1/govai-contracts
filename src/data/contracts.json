@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T02:23:29.184Z",
+  "generated_at": "2026-08-08T07:17:47.978Z",
   "count": 691,
   "window": {
     "start": "2023-10-01",
@@ -520,6 +520,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865023C7318_9700_-NONE-_-NONE-",
+      "award_id": "FA865023C7318",
+      "recipient": "CACI, INC. - FEDERAL",
+      "recipient_slug": "caci-inc-federal",
+      "amount": 12809769,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "FRAMEWORK FOR ARTIFICIAL INTELLIGENCE TRUSTWORTHINESS IN HUMAN-MACHINE DELEGATION (FAITH-MD)",
+      "start_date": "2023-04-13",
+      "end_date": "2026-12-14",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC11",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0089_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0089",
       "recipient": "RTX BBN TECHNOLOGIES, INC.",
@@ -624,27 +645,6 @@
       "pop_state": "CA",
       "matched_keywords": [
         "large language model"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865023C7318_9700_-NONE-_-NONE-",
-      "award_id": "FA865023C7318",
-      "recipient": "CACI, INC. - FEDERAL",
-      "recipient_slug": "caci-inc-federal",
-      "amount": 10759769,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "FRAMEWORK FOR ARTIFICIAL INTELLIGENCE TRUSTWORTHINESS IN HUMAN-MACHINE DELEGATION (FAITH-MD)",
-      "start_date": "2023-04-13",
-      "end_date": "2026-12-14",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC11",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
