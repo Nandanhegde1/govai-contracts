@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T02:29:46.047Z",
+  "generated_at": "2026-08-11T07:40:01.732Z",
   "count": 692,
   "window": {
     "start": "2023-10-01",
@@ -282,6 +282,28 @@
       "psc_code": "R499",
       "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
       "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911QX25C0005_9700_-NONE-_-NONE-",
+      "award_id": "W911QX25C0005",
+      "recipient": "METRON INCORPORATED",
+      "recipient_slug": "metron-incorporated",
+      "amount": 17110543.93,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "BROAD AGENCY ANNOUNCEMENT CONTRACT FOR RESEARCH, DEVELOPMENT, TEST, AND EVALUATION OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE.",
+      "start_date": "2025-08-18",
+      "end_date": "2027-12-03",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
@@ -772,28 +794,6 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX25C0005_9700_-NONE-_-NONE-",
-      "award_id": "W911QX25C0005",
-      "recipient": "METRON INCORPORATED",
-      "recipient_slug": "metron-incorporated",
-      "amount": 8733609.68,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "BROAD AGENCY ANNOUNCEMENT CONTRACT FOR RESEARCH, DEVELOPMENT, TEST, AND EVALUATION OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE.",
-      "start_date": "2025-08-18",
-      "end_date": "2026-08-17",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -4780,15 +4780,15 @@
     {
       "id": "CONT_AWD_N6600123C4701_9700_-NONE-_-NONE-",
       "award_id": "N6600123C4701",
-      "recipient": "EXPEDITION TECHNOLOGY, INC.",
-      "recipient_slug": "expedition-technology-inc",
+      "recipient": "EXPEDITION TECHNOLOGY, LLC",
+      "recipient_slug": "expedition-technology-llc",
       "amount": 1425905.93,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Navy",
       "description": "RADIO-FREQUENCY (RF) MACHINE LEARNING SYSTEMS SOFTWARE INTEGRATION (SEA OTTER) 873AUTHORITY",
       "start_date": "2023-07-12",
-      "end_date": "2026-05-12",
+      "end_date": "2026-09-30",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AJ12",
