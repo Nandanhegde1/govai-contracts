@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T02:47:07.943Z",
+  "generated_at": "2026-08-12T07:54:46.525Z",
   "count": 692,
   "window": {
     "start": "2023-10-01",
@@ -262,6 +262,28 @@
       "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
       "pop_state": "WV",
       "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911QX24C0009_9700_-NONE-_-NONE-",
+      "award_id": "W911QX24C0009",
+      "recipient": "EXPEDITION TECHNOLOGY, LLC",
+      "recipient_slug": "expedition-technology-llc",
+      "amount": 17991359.64,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE TITLED SPOONMAN UNDER BAA TOPIC ID: ARL-BAA-0037",
+      "start_date": "2024-04-05",
+      "end_date": "2029-04-04",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC35",
+      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
         "machine learning"
       ]
     },
@@ -580,28 +602,6 @@
       "psc_desc": "R&D- DEFENSE OTHER: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
       "pop_state": "MA",
       "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX24C0009_9700_-NONE-_-NONE-",
-      "award_id": "W911QX24C0009",
-      "recipient": "EXPEDITION TECHNOLOGY, INC.",
-      "recipient_slug": "expedition-technology-inc",
-      "amount": 12703859.64,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE TITLED SPOONMAN UNDER BAA TOPIC ID: ARL-BAA-0037",
-      "start_date": "2024-04-05",
-      "end_date": "2029-04-04",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC35",
-      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
         "machine learning"
       ]
     },
@@ -1777,6 +1777,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W912CG24C0002_9700_-NONE-_-NONE-",
+      "award_id": "W912CG24C0002",
+      "recipient": "ACCELINT AI, LLC",
+      "recipient_slug": "accelint-ai-llc",
+      "amount": 3990655,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE FOR MODELING AND SIMULATION",
+      "start_date": "2023-12-08",
+      "end_date": "2027-06-06",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "MI",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_2032H822F00171_2050_47QTCB21D0289_4732",
       "award_id": "2032H822F00171",
       "recipient": "ANALYTICA LLC",
@@ -1814,27 +1835,6 @@
       "psc_code": "DA10",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W912CG24C0002_9700_-NONE-_-NONE-",
-      "award_id": "W912CG24C0002",
-      "recipient": "ACCELINT AI, LLC",
-      "recipient_slug": "accelint-ai-llc",
-      "amount": 3890655,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE FOR MODELING AND SIMULATION",
-      "start_date": "2023-12-08",
-      "end_date": "2026-06-06",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "MI",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2687,6 +2687,27 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB072",
+      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
+      "recipient_slug": "black-river-systems-company-inc",
+      "amount": 2111663,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
+      "start_date": "2025-09-04",
+      "end_date": "2028-11-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -4304,27 +4325,6 @@
       "psc_code": "AC12",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "NH",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB072",
-      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
-      "recipient_slug": "black-river-systems-company-inc",
-      "amount": 1640663,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
-      "start_date": "2025-09-04",
-      "end_date": "2028-11-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -9299,7 +9299,7 @@
       "sub_agency": "Defense Logistics Agency",
       "description": "EMERGENT IV BAA0001-22 AWARD TO THE BRITE GROUP FOR DRIFT WATCH FOR ARTIFICIAL INTELLIGENCE/MACHINE LEARNING MODELS",
       "start_date": "2026-01-14",
-      "end_date": "2026-05-13",
+      "end_date": "2026-05-20",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC33",
