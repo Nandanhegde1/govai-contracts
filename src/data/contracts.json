@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-12T19:29:12.352Z",
+  "generated_at": "2026-08-13T03:01:34.961Z",
   "count": 692,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-12"
+    "end": "2026-08-13"
   },
   "contracts": [
     {
@@ -76,13 +76,13 @@
       "award_id": "W911QX25C0002",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 67878357.2,
+      "amount": 72819404.2,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
       "description": "CONTRACT TO RESEARCH, DEVELOP, MODIFY, DEPLOY, OPERATE, AND MAINTAIN ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) ALGORITHMS AND MODELS.",
       "start_date": "2025-01-30",
-      "end_date": "2027-01-29",
+      "end_date": "2027-05-12",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC11",
@@ -801,7 +801,7 @@
       "award_id": "HQ086026FE001",
       "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
       "recipient_slug": "modern-technology-solutions-inc",
-      "amount": 8404883.89,
+      "amount": 9287533.89,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Missile Defense Agency",
@@ -2456,6 +2456,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001125CE038_9700_-NONE-_-NONE-",
+      "award_id": "HR001125CE038",
+      "recipient": "AARNO LABS LLC",
+      "recipient_slug": "aarno-labs-llc",
+      "amount": 2533649,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "MACHINE LEARNING AND OPTIMIZATION-GUIDED COMPILERS FOR HETEROGENEOUS ARCHITECTURES (MOCHA) PROGRAM.",
+      "start_date": "2025-09-05",
+      "end_date": "2028-09-05",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864922P0747_9700_-NONE-_-NONE-",
       "award_id": "FA864922P0747",
       "recipient": "JUMP AERO INC",
@@ -2624,27 +2645,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001125CE038_9700_-NONE-_-NONE-",
-      "award_id": "HR001125CE038",
-      "recipient": "AARNO LABS LLC",
-      "recipient_slug": "aarno-labs-llc",
-      "amount": 2270042,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "MACHINE LEARNING AND OPTIMIZATION-GUIDED COMPILERS FOR HETEROGENEOUS ARCHITECTURES (MOCHA) PROGRAM.",
-      "start_date": "2025-09-05",
-      "end_date": "2028-09-05",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "MA",
-      "matched_keywords": [
-        "machine learning"
       ]
     },
     {
@@ -8464,6 +8464,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_SP470126C0029_9700_-NONE-_-NONE-",
+      "award_id": "SP470126C0029",
+      "recipient": "THE BRITE GROUP, INC",
+      "recipient_slug": "the-brite-group-inc",
+      "amount": 599008,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Logistics Agency",
+      "description": "EMERGENT IV BAA0001-22 AWARD TO THE BRITE GROUP FOR DRIFT WATCH FOR ARTIFICIAL INTELLIGENCE/MACHINE LEARNING MODELS",
+      "start_date": "2026-01-14",
+      "end_date": "2026-08-20",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_1333ND20FNB770217_1341_DOCSB134118CQ0004_1341",
       "award_id": "1333ND20FNB770217",
       "recipient": "HII MISSION TECHNOLOGIES CORP",
@@ -8500,6 +8522,27 @@
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W912CG25FA012_9700_W912CG24D0001_9700",
+      "award_id": "W912CG25FA012",
+      "recipient": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "recipient_slug": "university-of-southern-california",
+      "amount": 560000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "UNIVERSITY AFFILIATED RESEARCH CONTRACT - RESEARCH AND DEVELOPMENT IN MODELING AND SIMULATION - TOWARDS TACTICAL ARTIFICIAL INTELLIGENCE MODELS FOR LARGE SCALE COMBAT OPERATIONS (TACTICAI)",
+      "start_date": "2025-09-04",
+      "end_date": "2026-09-03",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
       "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
@@ -8993,27 +9036,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W912CG25FA012_9700_W912CG24D0001_9700",
-      "award_id": "W912CG25FA012",
-      "recipient": "UNIVERSITY OF SOUTHERN CALIFORNIA",
-      "recipient_slug": "university-of-southern-california",
-      "amount": 400000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "UNIVERSITY AFFILIATED RESEARCH CONTRACT - RESEARCH AND DEVELOPMENT IN MODELING AND SIMULATION - TOWARDS TACTICAL ARTIFICIAL INTELLIGENCE MODELS FOR LARGE SCALE COMBAT OPERATIONS (TACTICAI)",
-      "start_date": "2025-09-04",
-      "end_date": "2026-09-03",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_70B04C23F00001192_7014_NNG15SD12B_8000",
       "award_id": "70B04C23F00001192",
       "recipient": "CTG FEDERAL, LLC",
@@ -9286,28 +9308,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "predictive analytics"
-      ]
-    },
-    {
-      "id": "CONT_AWD_SP470126C0029_9700_-NONE-_-NONE-",
-      "award_id": "SP470126C0029",
-      "recipient": "THE BRITE GROUP, INC",
-      "recipient_slug": "the-brite-group-inc",
-      "amount": 344208,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Logistics Agency",
-      "description": "EMERGENT IV BAA0001-22 AWARD TO THE BRITE GROUP FOR DRIFT WATCH FOR ARTIFICIAL INTELLIGENCE/MACHINE LEARNING MODELS",
-      "start_date": "2026-01-14",
-      "end_date": "2026-05-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
