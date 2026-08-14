@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T02:48:23.821Z",
+  "generated_at": "2026-08-14T07:52:39.409Z",
   "count": 692,
   "window": {
     "start": "2023-10-01",
@@ -892,7 +892,7 @@
       "sub_agency": "Department of the Navy",
       "description": "ACCELERATED MACHINE LEARNING OPERATIONS (MLOPS) FOR MARITIME OPERATIONS (AMMO) - PROJECT OVERMATCH (OM)",
       "start_date": "2026-04-17",
-      "end_date": "2031-04-16",
+      "end_date": "2027-04-28",
       "naics_code": "541511",
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
       "psc_code": "DA10",
@@ -2225,7 +2225,7 @@
       "award_id": "HR001119C0114",
       "recipient": "RTX BBN TECHNOLOGIES, INC.",
       "recipient_slug": "rtx-bbn-technologies-inc",
-      "amount": 2895210,
+      "amount": 2829989.16,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Defense Contract Management Agency",
