@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T06:59:47.615Z",
-  "count": 693,
+  "generated_at": "2026-08-15T13:01:00.521Z",
+  "count": 694,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-15"
@@ -14480,6 +14480,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864924P0062_9700_-NONE-_-NONE-",
+      "award_id": "FA864924P0062",
+      "recipient": "SIMULATIONAI LLC",
+      "recipient_slug": "simulationai-llc",
+      "amount": 43994,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "AN ARTIFICIAL INTELLIGENCE-DRIVEN SOFTWARE FOR ENGINEERING SIMULATIONS: A SURROGATE TECHNIQUE TO FINITE ELEMENT ANALYSIS",
+      "start_date": "2023-12-15",
+      "end_date": "2024-01-12",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
