@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T01:51:55.550Z",
-  "count": 692,
+  "generated_at": "2026-08-15T06:59:47.615Z",
+  "count": 693,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-15"
@@ -180,6 +180,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
+      "award_id": "W909MY26F0009",
+      "recipient": "ENLIGHTEN IT CONSULTING LLC",
+      "recipient_slug": "enlighten-it-consulting-llc",
+      "amount": 34179835.95,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
+      "start_date": "2026-03-01",
+      "end_date": "2027-02-28",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DJ01",
+      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_1333BJ24C00280005_1344_-NONE-_-NONE-",
       "award_id": "1333BJ24C00280005",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
@@ -198,28 +220,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
-      "award_id": "W909MY26F0009",
-      "recipient": "ENLIGHTEN IT CONSULTING LLC",
-      "recipient_slug": "enlighten-it-consulting-llc",
-      "amount": 25745811.03,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CYBER ANALYTICS AND DETECTION (CAD) OMNIBUS PROCUREMENT FOR MAINTENANCE, DEVELOPMENT, AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) INTEGRATION.",
-      "start_date": "2026-03-01",
-      "end_date": "2027-02-28",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DJ01",
-      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE SUPPORT SERVICES (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -1586,6 +1586,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_47QACA26F0343_4732_47QTCA26D003S_4732",
+      "award_id": "47QACA26F0343",
+      "recipient": "KAIZEN LABORATORIES INC.",
+      "recipient_slug": "kaizen-laboratories-inc",
+      "amount": 4523470.65,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "ARTIFICIAL INTELLIGENCE NATIVE COMPLAINT INTAKE AND CASE ANALYSIS SOLUTION",
+      "start_date": "2026-08-06",
+      "end_date": "2027-08-05",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_75FCMC21C0013_7530_-NONE-_-NONE-",
       "award_id": "75FCMC21C0013",
       "recipient": "EXPLORE DIGITS INC",
@@ -2708,6 +2729,28 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA857126C0027_9700_-NONE-_-NONE-",
+      "award_id": "FA857126C0027",
+      "recipient": "SHIPCOM FEDERAL SOLUTIONS LLC",
+      "recipient_slug": "shipcom-federal-solutions-llc",
+      "amount": 2095000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "THIS IS SMALL BUSINESS INNOVATIVE RESEARCH (SBIR) PHASE III REQUIREMENT ARISING UNDER SBIR TOPIC AF221-DCSO1, ARTIFICIAL INTELLIGENCE / MACHINE LEARNING-ENABLED DATA FABRIC (COMPANY SHIPCOM FEDERAL SOLUTIONS DBA SHIPCOM AI).",
+      "start_date": "2026-05-15",
+      "end_date": "2027-05-14",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "7A21",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -8633,6 +8676,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W912HQ25C0030_9700_-NONE-_-NONE-",
+      "award_id": "W912HQ25C0030",
+      "recipient": "BLACK TUSK GEOPHYSICS INC",
+      "recipient_slug": "black-tusk-geophysics-inc",
+      "amount": 506453,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "NEW START ESTCP PROJECT MR25-8796 \"DEMONSTRATION OF PHYSICS-BASED AND MACHINE LEARNING TOOLS FOR DELINEATION OF SATURATED RESPONSE AREAS\"",
+      "start_date": "2025-06-13",
+      "end_date": "2029-06-12",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": null,
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_68HERC25C0007_6800_-NONE-_-NONE-",
       "award_id": "68HERC25C0007",
       "recipient": "VALIS INSIGHTS, INC.",
@@ -9374,27 +9438,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W912HQ25C0030_9700_-NONE-_-NONE-",
-      "award_id": "W912HQ25C0030",
-      "recipient": "BLACK TUSK GEOPHYSICS INC",
-      "recipient_slug": "black-tusk-geophysics-inc",
-      "amount": 329591,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "NEW START ESTCP PROJECT MR25-8796 \"DEMONSTRATION OF PHYSICS-BASED AND MACHINE LEARNING TOOLS FOR DELINEATION OF SATURATED RESPONSE AREAS\"",
-      "start_date": "2025-06-13",
-      "end_date": "2029-06-12",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": null,
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA822425C0010_9700_-NONE-_-NONE-",
       "award_id": "FA822425C0010",
       "recipient": "WEBOMATES, INC",
@@ -9662,7 +9705,7 @@
       "sub_agency": "Federal Acquisition Service",
       "description": "ARTIFICIAL INTELLIGENCE EXPORTS PROGRAM RESIDENT SERVICES PLATFORM ARTIFICIAL INTELLIGENCE CENTER",
       "start_date": "2026-08-15",
-      "end_date": "2027-08-14",
+      "end_date": "2027-08-05",
       "naics_code": "518210",
       "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
       "psc_code": "DA01",
@@ -14437,27 +14480,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA864924P0062_9700_-NONE-_-NONE-",
-      "award_id": "FA864924P0062",
-      "recipient": "SIMULATIONAI LLC",
-      "recipient_slug": "simulationai-llc",
-      "amount": 43994,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "AN ARTIFICIAL INTELLIGENCE-DRIVEN SOFTWARE FOR ENGINEERING SIMULATIONS: A SURROGATE TECHNIQUE TO FINITE ELEMENT ANALYSIS",
-      "start_date": "2023-12-15",
-      "end_date": "2024-01-12",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
