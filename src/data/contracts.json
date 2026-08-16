@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T01:58:51.838Z",
+  "generated_at": "2026-08-16T07:02:00.795Z",
   "count": 694,
   "window": {
     "start": "2023-10-01",
@@ -2279,6 +2279,27 @@
       "psc_code": "AJ41",
       "psc_desc": "R&D- GENERAL SCIENCE/TECHNOLOGY: ENGINEERING (BASIC RESEARCH)",
       "pop_state": "MD",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QACA26F0068_4732_47QTSA25A0030_4732",
+      "award_id": "47QACA26F0068",
+      "recipient": "EXCELLA, LLC",
+      "recipient_slug": "excella-llc",
+      "amount": 2764804.07,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "MACHINE LEARNINGAI DEVELOPMENT SUPPORT",
+      "start_date": "2026-02-02",
+      "end_date": "2027-02-01",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "B506",
+      "psc_desc": "SPECIAL STUDIES/ANALYSIS- DATA (OTHER THAN SCIENTIFIC)",
+      "pop_state": "DC",
       "matched_keywords": [
         "machine learning"
       ]
@@ -7250,27 +7271,6 @@
       "psc_code": "AC33",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "NM",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_47QACA26F0068_4732_47QTSA25A0030_4732",
-      "award_id": "47QACA26F0068",
-      "recipient": "EXCELLA, LLC",
-      "recipient_slug": "excella-llc",
-      "amount": 1076668.8,
-      "agency": "General Services Administration",
-      "agency_slug": "general-services-administration",
-      "sub_agency": "Federal Acquisition Service",
-      "description": "MACHINE LEARNINGAI DEVELOPMENT SUPPORT",
-      "start_date": "2026-02-02",
-      "end_date": "2027-02-01",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "B506",
-      "psc_desc": "SPECIAL STUDIES/ANALYSIS- DATA (OTHER THAN SCIENTIFIC)",
-      "pop_state": "DC",
       "matched_keywords": [
         "machine learning"
       ]
