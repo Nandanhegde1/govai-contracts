@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T01:52:44.120Z",
+  "generated_at": "2026-08-18T07:06:58.663Z",
   "count": 694,
   "window": {
     "start": "2023-10-01",
@@ -7170,6 +7170,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX25FA009_9700_W911QX25DA004_9700",
+      "award_id": "W911QX25FA009",
+      "recipient": "SANDTABLE, INC.",
+      "recipient_slug": "sandtable-inc",
+      "amount": 1101744,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "BROAD AGENCY ANNOUNCEMENT TASK ORDER CONTRACT FOR RESEARCH AND DEVELOPMENT SERVICES INVOLVING ENHANCING SITUATION AWARENESS FOR COMMAND AND CONTROL (C2) THROUGH AGENTIC ARTIFICIAL INTELLIGENCE",
+      "start_date": "2025-05-26",
+      "end_date": "2027-05-25",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_HDTRA124C0034_9700_-NONE-_-NONE-",
       "award_id": "HDTRA124C0034",
       "recipient": "KNOWMADICS INC",
@@ -8994,27 +9015,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W911QX25FA009_9700_W911QX25DA004_9700",
-      "award_id": "W911QX25FA009",
-      "recipient": "SANDTABLE, INC.",
-      "recipient_slug": "sandtable-inc",
-      "amount": 437200,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "BROAD AGENCY ANNOUNCEMENT TASK ORDER CONTRACT FOR RESEARCH AND DEVELOPMENT SERVICES INVOLVING ENHANCING SITUATION AWARENESS FOR COMMAND AND CONTROL (C2) THROUGH AGENTIC ARTIFICIAL INTELLIGENCE",
-      "start_date": "2025-05-26",
-      "end_date": "2026-05-25",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "GA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_80NM0023F0049_8000_80NM0018D0004_8000",
       "award_id": "80NM0023F0049",
       "recipient": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
@@ -9512,7 +9512,7 @@
       "sub_agency": "Department of the Army",
       "description": "BAA GSL-24-0035, ELECTROMAGNETIC AND PHOTONIC SIGNATURE MANAGEMENT VIA PHYSICS INFORMED MACHINE LEARNING FOR MATERIALS DESIGN AND DISCOVERY",
       "start_date": "2025-05-19",
-      "end_date": "2026-03-30",
+      "end_date": "2026-07-09",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AJ12",
@@ -10624,6 +10624,27 @@
       "psc_code": "AC33",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W913E525C0005_9700_-NONE-_-NONE-",
+      "award_id": "W913E525C0005",
+      "recipient": "ARIZONA STATE UNIVERSITY",
+      "recipient_slug": "arizona-state-university",
+      "amount": 199176,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "CSO-CRREL-24-IPR-FIRE-0008 TITLED, ARTIFICIAL INTELLIGENCE INFORMED HIGH-RESOLUTION FUEL MAPPING U437N00",
+      "start_date": "2025-08-28",
+      "end_date": "2027-09-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "AZ",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -12935,27 +12956,6 @@
       "psc_code": "R425",
       "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
       "pop_state": "ID",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W913E525C0005_9700_-NONE-_-NONE-",
-      "award_id": "W913E525C0005",
-      "recipient": "ARIZONA STATE UNIVERSITY",
-      "recipient_slug": "arizona-state-university",
-      "amount": 97552,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CSO-CRREL-24-IPR-FIRE-0008 TITLED, ARTIFICIAL INTELLIGENCE INFORMED HIGH-RESOLUTION FUEL MAPPING U437N00",
-      "start_date": "2025-08-28",
-      "end_date": "2026-09-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "AZ",
       "matched_keywords": [
         "artificial intelligence"
       ]
