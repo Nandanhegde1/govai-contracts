@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T01:54:40.113Z",
+  "generated_at": "2026-08-19T07:07:47.039Z",
   "count": 694,
   "window": {
     "start": "2023-10-01",
@@ -2711,6 +2711,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B25C0049_3600_-NONE-_-NONE-",
+      "award_id": "36C10B25C0049",
+      "recipient": "SGL360, LLC",
+      "recipient_slug": "sgl360-llc",
+      "amount": 2156056.96,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "ARTIFICIAL INTELLIGENCE CLINICAL DECISION SUPPORT SUMMARIZATIONS",
+      "start_date": "2025-09-30",
+      "end_date": "2027-03-30",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_2032H824F00043_2050_47QTCB21D0289_4732",
       "award_id": "2032H824F00043",
       "recipient": "ANALYTICA LLC",
@@ -4949,27 +4970,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_36C10B25C0049_3600_-NONE-_-NONE-",
-      "award_id": "36C10B25C0049",
-      "recipient": "SGL360, LLC",
-      "recipient_slug": "sgl360-llc",
-      "amount": 1383936,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "ARTIFICIAL INTELLIGENCE CLINICAL DECISION SUPPORT SUMMARIZATIONS",
-      "start_date": "2025-09-30",
-      "end_date": "2026-09-29",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W5170126CA076_9700_-NONE-_-NONE-",
       "award_id": "W5170126CA076",
       "recipient": "R-DEX SYSTEMS, INC.",
@@ -4989,6 +4989,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "neural network"
+      ]
+    },
+    {
+      "id": "CONT_AWD_HR001125CE017_9700_-NONE-_-NONE-",
+      "award_id": "HR001125CE017",
+      "recipient": "KITWARE INC",
+      "recipient_slug": "kitware-inc",
+      "amount": 1353151,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "ARTIFICIAL INTELLIGENCE QUANTIFIED (AIQ)",
+      "start_date": "2025-05-09",
+      "end_date": "2026-11-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AA12",
+      "psc_desc": "AGRICULTURE R&D SERVICES; AGRICULTURAL RESEARCH AND SERVICES; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -5261,27 +5282,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001125CE017_9700_-NONE-_-NONE-",
-      "award_id": "HR001125CE017",
-      "recipient": "KITWARE INC",
-      "recipient_slug": "kitware-inc",
-      "amount": 1255935,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "ARTIFICIAL INTELLIGENCE QUANTIFIED (AIQ)",
-      "start_date": "2025-05-09",
-      "end_date": "2026-11-09",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AA12",
-      "psc_desc": "AGRICULTURE R&D SERVICES; AGRICULTURAL RESEARCH AND SERVICES; APPLIED RESEARCH",
-      "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -7149,6 +7149,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W912CG25C0001_9700_-NONE-_-NONE-",
+      "award_id": "W912CG25C0001",
+      "recipient": "RTX BBN TECHNOLOGIES, INC.",
+      "recipient_slug": "rtx-bbn-technologies-inc",
+      "amount": 1122817.99,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "AWARDED TO RAYTHEON TECHNOLOGIES TO DEVELOP MEDICAL ARTIFICIAL INTELLIGENCE (AI) AGENTS TO OBSERVE, DETECT, AND EVALUATE MEDICAL PERFORMANCE IN TRAINING.",
+      "start_date": "2024-12-19",
+      "end_date": "2027-02-04",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "MN",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864925P0347_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0347",
       "recipient": "STREET SMARTS VR INC",
@@ -7950,27 +7971,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "NE",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W912CG25C0001_9700_-NONE-_-NONE-",
-      "award_id": "W912CG25C0001",
-      "recipient": "RTX BBN TECHNOLOGIES, INC.",
-      "recipient_slug": "rtx-bbn-technologies-inc",
-      "amount": 822817.99,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "AWARDED TO RAYTHEON TECHNOLOGIES TO DEVELOP MEDICAL ARTIFICIAL INTELLIGENCE (AI) AGENTS TO OBSERVE, DETECT, AND EVALUATE MEDICAL PERFORMANCE IN TRAINING.",
-      "start_date": "2024-12-19",
-      "end_date": "2027-02-04",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "MN",
       "matched_keywords": [
         "artificial intelligence"
       ]
