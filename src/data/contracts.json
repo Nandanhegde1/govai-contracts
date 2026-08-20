@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T01:53:44.538Z",
-  "count": 694,
+  "generated_at": "2026-08-20T07:08:43.275Z",
+  "count": 696,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-20"
@@ -925,6 +925,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX24C0010_9700_-NONE-_-NONE-",
+      "award_id": "W911QX24C0010",
+      "recipient": "LOCKHEED MARTIN CORP",
+      "recipient_slug": "lockheed-martin-corp",
+      "amount": 6957479.92,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-MANAGING MASSIVE DATA SETS: HIGH EFFICIENCY RESEARCH AND MODELING ECOSYSTEM (HERMES) BROAD AGENCY ANNOUNCEMENT (BAA) CONTRACT FOR UP TO FIVE (5) YEARS IN SUPPORT OF THE ARMY RESEARCH LABORATORY (ARL)",
+      "start_date": "2024-09-13",
+      "end_date": "2027-09-15",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "PA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001120C0015_9700_-NONE-_-NONE-",
       "award_id": "HR001120C0015",
       "recipient": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
@@ -1521,28 +1543,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W911QX24C0010_9700_-NONE-_-NONE-",
-      "award_id": "W911QX24C0010",
-      "recipient": "LOCKHEED MARTIN CORP",
-      "recipient_slug": "lockheed-martin-corp",
-      "amount": 4721479.92,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-MANAGING MASSIVE DATA SETS: HIGH EFFICIENCY RESEARCH AND MODELING ECOSYSTEM (HERMES) BROAD AGENCY ANNOUNCEMENT (BAA) CONTRACT FOR UP TO FIVE (5) YEARS IN SUPPORT OF THE ARMY RESEARCH LABORATORY (ARL)",
-      "start_date": "2024-09-13",
-      "end_date": "2026-09-15",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
       "award_id": "75N97A26F10001",
       "recipient": "DELOITTE CONSULTING LLP",
@@ -1900,6 +1900,27 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA875024CB082_9700_-NONE-_-NONE-",
+      "award_id": "FA875024CB082",
+      "recipient": "STONEWALL DEFENSE LLC",
+      "recipient_slug": "stonewall-defense-llc",
+      "amount": 3594868,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "TACTICAL EMPLOYMENT OF AUDIO WITH MOBILE MACHINE LEARNING (TEAM-ML)",
+      "start_date": "2024-05-23",
+      "end_date": "2028-07-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "machine learning"
       ]
     },
     {
@@ -4182,27 +4203,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA875024CB082_9700_-NONE-_-NONE-",
-      "award_id": "FA875024CB082",
-      "recipient": "STONEWALL DEFENSE LLC",
-      "recipient_slug": "stonewall-defense-llc",
-      "amount": 1759987,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "TACTICAL EMPLOYMENT OF AUDIO WITH MOBILE MACHINE LEARNING (TEAM-ML)",
-      "start_date": "2024-05-23",
-      "end_date": "2026-07-22",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA875024CB080_9700_-NONE-_-NONE-",
       "award_id": "FA875024CB080",
       "recipient": "SHERPA 6 INC",
@@ -5263,6 +5263,27 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_1605C226F00028_1605_1605C223A0036_1605",
+      "award_id": "1605C226F00028",
+      "recipient": "THE MANHATTAN STRATEGY GROUP LLC",
+      "recipient_slug": "the-manhattan-strategy-group-llc",
+      "amount": 1283110,
+      "agency": "Department of Labor",
+      "agency_slug": "department-of-labor",
+      "sub_agency": "Office of the Assistant Secretary for Administration and Management",
+      "description": "ARTIFICIAL INTELLIGENCE (AI) WORKFORCE HUB SUPPORT SERVICES",
+      "start_date": "2026-09-01",
+      "end_date": "2027-08-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -12065,6 +12086,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA875026CB042_9700_-NONE-_-NONE-",
+      "award_id": "FA875026CB042",
+      "recipient": "MACH INDUSTRIES INC",
+      "recipient_slug": "mach-industries-inc",
+      "amount": 137555,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ADVANCING DOD ARTIFICIAL INTELLIGENCE (AI) WITH NEUROMORPHIC HYPERDIMENSIONAL COMPUTING (HDC): A FRAMEWORK FOR ADAPTIVE, RESILIENT, AND ENERGY-EFFICIENT EDGE INTELLIGENCE",
+      "start_date": "2026-05-20",
+      "end_date": "2027-01-19",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
