@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T07:01:50.610Z",
-  "count": 695,
+  "generated_at": "2026-08-22T13:02:58.694Z",
+  "count": 696,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-22"
@@ -5878,6 +5878,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864925P0429_9700_-NONE-_-NONE-",
+      "award_id": "FA864925P0429",
+      "recipient": "T3W BUSINESS SOLUTIONS, INC.",
+      "recipient_slug": "t3w-business-solutions-inc",
+      "amount": 1249891,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MEDSCRIBE DEFENSE - GENERATIVE ARTIFICIAL INTELLIGENCE (GENAI) AMBIENT MEDICAL SCRIBE SUPPORTING AIR FORCE MEDICAL READINESS EXAMS AND SCREENINGS",
+      "start_date": "2025-09-29",
+      "end_date": "2027-07-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864925P0260_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0260",
       "recipient": "BEACON AI INC",
@@ -8050,7 +8071,7 @@
       "sub_agency": "Federal Transit Administration",
       "description": "THE PURPOSE OF THIS CALL ORDER IS TO PROVIDE ARTIFICIAL INTELLIGENCE SUPPORT.",
       "start_date": "2025-07-24",
-      "end_date": "2026-07-23",
+      "end_date": "2027-07-23",
       "naics_code": "541513",
       "naics_desc": "COMPUTER FACILITIES MANAGEMENT SERVICES",
       "psc_code": "R408",
