@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T01:52:35.127Z",
-  "count": 696,
+  "generated_at": "2026-08-22T07:01:50.610Z",
+  "count": 695,
   "window": {
     "start": "2023-10-01",
     "end": "2026-08-22"
@@ -206,7 +206,7 @@
       "award_id": "1333BJ24C00280005",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
       "recipient_slug": "accenture-federal-services-llc",
-      "amount": 28378495.75,
+      "amount": 27753766.76,
       "agency": "Department of Commerce",
       "agency_slug": "department-of-commerce",
       "sub_agency": "U.S. Patent and Trademark Office",
@@ -307,6 +307,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
+      "award_id": "47QFCA26F0023",
+      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
+      "recipient_slug": "accenture-federal-services-llc",
+      "amount": 17672846,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
+      "start_date": "2026-07-28",
+      "end_date": "2027-07-27",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -686,6 +707,27 @@
       "psc_code": "AC12",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_91990022F0045_9100_91990022A0001_9100",
+      "award_id": "91990022F0045",
+      "recipient": "ICATALYST, INC.",
+      "recipient_slug": "icatalyst-inc",
+      "amount": 10270659.76,
+      "agency": "Department of Education",
+      "agency_slug": "department-of-education",
+      "sub_agency": "Department of Education",
+      "description": "DEPARTMENT OF EDUCATION IT MODERNIZATION BPA--CIO INNOVATION ARTIFICIAL INTELLIGENCE",
+      "start_date": "2022-09-29",
+      "end_date": "2027-09-28",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -1119,22 +1161,22 @@
       ]
     },
     {
-      "id": "CONT_AWD_91990022F0045_9100_91990022A0001_9100",
-      "award_id": "91990022F0045",
-      "recipient": "ICATALYST, INC.",
-      "recipient_slug": "icatalyst-inc",
-      "amount": 5515798.96,
-      "agency": "Department of Education",
-      "agency_slug": "department-of-education",
-      "sub_agency": "Department of Education",
-      "description": "DEPARTMENT OF EDUCATION IT MODERNIZATION BPA--CIO INNOVATION ARTIFICIAL INTELLIGENCE",
-      "start_date": "2022-09-29",
-      "end_date": "2026-09-28",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "DC",
+      "id": "CONT_AWD_FA489026C0006_9700_-NONE-_-NONE-",
+      "award_id": "FA489026C0006",
+      "recipient": "KONIAG IT SYSTEMS, LLC",
+      "recipient_slug": "koniag-it-systems-llc",
+      "amount": 5721308.72,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "THIS REQUIREMENT PROVIDES ENTERPRISE-LEVEL SERVICES TO ACCELERATE THE ADOPTION, TRAINING, GOVERNANCE, AND OPERATIONAL INTEGRATION OF ARTIFICIAL INTELLIGENCE (AI) AND ROBOTIC PROCESS AUTOMATION (RPA) CAPABILITIES ACROSS ACC.",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
+      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -1325,27 +1367,6 @@
       "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
       "psc_code": "DD01",
       "psc_desc": "IT AND TELECOM - SERVICE DELIVERY SUPPORT SERVICES: ITSM, OPERATIONS CENTER, PROJECT/PM (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA489026C0006_9700_-NONE-_-NONE-",
-      "award_id": "FA489026C0006",
-      "recipient": "KONIAG IT SYSTEMS, LLC",
-      "recipient_slug": "koniag-it-systems-llc",
-      "amount": 5060186.92,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "THIS REQUIREMENT PROVIDES ENTERPRISE-LEVEL SERVICES TO ACCELERATE THE ADOPTION, TRAINING, GOVERNANCE, AND OPERATIONAL INTEGRATION OF ARTIFICIAL INTELLIGENCE (AI) AND ROBOTIC PROCESS AUTOMATION (RPA) CAPABILITIES ACROSS ACC.",
-      "start_date": "2026-04-01",
-      "end_date": "2027-03-31",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "R425",
-      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
@@ -2465,7 +2486,7 @@
       "sub_agency": "Department of Veterans Affairs",
       "description": "DELIVERY OF TWO RAPID PROTOTYPES AND TECHNICAL SOLUTIONS TO SUPPORT THE IMPROVEMENT OF BENEFITS DELIVERY THROUGH ARTIFICIAL INTELLIGENCE AND MODERN INFRASTRUCTURE AND CLOUD-BASED INFRASTRUCTURE NECESSARY TO ENABLE REPEATABLE, ACCELERATED PROTOTYPING.",
       "start_date": "2025-09-25",
-      "end_date": "2026-09-24",
+      "end_date": "2027-09-24",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DA01",
@@ -5852,27 +5873,6 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA864925P0429_9700_-NONE-_-NONE-",
-      "award_id": "FA864925P0429",
-      "recipient": "T3W BUSINESS SOLUTIONS, INC.",
-      "recipient_slug": "t3w-business-solutions-inc",
-      "amount": 1249891,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MEDSCRIBE DEFENSE - GENERATIVE ARTIFICIAL INTELLIGENCE (GENAI) AMBIENT MEDICAL SCRIBE SUPPORTING AIR FORCE MEDICAL READINESS EXAMS AND SCREENINGS",
-      "start_date": "2025-09-29",
-      "end_date": "2027-07-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -12809,27 +12809,6 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
-      "award_id": "47QFCA26F0023",
-      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
-      "recipient_slug": "accenture-federal-services-llc",
-      "amount": 102250,
-      "agency": "General Services Administration",
-      "agency_slug": "general-services-administration",
-      "sub_agency": "Federal Acquisition Service",
-      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
-      "start_date": "2026-07-28",
-      "end_date": "2027-07-27",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
