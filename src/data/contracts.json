@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T01:59:17.253Z",
+  "generated_at": "2026-08-24T07:31:00.287Z",
   "count": 696,
   "window": {
     "start": "2023-10-01",
@@ -7976,6 +7976,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_69319525F10020N_6955_693JJ320A000016_6925",
+      "award_id": "69319525F10020N",
+      "recipient": "INCENTIVE TECHNOLOGY GROUP LLC",
+      "recipient_slug": "incentive-technology-group-llc",
+      "amount": 832930,
+      "agency": "Department of Transportation",
+      "agency_slug": "department-of-transportation",
+      "sub_agency": "Federal Transit Administration",
+      "description": "THE PURPOSE OF THIS CALL ORDER IS TO PROVIDE ARTIFICIAL INTELLIGENCE SUPPORT.",
+      "start_date": "2025-07-24",
+      "end_date": "2027-09-19",
+      "naics_code": "541513",
+      "naics_desc": "COMPUTER FACILITIES MANAGEMENT SERVICES",
+      "psc_code": "R408",
+      "psc_desc": "SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NSSC23CA099_8000_-NONE-_-NONE-",
       "award_id": "80NSSC23CA099",
       "recipient": "GEOLABE LLC",
@@ -8058,27 +8079,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_69319525F10020N_6955_693JJ320A000016_6925",
-      "award_id": "69319525F10020N",
-      "recipient": "INCENTIVE TECHNOLOGY GROUP LLC",
-      "recipient_slug": "incentive-technology-group-llc",
-      "amount": 785212,
-      "agency": "Department of Transportation",
-      "agency_slug": "department-of-transportation",
-      "sub_agency": "Federal Transit Administration",
-      "description": "THE PURPOSE OF THIS CALL ORDER IS TO PROVIDE ARTIFICIAL INTELLIGENCE SUPPORT.",
-      "start_date": "2025-07-24",
-      "end_date": "2027-07-23",
-      "naics_code": "541513",
-      "naics_desc": "COMPUTER FACILITIES MANAGEMENT SERVICES",
-      "psc_code": "R408",
-      "psc_desc": "SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
