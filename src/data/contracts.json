@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-26T20:05:05.228Z",
+  "generated_at": "2026-08-27T09:55:33.698Z",
   "count": 696,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-26"
+    "end": "2026-08-27"
   },
   "contracts": [
     {
@@ -2024,27 +2024,6 @@
       "psc_code": "AC13",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "NH",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_2032L225F00049_2050_2032L225D00002_2050",
-      "award_id": "2032L225F00049",
-      "recipient": "SOKAT CONSULTING LLC",
-      "recipient_slug": "sokat-consulting-llc",
-      "amount": 3314392,
-      "agency": "Department of the Treasury",
-      "agency_slug": "department-of-the-treasury",
-      "sub_agency": "Internal Revenue Service",
-      "description": "THIS IS DELIVERY ORDER 1 FOR ARTIFICIAL INTELLIGENCE CODING TOOLS AND ARTIFICIAL INTELLIGENCE CHAT TOOLS AGAINST 2032L225D00002.",
-      "start_date": "2025-09-30",
-      "end_date": "2026-09-29",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7A21",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -12767,6 +12746,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_2032L225F00049_2050_2032L225D00002_2050",
+      "award_id": "2032L225F00049",
+      "recipient": "SOKAT CONSULTING LLC",
+      "recipient_slug": "sokat-consulting-llc",
+      "amount": 108975.1,
+      "agency": "Department of the Treasury",
+      "agency_slug": "department-of-the-treasury",
+      "sub_agency": "Internal Revenue Service",
+      "description": "THIS IS DELIVERY ORDER 1 FOR ARTIFICIAL INTELLIGENCE CODING TOOLS AND ARTIFICIAL INTELLIGENCE CHAT TOOLS AGAINST 2032L225D00002.",
+      "start_date": "2025-09-30",
+      "end_date": "2026-09-29",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "7A21",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
