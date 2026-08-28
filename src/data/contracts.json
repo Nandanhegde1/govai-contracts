@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-27T22:18:34.111Z",
-  "count": 696,
+  "generated_at": "2026-08-28T11:29:11.010Z",
+  "count": 697,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-27"
+    "end": "2026-08-28"
   },
   "contracts": [
     {
@@ -564,6 +564,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
+      "award_id": "HQ086026FE001",
+      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
+      "recipient_slug": "modern-technology-solutions-inc",
+      "amount": 13029608.89,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Missile Defense Agency",
+      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
+      "start_date": "2026-02-02",
+      "end_date": "2028-02-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "AL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W911QX24F0108_9700_W911QX24D0024_9700",
       "award_id": "W911QX24F0108",
       "recipient": "PALANTIR USG INC",
@@ -839,27 +860,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_HQ086026FE001_9700_HQ086024D0001_9700",
-      "award_id": "HQ086026FE001",
-      "recipient": "MODERN TECHNOLOGY SOLUTIONS, INC.",
-      "recipient_slug": "modern-technology-solutions-inc",
-      "amount": 9287533.89,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Missile Defense Agency",
-      "description": "DIGITAL ENGINEERING DRIVING ARTIFICIAL INTELLIGENCE-ENHANCED MODELING AND SIMULATION (DEDAIM)",
-      "start_date": "2026-02-02",
-      "end_date": "2028-02-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "AL",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_15F06725F0001855_1549_15F06724A0000296_1549",
       "award_id": "15F06725F0001855",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
@@ -1011,6 +1011,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W56KGU24C0026_9700_-NONE-_-NONE-",
+      "award_id": "W56KGU24C0026",
+      "recipient": "RAYTHEON COMPANY",
+      "recipient_slug": "raytheon-company",
+      "amount": 6728644.52,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "DEVELOPMENT, MATURATION, AND INTEGRATION OF TECHNOLOGY FOR ARTIFICIAL INTELLIGENCE (AI)-ASSISTED TARGETING, RAPID FIRES DECONFLICTION, AND DYNAMIC AIRSPACE MANAGEMENT",
+      "start_date": "2024-07-19",
+      "end_date": "2026-12-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_N0017321C2002_9700_-NONE-_-NONE-",
       "award_id": "N0017321C2002",
       "recipient": "STRATEGIC ANALYSIS, INC.",
@@ -1098,6 +1119,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX26CA003_9700_-NONE-_-NONE-",
+      "award_id": "W911QX26CA003",
+      "recipient": "ECS FEDERAL, LLC",
+      "recipient_slug": "ecs-federal-llc",
+      "amount": 5981000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "BROAD AGENCY ANNOUNCEMENT NAUTILUS ARTIFICIAL INTELLIGENCE RESEARCH AND DEVELOPMENT",
+      "start_date": "2026-05-28",
+      "end_date": "2027-05-27",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC35",
+      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_80NM0018F0747_8000_80NM0018D0004_8000",
       "award_id": "80NM0018F0747",
       "recipient": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
@@ -1116,27 +1158,6 @@
       "pop_state": "CA",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W56KGU24C0026_9700_-NONE-_-NONE-",
-      "award_id": "W56KGU24C0026",
-      "recipient": "RAYTHEON COMPANY",
-      "recipient_slug": "raytheon-company",
-      "amount": 5783644.52,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "DEVELOPMENT, MATURATION, AND INTEGRATION OF TECHNOLOGY FOR ARTIFICIAL INTELLIGENCE (AI)-ASSISTED TARGETING, RAPID FIRES DECONFLICTION, AND DYNAMIC AIRSPACE MANAGEMENT",
-      "start_date": "2024-07-19",
-      "end_date": "2029-08-07",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "MA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -1819,27 +1840,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W912CG24C0002_9700_-NONE-_-NONE-",
-      "award_id": "W912CG24C0002",
-      "recipient": "ACCELINT AI, LLC",
-      "recipient_slug": "accelint-ai-llc",
-      "amount": 3990655,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE FOR MODELING AND SIMULATION",
-      "start_date": "2023-12-08",
-      "end_date": "2027-06-06",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "MI",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_2032H822F00171_2050_47QTCB21D0289_4732",
       "award_id": "2032H822F00171",
       "recipient": "ANALYTICA LLC",
@@ -1877,6 +1877,27 @@
       "psc_code": "DA10",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
       "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W912CG24C0002_9700_-NONE-_-NONE-",
+      "award_id": "W912CG24C0002",
+      "recipient": "ACCELINT AI, LLC",
+      "recipient_slug": "accelint-ai-llc",
+      "amount": 3817682.07,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE FOR MODELING AND SIMULATION",
+      "start_date": "2023-12-08",
+      "end_date": "2027-06-06",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "MI",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2643,6 +2664,28 @@
       "pop_state": "MA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_N0017325C2428_9700_-NONE-_-NONE-",
+      "award_id": "N0017325C2428",
+      "recipient": "STRATEGIC ANALYSIS, INC.",
+      "recipient_slug": "strategic-analysis-inc",
+      "amount": 2351740.63,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Navy",
+      "description": "HUMAN SYSTEMS INTEGRATION CONSIDERATIONS WITH ARTIFICIAL INTELLIGENCE / MACHINE LEARNING TECHNOLOGIES",
+      "start_date": "2025-05-30",
+      "end_date": "2027-05-29",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC11",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -4475,28 +4518,6 @@
       "pop_state": "PA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_N0017325C2428_9700_-NONE-_-NONE-",
-      "award_id": "N0017325C2428",
-      "recipient": "STRATEGIC ANALYSIS, INC.",
-      "recipient_slug": "strategic-analysis-inc",
-      "amount": 1580854.79,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Navy",
-      "description": "HUMAN SYSTEMS INTEGRATION CONSIDERATIONS WITH ARTIFICIAL INTELLIGENCE / MACHINE LEARNING TECHNOLOGIES",
-      "start_date": "2025-05-30",
-      "end_date": "2026-05-29",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC11",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
