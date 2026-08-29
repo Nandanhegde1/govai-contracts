@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T22:25:13.481Z",
-  "count": 697,
+  "generated_at": "2026-08-29T07:08:37.105Z",
+  "count": 699,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-28"
+    "end": "2026-08-29"
   },
   "contracts": [
     {
@@ -76,7 +76,7 @@
       "award_id": "W911QX25C0002",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 72819404.2,
+      "amount": 65006500.75,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -1246,6 +1246,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B25N00020003_3600_36C10B25D0002_3600",
+      "award_id": "36C10B25N00020003",
+      "recipient": "AQUIA NAVA II LLC",
+      "recipient_slug": "aquia-nava-ii-llc",
+      "amount": 5366116,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "THE OBJECTIVE OF THE SPRUCE TO 36C10B25N00020003 IS FOR THE NATIONAL ARTIFICIAL INTELLIGENCE INSTITUTE (NAII) ARTIFICIAL INTELLIGENCE (AI) SOLUTION TECHNICAL CONFIGURATION MANAGEMENT & SUPPORT",
+      "start_date": "2025-09-30",
+      "end_date": "2027-09-29",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "DE",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_36C10X23F0092_3600_47QTCA23D005Y_4732",
       "award_id": "36C10X23F0092",
       "recipient": "NATIONAL CONSULTING PARTNERS LLC",
@@ -1306,6 +1327,28 @@
       "pop_state": "MA",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W519TC26CA019_9700_-NONE-_-NONE-",
+      "award_id": "W519TC26CA019",
+      "recipient": "KONIAG EMERGING TECHNOLOGIES LLC",
+      "recipient_slug": "koniag-emerging-technologies-llc",
+      "amount": 5267244.8,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE (AI) RAPID SUPPORT (AIRS) IN SUPPORT OF DEPUTY TO THE CHIEF DIGITAL ARTIFICIAL INTELLIGENCE OFFICE (CDAO) ENTERPRISE PROGRAMS (FORMERLY AI RAPID CAPABILITIES CELL)",
+      "start_date": "2026-05-29",
+      "end_date": "2027-05-28",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "R423",
+      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
+      "pop_state": "AK",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
       ]
     },
     {
@@ -2519,27 +2562,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_36C10B25N00020003_3600_36C10B25D0002_3600",
-      "award_id": "36C10B25N00020003",
-      "recipient": "AQUIA NAVA II LLC",
-      "recipient_slug": "aquia-nava-ii-llc",
-      "amount": 2557068.8,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "THE OBJECTIVE OF THE SPRUCE TO 36C10B25N00020003 IS FOR THE NATIONAL ARTIFICIAL INTELLIGENCE INSTITUTE (NAII) ARTIFICIAL INTELLIGENCE (AI) SOLUTION TECHNICAL CONFIGURATION MANAGEMENT & SUPPORT",
-      "start_date": "2025-09-30",
-      "end_date": "2026-09-29",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "DE",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_HR001125CE038_9700_-NONE-_-NONE-",
       "award_id": "HR001125CE038",
       "recipient": "AARNO LABS LLC",
@@ -2920,6 +2942,27 @@
       "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W15QKN24C0042_9700_-NONE-_-NONE-",
+      "award_id": "W15QKN24C0042",
+      "recipient": "OPTIMIZATION TECHNOLOGIES, INC.",
+      "recipient_slug": "optimization-technologies-inc",
+      "amount": 2000000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "STTR PHASE II AWARD FOR VERIFICATION, VALIDATION, ASSURANCE, AND TRUST OF MACHINE LEARNING MODELS AND DATA",
+      "start_date": "2024-06-28",
+      "end_date": "2027-06-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "CO",
+      "matched_keywords": [
         "machine learning"
       ]
     },
@@ -7085,27 +7128,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W15QKN24C0042_9700_-NONE-_-NONE-",
-      "award_id": "W15QKN24C0042",
-      "recipient": "OPTIMIZATION TECHNOLOGIES, INC.",
-      "recipient_slug": "optimization-technologies-inc",
-      "amount": 1150000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "STTR PHASE II AWARD FOR VERIFICATION, VALIDATION, ASSURANCE, AND TRUST OF MACHINE LEARNING MODELS AND DATA",
-      "start_date": "2024-06-28",
-      "end_date": "2026-06-28",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "CO",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_70RSAT23FR0000136_7001_70RSAT20D00000001_7001",
       "award_id": "70RSAT23FR0000136",
       "recipient": "THE MITRE CORPORATION",
@@ -9947,6 +9969,28 @@
       "pop_state": "AL",
       "matched_keywords": [
         "large language model"
+      ]
+    },
+    {
+      "id": "CONT_AWD_31310026C0015_3100_-NONE-_-NONE-",
+      "award_id": "31310026C0015",
+      "recipient": "DEF-LOGIX INC",
+      "recipient_slug": "def-logix-inc",
+      "amount": 249978,
+      "agency": "Nuclear Regulatory Commission",
+      "agency_slug": "nuclear-regulatory-commission",
+      "sub_agency": "Nuclear Regulatory Commission",
+      "description": "CYBERSECURITY OF NOVEL TECHNOLOGY IMPLEMENTATIONS IN OPERATING AND NEW ADVANCED REACTORS ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+      "start_date": "2026-08-27",
+      "end_date": "2027-08-26",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
