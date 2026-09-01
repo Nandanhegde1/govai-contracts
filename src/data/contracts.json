@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T22:54:04.178Z",
-  "count": 699,
+  "generated_at": "2026-09-01T05:15:55.342Z",
+  "count": 700,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-08-31"
+    "end": "2026-09-01"
   },
   "contracts": [
     {
@@ -1395,6 +1395,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA237726CB019_9700_-NONE-_-NONE-",
+      "award_id": "FA237726CB019",
+      "recipient": "ETEGENT TECHNOLOGIES, LTD.",
+      "recipient_slug": "etegent-technologies-ltd",
+      "amount": 5124961,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "GEOSPATIAL AUTOMATION USING MACHINE LEARNING FOR ELECTRO-OPTICAL AND SYNTHETIC APERTURE RADAR (GAMES)",
+      "start_date": "2026-04-30",
+      "end_date": "2031-04-29",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_36C10B25F0039_3600_NNG15SD26B_8000",
       "award_id": "36C10B25F0039",
       "recipient": "THUNDERCAT TECHNOLOGY, LLC",
@@ -2409,27 +2430,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "deep learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA237726CB019_9700_-NONE-_-NONE-",
-      "award_id": "FA237726CB019",
-      "recipient": "ETEGENT TECHNOLOGIES, LTD.",
-      "recipient_slug": "etegent-technologies-ltd",
-      "amount": 2700000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "GEOSPATIAL AUTOMATION USING MACHINE LEARNING FOR ELECTRO-OPTICAL AND SYNTHETIC APERTURE RADAR (GAMES)",
-      "start_date": "2026-04-30",
-      "end_date": "2031-04-29",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "machine learning"
       ]
     },
     {
@@ -8104,6 +8104,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_H9227826PE010_9700_-NONE-_-NONE-",
+      "award_id": "H9227826PE010",
+      "recipient": "WORLD WIDE TECHNOLOGY LLC",
+      "recipient_slug": "world-wide-technology-llc",
+      "amount": 779940.74,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "U.S. Special Operations Command",
+      "description": "COMMERCIAL CLOUD COMPUTE, STORAGE AND DATABASES, COMMERCIAL NETWORKING, BIG DATA TRANSFER, MACHINE LEARNING, APIS, IOT, DATA MANAGEMENT, INTEGRATION, SECURITY TOOLS",
+      "start_date": "2026-06-01",
+      "end_date": "2026-12-01",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "DC10",
+      "psc_desc": "IT AND TELECOM - DATA CENTER AS A SERVICE",
+      "pop_state": null,
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_9523ZY23C0008_9507_-NONE-_-NONE-",
       "award_id": "9523ZY23C0008",
       "recipient": "SOHUM SYSTEMS LLC",
@@ -11314,7 +11335,7 @@
       "agency": "Department of Veterans Affairs",
       "agency_slug": "department-of-veterans-affairs",
       "sub_agency": "Department of Veterans Affairs",
-      "description": "VISN 22 RADIOLOGY GRAPHIC SERVERS FOR ARTIFICIAL INTELLIGENCE PROCUREMENT FOR THE BLACKFORD AI PLATFORM",
+      "description": "VISN 22 RADIOLOGY GRAPHIC SERVERS FOR ARTIFICIAL INTELLIGENCE PROCUREMENT FOR THE BLACKFORD AI PLATFORM           EO 14398",
       "start_date": "2026-02-27",
       "end_date": "2027-02-26",
       "naics_code": "541519",
