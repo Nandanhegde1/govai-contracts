@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T21:05:43.737Z",
+  "generated_at": "2026-09-02T04:41:12.887Z",
   "count": 700,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-09-01"
+    "end": "2026-09-02"
   },
   "contracts": [
     {
@@ -458,6 +458,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
+      "award_id": "FA239125CB010",
+      "recipient": "UNIVERSITY OF DAYTON",
+      "recipient_slug": "university-of-dayton",
+      "amount": 14535633.4,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
+      "start_date": "2025-08-25",
+      "end_date": "2028-02-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_W31P4Q21F0332_9700_W31P4Q18D0002_9700",
       "award_id": "W31P4Q21F0332",
       "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
@@ -667,27 +688,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
-      "award_id": "FA239125CB010",
-      "recipient": "UNIVERSITY OF DAYTON",
-      "recipient_slug": "university-of-dayton",
-      "amount": 11317571.4,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
-      "start_date": "2025-08-25",
-      "end_date": "2028-02-24",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
