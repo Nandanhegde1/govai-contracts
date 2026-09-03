@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-02T21:06:29.373Z",
+  "generated_at": "2026-09-03T04:37:58.757Z",
   "count": 700,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-09-02"
+    "end": "2026-09-03"
   },
   "contracts": [
     {
@@ -76,7 +76,7 @@
       "award_id": "W911QX25C0002",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 65006500.75,
+      "amount": 72819404.2,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -568,7 +568,7 @@
       "award_id": "1333BJ23C00280006",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
       "recipient_slug": "accenture-federal-services-llc",
-      "amount": 13293563.31,
+      "amount": 13283563.31,
       "agency": "Department of Commerce",
       "agency_slug": "department-of-commerce",
       "sub_agency": "U.S. Patent and Trademark Office",
@@ -1094,6 +1094,28 @@
       "matched_keywords": [
         "machine learning",
         "ai"
+      ]
+    },
+    {
+      "id": "CONT_AWD_53987123F0014_5300_47QTCB22D0194_4732",
+      "award_id": "53987123F0014",
+      "recipient": "ZOLON PCS II, LLC",
+      "recipient_slug": "zolon-pcs-ii-llc",
+      "amount": 6359042.24,
+      "agency": "Institute of Museum and Library Services",
+      "agency_slug": "institute-of-museum-and-library-services",
+      "sub_agency": "Institute of Museum and Library Services",
+      "description": "INFORMATION TECHNOLOGY SYSTEMS DEVELOPMENT, OPERATIONS, WEBSITE, ARTIFICIAL INTELLIGENCE/MACHINE LEARNING AND MAINTENANCE CONTRACT",
+      "start_date": "2023-09-01",
+      "end_date": "2027-09-29",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DF01",
+      "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -1667,28 +1689,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_53987123F0014_5300_47QTCB22D0194_4732",
-      "award_id": "53987123F0014",
-      "recipient": "ZOLON PCS II, LLC",
-      "recipient_slug": "zolon-pcs-ii-llc",
-      "amount": 4577625.88,
-      "agency": "Institute of Museum and Library Services",
-      "agency_slug": "institute-of-museum-and-library-services",
-      "sub_agency": "Institute of Museum and Library Services",
-      "description": "INFORMATION TECHNOLOGY SYSTEMS DEVELOPMENT, OPERATIONS, WEBSITE, ARTIFICIAL INTELLIGENCE/MACHINE LEARNING AND MAINTENANCE CONTRACT",
-      "start_date": "2023-09-01",
-      "end_date": "2026-09-29",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DF01",
-      "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -9769,7 +9769,7 @@
       "sub_agency": "National Aeronautics and Space Administration",
       "description": "JPL SUPPORT FOR ARTIFICIAL INTELLIGENCE IN HELIOPHYSICS (70-223756)",
       "start_date": "2025-01-30",
-      "end_date": "2026-09-30",
+      "end_date": "2027-02-28",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AR12",
