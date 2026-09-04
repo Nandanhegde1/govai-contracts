@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T21:05:37.545Z",
+  "generated_at": "2026-09-04T04:39:49.119Z",
   "count": 700,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-09-03"
+    "end": "2026-09-04"
   },
   "contracts": [
     {
@@ -90,6 +90,27 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QFCA26F0018_4732_47QTCK18D0004_4732",
+      "award_id": "47QFCA26F0018",
+      "recipient": "BOOZ ALLEN HAMILTON INC",
+      "recipient_slug": "booz-allen-hamilton-inc",
+      "amount": 57402072,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THE PURPOSE OF THIS CONTRACT ACTION IS TO AWARD AND INCREMENTALLY FUND THE ENTERPRISE MACHINE LEARNING ANALYTICS AND PERSISTENT SERVICES 3 (EMAPS 3) TASK ORDER.",
+      "start_date": "2026-06-15",
+      "end_date": "2027-06-14",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "NC",
+      "matched_keywords": [
         "machine learning"
       ]
     },
@@ -218,6 +239,27 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_75FCMC23F0001_7530_75FCMC22A0018_7530",
+      "award_id": "75FCMC23F0001",
+      "recipient": "INDEX ANALYTICS LLC",
+      "recipient_slug": "index-analytics-llc",
+      "amount": 22937726.63,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "Centers for Medicare and Medicaid Services",
+      "description": "ARTIFICIAL INTELLIGENCE THROUGH MACHINE LEARNED MODELING (AIMM)",
+      "start_date": "2023-09-28",
+      "end_date": "2027-09-27",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DF01",
+      "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -371,27 +413,6 @@
       "pop_state": "NJ",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75FCMC23F0001_7530_75FCMC22A0018_7530",
-      "award_id": "75FCMC23F0001",
-      "recipient": "INDEX ANALYTICS LLC",
-      "recipient_slug": "index-analytics-llc",
-      "amount": 16567088.71,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "Centers for Medicare and Medicaid Services",
-      "description": "ARTIFICIAL INTELLIGENCE THROUGH MACHINE LEARNED MODELING (AIMM)",
-      "start_date": "2023-09-28",
-      "end_date": "2026-09-27",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DF01",
-      "psc_desc": "IT AND TELECOM - IT MANAGEMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -943,27 +964,6 @@
       "matched_keywords": [
         "machine learning",
         "mlops"
-      ]
-    },
-    {
-      "id": "CONT_AWD_47QFCA26F0018_4732_47QTCK18D0004_4732",
-      "award_id": "47QFCA26F0018",
-      "recipient": "BOOZ ALLEN HAMILTON INC",
-      "recipient_slug": "booz-allen-hamilton-inc",
-      "amount": 6998425,
-      "agency": "General Services Administration",
-      "agency_slug": "general-services-administration",
-      "sub_agency": "Federal Acquisition Service",
-      "description": "THE PURPOSE OF THIS CONTRACT ACTION IS TO AWARD AND INCREMENTALLY FUND THE ENTERPRISE MACHINE LEARNING ANALYTICS AND PERSISTENT SERVICES 3 (EMAPS 3) TASK ORDER.",
-      "start_date": "2026-06-15",
-      "end_date": "2027-06-14",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "NC",
-      "matched_keywords": [
-        "machine learning"
       ]
     },
     {
