@@ -1,20 +1,41 @@
 {
-  "generated_at": "2026-09-04T20:48:39.035Z",
-  "count": 700,
+  "generated_at": "2026-09-25T11:57:08.737Z",
+  "count": 696,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-09-04"
+    "end": "2026-09-25"
   },
   "contracts": [
+    {
+      "id": "CONT_AWD_47QFCA26F0018_4732_47QTCK18D0004_4732",
+      "award_id": "47QFCA26F0018",
+      "recipient": "BOOZ ALLEN HAMILTON INC",
+      "recipient_slug": "booz-allen-hamilton-inc",
+      "amount": 165559462,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THE PURPOSE OF THIS CONTRACT ACTION IS TO AWARD AND INCREMENTALLY FUND THE ENTERPRISE MACHINE LEARNING ANALYTICS AND PERSISTENT SERVICES 3 (EMAPS 3) TASK ORDER.",
+      "start_date": "2026-06-15",
+      "end_date": "2027-06-14",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "NC",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
     {
       "id": "CONT_AWD_W911QX20C0023_9700_-NONE-_-NONE-",
       "award_id": "W911QX20C0023",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 120575059.35,
+      "amount": 120492195.74,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
+      "sub_agency": "Defense Contract Management Agency",
       "description": "RESEARCH AND DEVELOPMENT EFFORT TO DESIGN AND DEVELOP PROTOTYPES TO ARTIFICIAL INTELLIGENCE/MACHINE LEARNING ALGORITHMS.",
       "start_date": "2020-04-23",
       "end_date": "2027-03-11",
@@ -94,27 +115,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_47QFCA26F0018_4732_47QTCK18D0004_4732",
-      "award_id": "47QFCA26F0018",
-      "recipient": "BOOZ ALLEN HAMILTON INC",
-      "recipient_slug": "booz-allen-hamilton-inc",
-      "amount": 57402072,
-      "agency": "General Services Administration",
-      "agency_slug": "general-services-administration",
-      "sub_agency": "Federal Acquisition Service",
-      "description": "THE PURPOSE OF THIS CONTRACT ACTION IS TO AWARD AND INCREMENTALLY FUND THE ENTERPRISE MACHINE LEARNING ANALYTICS AND PERSISTENT SERVICES 3 (EMAPS 3) TASK ORDER.",
-      "start_date": "2026-06-15",
-      "end_date": "2027-06-14",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "NC",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_36C10B20F0417_3600_NNG15SC91B_8000",
       "award_id": "36C10B20F0417",
       "recipient": "SWISH DATA CORPORATION",
@@ -176,6 +176,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
+      "award_id": "47QFCA26F0023",
+      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
+      "recipient_slug": "accenture-federal-services-llc",
+      "amount": 36709970,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
+      "start_date": "2026-07-28",
+      "end_date": "2027-07-27",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -352,27 +373,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
-      "award_id": "47QFCA26F0023",
-      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
-      "recipient_slug": "accenture-federal-services-llc",
-      "amount": 17672846,
-      "agency": "General Services Administration",
-      "agency_slug": "general-services-administration",
-      "sub_agency": "Federal Acquisition Service",
-      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
-      "start_date": "2026-07-28",
-      "end_date": "2027-07-27",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W911QX25C0005_9700_-NONE-_-NONE-",
       "award_id": "W911QX25C0005",
       "recipient": "METRON INCORPORATED",
@@ -458,6 +458,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W31P4Q21F0332_9700_W31P4Q18D0002_9700",
+      "award_id": "W31P4Q21F0332",
+      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
+      "recipient_slug": "georgia-tech-applied-research-corp",
+      "amount": 15445179.27,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "NAVAL AIR WARFARE CENTER WEAPONS DIVISION (NAWCWD) AIRBORNE ELECTRONIC ATTACK INTEGRATED PRODUCT TEAM (AEA IPT) MACHINE LEARNING SUPPORT",
+      "start_date": "2021-09-24",
+      "end_date": "2026-09-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA865021C6271_9700_-NONE-_-NONE-",
       "award_id": "FA865021C6271",
       "recipient": "MILE TWO LLC",
@@ -500,32 +521,11 @@
       ]
     },
     {
-      "id": "CONT_AWD_W31P4Q21F0332_9700_W31P4Q18D0002_9700",
-      "award_id": "W31P4Q21F0332",
-      "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
-      "recipient_slug": "georgia-tech-applied-research-corp",
-      "amount": 14426183.79,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "NAVAL AIR WARFARE CENTER WEAPONS DIVISION (NAWCWD) AIRBORNE ELECTRONIC ATTACK INTEGRATED PRODUCT TEAM (AEA IPT) MACHINE LEARNING SUPPORT",
-      "start_date": "2021-09-24",
-      "end_date": "2026-09-24",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "GA",
-      "matched_keywords": [
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_W911QX25F0024_9700_W911QX25D0007_9700",
       "award_id": "W911QX25F0024",
       "recipient": "MORSECORP, INC",
       "recipient_slug": "morsecorp-inc",
-      "amount": 13753173.86,
+      "amount": 14279614.07,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -712,6 +712,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_91990022F0045_9100_91990022A0001_9100",
+      "award_id": "91990022F0045",
+      "recipient": "ICATALYST, INC.",
+      "recipient_slug": "icatalyst-inc",
+      "amount": 10975659.76,
+      "agency": "Department of Education",
+      "agency_slug": "department-of-education",
+      "sub_agency": "Department of Education",
+      "description": "DEPARTMENT OF EDUCATION IT MODERNIZATION BPA--CIO INNOVATION ARTIFICIAL INTELLIGENCE",
+      "start_date": "2022-09-29",
+      "end_date": "2027-09-28",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_H9240124C0002_9700_-NONE-_-NONE-",
       "award_id": "H9240124C0002",
       "recipient": "YURTS TECHNOLOGIES, INC.",
@@ -749,27 +770,6 @@
       "psc_code": "AC12",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "NJ",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_91990022F0045_9100_91990022A0001_9100",
-      "award_id": "91990022F0045",
-      "recipient": "ICATALYST, INC.",
-      "recipient_slug": "icatalyst-inc",
-      "amount": 10270659.76,
-      "agency": "Department of Education",
-      "agency_slug": "department-of-education",
-      "sub_agency": "Department of Education",
-      "description": "DEPARTMENT OF EDUCATION IT MODERNIZATION BPA--CIO INNOVATION ARTIFICIAL INTELLIGENCE",
-      "start_date": "2022-09-29",
-      "end_date": "2027-09-28",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R499",
-      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -1021,7 +1021,7 @@
       "sub_agency": "Department of the Army",
       "description": "DEVELOPMENT, MATURATION, AND INTEGRATION OF TECHNOLOGY FOR ARTIFICIAL INTELLIGENCE (AI)-ASSISTED TARGETING, RAPID FIRES DECONFLICTION, AND DYNAMIC AIRSPACE MANAGEMENT",
       "start_date": "2024-07-19",
-      "end_date": "2026-12-31",
+      "end_date": "2029-08-07",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
@@ -1390,6 +1390,27 @@
       "psc_code": "AD92",
       "psc_desc": "R&D- DEFENSE OTHER: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
       "pop_state": "TN",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864923P1087_9700_-NONE-_-NONE-",
+      "award_id": "FA864923P1087",
+      "recipient": "ILLUMINATION WORKS, LLC",
+      "recipient_slug": "illumination-works-llc",
+      "amount": 5247681,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "F2D-8670 ODIN FINANCIAL MANAGEMENT - ARTIFICIAL INTELLIGENCE ENABLED EXECUTION PLAN & BUDGET",
+      "start_date": "2023-07-19",
+      "end_date": "2027-06-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -1815,27 +1836,6 @@
       "psc_code": "7A21",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "TX",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA864923P1087_9700_-NONE-_-NONE-",
-      "award_id": "FA864923P1087",
-      "recipient": "ILLUMINATION WORKS, LLC",
-      "recipient_slug": "illumination-works-llc",
-      "amount": 4248050,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "F2D-8670 ODIN FINANCIAL MANAGEMENT - ARTIFICIAL INTELLIGENCE ENABLED EXECUTION PLAN & BUDGET",
-      "start_date": "2023-07-19",
-      "end_date": "2027-06-30",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2306,6 +2306,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B26F0372_3600_47QTCA25D00AX_4732",
+      "award_id": "36C10B26F0372",
+      "recipient": "WILCORE TECHNOLOGIES INC",
+      "recipient_slug": "wilcore-technologies-inc",
+      "amount": 2926310.46,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "ARTIFICIAL INTELLIGENCE VETERAN-CENTERED SUBMISSION ECOSYSTEM SUPPORT FOR THE DESIGN, DEVELOPMENT, AND DEPLOYMENT OF SECURE, ACCESSIBLE, AND INTEROPERABLE DIGITAL WORKFLOW SOLUTIONS THAT MODERNIZE VAS FORMS ECOSYSTEM.",
+      "start_date": "2026-09-22",
+      "end_date": "2027-09-21",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864923P1095_9700_-NONE-_-NONE-",
       "award_id": "FA864923P1095",
       "recipient": "CONDUCTORAI CORPORATION",
@@ -2343,6 +2364,27 @@
       "psc_code": "AC13",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
       "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W911QX25FA054_9700_W911QX25DA011_9700",
+      "award_id": "W911QX25FA054",
+      "recipient": "SCALE AI, INC.",
+      "recipient_slug": "scale-ai-inc",
+      "amount": 2882872,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ARTIFICIAL INTELLIGENCE SUPPORT FOR BASIC AND APPLIED RESEARCH OF THE ARMY RESEARCH LABORATORY",
+      "start_date": "2025-08-26",
+      "end_date": "2026-10-27",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC33",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2529,7 +2571,7 @@
       "sub_agency": "Department of Veterans Affairs",
       "description": "DELIVERY OF TWO RAPID PROTOTYPES AND TECHNICAL SOLUTIONS TO SUPPORT THE IMPROVEMENT OF BENEFITS DELIVERY THROUGH ARTIFICIAL INTELLIGENCE AND MODERN INFRASTRUCTURE AND CLOUD-BASED INFRASTRUCTURE NECESSARY TO ENABLE REPEATABLE, ACCELERATED PROTOTYPING.",
       "start_date": "2025-09-25",
-      "end_date": "2027-09-24",
+      "end_date": "2027-01-19",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DA01",
@@ -2583,6 +2625,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001125CE017_9700_-NONE-_-NONE-",
+      "award_id": "HR001125CE017",
+      "recipient": "KITWARE INC",
+      "recipient_slug": "kitware-inc",
+      "amount": 2521683,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "ARTIFICIAL INTELLIGENCE QUANTIFIED (AIQ)",
+      "start_date": "2025-05-09",
+      "end_date": "2026-11-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AA12",
+      "psc_desc": "AGRICULTURE R&D SERVICES; AGRICULTURAL RESEARCH AND SERVICES; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864922P0747_9700_-NONE-_-NONE-",
       "award_id": "FA864922P0747",
       "recipient": "JUMP AERO INC",
@@ -2626,22 +2689,22 @@
       ]
     },
     {
-      "id": "CONT_AWD_W911QX25FA054_9700_W911QX25DA011_9700",
-      "award_id": "W911QX25FA054",
-      "recipient": "SCALE AI, INC.",
-      "recipient_slug": "scale-ai-inc",
-      "amount": 2416184,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ARTIFICIAL INTELLIGENCE SUPPORT FOR BASIC AND APPLIED RESEARCH OF THE ARMY RESEARCH LABORATORY",
-      "start_date": "2025-08-26",
-      "end_date": "2026-08-25",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "DC",
+      "id": "CONT_AWD_70B04C26F00000114_7014_47QTCA18D003J_4732",
+      "award_id": "70B04C26F00000114",
+      "recipient": "CENTRIFUGE, LLC",
+      "recipient_slug": "centrifuge-llc",
+      "amount": 2456774.4,
+      "agency": "Department of Homeland Security",
+      "agency_slug": "department-of-homeland-security",
+      "sub_agency": "U.S. Customs and Border Protection",
+      "description": "THIS IS FOR THE DESIGN AND DEVELOPMENT OF AN ARTIFICIAL INTELLIGENCE (AI) ENHANCED SURVEILLANCE DATA PLATFORM (AI-ESDP).",
+      "start_date": "2026-09-18",
+      "end_date": "2027-09-17",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -2672,7 +2735,7 @@
       "award_id": "W56KGU24C0023",
       "recipient": "SYSTEMS & TECHNOLOGY RESEARCH LLC",
       "recipient_slug": "systems-technology-research-llc",
-      "amount": 2392843,
+      "amount": 2391033,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -2903,6 +2966,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865825CB001_9700_-NONE-_-NONE-",
+      "award_id": "FA865825CB001",
+      "recipient": "UNIVERSITY OF FLORIDA",
+      "recipient_slug": "university-of-florida",
+      "amount": 2080546.25,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "CONTRACT ESTABLISHING SUPPORT FROM THE UNIVERSITY OF FLORIDA (UF) TO ASSESS WEAPON EFFICACY TO EXPAND CAPABILITIES OF MACHINE LEARNING (ML) TECHNOLOGIES ON CURRENT OPERATIONS TO RUN EXPERIMENTS AND TEST ON ARTIFICIAL INTELLIGENCE (AI) SYSTEMS.",
+      "start_date": "2025-04-01",
+      "end_date": "2028-12-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "1420",
+      "psc_desc": "GUIDED MISSILE COMPONENTS",
+      "pop_state": "FL",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_75N91023C00031_7529_-NONE-_-NONE-",
       "award_id": "75N91023C00031",
       "recipient": "SENTIMETRIX, INC.",
@@ -3034,8 +3119,8 @@
     {
       "id": "CONT_AWD_W5170125CA055_9700_-NONE-_-NONE-",
       "award_id": "W5170125CA055",
-      "recipient": "COLDQUANTA, INC.",
-      "recipient_slug": "coldquanta-inc",
+      "recipient": "INFLEQTION QUANTUM, LLC",
+      "recipient_slug": "infleqtion-quantum-llc",
       "amount": 1999826.09,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -3653,28 +3738,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA865825CB001_9700_-NONE-_-NONE-",
-      "award_id": "FA865825CB001",
-      "recipient": "UNIVERSITY OF FLORIDA",
-      "recipient_slug": "university-of-florida",
-      "amount": 1814838.25,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "CONTRACT ESTABLISHING SUPPORT FROM THE UNIVERSITY OF FLORIDA (UF) TO ASSESS WEAPON EFFICACY TO EXPAND CAPABILITIES OF MACHINE LEARNING (ML) TECHNOLOGIES ON CURRENT OPERATIONS TO RUN EXPERIMENTS AND TEST ON ARTIFICIAL INTELLIGENCE (AI) SYSTEMS.",
-      "start_date": "2025-04-01",
-      "end_date": "2028-12-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "1420",
-      "psc_desc": "GUIDED MISSILE COMPONENTS",
-      "pop_state": "FL",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA875025CB017_9700_-NONE-_-NONE-",
       "award_id": "FA875025CB017",
       "recipient": "TOYON RESEARCH CORPORATION",
@@ -3698,7 +3761,7 @@
     {
       "id": "CONT_AWD_FA864924P0562_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0562",
-      "recipient": "ASCEND INTEGRATED TECHNOLOGY SOLUTIONS INC",
+      "recipient": "ASCEND INTEGRATED TECHNOLOGY SOLUTIONS, INC.",
       "recipient_slug": "ascend-integrated-technology-solutions-inc",
       "amount": 1799999,
       "agency": "Department of Defense",
@@ -3719,8 +3782,8 @@
     {
       "id": "CONT_AWD_FA864925P0488_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0488",
-      "recipient": "SENSOROPS LLC",
-      "recipient_slug": "sensorops-llc",
+      "recipient": "SENSOROPS INCORPORATED",
+      "recipient_slug": "sensorops-incorporated",
       "amount": 1799992,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -3749,7 +3812,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "SMALL BUSINESS INNOVATION RESEARCH FOR MULTI INT MULTI LOOK 3D FEATURES IMAGE FUSION WITH MACHINE LEARNING",
       "start_date": "2025-06-30",
-      "end_date": "2027-06-30",
+      "end_date": "2027-06-18",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
@@ -3939,7 +4002,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "EPAS - EVERY PLATFORM AN ARTIFICIAL INTELLIGENCE SENTINELCC",
       "start_date": "2024-09-03",
-      "end_date": "2026-06-01",
+      "end_date": "2026-09-01",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -4437,6 +4500,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_47QACA26F0383_4732_NNG15SC27B_8000",
+      "award_id": "47QACA26F0383",
+      "recipient": "CARAHSOFT TECHNOLOGY CORP",
+      "recipient_slug": "carahsoft-technology-corp",
+      "amount": 1666999.96,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "AGENTIC ARTIFICIAL INTELLIGENCE IMPLEMENTATION AI AGENT",
+      "start_date": "2026-09-14",
+      "end_date": "2027-09-13",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA10",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
+      "pop_state": "PA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "ai"
+      ]
+    },
+    {
       "id": "CONT_AWD_70B06C25F00000621_7014_70B06C20A00000036_7014",
       "award_id": "70B06C25F00000621",
       "recipient": "ELDER RESEARCH, INC.",
@@ -4600,27 +4685,6 @@
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "R499",
       "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_2032L226F00052_2001_2032L226A00002_2050",
-      "award_id": "2032L226F00052",
-      "recipient": "THUNDERYARD LIBERTY JV LLC",
-      "recipient_slug": "thunderyard-liberty-jv-llc",
-      "amount": 1546685.83,
-      "agency": "Department of the Treasury",
-      "agency_slug": "department-of-the-treasury",
-      "sub_agency": "Departmental Offices",
-      "description": "ORDER #6 AGAINST 2032L226A00001 FOR ENTERPRISE APPLICATIONS TECHNICAL SERVICES, TREASURY COMMON SERVICES CENTER, HR INFORMATION TECHNOLOGY STRATEGIC & ARTIFICIAL INTELLIGENCE SERVICES",
-      "start_date": "2026-05-01",
-      "end_date": "2027-06-30",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DE01",
-      "psc_desc": "IT and Telecom - End User: Help Desk; Tier 1-2, Workspace, Print, Output, Productivity Tools (Labor)",
       "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
@@ -4979,7 +5043,7 @@
       "sub_agency": "U.S. Citizenship and Immigration Services",
       "description": "ARTIFICIAL INTELLIGENCE (AI) GATEWAY (LASSO) WILL BE USED TO ENSURE SECURE AND EFFICIENT INTERACTION WITH AI PRODUCTS. POP 9/1/25-8/30/26",
       "start_date": "2025-09-15",
-      "end_date": "2026-09-16",
+      "end_date": "2026-09-21",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DJ10",
@@ -5074,27 +5138,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "neural network"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HR001125CE017_9700_-NONE-_-NONE-",
-      "award_id": "HR001125CE017",
-      "recipient": "KITWARE INC",
-      "recipient_slug": "kitware-inc",
-      "amount": 1353151,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Advanced Research Projects Agency",
-      "description": "ARTIFICIAL INTELLIGENCE QUANTIFIED (AIQ)",
-      "start_date": "2025-05-09",
-      "end_date": "2026-11-09",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AA12",
-      "psc_desc": "AGRICULTURE R&D SERVICES; AGRICULTURAL RESEARCH AND SERVICES; APPLIED RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -7128,6 +7171,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_N0002423F8363_9700_N0002418D6401_9700",
+      "award_id": "N0002423F8363",
+      "recipient": "THE PENNSYLVANIA STATE UNIVERSITY",
+      "recipient_slug": "the-pennsylvania-state-university",
+      "amount": 1150000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Navy",
+      "description": "ACINT ADVANCED MACHINE LEARNING (AAML)",
+      "start_date": "2023-06-15",
+      "end_date": "2026-10-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "PA",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_70RSAT23FR0000136_7001_70RSAT20D00000001_7001",
       "award_id": "70RSAT23FR0000136",
       "recipient": "THE MITRE CORPORATION",
@@ -7362,8 +7426,8 @@
     {
       "id": "CONT_AWD_FA875025CB062_9700_-NONE-_-NONE-",
       "award_id": "FA875025CB062",
-      "recipient": "EXPEDITION TECHNOLOGY, INC.",
-      "recipient_slug": "expedition-technology-inc",
+      "recipient": "EXPEDITION TECHNOLOGY, LLC",
+      "recipient_slug": "expedition-technology-llc",
       "amount": 1082019,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -7442,27 +7506,6 @@
       "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_N0002423F8363_9700_N0002418D6401_9700",
-      "award_id": "N0002423F8363",
-      "recipient": "THE PENNSYLVANIA STATE UNIVERSITY",
-      "recipient_slug": "the-pennsylvania-state-university",
-      "amount": 1000000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Navy",
-      "description": "ACINT ADVANCED MACHINE LEARNING (AAML)",
-      "start_date": "2023-06-15",
-      "end_date": "2026-10-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "PA",
-      "matched_keywords": [
         "machine learning"
       ]
     },
@@ -8178,7 +8221,7 @@
       "sub_agency": "Department of Veterans Affairs",
       "description": "ARTIFICIAL INTELLIGENCE LITERACY SUPPORT",
       "start_date": "2026-05-29",
-      "end_date": "2026-11-28",
+      "end_date": "2027-05-28",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "U012",
@@ -8300,7 +8343,7 @@
       "award_id": "80GSFC25F7023",
       "recipient": "TMC TECHNOLOGIES OF WEST VIRGINIA CORP",
       "recipient_slug": "tmc-technologies-of-west-virginia-corp",
-      "amount": 738855.85,
+      "amount": 733701.24,
       "agency": "National Aeronautics and Space Administration",
       "agency_slug": "national-aeronautics-and-space-administration",
       "sub_agency": "National Aeronautics and Space Administration",
@@ -8677,48 +8720,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA930125F0142_9700_FA930125D0005_9700",
-      "award_id": "FA930125F0142",
-      "recipient": "GLADSTONE.AI, INC.",
-      "recipient_slug": "gladstone-ai-inc",
-      "amount": 570000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "FLIGHT TEST MODERNIZATION USING ARTIFICIAL INTELLIGENCE",
-      "start_date": "2025-06-21",
-      "end_date": "2026-06-20",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W912CG25FA012_9700_W912CG24D0001_9700",
-      "award_id": "W912CG25FA012",
-      "recipient": "UNIVERSITY OF SOUTHERN CALIFORNIA",
-      "recipient_slug": "university-of-southern-california",
-      "amount": 560000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "UNIVERSITY AFFILIATED RESEARCH CONTRACT - RESEARCH AND DEVELOPMENT IN MODELING AND SIMULATION - TOWARDS TACTICAL ARTIFICIAL INTELLIGENCE MODELS FOR LARGE SCALE COMBAT OPERATIONS (TACTICAI)",
-      "start_date": "2025-09-04",
-      "end_date": "2026-09-03",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W912HQ22C0022_9700_-NONE-_-NONE-",
       "award_id": "W912HQ22C0022",
       "recipient": "COLORADO STATE UNIVERSITY",
@@ -8761,22 +8762,22 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA860426FB054_9700_FA800322D0003_9700",
-      "award_id": "FA860426FB054",
-      "recipient": "VANA SOLUTIONS LLC",
-      "recipient_slug": "vana-solutions-llc",
-      "amount": 520034.82,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MASINT, ANALYTICS, DATA - ARTIFICIAL INTELLIGENCE (MAD-AI)",
-      "start_date": "2026-02-04",
-      "end_date": "2026-09-04",
+      "id": "CONT_AWD_2032L226F00052_2001_2032L226A00002_2050",
+      "award_id": "2032L226F00052",
+      "recipient": "THUNDERYARD LIBERTY JV LLC",
+      "recipient_slug": "thunderyard-liberty-jv-llc",
+      "amount": 539921.42,
+      "agency": "Department of the Treasury",
+      "agency_slug": "department-of-the-treasury",
+      "sub_agency": "Internal Revenue Service",
+      "description": "ORDER #6 AGAINST 2032L226A00001 FOR ENTERPRISE APPLICATIONS TECHNICAL SERVICES, TREASURY COMMON SERVICES CENTER, HR INFORMATION TECHNOLOGY STRATEGIC & ARTIFICIAL INTELLIGENCE SERVICES",
+      "start_date": "2026-05-01",
+      "end_date": "2026-09-30",
       "naics_code": "541511",
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R423",
-      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
-      "pop_state": "OH",
+      "psc_code": "DE01",
+      "psc_desc": "IT and Telecom - End User: Help Desk; Tier 1-2, Workspace, Print, Output, Productivity Tools (Labor)",
+      "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -8866,48 +8867,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_6913G623C100006_6901_-NONE-_-NONE-",
-      "award_id": "6913G623C100006",
-      "recipient": "AIWAYSION INC",
-      "recipient_slug": "aiwaysion-inc",
-      "amount": 497365,
-      "agency": "Department of Transportation",
-      "agency_slug": "department-of-transportation",
-      "sub_agency": "Immediate Office of the Secretary of Transportation",
-      "description": "SMALL BUSINESS INNOVATION RESEARCH (SBIR) FY22 PHASE 2 AWARD ON U.S. DOT SBIR TOPIC 22-FH2 FOR EDGE SERVER-BASED ARTIFICIAL INTELLIGENCE APPLICATION FOR DILEMMA ZONE & TRAFFIC CONFLICT EVENTS DETECTION",
-      "start_date": "2023-06-09",
-      "end_date": "2025-06-09",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AS13",
-      "psc_desc": "TRANSPORTATION R&D SVCS; SURFACE TRANSPORTATION, PUBLIC TRANSIT, & RAIL; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "WA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_2032L226F00061_2001_2032L226A00008_2001",
-      "award_id": "2032L226F00061",
-      "recipient": "FEARLESS SOLUTIONS, LLC",
-      "recipient_slug": "fearless-solutions-llc",
-      "amount": 496800,
-      "agency": "Department of the Treasury",
-      "agency_slug": "department-of-the-treasury",
-      "sub_agency": "Departmental Offices",
-      "description": "TECHNICAL WORKFORCE DEVELOPMENT & TRAINING - ARTIFICIAL INTELLIGENCE ENGINEER WORKFORCE DEVELOPMENT",
-      "start_date": "2026-05-28",
-      "end_date": "2027-05-27",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R431",
-      "psc_desc": "SUPPORT- PROFESSIONAL: HUMAN RESOURCES",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_68HERC21C0045_6800_-NONE-_-NONE-",
       "award_id": "68HERC21C0045",
       "recipient": "AQUAREALTIME, INC.",
@@ -8926,28 +8885,6 @@
       "pop_state": "CO",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_36C10B26C0053_3600_-NONE-_-NONE-",
-      "award_id": "36C10B26C0053",
-      "recipient": "ZCORE GROUP LLC",
-      "recipient_slug": "zcore-group-llc",
-      "amount": 495213.6,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "ARTIFICIAL INTELLIGENCE LLM API",
-      "start_date": "2026-06-12",
-      "end_date": "2026-12-12",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "NJ",
-      "matched_keywords": [
-        "artificial intelligence",
-        "llm"
       ]
     },
     {
@@ -9079,27 +9016,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_24322623F0103_2400_24361822D0001_2400",
-      "award_id": "24322623F0103",
-      "recipient": "POWERTRAIN, INC.",
-      "recipient_slug": "powertrain-inc",
-      "amount": 454486.08,
-      "agency": "Office of Personnel Management",
-      "agency_slug": "office-of-personnel-management",
-      "sub_agency": "Office of Personnel Management",
-      "description": "SP-HRS-224434 ARTIFICIAL INTELLIGENCE SUPPORT TO THE LEARNING EXPERIENCE PLATFORM FOR USALEARNING",
-      "start_date": "2023-05-23",
-      "end_date": "2025-05-23",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "U009",
-      "psc_desc": "EDUCATION/TRAINING- GENERAL",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W31P4Q21F0278_9700_W31P4Q18D0002_9700",
       "award_id": "W31P4Q21F0278",
       "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
@@ -9142,24 +9058,24 @@
       ]
     },
     {
-      "id": "CONT_AWD_31310023F0062_3100_31310023D0005_3100",
-      "award_id": "31310023F0062",
-      "recipient": "SOUTHWEST RESEARCH INSTITUTE",
-      "recipient_slug": "southwest-research-institute",
-      "amount": 420440,
-      "agency": "Nuclear Regulatory Commission",
-      "agency_slug": "nuclear-regulatory-commission",
-      "sub_agency": "Nuclear Regulatory Commission",
-      "description": "REGULATORY FRAMEWORK APPLICABILITY ASSESSMENT OF ARTIFICIAL INTELLIGENCE IN NUCLEAR APPLICATIONS - NEW TASK ORDER UNDER THE ENTERPRISE-WIDE CONTRACT FOR THE CENTER FOR NUCLEAR WASTE REGULATORY ANALYSES (CNWRA) WORK-FOR-OTHERS TECHNICAL ASSISTANCE AND",
-      "start_date": "2023-06-05",
-      "end_date": "2025-03-28",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "TX",
+      "id": "CONT_AWD_1305M326P0406_1330_-NONE-_-NONE-",
+      "award_id": "1305M326P0406",
+      "recipient": "INTEGRATED MONITORING, INC.",
+      "recipient_slug": "integrated-monitoring-inc",
+      "amount": 434727.8,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "National Oceanic and Atmospheric Administration",
+      "description": "MACHINE LEARNING ASSISTED ELECTRONIC MONITORING OF WEST COAST FIXED GEAR FISHERIES FOR THE NORTHWEST FISHERIES SCIENCE CENTER. OR-FY26-02091 APPROVED MAY 18, 2026.",
+      "start_date": "2027-01-01",
+      "end_date": "2027-12-31",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "7A20",
+      "psc_desc": "IT AND TELECOM - APPLICATION DEVELOPMENT SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "MA",
       "matched_keywords": [
-        "artificial intelligence"
+        "machine learning"
       ]
     },
     {
@@ -9185,43 +9101,22 @@
       ]
     },
     {
-      "id": "CONT_AWD_W911SD25CA014_9700_-NONE-_-NONE-",
-      "award_id": "W911SD25CA014",
-      "recipient": "FLYWHEEL DATA LLC",
-      "recipient_slug": "flywheel-data-llc",
-      "amount": 412060.55,
+      "id": "CONT_AWD_W912CG25FA012_9700_W912CG24D0001_9700",
+      "award_id": "W912CG25FA012",
+      "recipient": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "recipient_slug": "university-of-southern-california",
+      "amount": 400000,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
-      "description": "NETWORK DETECTION AND RESPONSE (NDR) TOOL, AN ARTIFICIAL INTELLIGENCE (AI) POWERED CYBERSECURITY SOLUTION FOR THE UNITED STATES MILITARY ACADEMY (USMA), CYBERSECURITY DIVISION (G6) AT WEST POINT, NY.",
-      "start_date": "2025-04-01",
-      "end_date": "2027-03-31",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7J20",
-      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_70B04C23F00001192_7014_NNG15SD12B_8000",
-      "award_id": "70B04C23F00001192",
-      "recipient": "CTG FEDERAL, LLC",
-      "recipient_slug": "ctg-federal-llc",
-      "amount": 400000,
-      "agency": "Department of Homeland Security",
-      "agency_slug": "department-of-homeland-security",
-      "sub_agency": "U.S. Customs and Border Protection",
-      "description": "ARTIFICIAL INTELLIGENCE CENTER OF INNOVATION SUPPORT SERVICES",
-      "start_date": "2023-09-22",
-      "end_date": "2024-06-21",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7F20",
-      "psc_desc": "IT AND TELECOM - IT MANAGEMENT TOOLS/PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "VA",
+      "description": "UNIVERSITY AFFILIATED RESEARCH CONTRACT - RESEARCH AND DEVELOPMENT IN MODELING AND SIMULATION - TOWARDS TACTICAL ARTIFICIAL INTELLIGENCE MODELS FOR LARGE SCALE COMBAT OPERATIONS (TACTICAI)",
+      "start_date": "2025-09-04",
+      "end_date": "2026-09-03",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ12",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
+      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -9354,48 +9249,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_70RTAC24FR0000059_7001_HSHQDC12D00011_7001",
-      "award_id": "70RTAC24FR0000059",
-      "recipient": "C & C INTERNATIONAL COMPUTERS & CONSULTANTS, INC.",
-      "recipient_slug": "c-c-international-computers-consultants-inc",
-      "amount": 361125,
-      "agency": "Department of Homeland Security",
-      "agency_slug": "department-of-homeland-security",
-      "sub_agency": "Office of Procurement Operations",
-      "description": "PROCURE MACBOOKS AND PERIPHERAL EQUIPMENT TO SUPPORT THE ARTIFICIAL INTELLIGENCE (AI) MISSION TO SECURE THE HOMELAND FOR THE OFFICE OF THE CHIEF INFORMATION OFFICER (OCIO).",
-      "start_date": "2024-06-07",
-      "end_date": "2024-11-10",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7B20",
-      "psc_desc": "IT AND TELECOM - HIGH PERFORMANCE COMPUTE (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W912HZ22C0041_9700_-NONE-_-NONE-",
-      "award_id": "W912HZ22C0041",
-      "recipient": "UNIVERSITY OF NOTRE DAME DU LAC",
-      "recipient_slug": "university-of-notre-dame-du-lac",
-      "amount": 356421,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "BAA 22-0012 APPLICATIONS OF ARTIFICIAL INTELLIGENCE AND COMPUTATIONAL STATISTICS TOOLS FOR IMPROVING STORM FLOOD HAZARD ESTIMATION",
-      "start_date": "2022-09-01",
-      "end_date": "2025-05-22",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AH11",
-      "psc_desc": "NATURAL RESOURCES AND ENVIRONMENT R&D SERVICES; WATER RESOURCES; BASIC RESEARCH",
-      "pop_state": "IN",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_75N91023C00006_7529_-NONE-_-NONE-",
       "award_id": "75N91023C00006",
       "recipient": "COLUMBUS NANOWORKS, INC.",
@@ -9414,27 +9267,6 @@
       "pop_state": "OH",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX25FA013_9700_W911QX24D0009_9700",
-      "award_id": "W911QX25FA013",
-      "recipient": "CARNEGIE-MELLON UNIVERSITY",
-      "recipient_slug": "carnegie-mellon-university",
-      "amount": 350000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "RESEARCH AND DEVELOPMENT - TRANSFORMING AERIAL VEHICLE DETECTION WITH GENERATIVE ARTIFICIAL INTELLIGENCE (AI): SYNTHETIC DATA AND FAILURE ANALYSIS INNOVATIONS",
-      "start_date": "2025-05-22",
-      "end_date": "2027-01-28",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -9502,27 +9334,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_140D0425F0045_1406_47QTCB22D0037_4732",
-      "award_id": "140D0425F0045",
-      "recipient": "SIMPLE TECHNOLOGY SOLUTIONS INC.",
-      "recipient_slug": "simple-technology-solutions-inc",
-      "amount": 340805.41,
-      "agency": "Department of the Interior",
-      "agency_slug": "department-of-the-interior",
-      "sub_agency": "Departmental Offices",
-      "description": "ARTIFICIAL INTELLIGENCE (AI) SUPPORT SERVICES",
-      "start_date": "2024-12-01",
-      "end_date": "2025-11-30",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DB01",
-      "psc_desc": "IT AND TELECOM - HIGH PERFORMANCE COMPUTING (HPC) SUPPORT SERVICES (LABOR)",
-      "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_1333ND25FNB770132_1341_47QTCB21D0005_4732",
       "award_id": "1333ND25FNB770132",
       "recipient": "GBS SOLUTIONS CORP",
@@ -9559,27 +9370,6 @@
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "UT",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_1333ND24FNB770162_1341_47QTCB21D0005_4732",
-      "award_id": "1333ND24FNB770162",
-      "recipient": "GBS DAKOTA IT, LLC",
-      "recipient_slug": "gbs-dakota-it-llc",
-      "amount": 323943.85,
-      "agency": "Department of Commerce",
-      "agency_slug": "department-of-commerce",
-      "sub_agency": "National Institute of Standards and Technology",
-      "description": "ARTIFICIAL INTELLIGENCE RED TEAM EVENT SUPPORT SERVICES",
-      "start_date": "2024-07-01",
-      "end_date": "2025-01-31",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R799",
-      "psc_desc": "SUPPORT- MANAGEMENT: OTHER",
       "pop_state": "UT",
       "matched_keywords": [
         "artificial intelligence"
@@ -9639,7 +9429,7 @@
       "sub_agency": "National Transportation Safety Board",
       "description": "BPA ORDER #37: SMART DATA SEARCH AND ARTIFICIAL INTELLIGENCE APPLICATION MAINTENANCE SUPPORT SERVICES",
       "start_date": "2025-09-30",
-      "end_date": "2026-09-06",
+      "end_date": "2026-10-31",
       "naics_code": "541512",
       "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
       "psc_code": "R499",
@@ -9844,27 +9634,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_1305M325C0032_1330_-NONE-_-NONE-",
-      "award_id": "1305M325C0032",
-      "recipient": "KITWARE INC",
-      "recipient_slug": "kitware-inc",
-      "amount": 264000,
-      "agency": "Department of Commerce",
-      "agency_slug": "department-of-commerce",
-      "sub_agency": "National Oceanic and Atmospheric Administration",
-      "description": "STELLER SEA LION ARTIFICIAL INTELLIGENCE (AI) IMAGE PROCESSING AND COUNTING EFFORT (OR-25-01283)",
-      "start_date": "2025-08-15",
-      "end_date": "2027-08-14",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DA10",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA865021C6300_9700_-NONE-_-NONE-",
       "award_id": "FA865021C6300",
       "recipient": "SHADOWBOX LLC",
@@ -10058,27 +9827,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_91990025C0111_9100_-NONE-_-NONE-",
-      "award_id": "91990025C0111",
-      "recipient": "KINARAS SOLUTIONS, INC.",
-      "recipient_slug": "kinaras-solutions-inc",
-      "amount": 249960,
-      "agency": "Department of Education",
-      "agency_slug": "department-of-education",
-      "sub_agency": "Department of Education",
-      "description": "ARTIFICIAL INTELLIGENCE REGULATORY REVIEW",
-      "start_date": "2025-09-30",
-      "end_date": "2026-09-29",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W5170125CA080_9700_-NONE-_-NONE-",
       "award_id": "W5170125CA080",
       "recipient": "INTELLIGENT FUSION TECHNOLOGY, INC.",
@@ -10195,7 +9943,7 @@
       "sub_agency": "Federal Highway Administration",
       "description": "THE PURPOSE OF THIS REQUISITION IS FOR THE PURCHASE OF THE GOOGLE CLOUD PLATFORM, PROVIDING A SUITE OF COMPUTING, DATA STORAGE, DATA ANALYTICS, MACHINE LEARNING, AND COMPREHENSIVE MANAGEMENT TOOLS, ENSURING SCALABILITY, SECURITY, AND COMPLIANCE WITH",
       "start_date": "2024-09-22",
-      "end_date": "2026-09-21",
+      "end_date": "2027-03-21",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DA10",
@@ -10248,27 +9996,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_70RDA125FR0000005_7001_NNG15SD02B_8000",
-      "award_id": "70RDA125FR0000005",
-      "recipient": "PANAMERICA COMPUTERS, INC.",
-      "recipient_slug": "panamerica-computers-inc",
-      "amount": 246179.96,
-      "agency": "Department of Homeland Security",
-      "agency_slug": "department-of-homeland-security",
-      "sub_agency": "Office of Procurement Operations",
-      "description": "DUE-DILIGENCE ARTIFICIAL INTELLIGENCE WEB-BASED ANALYTIC TOOL.",
-      "start_date": "2024-12-31",
-      "end_date": "2026-12-30",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA10",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_W5170125CA252_9700_-NONE-_-NONE-",
       "award_id": "W5170125CA252",
       "recipient": "TECHNERGETICS, LLC",
@@ -10311,27 +10038,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_70RDAD23FR0000022_7001_HSHQDC12D00014_7001",
-      "award_id": "70RDAD23FR0000022",
-      "recipient": "ANACAPA MICRO PRODUCTS, INC.",
-      "recipient_slug": "anacapa-micro-products-inc",
-      "amount": 236232.32,
-      "agency": "Department of Homeland Security",
-      "agency_slug": "department-of-homeland-security",
-      "sub_agency": "Office of Procurement Operations",
-      "description": "EXIGER DUE-DILIGENCE ARTIFICIAL INTELLIGENCE WEB-BASED ANALYTIC TOOL SUBSCRIPTION",
-      "start_date": "2023-03-31",
-      "end_date": "2024-12-30",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7A20",
-      "psc_desc": "IT AND TELECOM - APPLICATION DEVELOPMENT SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_1333ND24FNB770023_1341_1333ND21DNB770020_1341",
       "award_id": "1333ND24FNB770023",
       "recipient": "CHAKRA CONSULTING, INC.",
@@ -10350,28 +10056,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_SP470424F0093_9700_N6600119A0049_9700",
-      "award_id": "SP470424F0093",
-      "recipient": "GARTNER, INC.",
-      "recipient_slug": "gartner-inc",
-      "amount": 231425,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Logistics Agency",
-      "description": "DCAA REQUIRES INDEPENDENT IT, DATA ANALYTICS (DA), AND AI RESEARCH AND ADVISORY SERVICES ON A SUBSCRIPTION BASIS SPECIFICALLY FOR THE CHIEF INFORMATION OFFICER (CIO) AND THE CHIEF DIGITAL AND ARTIFICIAL INTELLIGENCE OFFICE (CDAO).",
-      "start_date": "2024-09-30",
-      "end_date": "2025-02-28",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "B544",
-      "psc_desc": "SPECIAL STUDIES/ANALYSIS- TECHNOLOGY",
-      "pop_state": "CT",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
       ]
     },
     {
@@ -10413,27 +10097,6 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_693JJ624C000026_6930_-NONE-_-NONE-",
-      "award_id": "693JJ624C000026",
-      "recipient": "TIER 1 PERFORMANCE SOLUTIONS LLC",
-      "recipient_slug": "tier-1-performance-solutions-llc",
-      "amount": 225501.54,
-      "agency": "Department of Transportation",
-      "agency_slug": "department-of-transportation",
-      "sub_agency": "Federal Railroad Administration",
-      "description": "THIS BROAD AGENCY ANNOUNCEMENT (BAA) SUPPORTS THE U.S. DEPARTMENT OF TRANSPORTATION (DOT), OFFICE OF RESEARCH, DATA, AND INNOVATION (RDI) TO SERVE THE RAIL INDUSTRY BY IDENTIFYING LEVERAGE POINTS FOR ARTIFICIAL INTELLIGENCE (AI) TOOLS AND CHANGES TO",
-      "start_date": "2024-08-09",
-      "end_date": "2025-08-19",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AS11",
-      "psc_desc": "TRANSPORTATION R&D SERVICES; SURFACE TRANSPORTATION, PUBLIC TRANSIT, AND RAIL; BASIC RESEARCH",
-      "pop_state": "KY",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -10694,69 +10357,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA239425PB011_9700_-NONE-_-NONE-",
-      "award_id": "FA239425PB011",
-      "recipient": "SIMBA CHAIN INC",
-      "recipient_slug": "simba-chain-inc",
-      "amount": 199999,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "OMNISCIENT EARTH 616 ARTIFICIAL INTELLIGENCE SCALABILITY STTR I",
-      "start_date": "2025-08-15",
-      "end_date": "2025-11-15",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "IN",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HDTRA225PE004_9700_-NONE-_-NONE-",
-      "award_id": "HDTRA225PE004",
-      "recipient": "REDSHRED, LLC",
-      "recipient_slug": "redshred-llc",
-      "amount": 199984.14,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Threat Reduction Agency",
-      "description": "A PERSONAL ARTIFICIAL INTELLIGENCE (AI) RADIATION HEALTH PHYSICIST COMPANION FOR RADIOLOGICAL ENVIRONMENTS",
-      "start_date": "2025-08-04",
-      "end_date": "2026-03-03",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC33",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W913E525C0005_9700_-NONE-_-NONE-",
-      "award_id": "W913E525C0005",
-      "recipient": "ARIZONA STATE UNIVERSITY",
-      "recipient_slug": "arizona-state-university",
-      "amount": 199176,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "CSO-CRREL-24-IPR-FIRE-0008 TITLED, ARTIFICIAL INTELLIGENCE INFORMED HIGH-RESOLUTION FUEL MAPPING U437N00",
-      "start_date": "2025-08-28",
-      "end_date": "2027-09-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ12",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
-      "pop_state": "AZ",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_72MC1025C00003_7200_-NONE-_-NONE-",
       "award_id": "72MC1025C00003",
       "recipient": "HCC CONSULTING LLC",
@@ -10816,69 +10416,6 @@
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75F40124F80063_7524_NNG15SD91B_8000",
-      "award_id": "75F40124F80063",
-      "recipient": "PARAGON MICRO INC",
-      "recipient_slug": "paragon-micro-inc",
-      "amount": 184625.95,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "Food and Drug Administration",
-      "description": "THIS SOFTWARE DEVELOPMENT PLATFORM IS NEEDED FOR THE DEVELOPMENT OF DASHBOARDS AND USER INTERFACES FOR OFFICE OF FOOD ADDITIVE SAFETY (OFAS) ARTIFICIAL INTELLIGENCE TOOL. THIS TOOL IS DESIGNED FOR ADVANCED DATA ANALYSIS AND RISK-BASED DECISION MAKING",
-      "start_date": "2024-03-06",
-      "end_date": "2026-03-06",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DD01",
-      "psc_desc": "IT AND TELECOM - SERVICE DELIVERY SUPPORT SERVICES: ITSM, OPERATIONS CENTER, PROJECT/PM (LABOR)",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HDTRA123P0011_9700_-NONE-_-NONE-",
-      "award_id": "HDTRA123P0011",
-      "recipient": "AERIS LLC",
-      "recipient_slug": "aeris-llc",
-      "amount": 182998.86,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Threat Reduction Agency",
-      "description": "ARTIFICIAL INTELLIGENCE BASED 3 DIMENSION 3D BUILDING MODEL GENERATION CAPABILITY FOR CHEMICAL BIOLOGICAL RADIOLOGICAL AND NUCLEAR SITUATIONAL AWARENESS SA AND HAZARD MODELING",
-      "start_date": "2023-05-22",
-      "end_date": "2023-12-03",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "CO",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HDTRA123P0012_9700_-NONE-_-NONE-",
-      "award_id": "HDTRA123P0012",
-      "recipient": "IAVO RESEARCH AND SCIENTIFIC, INCORPORATED",
-      "recipient_slug": "iavo-research-and-scientific-incorporated",
-      "amount": 182929.68,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Threat Reduction Agency",
-      "description": "RESEARCH AND DEVELOPMENT FOR ARTIFICIAL INTELLIGENCE BASED REAL-TIME AUTOMATIC THREE DIMENSION RECONSTRUCTION AND MODELING FROM MULTIPLE IMAGES, TRANSPORT, AND DISPERSION MODELING.",
-      "start_date": "2023-05-22",
-      "end_date": "2023-12-03",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "NC",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -11009,27 +10546,6 @@
       "pop_state": "NY",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA680024P0014_9700_-NONE-_-NONE-",
-      "award_id": "FA680024P0014",
-      "recipient": "SAFEFLIGHTS, INC.",
-      "recipient_slug": "safeflights-inc",
-      "amount": 179890,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "READINESS SPARE PACKAGES PACKING OPERATIONS OPTIMIZATION ARTIFICIAL INTELLIGENCE SUGGESTIONS AND 3D MAPPING",
-      "start_date": "2024-03-11",
-      "end_date": "2024-09-12",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "MA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -11264,27 +10780,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_W911QX23P0019_9700_-NONE-_-NONE-",
-      "award_id": "W911QX23P0019",
-      "recipient": "STELLAR SCIENCE LTD. CO.",
-      "recipient_slug": "stellar-science-ltd-co",
-      "amount": 167247.89,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "SBIR I TOPIC A22-004: FOR A MILITARY OPERATION SIMULATOR WITH ARTIFICIAL INTELLIGENCE (AI) AND EXTENDED REALITY (XR) INTERFACES IN WHICH AGENTS WILL LEARN BY EXECUTING SIMULATED MULTI-DOMAIN OPERATIONS (MDO).",
-      "start_date": "2023-01-09",
-      "end_date": "2024-12-14",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "NM",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_1333ND24FNB670171_1341_1333ND21DNB770022_1341",
       "award_id": "1333ND24FNB670171",
       "recipient": "PROMETHEUS COMPUTING, LLC",
@@ -11324,28 +10819,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_36C10B26F0080_3600_NNG15SD27B_8000",
-      "award_id": "36C10B26F0080",
-      "recipient": "V3GATE, LLC",
-      "recipient_slug": "v3gate-llc",
-      "amount": 164000.85,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "VISN 22 RADIOLOGY GRAPHIC SERVERS FOR ARTIFICIAL INTELLIGENCE PROCUREMENT FOR THE BLACKFORD AI PLATFORM           EO 14398",
-      "start_date": "2026-02-27",
-      "end_date": "2027-02-26",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "7B20",
-      "psc_desc": "IT AND TELECOM - HIGH PERFORMANCE COMPUTE (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
-      "pop_state": "CO",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
       ]
     },
     {
@@ -11538,49 +11011,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA930126F0053_9700_FA930125D0005_9700",
-      "award_id": "FA930126F0053",
-      "recipient": "GLADSTONE.AI, INC.",
-      "recipient_slug": "gladstone-ai-inc",
-      "amount": 150000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "FLIGHT TEST MODERNIZATION USING ARTIFICIAL INTELLIGENCE",
-      "start_date": "2026-02-01",
-      "end_date": "2026-08-31",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC32",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
-      "pop_state": "CA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA860425CB069_9700_-NONE-_-NONE-",
-      "award_id": "FA860425CB069",
-      "recipient": "INTELLIGENIC, INC",
-      "recipient_slug": "intelligenic-inc",
-      "amount": 150000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "TO INVESTIGATE THE FEASIBILITY OF LEVERAGING GENERATIVE ARTIFICIAL INTELLIGENCE (GENAI) TO ASSIST THE DEPARTMENT OF DEFENSE (DOD) CHIEF DIGITAL AND AI OFFICE (CDAO) IN ITS EFFORTS TO IMPROVE AGILITY IN DEVELOPING AND DEPLOYING GENAI SOLUTIONS.",
-      "start_date": "2025-08-28",
-      "end_date": "2026-02-28",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC11",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA860425CB086_9700_-NONE-_-NONE-",
       "award_id": "FA860425CB086",
       "recipient": "FIREFLOWER AI INC",
@@ -11707,27 +11137,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_80NSSC25C0376_8000_-NONE-_-NONE-",
-      "award_id": "80NSSC25C0376",
-      "recipient": "THERMOANALYTICS, INC.",
-      "recipient_slug": "thermoanalytics-inc",
-      "amount": 149943,
-      "agency": "National Aeronautics and Space Administration",
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "sub_agency": "National Aeronautics and Space Administration",
-      "description": "SBIR PHASE I - ARTIFICIAL INTELLIGENCE FOR SPACECRAFT THERMAL CONTROL SYSTEMS",
-      "start_date": "2025-09-29",
-      "end_date": "2026-03-27",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ14",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; R&D ADMINISTRATIVE EXPENSES",
-      "pop_state": "MI",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_FA860425CB085_9700_-NONE-_-NONE-",
       "award_id": "FA860425CB085",
       "recipient": "ULAP INC",
@@ -11789,28 +11198,6 @@
       "pop_state": "NY",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA860425CB089_9700_-NONE-_-NONE-",
-      "award_id": "FA860425CB089",
-      "recipient": "ASSURED INFORMATION SECURITY, INC.",
-      "recipient_slug": "assured-information-security-inc",
-      "amount": 149914.68,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "INVESTIGATE THE FEASIBILITY OF LEVERAGING GENERATIVE ARTIFICIAL INTELLIGENCE (GENAI) TO CREATE SECURE SYNTHETIC DATA FOR AI MODEL DEVELOPMENT BY REMOVING PERSONALLY IDENTIFIABLE INFORMATION (PIT).",
-      "start_date": "2025-08-28",
-      "end_date": "2026-02-27",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC11",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence",
-        "ai"
       ]
     },
     {
@@ -12537,6 +11924,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0228_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0228",
+      "recipient": "UNANIMOUS A.I., INC.",
+      "recipient_slug": "unanimous-a-i-inc",
+      "amount": 109881,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "HYPERCOM ARTIFICIAL INTELLIGENCE - HYPER-COMMUNICATION FOR OPTIMIZED COMMAND AND CONTROL (C2)",
+      "start_date": "2026-06-26",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0082_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0082",
       "recipient": "UNANIMOUS A.I., INC.",
@@ -12561,8 +11969,8 @@
     {
       "id": "CONT_AWD_FA864925P0182_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0182",
-      "recipient": "SENSOROPS LLC",
-      "recipient_slug": "sensorops-llc",
+      "recipient": "SENSOROPS INCORPORATED",
+      "recipient_slug": "sensorops-incorporated",
       "amount": 109878,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -12725,6 +12133,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NJ",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0329_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0329",
+      "recipient": "CAMGIAN CORPORATION",
+      "recipient_slug": "camgian-corporation",
+      "amount": 109400,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE AND QUADRATIC UNCONSTRAINED BINARY OPTIMIZATION DRIVEN MANEUVER OPTIMIZATION FOR SPACE CONTROL AGAINST GROUND BASED THREATS",
+      "start_date": "2026-06-23",
+      "end_date": "2026-09-23",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MS",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -13257,6 +12686,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0129_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0129",
+      "recipient": "ADDIGURU, LLC",
+      "recipient_slug": "addiguru-llc",
+      "amount": 75000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SMARTBUILD: SENSOR AND ARTIFICIAL INTELLIGENCE/MACHINE LEARNING DRIVEN VOXEL-LEVEL CONTROL FOR METAL ADDITIVE MANUFACTURING PROCESS OPTIMIZATION",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "LA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0776_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0776",
       "recipient": "PLANEENGLISH LLC",
@@ -13341,6 +12792,48 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0056_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0056",
+      "recipient": "SEEKR TECHNOLOGIES INC.",
+      "recipient_slug": "seekr-technologies-inc",
+      "amount": 74989,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "TRUST BUT VERIFY: SEEKRFLOW ARTIFICIAL INTELLIGENCE AGENTIC SUPPLY CHAIN DECISION INTELLIGENCE PLATFORM",
+      "start_date": "2026-06-30",
+      "end_date": "2026-06-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0171_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0171",
+      "recipient": "PARAGON RESEARCH CORP",
+      "recipient_slug": "paragon-research-corp",
+      "amount": 74980,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "OPEN SET DETECTION: ARTIFICIAL INTELLIGENCE FOR REAL-TIME CLASSIFICATION OF NOVEL CYBER THREATS",
+      "start_date": "2026-06-25",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "AL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864925P0144_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0144",
       "recipient": "HEDRAL INC.",
@@ -13383,6 +12876,48 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0169_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0169",
+      "recipient": "RESILIENX, INC.",
+      "recipient_slug": "resilienx-inc",
+      "amount": 74973,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "EXPLAINABLE ARTIFICIAL INTELLIGENCE AGENTS FOR REAL-TIME MODEL HEALTH MONITORING IN UNMANNED AIRCRAFT SYSTEM ECOSYSTEMS",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0168_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0168",
+      "recipient": "SOFTWARE VELOCITY CORP",
+      "recipient_slug": "software-velocity-corp",
+      "amount": 74972,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "AN ARTIFICIAL INTELLIGENCE-ASSISTED SOFTWARE TEST GENERATION PLATFORM FOR MISSION-ALIGNED, TRACEABLE, AND RISK-AWARE TESTING",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0763_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0763",
       "recipient": "AI2 INCORPORATED",
@@ -13402,6 +12937,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "deep learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0165_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0165",
+      "recipient": "MOOVILA INC.",
+      "recipient_slug": "moovila-inc",
+      "amount": 74963,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MENTORPLUS: SUSTAINING MISSION CONTINUITY THROUGH ARTIFICIAL INTELLIGENCE-POWERED PERMANENT CHANGE OF STATION TRANSITION SUPPORT",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "SC",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -13594,6 +13150,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0161_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0161",
+      "recipient": "POLYMATH AI INC.",
+      "recipient_slug": "polymath-ai-inc",
+      "amount": 74933,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "USING ARTIFICIAL INTELLIGENCE TO CREATE MULTI-DIMENSIONAL DIGITAL MODELS FROM LEGACY DRAWINGS",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0316_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0316",
       "recipient": "SAGELY, LLC",
@@ -13612,6 +13189,28 @@
       "pop_state": "RI",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0157_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0157",
+      "recipient": "BOWLER PONS SOLUTIONS CONSULTANTS, LLC",
+      "recipient_slug": "bowler-pons-solutions-consultants-llc",
+      "amount": 74925,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE-ENHANCED PHYSICAL SECURITY ANOMALY DETECTION AND PREDICTIVE ANALYTICS FOR ACCESS CONTROL POINTS",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "predictive analytics"
       ]
     },
     {
@@ -13674,6 +13273,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "FL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA230426C0005_9700_-NONE-_-NONE-",
+      "award_id": "FA230426C0005",
+      "recipient": "TECHNERGETICS, LLC",
+      "recipient_slug": "technergetics-llc",
+      "amount": 74902,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SPACEKNIGHT: INTERACTIVE ARTIFICIAL INTELLIGENCE SIMULATION FOR SUSTAINMENT AND CONTESTED LOGISTICS WARGAMING",
+      "start_date": "2026-06-26",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "NY",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -13743,6 +13363,48 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0153_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0153",
+      "recipient": "HHITT, INC.",
+      "recipient_slug": "hhitt-inc",
+      "amount": 74873,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE-POWERED COGNITIVE ASSESSMENT PLATFORM WITHOUT THE NEED FOR BASELINE ASSESSMENT",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0152_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0152",
+      "recipient": "NEURODYNE, INC",
+      "recipient_slug": "neurodyne-inc",
+      "amount": 74871,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ENABLING MEDIC-X NEUROLOGICAL TRIAGE: ARTIFICIAL INTELLIGENCE-DRIVEN TRAUMATIC BRAIN INJURY ASSESSMENT FOR MULTI-CAPABLE AIRMEN",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "TN",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0581_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0581",
       "recipient": "POINT80 LLC",
@@ -13782,6 +13444,27 @@
       "pop_state": "CO",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0094_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0094",
+      "recipient": "LIGHTUP, INC.",
+      "recipient_slug": "lightup-inc",
+      "amount": 74781,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "EXTENDED REALITY ARTIFICIAL INTELLIGENCE (XRAI): AI-POWERED SMARTGLASSES TO RADICALLY ENHANCE AIR FORCE REPAIR AND MAINTENANCE",
+      "start_date": "2026-06-24",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -13891,6 +13574,48 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0086_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0086",
+      "recipient": "AD HOC RESEARCH ASSOCIATES LLC",
+      "recipient_slug": "ad-hoc-research-associates-llc",
+      "amount": 74636,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "CLOSING THE AIR FORCE LOGISTICS READINESS GAP: ARTIFICIAL INTELLIGENCE (AI) DRIVEN DIGITAL TWINS FOR PREDICTIVE, TRUSTED DECISION SUPPORT",
+      "start_date": "2026-06-24",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0140_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0140",
+      "recipient": "VALIDVOICE LLC",
+      "recipient_slug": "validvoice-llc",
+      "amount": 74627,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "V2SHIELD: ARTIFICIAL INTELLIGENCE-RESILIENT 5-FACTOR AUTHENTICATION FOR ZERO-TRUST AND DISCONNECTED ENVIRONMENTS",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "NE",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0362_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0362",
       "recipient": "BETAFLIX, INC.",
@@ -13949,6 +13674,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0139_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0139",
+      "recipient": "MAGIC INC",
+      "recipient_slug": "magic-inc",
+      "amount": 74556,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "AUTOMATED TASKING FOR LOGISTICS AND ADMINISTRATIVE SUPPORT : HUMAN-ARTIFICIAL INTELLIGENCE COLLABORATION TO AUTOMATE LOGISTICS, RECRUITMENT, AND MISSION SUPPORT ACROSS THE DEPARTMENT OF THE AIR FORCE",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "FL",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -14165,6 +13911,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0135_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0135",
+      "recipient": "DARKFLITE INC.",
+      "recipient_slug": "darkflite-inc",
+      "amount": 74161,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "CLOUD-NETWORKED TILT-ROTOR UNMANNED AIRCRAFT SYSTEM WITH ARTIFICIAL INTELLIGENCE/MACHINE LEARNING FLIGHT CONTROLLER FOR AGILE COMBAT EMPLOYMENT",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MI",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864925P0129_9700_-NONE-_-NONE-",
       "award_id": "FA864925P0129",
       "recipient": "HOPE 4 YOU GLOBAL LLC",
@@ -14244,6 +14012,48 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0282_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0282",
+      "recipient": "DANTI AI INC",
+      "recipient_slug": "danti-ai-inc",
+      "amount": 73841,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE AUGMENTED INTEL FOR DEPARTMENT OF THE AIR FORCES EMERGING OPERATIONAL NEEDS",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "GA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0134_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0134",
+      "recipient": "BARBELL LOGIC INC.",
+      "recipient_slug": "barbell-logic-inc",
+      "amount": 73734,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE MOVEMENT COACHING FOR IN-YOUR-POCKET PERSONAL TRAINER",
+      "start_date": "2026-06-30",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MO",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -14396,6 +14206,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0072_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0072",
+      "recipient": "AMERICAN INSTITUTE OF ARTIFICIAL INTELLIGENCE INC",
+      "recipient_slug": "american-institute-of-artificial-intelligence-inc",
+      "amount": 71907,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "AI MULTITASK LEARNING (MTL) FOR SIGNAL CHARACTERIZATION",
+      "start_date": "2026-06-25",
+      "end_date": "2026-09-28",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "ai"
+      ]
+    },
+    {
       "id": "CONT_AWD_N0017325C2408_9700_-NONE-_-NONE-",
       "award_id": "N0017325C2408",
       "recipient": "THE UNIVERSITY OF SOUTHERN MISSISSIPPI",
@@ -14412,6 +14243,27 @@
       "psc_code": "AJ12",
       "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
       "pop_state": "MS",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0337_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0337",
+      "recipient": "VULERION SOLUTIONS, LLC",
+      "recipient_slug": "vulerion-solutions-llc",
+      "amount": 64681,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARGUS: ARTIFICIAL INTELLIGENCE-ENABLED ELECTROMAGNETIC WARFARE INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE PLATFORM FOR ELECTROMAGNETIC SPECTRUM DOMAIN AWARENESS AND ENGAGEMENT",
+      "start_date": "2026-06-24",
+      "end_date": "2026-09-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CO",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -14586,6 +14438,48 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_70CMSD26FR0000161_7012_NNG15SC86B_8000",
+      "award_id": "70CMSD26FR0000161",
+      "recipient": "IMPRES TECHNOLOGY SOLUTIONS, INC",
+      "recipient_slug": "impres-technology-solutions-inc",
+      "amount": 48000,
+      "agency": "Department of Homeland Security",
+      "agency_slug": "department-of-homeland-security",
+      "sub_agency": "U.S. Immigration and Customs Enforcement",
+      "description": "THIS AWARD PROVIDES ARTIFICIAL INTELLIGENCE SOFTWARE LICENSES, SUPPORT, AND MAINTENANCE TO ENABLE AUTOMATED DATA PROCESSING AND INVESTIGATIVE ANALYTICS FOR CYBERCRIME INVESTIGATIONS.",
+      "start_date": "2026-09-30",
+      "end_date": "2027-09-29",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "7A21",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_70CMSD26FR0000167_7012_NNG15SC23B_8000",
+      "award_id": "70CMSD26FR0000167",
+      "recipient": "ACCESSAGILITY LLC",
+      "recipient_slug": "accessagility-llc",
+      "amount": 45139.14,
+      "agency": "Department of Homeland Security",
+      "agency_slug": "department-of-homeland-security",
+      "sub_agency": "U.S. Immigration and Customs Enforcement",
+      "description": "THIS AWARD PROVIDES ENTERPRISE SUPPORT TO HELP MAINTAIN ARTIFICIAL INTELLIGENCE SOFTWARE PERFORMANCE AND CONTINUITY FOR MISSION CRITICAL INVESTIGATIVE TECHNOLOGY PROJECTS.",
+      "start_date": "2026-09-18",
+      "end_date": "2027-09-29",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "7A21",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -14864,6 +14758,27 @@
       "pop_state": "WA",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_N6600126F9000_9700_N6600122D0021_9700",
+      "award_id": "N6600126F9000",
+      "recipient": "SAN DIEGO STATE UNIVERSITY FOUNDATION",
+      "recipient_slug": "san-diego-state-university-foundation",
+      "amount": 5975.44,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Navy",
+      "description": "THIS IS A STUDENT SERVICES TASK ORDER TO ASSIST WITH THE DEVELOPMENT OF A MACHINE LEARNING PIPELINE FOR EVALUATION WATER QUALITY.",
+      "start_date": "2026-06-09",
+      "end_date": "2026-09-30",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC31",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; BASIC RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "machine learning"
       ]
     }
   ]
