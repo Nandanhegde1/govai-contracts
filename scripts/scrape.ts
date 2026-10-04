@@ -69,9 +69,9 @@ interface Raw {
   internal_id: number;
   generated_internal_id?: string;
   ['Award ID']: string;
-  ['Recipient Name']: string;
+  ['Recipient Name']: string | null;
   ['Award Amount']: number;
-  ['Awarding Agency']: string;
+  ['Awarding Agency']: string | null;
   ['Awarding Sub Agency']: string;
   Description: string;
   ['Start Date']: string;
@@ -157,6 +157,12 @@ function matchKeywords(description: string): string[] {
   return AI_KEYWORDS.filter((kw) => desc.includes(kw)).map((kw) => kw.trim());
 }
 
+// USAspending returns null for some recipient and agency names. A contract with
+// neither cannot be attributed or linked to a vendor or agency page, and a stand-in
+// name would invent a vendor that groups unrelated awards, so such awards are
+// skipped and counted. The run used to crash on the first one.
+let skippedUnattributed = 0;
+
 function normalize(raw: Raw): Contract | null {
   const desc = raw.Description ?? '';
   const matched = matchKeywords(desc);
@@ -164,15 +170,21 @@ function normalize(raw: Raw): Contract | null {
   if (matched.length === 0) return null;
   // Skip absurdly tiny entries
   if (!raw['Award Amount'] || raw['Award Amount'] < 1000) return null;
+  const recipient = raw['Recipient Name']?.trim();
+  const agency = raw['Awarding Agency']?.trim();
+  if (!recipient || !agency) {
+    skippedUnattributed++;
+    return null;
+  }
 
   return {
     id: raw.generated_internal_id ?? String(raw.internal_id),
     award_id: raw['Award ID'],
-    recipient: raw['Recipient Name'],
-    recipient_slug: slugify(raw['Recipient Name']),
+    recipient,
+    recipient_slug: slugify(recipient),
     amount: raw['Award Amount'],
-    agency: raw['Awarding Agency'],
-    agency_slug: raw.agency_slug ?? slugify(raw['Awarding Agency']),
+    agency,
+    agency_slug: raw.agency_slug ?? slugify(agency),
     sub_agency: raw['Awarding Sub Agency'],
     description: desc,
     start_date: raw['Start Date'],
@@ -219,6 +231,9 @@ async function main(): Promise<void> {
 
   const all = [...seen.values()].sort((a, b) => b.amount - a.amount);
   console.log(`[scrape] DONE. ${all.length} contracts kept.`);
+  if (skippedUnattributed > 0) {
+    console.log(`[scrape] skipped ${skippedUnattributed} AI awards with no recipient or agency name.`);
+  }
 
   // Sanity gate: never overwrite a healthy dataset with an empty or drastically
   // smaller result (e.g. an API outage or a transient zero-result fetch).
