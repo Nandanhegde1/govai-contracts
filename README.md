@@ -65,6 +65,14 @@ npm run build          # production build → dist/
 - A full run makes up to 110 requests: 6 NAICS × up to 10 list pages, plus up to 50 description fetches (`MAX_DESC_FETCHES` in `scripts/scrape-opportunities.ts`).
 - SAM.gov sets the daily quota by the account's role. No SAM.gov run has succeeded since 2026-05-02. Every commit of `opportunities.json` from then to 2026-10-05 records an HTTP 429 (quota exceeded), so `/opportunities/` shows a "feed paused" notice until that is sorted out.
 
+## npm audit
+
+As of 2026-10-06, `npm audit` reports 3 entries (1 critical, 1 high, 1 low). Each is fixed only by Astro 7, a major upgrade from the Astro 5 this site runs.
+
+- `astro` (10 advisories). Each one needs a feature this site doesn't use: on-demand rendering or an adapter, server islands, `define:vars`, spread attributes, view transitions, a `base` path, or image optimization through `astro:assets`. The site is static output with no adapter, and `src/` uses none of them.
+- `sharp` (libvips and libheif). Astro uses it to optimize images, and the site has no `astro:assets` images.
+- `esbuild` (low). It affects the dev server on Windows, not the built site.
+
 ## Disclaimer
 
 GovAI Contracts is an independent project and is not affiliated with, endorsed by, or connected to any U.S. government agency. Data is provided as-is for informational purposes.
