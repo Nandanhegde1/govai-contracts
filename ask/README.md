@@ -45,6 +45,17 @@ A 14-item gold set (`eval/gold.json`) written in **natural language** — vendor
 agency / mission terms, **not** pasted award_ids or description text — so
 retrieval recall measures real generalization, not a copy-match (non-circular).
 
+The gate scores a frozen corpus, `eval/corpus.snapshot.json`. It holds the 750
+contracts from the 2026-10-05 scrape (data commit 5367862), trimmed to the fields
+retrieval and synthesis read. The live dataset changes every 6 hours, and new
+awards can change the right answer. When the gold set was written (d1015d6,
+2026-06-29), the largest award was ECS's W911QX20C0023 at $120.6M. Booz Allen's
+47QFCA26F0018 has since grown from $7.0M to $243.9M, so that item is now labelled
+against the snapshot. `npm run ask:eval -- --live` runs the same gold set on
+today's data as a non-blocking check in the scheduled scrape. Refreshing the
+snapshot is a deliberate commit: `npm run ask:snapshot`, recheck `gold.json`,
+re-measure.
+
 | Metric | Result | Notes |
 |---|---|---|
 | **Retrieval recall@8 (routed)** | **92% (12/13)** | Measured, no key. Router + BM25 — the pipeline's actual entry point. |

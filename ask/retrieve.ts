@@ -22,7 +22,7 @@ export interface Contract {
   matched_keywords?: string[];
 }
 
-const DATA_URL = new URL('../src/data/contracts.json', import.meta.url);
+let dataUrl = new URL('../src/data/contracts.json', import.meta.url);
 
 // Small stoplist + boilerplate that's noise across federal contract text.
 const STOP = new Set(
@@ -63,9 +63,16 @@ function docText(c: Contract): string {
 let _contracts: Contract[] | null = null;
 let _index: { tf: Map<string, number>[]; df: Map<string, number>; len: number[]; avg: number } | null = null;
 
+/** Point retrieval at another corpus file with the same { contracts: [...] } shape (the eval's frozen snapshot). */
+export function useCorpus(url: URL): void {
+  dataUrl = url;
+  _contracts = null;
+  _index = null;
+}
+
 export function loadContracts(): Contract[] {
   if (_contracts) return _contracts;
-  const raw = JSON.parse(readFileSync(DATA_URL, 'utf8'));
+  const raw = JSON.parse(readFileSync(dataUrl, 'utf8'));
   _contracts = raw.contracts as Contract[];
   buildIndex(_contracts);
   return _contracts;

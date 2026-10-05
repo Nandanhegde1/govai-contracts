@@ -12,6 +12,7 @@
     "scrape:all": "npm run scrape && npm run scrape:opps",
     "ask": "tsx ask/ask.ts",
     "ask:eval": "tsx ask/eval/run-eval.ts",
+    "ask:snapshot": "tsx ask/eval/snapshot.ts",
     "check:freshness": "tsx scripts/check-freshness.ts",
     "astro": "astro"
   },

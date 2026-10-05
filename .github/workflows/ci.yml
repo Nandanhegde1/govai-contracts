@@ -20,8 +20,9 @@ jobs:
           node-version-file: .nvmrc
           cache: 'npm'
       - run: npm ci
-      # Key-free deterministic gate: BM25 + router recall@8 against the frozen
-      # gold set. Fails the build if recall drops below the measured 12/13 floor.
+      # Key-free deterministic gate: BM25 + router recall@8 for the frozen gold
+      # set over the frozen corpus (ask/eval/corpus.snapshot.json), so scraped
+      # data can't move the score. Fails if recall drops below the 12/13 floor.
       - run: npm run ask:eval
 
   build:

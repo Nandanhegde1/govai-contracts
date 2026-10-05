@@ -2,14 +2,19 @@
 //  - Retrieval recall@k  → runs with NO key (this is the honest, always-on metric).
 //  - Answer accuracy + latency + cost → runs when GEMINI_API_KEY (free) or ANTHROPIC_API_KEY is set.
 //
-// Run:  npm run ask:eval
+// Run:  npm run ask:eval            (frozen corpus, eval/corpus.snapshot.json; this is the CI gate)
+//       npm run ask:eval -- --live  (today's src/data/contracts.json; informational, never fails)
+//
+// The gate scores a frozen corpus so it measures code changes, not the scrape:
+// new awards shift BM25 IDF and can change which contract is "the largest".
+// The gold labels are checked against the snapshot. See eval/snapshot.ts.
 //
 // Note on non-circularity: the gold questions are written in natural language
 // (vendor / agency / mission terms), NOT by pasting award_ids or description text,
 // so retrieval recall measures real lexical generalization, not a copy-match.
 
 import { readFileSync } from 'node:fs';
-import { retrieve, retrieveSmart } from '../retrieve.ts';
+import { retrieve, retrieveSmart, loadContracts, useCorpus } from '../retrieve.ts';
 import { answer, hasLLM } from '../answer.ts';
 
 interface Gold {
@@ -17,6 +22,10 @@ interface Gold {
   expectAwardIds?: string[];
   answerMustInclude?: string[];
 }
+
+const LIVE = process.argv.includes('--live');
+if (!LIVE) useCorpus(new URL('./corpus.snapshot.json', import.meta.url));
+console.log(`Corpus: ${LIVE ? 'live src/data/contracts.json' : 'frozen eval/corpus.snapshot.json'} (${loadContracts().length} contracts)\n`);
 
 const gold = JSON.parse(readFileSync(new URL('./gold.json', import.meta.url), 'utf8')) as Gold[];
 const K = 8;
@@ -88,10 +97,15 @@ console.log(`Retrieval recall@${K} (routed): ${retHits}/${retTotal} = ${((100 * 
 console.log(`Retrieval recall@${K} (BM25 baseline): ${baseHits}/${retTotal} = ${((100 * baseHits) / (retTotal || 1)).toFixed(0)}%`);
 
 // CI gate: fail the build if routed recall regresses below the measured floor.
+// On the live corpus a drop is only a warning: the code didn't change, the data did.
 const MIN_HITS = Number(process.env.EVAL_MIN_RECALL_HITS ?? 12);
 if (retHits < MIN_HITS) {
-  console.error(`\nEVAL GATE FAILED: routed recall ${retHits}/${retTotal} fell below the ${MIN_HITS}/${retTotal} floor.`);
-  process.exit(1);
+  if (LIVE) {
+    console.log(`::warning::Live-corpus recall ${retHits}/${retTotal} is below the ${MIN_HITS}/${retTotal} floor. Check gold.json against the new data.`);
+  } else {
+    console.error(`\nEVAL GATE FAILED: routed recall ${retHits}/${retTotal} fell below the ${MIN_HITS}/${retTotal} floor.`);
+    process.exit(1);
+  }
 }
 if (hasKey) {
   console.log(`Answer accuracy:      ${ansCorrect}/${ansTotal} = ${((100 * ansCorrect) / (ansTotal || 1)).toFixed(0)}%`);
