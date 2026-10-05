@@ -27,7 +27,12 @@ jobs:
       - name: Run scraper
         run: npm run scrape
 
+      # A SAM.gov failure must not block the USAspending data from publishing,
+      # so this step continues on error and the run is failed at the end instead.
+      # A throttle (free-tier quota) exits 0 with a ::warning:: annotation.
       - name: Run SAM.gov opportunities scraper
+        id: sam
+        continue-on-error: true
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
         run: npm run scrape:opps
@@ -62,6 +67,12 @@ jobs:
           fi
           npm run build
           npx wrangler deploy
+
+      - name: Fail the run if the SAM.gov scraper failed
+        if: steps.sam.outcome == 'failure'
+        run: |
+          echo "::error::SAM.gov opportunities scraper failed; see the 'Run SAM.gov opportunities scraper' step log."
+          exit 1
 
       - name: Open or update a failure issue
         if: failure()

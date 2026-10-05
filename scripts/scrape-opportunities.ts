@@ -257,13 +257,21 @@ async function main(): Promise<void> {
   // If existing dataset shows we hit the daily quota, skip until reset (midnight UTC).
   if (existsSync(OUT_PATH)) {
     try {
-      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8')) as { generated_at?: string; note?: string };
+      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8')) as {
+        generated_at?: string;
+        last_attempt_at?: string;
+        last_success_at?: string;
+        note?: string;
+      };
+      // A throttled run only bumps last_attempt_at (generated_at stays at the last real fetch).
+      const lastAttempt = prev.last_attempt_at ?? prev.generated_at;
       const sameUtcDay =
-        prev.generated_at &&
-        new Date(prev.generated_at).toISOString().slice(0, 10) === new Date().toISOString().slice(0, 10);
+        lastAttempt &&
+        new Date(lastAttempt).toISOString().slice(0, 10) === new Date().toISOString().slice(0, 10);
       const wasThrottled = prev.note?.includes('throttled') || prev.note?.includes('exceeded your quota');
       if (sameUtcDay && wasThrottled) {
         console.warn('[sam] daily quota already exhausted today. Skipping until UTC midnight reset.');
+        console.log(`::warning::SAM.gov quota exhausted today; opportunities unchanged since ${prev.last_success_at ?? prev.generated_at}`);
         return;
       }
     } catch {
@@ -423,8 +431,11 @@ async function main(): Promise<void> {
   console.log(`[sam] DONE. ${all.length} opportunities kept. (description fetches this run: ${descFetches})`);
 
   mkdirSync(dirname(OUT_PATH), { recursive: true });
+  const finishedAt = new Date().toISOString();
   const payload = {
-    generated_at: new Date().toISOString(),
+    generated_at: finishedAt,
+    last_success_at: finishedAt,
+    last_attempt_at: finishedAt,
     count: all.length,
     window: { posted_from: postedFrom, posted_to: postedTo },
     opportunities: all,
@@ -440,12 +451,16 @@ main().catch((err) => {
 
   if (throttled && existsSync(OUT_PATH)) {
     // Tag the existing dataset so we skip until UTC midnight on the next run.
+    // Only last_attempt_at moves: generated_at/last_success_at keep the date the
+    // data was actually fetched, so the site can say how stale it really is.
     try {
       const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8')) as Record<string, unknown>;
-      prev.generated_at = new Date().toISOString();
+      prev.last_attempt_at = new Date().toISOString();
       prev.note = `throttled: ${msg.slice(0, 200)}`;
       writeFileSync(OUT_PATH, JSON.stringify(prev, null, 2), 'utf8');
       console.warn('[sam] tagged dataset as throttled; will skip until UTC midnight.');
+      // Quota exhaustion is expected on the free tier: annotate the run, don't fail it.
+      console.log(`::warning::SAM.gov throttled the scrape; opportunities unchanged since ${prev.last_success_at ?? prev.generated_at}`);
     } catch (e) {
       console.warn(`[sam] could not tag dataset: ${(e as Error).message}`);
     }
@@ -459,5 +474,6 @@ main().catch((err) => {
   } else {
     console.warn(`[sam] keeping existing dataset at ${OUT_PATH} (scrape failed: ${msg})`);
   }
-  process.exit(0);
+  // Anything other than a throttle is a real failure: make the cron run red.
+  process.exit(process.env.CI && !throttled ? 1 : 0);
 });

@@ -32,6 +32,8 @@ export const GET: APIRoute = () => {
         opportunities: {
           count: om.count,
           generated_at: om.generated_at,
+          last_success_at: om.last_success_at,
+          last_attempt_at: om.last_attempt_at,
           all: `${BASE}/api/v1/opportunities.json`,
         },
       },

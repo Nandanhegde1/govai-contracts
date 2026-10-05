@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getAllOpportunities, getOpportunityById } from '../../lib/data';
+import { getAllOpportunities, getOpportunityById, getOpportunityMeta, isOpportunityOpen, isOpportunityFeedPaused } from '../../lib/data';
 import { formatDate } from '../../lib/types';
 
 export async function getStaticPaths() {
@@ -13,6 +13,8 @@ if (!o) {
   return Astro.redirect('/opportunities/');
 }
 
+const paused = isOpportunityFeedPaused();
+const lastSuccess = getOpportunityMeta().last_success_at;
 const title = `${o.title} · ${o.agency_top}`;
 const description = `${o.agency_top} ${o.type}. ${o.description.slice(0, 160)}`;
 ---
@@ -24,8 +26,15 @@ const description = `${o.agency_top} ${o.type}. ${o.description.slice(0, 160)}`;
     {o.agency_top}
     {o.solicitation_number && (<span> · Solicitation <code>{o.solicitation_number}</code></span>)}
     {' · '}
-    {o.active ? <span class="pill">Active</span> : <span class="pill-muted pill">Closed</span>}
+    {isOpportunityOpen(o) ? <span class="pill">Open</span> : <span class="pill-muted pill">Closed</span>}
   </p>
+
+  {paused && (
+    <p style="border:1px solid var(--border-strong); border-radius:8px; padding:12px 16px; margin:0 0 24px; font-size:14px; color:var(--text-muted);">
+      <strong style="color:var(--text);">SAM.gov feed paused since {formatDate(lastSuccess)}.</strong>
+      This notice is from the last successful fetch. Check SAM.gov for its current status.
+    </p>
+  )}
 
   <div class="detail-grid">
     <section class="card" style="padding: 24px;">

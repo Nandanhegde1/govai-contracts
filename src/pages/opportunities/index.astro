@@ -1,11 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getAllOpportunities, getOpportunityMeta } from '../../lib/data';
+import { getAllOpportunities, getOpportunityMeta, isOpportunityOpen, isOpportunityFeedPaused } from '../../lib/data';
 import { formatDate } from '../../lib/types';
 
 const opps = getAllOpportunities();
 const meta = getOpportunityMeta();
-const active = opps.filter((o) => o.active);
+const open = opps.filter((o) => isOpportunityOpen(o));
+const paused = isOpportunityFeedPaused();
 ---
 <Layout
   title="Open federal AI opportunities (RFPs &amp; sources sought)"
@@ -15,9 +16,16 @@ const active = opps.filter((o) => o.active);
     <h1>Open federal AI opportunities</h1>
     <p class="lead">
       Pre-award AI/ML solicitations, RFPs and sources-sought notices pulled from SAM.gov.
-      The early-warning data competitors charge $10K+/yr for. Updated every 6 hours.
+      The early-warning data competitors charge $10K+/yr for.{!paused && ' Updated every 6 hours.'}
     </p>
   </section>
+
+  {paused && (
+    <p style="border:1px solid var(--border-strong); border-radius:8px; padding:12px 16px; margin:0 0 16px; font-size:14px; color:var(--text-muted);">
+      <strong style="color:var(--text);">SAM.gov feed paused since {formatDate(meta.last_success_at)}.</strong>
+      The notices below are from the last successful fetch. Open or closed is based on each notice's response deadline.
+    </p>
+  )}
 
   {opps.length === 0 ? (
     <div class="empty">
@@ -32,7 +40,7 @@ const active = opps.filter((o) => o.active);
   ) : (
     <>
       <p class="result-count">
-        {active.length} active · {opps.length} total in the last 60 days
+        {open.length} open · {opps.length} total{paused ? '' : ` in the last 60 days · last fetched from SAM.gov ${formatDate(meta.last_success_at)}`}
       </p>
       <div class="list-grid">
         {opps.map((o) => (
@@ -44,7 +52,7 @@ const active = opps.filter((o) => o.active);
                 </a>
               </div>
               <div class="amount" style="font-size:14px;">
-                {o.active ? <span class="pill">Active</span> : <span class="pill-muted pill">Closed</span>}
+                {isOpportunityOpen(o) ? <span class="pill">Open</span> : <span class="pill-muted pill">Closed</span>}
               </div>
             </div>
             <div class="agency">{o.agency_top}</div>

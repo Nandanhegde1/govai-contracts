@@ -11,6 +11,8 @@ interface DataFile {
 
 interface OppFile {
   generated_at: string;
+  last_success_at?: string;
+  last_attempt_at?: string;
   count: number;
   note?: string;
   window?: { posted_from: string; posted_to: string };
@@ -36,8 +38,38 @@ export function getOpportunityById(id: string): Opportunity | undefined {
   return getAllOpportunities().find((o) => o.id === id);
 }
 
-export function getOpportunityMeta(): { generated_at: string; count: number; note?: string } {
-  return { generated_at: oppData.generated_at, count: oppData.count, note: oppData.note };
+export function getOpportunityMeta(): {
+  generated_at: string;
+  last_success_at: string;
+  last_attempt_at?: string;
+  count: number;
+  note?: string;
+} {
+  return {
+    generated_at: oppData.generated_at,
+    // Older files predate last_success_at; their generated_at is the best we have.
+    last_success_at: oppData.last_success_at ?? oppData.generated_at,
+    last_attempt_at: oppData.last_attempt_at,
+    count: oppData.count,
+    note: oppData.note,
+  };
+}
+
+// SAM's `active` flag is frozen at scrape time, so a notice whose deadline has
+// passed would keep saying "Active" while the feed is paused. Decide at build
+// time instead: the response deadline wins, archive date only if there is none.
+export function isOpportunityOpen(o: Opportunity, now = new Date()): boolean {
+  if (o.response_deadline) return new Date(o.response_deadline).getTime() >= now.getTime();
+  if (o.archive_date) return o.archive_date.slice(0, 10) >= now.toISOString().slice(0, 10);
+  return o.active;
+}
+
+// Opportunities older than this at build time get a "feed paused" notice.
+export const OPP_STALE_DAYS = 7;
+
+export function isOpportunityFeedPaused(now = new Date()): boolean {
+  const last = new Date(getOpportunityMeta().last_success_at).getTime();
+  return now.getTime() - last > OPP_STALE_DAYS * 24 * 60 * 60 * 1000;
 }
 
 export function getById(id: string): Contract | undefined {

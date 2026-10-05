@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T00:07:07.189Z",
+  "generated_at": "2026-05-02T03:54:07.027Z",
   "count": 10,
   "window": {
     "posted_from": "03/03/2026",
@@ -220,5 +220,7 @@
       ]
     }
   ],
-  "note": "throttled: THROTTLED: HTTP 429"
+  "note": "throttled: THROTTLED: HTTP 429",
+  "last_success_at": "2026-05-02T03:54:07.027Z",
+  "last_attempt_at": "2026-10-05T05:48:55.855Z"
 }
