@@ -1,8 +1,8 @@
 # Ask GovAI — a measured RAG over the federal AI/ML contracts
 
 A small, dependency-free Retrieval-Augmented-Generation pipeline that answers
-natural-language questions about the 670+ U.S. federal AI/ML contract awards this
-project already indexes — with **citations**, a **refuse-to-invent guardrail**, and
+natural-language questions about the U.S. federal AI/ML contract awards this
+project already indexes (750 as of 2026-10-05) — with **citations**, a **refuse-to-invent guardrail**, and
 a **measured eval**. Built to demonstrate the methodology (retrieval design +
 grounding + evaluation + cost strategy), not as a production service.
 
@@ -61,7 +61,7 @@ The BM25 baseline measured **69%** with 4 misses. Diagnosis, then the fix:
 2. **NAICS 541715 (1 miss)** — an explicit code is a filter, not a search phrase.
    **Fixed** by the router (six-digit code → `naics_code` filter, amount-ordered).
    Passes now.
-3. **R&D-prototype query (1 miss)** — corpus homogeneity: 670+ contracts that all
+3. **R&D-prototype query (1 miss)** — corpus homogeneity: 750 contracts that all
    say "research / development / AI / ML," so generic terms don't isolate one
    award. **The honest residual** — a structural limit of lexical retrieval that
    routing can't fix; embeddings for semantic disambiguation + entity-name

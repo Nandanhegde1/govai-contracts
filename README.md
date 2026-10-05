@@ -2,7 +2,7 @@
 
 [![Retrieval eval](https://github.com/Nandanhegde1/govai-contracts/actions/workflows/ci.yml/badge.svg)](https://github.com/Nandanhegde1/govai-contracts/actions/workflows/ci.yml)
 
-A free, independent index of every U.S. federal **AI / ML / data-science** contract award and open opportunity.
+A free, independent index of U.S. federal **AI / ML / data-science** contract awards and open opportunities. Awards come from six IT and R&D NAICS codes and must have an AI/ML keyword in the description (see [How it works](#how-it-works)).
 
 - **Live site:** https://govai-contracts.nandanhegde1096.workers.dev/
 - **Data sources:** [USAspending.gov](https://api.usaspending.gov/) (awards) and [SAM.gov](https://sam.gov/data-services) (open opportunities) — both public domain
@@ -12,7 +12,7 @@ A free, independent index of every U.S. federal **AI / ML / data-science** contr
 
 ## Why
 
-Federal AI contract intelligence is locked behind enterprise tools (Deltek GovWin, GovTribe, etc.) costing $10K–$30K/year. This site does the obvious thing the public APIs already enable: aggregate, filter, and make every AI/ML award searchable for free.
+Federal AI contract intelligence mostly sits behind paid enterprise tools (Deltek GovWin, GovTribe, etc.). This site does the obvious thing the public APIs already enable: aggregate, filter, and make the AI/ML awards searchable for free.
 
 ## Ask GovAI (RAG)
 
@@ -28,7 +28,7 @@ npm run ask:eval                                                    # the measur
 - [Astro 5](https://astro.build) — static site, file-based routing
 - TypeScript
 - [USAspending.gov](https://api.usaspending.gov/) public API (no auth)
-- [SAM.gov](https://open.gsa.gov/api/get-opportunities-public-api/) opportunities API (free key, ~1k req/day)
+- [SAM.gov](https://open.gsa.gov/api/get-opportunities-public-api/) opportunities API (free key, daily quota set by the account's role)
 - GitHub Actions scheduled cron (every 6h)
 - Cloudflare Workers (free tier, static assets via `wrangler deploy`)
 
@@ -48,7 +48,7 @@ npm run build          # production build → dist/
 2. It then filters by AI/ML keyword presence in each award's description (so generic IT contracts are excluded).
 3. `scripts/scrape-opportunities.ts` does the same for active SAM.gov solicitations (last 60 days). Skips gracefully if `SAM_API_KEY` is not set or daily quota is exhausted.
 4. Deduplicated results are written to `src/data/contracts.json` and `src/data/opportunities.json`.
-5. Astro builds ~1,400 static pages at build time:
+5. Astro builds the static pages at build time (1,542 pages on the 2026-10-05 data):
    - `/` — landing + recent awards
    - `/contracts/` — searchable list (URL-state filters)
    - `/contracts/[id]/` — programmatic SEO detail page per award
@@ -62,9 +62,8 @@ npm run build          # production build → dist/
 
 ## API quota usage (SAM.gov)
 
-- Free public quota: **1,000 requests/day per IP**
-- Per cron run: 6 NAICS × up to 10 pages = **≤ 60 requests**
-- 4 runs/day = **~240 requests/day** (~24% of quota). Headroom for backfills and retries.
+- A full run makes up to 110 requests: 6 NAICS × up to 10 list pages, plus up to 50 description fetches (`MAX_DESC_FETCHES` in `scripts/scrape-opportunities.ts`).
+- SAM.gov sets the daily quota by the account's role. No SAM.gov run has succeeded since 2026-05-02. Every commit of `opportunities.json` from then to 2026-10-05 records an HTTP 429 (quota exceeded), so `/opportunities/` shows a "feed paused" notice until that is sorted out.
 
 ## Disclaimer
 

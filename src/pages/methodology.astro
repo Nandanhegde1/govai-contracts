@@ -1,8 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getMeta } from '../lib/data';
+import { getAll, getMeta, getOpportunityMeta, isOpportunityFeedPaused } from '../lib/data';
+import { formatDate } from '../lib/types';
 
 const m = getMeta();
+const earliestStart = getAll().map((c) => c.start_date).filter(Boolean).sort()[0];
+// Federal fiscal years start Oct 1, so 2023-10-01 is the first day of FY2024.
+const windowFY = Number(m.window.start.slice(0, 4)) + (m.window.start.slice(5, 7) >= '10' ? 1 : 0);
+const oppsPaused = isOpportunityFeedPaused();
+const oppMeta = getOpportunityMeta();
 const BASE = 'https://govai-contracts.nandanhegde1096.workers.dev';
 
 const datasetSchema = {
@@ -51,8 +57,20 @@ const description = 'How GovAI Contracts compiles its dataset: sources, AI/ML ke
       The filter is intentionally broad to capture both pure-play AI work and AI-enabled systems (e.g. predictive maintenance, autonomous platforms). False positives are minimized by also requiring NAICS codes in the IT/R&D family.
     </p>
 
+    <h2>Date range and amounts</h2>
+    <p>
+      The scraper asks USAspending for awards from {formatDate(m.window.start)} (fiscal year {windowFY}) to today.
+      USAspending also returns older awards that had contract activity in that period, so the earliest
+      start date in the data is {formatDate(earliestStart)}. Each amount is the award total that USAspending
+      reports, not only the money spent after {formatDate(m.window.start)}.
+    </p>
+
     <h2>Refresh cadence</h2>
-    <p>The full pipeline runs every 6 hours via GitHub Actions cron. Static pages rebuild on each run; live data is at most 6 hours old.</p>
+    <p>
+      The pipeline runs every 6 hours on a GitHub Actions cron, and each data commit triggers a rebuild.
+      A failed run leaves the previous data in place. Contract data on this build was last updated
+      {formatDate(m.generated_at)}.{oppsPaused && ` The SAM.gov opportunities feed has been paused since ${formatDate(oppMeta.last_success_at)}.`}
+    </p>
 
     <h2>License</h2>
     <p>

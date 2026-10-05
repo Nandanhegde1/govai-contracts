@@ -3,7 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import { getVendors, getMeta } from '../../lib/data';
 import { formatMoney, formatDate } from '../../lib/types';
 
-const top = getVendors().slice(0, 25);
+const vendors = getVendors();
+const top = vendors.slice(0, 25);
 const meta = getMeta();
 const totalTop = top.reduce((s, v) => s + v.total_amount, 0);
 
@@ -45,9 +46,10 @@ const faqSchema = {
     <p style="color: var(--text-dim); font-size: 13px;">Updated {formatDate(meta.generated_at)} · Live data</p>
 
     <p class="lead" style="margin-top: 18px;">
-      The federal AI/ML market is consolidating fast. The top 25 vendors below have collectively won
-      <strong>{formatMoney(totalTop)}</strong> in AI-related awards since FY2024 — pulled live from
-      USAspending.gov and ranked by total dollars awarded.
+      The top 25 vendors below hold <strong>{formatMoney(totalTop)}</strong> in AI-related awards,
+      pulled from USAspending.gov and ranked by total award value. The data covers awards with
+      contract activity since {formatDate(meta.window.start)}, so some started earlier, and each
+      amount is the award's full value.
     </p>
 
     <h2 class="section-title">The top 25</h2>
@@ -84,7 +86,7 @@ const faqSchema = {
     </p>
 
     <p style="margin-top: 18px;">
-      Want the full list? <a href="/vendors/">Browse all {top.length}+ vendors →</a>
+      Want the full list? <a href="/vendors/">Browse all {vendors.length.toLocaleString('en-US')} vendors →</a>
       or <a href="/export/all.csv">download the raw CSV</a>.
     </p>
   </article>

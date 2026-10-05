@@ -2,7 +2,7 @@ name: Scheduled scrape
 
 on:
   schedule:
-    # Every 6 hours at :17 (well under SAM.gov 1,000/day quota)
+    # Every 6 hours at :17. A full SAM.gov run makes up to 110 requests (see scrape-opportunities.ts).
     - cron: '17 */6 * * *'
   workflow_dispatch: {}
 

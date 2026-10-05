@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import ContractCard from '../components/ContractCard.astro';
 import FreshnessBadge from '../components/FreshnessBadge.astro';
-import { getAll, getMeta, getAgencies, getVendors, hasStarted } from '../lib/data';
+import { getAll, getMeta, getAgencies, getVendors, hasStarted, isOpportunityFeedPaused } from '../lib/data';
 import { getTrending, getBiggest } from '../lib/related';
 import { formatMoney, formatDate } from '../lib/types';
 
@@ -20,6 +20,7 @@ const trending = getTrending(6);
 const biggest = getBiggest(6);
 const topVendors = vendors.slice(0, 5);
 const topAgencies = agencies.slice(0, 5);
+const oppsPaused = isOpportunityFeedPaused();
 
 const datasetSchema = {
   '@context': 'https://schema.org',
@@ -40,7 +41,7 @@ const datasetSchema = {
 ---
 <Layout
   title="Federal AI &amp; ML Contracts · GovAI Contracts"
-  description="Track federal AI and machine learning contracts awarded since 2023. Search vendors, agencies, and dollar amounts. Free, updated every 6 hours, public-domain data."
+  description={`Track federal AI and machine learning contract awards with activity since ${formatDate(meta.window.start)}. Search vendors, agencies, and dollar amounts. Free, updated every 6 hours, public-domain data.`}
   jsonLd={datasetSchema}
 >
   <section class="hero">
@@ -54,7 +55,7 @@ const datasetSchema = {
     <p style="margin-top: 18px; display:flex; gap:10px; flex-wrap:wrap;">
       <a href="/contracts/" style="background:var(--accent); color:#04140a; padding:10px 18px; border-radius:6px; font-weight:600; text-decoration:none;">Browse contracts →</a>
       <a href="/ask/" style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:10px 18px; border-radius:6px; font-weight:500; text-decoration:none;">Ask GovAI (RAG)</a>
-      <a href="/opportunities/" style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:10px 18px; border-radius:6px; font-weight:500; text-decoration:none;">Open RFPs</a>
+      <a href="/opportunities/" style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:10px 18px; border-radius:6px; font-weight:500; text-decoration:none;">{oppsPaused ? 'RFPs (SAM.gov feed paused)' : 'Open RFPs'}</a>
       <a href="/alerts/" style="background:transparent; color:var(--text); border:1px solid var(--border-strong); padding:10px 18px; border-radius:6px; font-weight:500; text-decoration:none;">Follow by RSS</a>
     </p>
     <p style="margin-top:10px; font-size:13.5px; color:var(--text-muted);">

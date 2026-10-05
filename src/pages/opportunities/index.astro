@@ -9,14 +9,13 @@ const open = opps.filter((o) => isOpportunityOpen(o));
 const paused = isOpportunityFeedPaused();
 ---
 <Layout
-  title="Open federal AI opportunities (RFPs &amp; sources sought)"
-  description="Open U.S. federal AI/ML solicitations, RFPs and sources-sought notices from SAM.gov. Pre-award intel, free."
+  title={paused ? 'Federal AI opportunities (RFPs & sources sought)' : 'Open federal AI opportunities (RFPs & sources sought)'}
+  description="U.S. federal AI/ML solicitations, RFPs and sources-sought notices from SAM.gov. Pre-award intel, free."
 >
   <section class="hero">
-    <h1>Open federal AI opportunities</h1>
+    <h1>{paused ? 'Federal AI opportunities' : 'Open federal AI opportunities'}</h1>
     <p class="lead">
-      Pre-award AI/ML solicitations, RFPs and sources-sought notices pulled from SAM.gov.
-      The early-warning data competitors charge $10K+/yr for.{!paused && ' Updated every 6 hours.'}
+      Pre-award AI/ML solicitations, RFPs and sources-sought notices pulled from SAM.gov.{!paused && ' Updated every 6 hours.'}
     </p>
   </section>
 

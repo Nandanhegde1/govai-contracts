@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getAll } from '../../lib/data';
-import { formatMoney } from '../../lib/types';
+import { getAll, getMeta } from '../../lib/data';
+import { formatMoney, formatDate } from '../../lib/types';
 
 const byYear = new Map<string, { count: number; amount: number }>();
 for (const c of getAll()) {
@@ -12,14 +12,18 @@ for (const c of getAll()) {
   byYear.set(y, cur);
 }
 const years = [...byYear.entries()].sort(([a], [b]) => b.localeCompare(a));
+const windowStart = getMeta().window.start;
 
 const title = 'Federal AI contracts by year — annual reports';
-const description = 'Year-by-year totals of federal AI/ML contract awards. Compare AI spending across fiscal years.';
+const description = 'Year-by-year totals of federal AI/ML contract awards, grouped by the calendar year each award started.';
 ---
 <Layout title={title} description={description}>
   <section class="hero">
     <h1>AI contracts by year</h1>
-    <p class="lead">Federal AI/ML spending broken down by year of award start.</p>
+    <p class="lead">
+      Federal AI/ML awards broken down by the calendar year each award started. The dataset covers
+      awards with contract activity since {formatDate(windowStart)}, so earlier years are partial.
+    </p>
   </section>
   <section style="margin-top: 32px;">
     <table style="width: 100%; border-collapse: collapse;">

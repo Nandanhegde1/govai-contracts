@@ -286,7 +286,7 @@ async function main(): Promise<void> {
   const postedTo = fmtDate(now);
   console.log(`[sam] window: ${postedFrom} → ${postedTo}`);
 
-  // Quota plan per run (free SAM API: 1,000 req/day per IP, ~250/run @ 4 runs/day):
+  // Quota plan per run (SAM sets the daily quota by account role; check yours before raising these):
   //   - List requests:        6 NAICS × ≤10 pages = ≤60
   //   - Description fetches:  capped at MAX_DESC_FETCHES (default 50)
   //   - Total per run: ≤110 req. Daily: ≤440 (well under quota + room for burst).

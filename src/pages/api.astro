@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getMeta } from '../lib/data';
+import { getMeta, getOpportunityMeta, isOpportunityFeedPaused } from '../lib/data';
+import { formatDate } from '../lib/types';
 
 const m = getMeta();
+const oppsPaused = isOpportunityFeedPaused();
+const oppsSince = formatDate(getOpportunityMeta().last_success_at);
 const title = 'Free public API — federal AI contracts data';
 const description = `Free, no-auth JSON API with all ${m.count.toLocaleString()} federal AI/ML contracts. CC0 license. Cached at the edge by Cloudflare.`;
 const BASE = 'https://govai-contracts.nandanhegde1096.workers.dev';
@@ -23,7 +26,7 @@ const apiSchema = {
     <h1>Public API</h1>
     <p class="lead">
       All endpoints return JSON. No auth, no rate limits, CORS open.
-      Data updates every 6 hours and is served from Cloudflare's edge cache.
+      Contract data updates every 6 hours and is served from Cloudflare's edge cache.
     </p>
   </section>
 
@@ -57,9 +60,9 @@ const apiSchema = {
   </section>
 
   <section style="margin-top: 32px;">
-    <h2>Opportunities (open RFPs)</h2>
+    <h2>Opportunities (RFPs)</h2>
     <ul style="list-style: none; padding: 0; line-height: 2;">
-      <li><a href="/api/v1/opportunities.json" style="color: var(--accent);"><code>GET /api/v1/opportunities.json</code></a> — Active solicitations from SAM.gov</li>
+      <li><a href="/api/v1/opportunities.json" style="color: var(--accent);"><code>GET /api/v1/opportunities.json</code></a> — {oppsPaused ? `Solicitations from SAM.gov. The feed has been paused since ${oppsSince}, so check each notice's response_deadline rather than its stored active flag.` : 'Open solicitations from SAM.gov'}</li>
     </ul>
   </section>
 

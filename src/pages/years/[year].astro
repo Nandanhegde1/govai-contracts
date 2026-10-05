@@ -1,8 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ContractCard from '../../components/ContractCard.astro';
-import { getAll } from '../../lib/data';
-import { formatMoney } from '../../lib/types';
+import { getAll, getMeta } from '../../lib/data';
+import { formatMoney, formatDate } from '../../lib/types';
 
 export async function getStaticPaths() {
   const years = new Set<string>();
@@ -31,9 +31,15 @@ const topAgencies = [...agencyTotals.values()].sort((a, b) => b.amount - a.amoun
 
 // Years group awards by start date. USAspending can list an award that starts
 // in a later year (1305M326P0406 starts 2027-01-01), so only years before the
-// build year are complete.
+// build year are complete. Years that begin before the scrape window only hold
+// the older awards that still had activity inside it.
+const windowStart = getMeta().window.start;
 const buildYear = new Date().getUTCFullYear();
-const span = Number(year) > buildYear ? 'not started yet' : Number(year) === buildYear ? 'year to date' : 'full year';
+const span =
+  Number(year) > buildYear ? 'not started yet'
+  : Number(year) === buildYear ? 'year to date'
+  : `${year}-01-01` < windowStart ? 'partial'
+  : 'full year';
 
 const title = `${year} federal AI contracts (${span})`;
 const description = `${all.length} federal AI/ML contracts starting in ${year} (${span}), totaling ${formatMoney(total)}. Top vendors, top agencies, biggest deals.`;
@@ -45,6 +51,12 @@ const description = `${all.length} federal AI/ML contracts starting in ${year} (
     <p class="lead">
       {all.length.toLocaleString()} AI/ML contracts · {formatMoney(total)} total · across {agencyTotals.size} agencies and {vendorTotals.size} vendors.
     </p>
+    {span === 'partial' && (
+      <p style="font-size: 14px; color: var(--text-muted);">
+        Partial year. The dataset covers awards with contract activity since {formatDate(windowStart)},
+        so this page only lists the {year} awards that had activity after that date.
+      </p>
+    )}
   </section>
 
   <section style="margin-top: 32px; display:grid; grid-template-columns: 1fr 1fr; gap: 24px;">
