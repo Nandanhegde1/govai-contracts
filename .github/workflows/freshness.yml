@@ -1,0 +1,53 @@
+name: Data freshness
+
+on:
+  schedule:
+    # Daily, between scrape runs (those start at :17 every 6 hours)
+    - cron: '43 9 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      # Reads the LIVE /api/v1/index.json, so a deploy that stopped shipping
+      # fails here even when every scrape run is green.
+      - name: Live contracts data is under 24 hours old
+        run: npm run check:freshness
+
+      - name: Close the stale-data issue on recovery
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "Live data stale" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue close "$existing" --repo "$GITHUB_REPOSITORY" --comment "Fresh again at $(date -u '+%Y-%m-%d %H:%M UTC'), [run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          fi
+
+      - name: Open or update a stale-data issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "Live data stale" --json number --jq '.[0].number // empty')
+          body="Live contracts data older than 24 h at $(date -u '+%Y-%m-%d %H:%M UTC'), [run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Live data stale" --assignee Nandanhegde1 --body "$body"
+          fi

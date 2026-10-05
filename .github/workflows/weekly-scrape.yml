@@ -70,6 +70,19 @@ jobs:
           echo "::error::SAM.gov opportunities scraper failed; see the 'Run SAM.gov opportunities scraper' step log."
           exit 1
 
+      # Close the open failure issue once a run is clean, so the next outage
+      # opens a fresh issue (and a fresh notification) instead of one more
+      # comment on an old thread. Must stay after the SAM.gov check above.
+      - name: Close the failure issue on recovery
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "Scheduled scrape failed" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue close "$existing" --repo "$GITHUB_REPOSITORY" --comment "Recovered at $(date -u '+%Y-%m-%d %H:%M UTC'), [run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          fi
+
       - name: Open or update a failure issue
         if: failure()
         env:
@@ -80,5 +93,5 @@ jobs:
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
           else
-            gh issue create --repo "$GITHUB_REPOSITORY" --title "Scheduled scrape failed" --body "$body"
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Scheduled scrape failed" --assignee Nandanhegde1 --body "$body"
           fi
