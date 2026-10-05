@@ -1,5 +1,5 @@
 import type { Contract } from './types';
-import { getAll } from './data';
+import { getAll, hasStarted } from './data';
 
 /** Find related contracts: prioritize same vendor, then same agency, then same NAICS. */
 export function getRelatedContracts(c: Contract, max = 6): Contract[] {
@@ -50,7 +50,7 @@ export function getTrending(max = 8): Contract[] {
   return getAll()
     .filter((c) => {
       const t = new Date(c.start_date).getTime();
-      return !Number.isNaN(t) && t >= cutoff;
+      return !Number.isNaN(t) && t >= cutoff && hasStarted(c);
     })
     .sort((a, b) => b.amount - a.amount)
     .slice(0, max);

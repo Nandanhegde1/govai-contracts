@@ -72,6 +72,13 @@ export function isOpportunityFeedPaused(now = new Date()): boolean {
   return now.getTime() - last > OPP_STALE_DAYS * 24 * 60 * 60 * 1000;
 }
 
+// USAspending can list an award whose start date is still in the future
+// (1305M326P0406 starts 2027-01-01). "Recent" and "trending" lists only show
+// awards that had started by build time.
+export function hasStarted(c: Contract, now = new Date()): boolean {
+  return !!c.start_date && c.start_date.slice(0, 10) <= now.toISOString().slice(0, 10);
+}
+
 export function getById(id: string): Contract | undefined {
   return getAll().find((c) => c.id === id);
 }

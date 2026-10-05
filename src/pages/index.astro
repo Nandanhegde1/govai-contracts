@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import ContractCard from '../components/ContractCard.astro';
 import FreshnessBadge from '../components/FreshnessBadge.astro';
-import { getAll, getMeta, getAgencies, getVendors } from '../lib/data';
+import { getAll, getMeta, getAgencies, getVendors, hasStarted } from '../lib/data';
 import { getTrending, getBiggest } from '../lib/related';
 import { formatMoney, formatDate } from '../lib/types';
 
@@ -12,7 +12,8 @@ const agencies = getAgencies();
 const vendors = getVendors();
 
 const totalAmount = all.reduce((s, c) => s + c.amount, 0);
-const recent = [...all]
+const recent = all
+  .filter((c) => hasStarted(c))
   .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
   .slice(0, 10);
 const trending = getTrending(6);

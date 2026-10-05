@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { getAll, getMeta } from '../lib/data';
+import { getAll, getMeta, hasStarted } from '../lib/data';
 import { formatMoney } from '../lib/types';
 
 const SITE = 'https://govai-contracts.nandanhegde1096.workers.dev';
@@ -14,7 +14,8 @@ const esc = (s: string): string =>
 
 export const GET: APIRoute = () => {
   const meta = getMeta();
-  const items = [...getAll()]
+  const items = getAll()
+    .filter((c) => hasStarted(c))
     .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
     .slice(0, 50);
 

@@ -10,3 +10,11 @@
 
 /export/all.json
   Cache-Control: public, max-age=3600
+
+# The JSON API and exports are public data: allow browser fetches from any origin.
+# (Headers set inside an Astro endpoint's Response are dropped by the static build.)
+/api/*
+  Access-Control-Allow-Origin: *
+
+/export/*
+  Access-Control-Allow-Origin: *

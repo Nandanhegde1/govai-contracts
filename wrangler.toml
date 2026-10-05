@@ -3,3 +3,5 @@ compatibility_date = "2025-04-01"
 
 [assets]
 directory = "./dist"
+# Unknown paths get dist/404.html with a 404 status instead of an empty body.
+not_found_handling = "404-page"
