@@ -48,7 +48,7 @@ export const GET: APIRoute = () => {
         },
       },
       '/api/v1/opportunities.json': {
-        get: { summary: 'SAM.gov opportunities', responses: { '200': { description: 'Pre-award AI solicitations from the last successful SAM.gov fetch, open and closed; meta.last_success_at says when that was' } } },
+        get: { summary: 'SAM.gov opportunities', responses: { '200': { description: 'Pre-award AI solicitations from the last successful SAM.gov fetch, open and closed. meta.last_success_at says when that was.' } } },
       },
     },
   };
