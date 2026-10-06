@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T00:06:51.635Z",
-  "count": 750,
+  "generated_at": "2026-10-06T06:27:51.943Z",
+  "count": 751,
   "window": {
     "start": "2023-10-01",
     "end": "2026-10-06"
@@ -7257,6 +7257,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HR001126FE045_9700_HR001122D0001_9700",
+      "award_id": "HR001126FE045",
+      "recipient": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+      "recipient_slug": "the-johns-hopkins-university-applied-physics-laboratory-llc",
+      "amount": 1169910,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Advanced Research Projects Agency",
+      "description": "COMPOSITIONAL LEARNING-AND-REASONING FOR ARTIFICIAL INTELLIGENCE COMPLEX SYSTEMS ENGINEERING (CLARA) EFFORT UNDER THE JOHNS HOPKINS UNIVERSITY (JHU)/ APPLIED PHYSICS LABORATORY (APL) UNIVERSITY AFFILIATE RESEARCH CENTER (UARC) SUPPORT SERVICES",
+      "start_date": "2026-07-06",
+      "end_date": "2027-11-07",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC11",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; BASIC RESEARCH",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_N0001422C1059_9700_-NONE-_-NONE-",
       "award_id": "N0001422C1059",
       "recipient": "THE BOEING COMPANY",
@@ -9842,27 +9863,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_FA822425C0010_9700_-NONE-_-NONE-",
-      "award_id": "FA822425C0010",
-      "recipient": "WEBOMATES, INC",
-      "recipient_slug": "webomates-inc",
-      "amount": 324806,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "THE PRIMARY OBJECTIVE OF THIS CONTRACT IS TO PROVIDE TESTING AS A SERVICE (TAAS) FOR THE MAINTENANCE REPAIR ORGANIZATION (MRO) SOFTWARE, UTILIZING ARTIFICIAL INTELLIGENCE (AI) TO REDUCE TESTING TIME, EFFORT AND COST AND IMPROVE TEST QUALITY.",
-      "start_date": "2025-10-01",
-      "end_date": "2027-04-30",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "UT",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
       "id": "CONT_AWD_1333ND24FNB770162_1341_47QTCB21D0005_4732",
       "award_id": "1333ND24FNB770162",
       "recipient": "GBS DAKOTA IT, LLC",
@@ -10881,6 +10881,27 @@
       "pop_state": "AR",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA822425C0010_9700_-NONE-_-NONE-",
+      "award_id": "FA822425C0010",
+      "recipient": "WEBOMATES, INC",
+      "recipient_slug": "webomates-inc",
+      "amount": 213113.32,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "THE PRIMARY OBJECTIVE OF THIS CONTRACT IS TO PROVIDE TESTING AS A SERVICE (TAAS) FOR THE MAINTENANCE REPAIR ORGANIZATION (MRO) SOFTWARE, UTILIZING ARTIFICIAL INTELLIGENCE (AI) TO REDUCE TESTING TIME, EFFORT AND COST AND IMPROVE TEST QUALITY.",
+      "start_date": "2025-10-01",
+      "end_date": "2027-04-30",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "UT",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
