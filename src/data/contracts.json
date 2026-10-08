@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-07T23:08:55.226Z",
-  "count": 751,
+  "generated_at": "2026-10-08T06:12:19.285Z",
+  "count": 755,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-07"
+    "end": "2026-10-08"
   },
   "contracts": [
     {
@@ -351,6 +351,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX25C0005_9700_-NONE-_-NONE-",
+      "award_id": "W911QX25C0005",
+      "recipient": "METRON INCORPORATED",
+      "recipient_slug": "metron-incorporated",
+      "amount": 18983609.68,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "BROAD AGENCY ANNOUNCEMENT CONTRACT FOR RESEARCH, DEVELOPMENT, TEST, AND EVALUATION OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE.",
+      "start_date": "2025-08-18",
+      "end_date": "2027-12-03",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_W911QX24C0009_9700_-NONE-_-NONE-",
       "award_id": "W911QX24C0009",
       "recipient": "EXPEDITION TECHNOLOGY, LLC",
@@ -366,28 +388,6 @@
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC35",
       "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX25C0005_9700_-NONE-_-NONE-",
-      "award_id": "W911QX25C0005",
-      "recipient": "METRON INCORPORATED",
-      "recipient_slug": "metron-incorporated",
-      "amount": 17110543.93,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "BROAD AGENCY ANNOUNCEMENT CONTRACT FOR RESEARCH, DEVELOPMENT, TEST, AND EVALUATION OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-ENABLING TECHNOLOGIES FOR EXPEDITIONARY MANEUVER AND AIR/GROUND RECONNAISSANCE.",
-      "start_date": "2025-08-18",
-      "end_date": "2027-12-03",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence",
@@ -7626,7 +7626,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "TO ACCELERATE ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) TO PREPARE FOR PROLIFERATED MISSILE WARNING (MW) / MISSILE TRACKING (MT) / MISSILE DEFENSE (MD) ARCHITECTURE GENERATING OPIR DATA.",
       "start_date": "2024-11-13",
-      "end_date": "2025-11-08",
+      "end_date": "2026-12-27",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
@@ -9356,6 +9356,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W912HQ25C0037_9700_-NONE-_-NONE-",
+      "award_id": "W912HQ25C0037",
+      "recipient": "NMC, INC.",
+      "recipient_slug": "nmc-inc",
+      "amount": 449190,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "ESTCP PROJECT RC24-8133 \"ADVANCING LIDAR APPLICATIONS FOR DOD CULTURAL RESOURCE MANAGEMENT THROUGH MACHINE LEARNING ALGORITHMS FOR ARCHAEOLOGICAL SURVEY AND RISK MODELING FOR CULTURAL RESOURCE HAZARD ASSESSMENTS\"",
+      "start_date": "2025-04-28",
+      "end_date": "2029-04-27",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AJ11",
+      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
+      "pop_state": "NM",
+      "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_W31P4Q21F0278_9700_W31P4Q18D0002_9700",
       "award_id": "W31P4Q21F0278",
       "recipient": "GEORGIA TECH APPLIED RESEARCH CORP",
@@ -10032,27 +10053,6 @@
         "deep learning",
         "ai",
         "neural network"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W912HQ25C0037_9700_-NONE-_-NONE-",
-      "award_id": "W912HQ25C0037",
-      "recipient": "NMC, INC.",
-      "recipient_slug": "nmc-inc",
-      "amount": 289190,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "ESTCP PROJECT RC24-8133 \"ADVANCING LIDAR APPLICATIONS FOR DOD CULTURAL RESOURCE MANAGEMENT THROUGH MACHINE LEARNING ALGORITHMS FOR ARCHAEOLOGICAL SURVEY AND RISK MODELING FOR CULTURAL RESOURCE HAZARD ASSESSMENTS\"",
-      "start_date": "2025-04-28",
-      "end_date": "2029-04-27",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AJ11",
-      "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; BASIC RESEARCH",
-      "pop_state": "NM",
-      "matched_keywords": [
-        "machine learning"
       ]
     },
     {
@@ -13090,6 +13090,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0367_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0367",
+      "recipient": "VELOCOR INDUSTRIES, INC.",
+      "recipient_slug": "velocor-industries-inc",
+      "amount": 109814,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "NEUROSYMBOLIC FOUNDATION ARTIFICIAL INTELLIGENCE MODEL FOR SPACE ORBITAL WARFARE",
+      "start_date": "2026-07-12",
+      "end_date": "2026-10-12",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "NC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0846_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0846",
       "recipient": "INK CONTENT, INC.",
@@ -14018,6 +14039,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0051_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0051",
+      "recipient": "QUANTIFIND INC.",
+      "recipient_slug": "quantifind-inc",
+      "amount": 74974,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "PERSISTENT ARTIFICIAL INTELLIGENCE ASSISTED MONITORING OF SUPPLIER NETWORK RISK",
+      "start_date": "2026-07-07",
+      "end_date": "2026-10-07",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864926P0169_9700_-NONE-_-NONE-",
       "award_id": "FA864926P0169",
       "recipient": "RESILIENX, INC.",
@@ -14287,6 +14329,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0109_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0109",
+      "recipient": "OPENINFER, INC",
+      "recipient_slug": "openinfer-inc",
+      "amount": 74935,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "OPENINFER: ENABLING SECURE, ONBOARD PREDICTIVE MAINTENANCE WITH LOCAL EDGE ARTIFICIAL INTELLIGENCE",
+      "start_date": "2026-07-07",
+      "end_date": "2026-10-13",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -14942,6 +15005,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0188_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0188",
+      "recipient": "OPENTEAMS INC",
+      "recipient_slug": "openteams-inc",
+      "amount": 74334,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MULTI-MODAL SIGNAL INTELLIGENCE (SIGINT) ANALYTICS PLATFORM: ADVANCING INFORMATION WARFARE THROUGH OPEN-SOURCE ARTIFICIAL INTELLIGENCE (AI) AND TRUSTED ARTIFICIAL INTELLIGENCE (AI) PRINCIPLES",
+      "start_date": "2026-07-08",
+      "end_date": "2026-10-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
       ]
