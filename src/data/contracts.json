@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T23:24:33.490Z",
-  "count": 755,
+  "generated_at": "2026-10-09T06:16:21.915Z",
+  "count": 756,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-08"
+    "end": "2026-10-09"
   },
   "contracts": [
     {
@@ -8360,6 +8360,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB044_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB044",
+      "recipient": "SRC INC",
+      "recipient_slug": "src-inc",
+      "amount": 766000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "GROOVY CHAMELEON, DISCOVER, DEVELOP NOVEL ALGORITHMS, TECHNIQUES THAT ENABLE ROBUST, RESILIENT ARTIFICIAL INTELLIGENCE, MACHINE LEARNING APPLICATIONS FOR INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE MISSIONS UTILIZING MULTIPLE SENSOR MODALITIES.",
+      "start_date": "2025-06-03",
+      "end_date": "2028-08-02",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_36C10B26C0045_3600_-NONE-_-NONE-",
       "award_id": "36C10B26C0045",
       "recipient": "HUNTRIDGE LABS, LLC",
@@ -8528,28 +8550,6 @@
       "pop_state": "AL",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB044_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB044",
-      "recipient": "SRC INC",
-      "recipient_slug": "src-inc",
-      "amount": 718000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "GROOVY CHAMELEON, DISCOVER, DEVELOP NOVEL ALGORITHMS, TECHNIQUES THAT ENABLE ROBUST, RESILIENT ARTIFICIAL INTELLIGENCE, MACHINE LEARNING APPLICATIONS FOR INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE MISSIONS UTILIZING MULTIPLE SENSOR MODALITIES.",
-      "start_date": "2025-06-03",
-      "end_date": "2028-08-02",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -14753,6 +14753,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NV",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0089_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0089",
+      "recipient": "BARBARY CONSULTING LLC",
+      "recipient_slug": "barbary-consulting-llc",
+      "amount": 74665,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "AERIS-AI - AUTONOMOUS ENVIRONMENTAL REPORTING AND INTELLIGENCE SYSTEM WITH ARTIFICIAL INTELLIGENCE",
+      "start_date": "2026-07-09",
+      "end_date": "2026-10-09",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "ID",
       "matched_keywords": [
         "artificial intelligence"
       ]
