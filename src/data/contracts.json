@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-10T21:49:32.631Z",
+  "generated_at": "2026-10-11T05:54:35.296Z",
   "count": 756,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-10"
+    "end": "2026-10-11"
   },
   "contracts": [
     {
@@ -1268,6 +1268,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
+      "award_id": "75N97A26F10001",
+      "recipient": "DELOITTE CONSULTING LLP",
+      "recipient_slug": "deloitte-consulting-llp",
+      "amount": 5586503.16,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "National Institutes of Health",
+      "description": "PROFESSIONAL SERVICES FOR STRATEGIC IT COMMUNICATIONS, CHANGE MANAGEMENT, AND INTEGRATION OF SUCH WITH IT PLATFORMS, ADOPTION AND USE OF ARTIFICIAL INTELLIGENCE, AND BEST PRACTICES.",
+      "start_date": "2025-12-12",
+      "end_date": "2026-12-11",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_20341226F00011_2036_20341221A00001_2036",
       "award_id": "20341226F00011",
       "recipient": "DELOITTE & TOUCHE LLP",
@@ -1772,27 +1793,6 @@
       "psc_code": "AD92",
       "psc_desc": "R&D- DEFENSE OTHER: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)",
       "pop_state": "HI",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
-      "award_id": "75N97A26F10001",
-      "recipient": "DELOITTE CONSULTING LLP",
-      "recipient_slug": "deloitte-consulting-llp",
-      "amount": 4626626.41,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "National Institutes of Health",
-      "description": "PROFESSIONAL SERVICES FOR STRATEGIC IT COMMUNICATIONS, CHANGE MANAGEMENT, AND INTEGRATION OF SUCH WITH IT PLATFORMS, ADOPTION AND USE OF ARTIFICIAL INTELLIGENCE, AND BEST PRACTICES.",
-      "start_date": "2025-12-12",
-      "end_date": "2026-10-11",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
