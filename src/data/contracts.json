@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T00:46:45.617Z",
-  "count": 756,
+  "generated_at": "2026-10-13T14:19:23.553Z",
+  "count": 758,
   "window": {
     "start": "2023-10-01",
     "end": "2026-10-13"
@@ -13175,6 +13175,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0218_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0218",
+      "recipient": "QORE HEALTH INC",
+      "recipient_slug": "qore-health-inc",
+      "amount": 109578,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "TRUSTED ARTIFICIAL INTELLIGENCE IN COMBAT CARE: ENABLING LIFE-SAVING DECISIONS BY MULTI-CAPABLE AIRMEN AT THE POINT OF INJURY",
+      "start_date": "2026-07-17",
+      "end_date": "2026-10-19",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "FL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0877_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0877",
       "recipient": "WAVEYE, INC.",
@@ -14984,6 +15005,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0190_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0190",
+      "recipient": "SKILLMAKER, INC",
+      "recipient_slug": "skillmaker-inc",
+      "amount": 74472,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SKILLMAKER. ARTIFICIAL INTELLIGENCE (AI): RAPID XR TRAINING FOR DEFENSE READINESS",
+      "start_date": "2026-07-09",
+      "end_date": "2026-10-14",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "NC",
       "matched_keywords": [
         "artificial intelligence"
       ]
