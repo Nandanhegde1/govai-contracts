@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-13T22:50:36.150Z",
+  "generated_at": "2026-10-14T04:59:47.110Z",
   "count": 758,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-13"
+    "end": "2026-10-14"
   },
   "contracts": [
     {
@@ -755,6 +755,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_SP470125C0100_9700_-NONE-_-NONE-",
+      "award_id": "SP470125C0100",
+      "recipient": "CREDENCE MANAGEMENT SOLUTIONS LIMITED LIABILITY COMPANY",
+      "recipient_slug": "credence-management-solutions-limited-liability-company",
+      "amount": 11364624,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Logistics Agency",
+      "description": "PROCUREMENT INTEGRATED ENTERPRISE ENVIRONMENT ARTIFICIAL INTELLIGENCE MACHINE LEARNING TRANSFORMATION",
+      "start_date": "2025-09-25",
+      "end_date": "2027-09-24",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_H9240124C0002_9700_-NONE-_-NONE-",
       "award_id": "H9240124C0002",
       "recipient": "YURTS TECHNOLOGIES, INC.",
@@ -921,28 +943,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_SP470125C0100_9700_-NONE-_-NONE-",
-      "award_id": "SP470125C0100",
-      "recipient": "CREDENCE MANAGEMENT SOLUTIONS LIMITED LIABILITY COMPANY",
-      "recipient_slug": "credence-management-solutions-limited-liability-company",
-      "amount": 8275478.4,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Logistics Agency",
-      "description": "PROCUREMENT INTEGRATED ENTERPRISE ENVIRONMENT ARTIFICIAL INTELLIGENCE MACHINE LEARNING TRANSFORMATION",
-      "start_date": "2025-09-25",
-      "end_date": "2026-09-24",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -4554,7 +4554,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "MACHINE LEARNING (ML) UNIFIED ENDPOINT MANAGEMENT (UEM) FOR TAK",
       "start_date": "2024-06-05",
-      "end_date": "2026-09-29",
+      "end_date": "2027-01-04",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC12",
@@ -5328,6 +5328,27 @@
       "psc_code": "7A21",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA860426FB054_9700_FA800322D0003_9700",
+      "award_id": "FA860426FB054",
+      "recipient": "VANA SOLUTIONS LLC",
+      "recipient_slug": "vana-solutions-llc",
+      "amount": 1315533.5,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MASINT, ANALYTICS, DATA - ARTIFICIAL INTELLIGENCE (MAD-AI)",
+      "start_date": "2026-02-04",
+      "end_date": "2027-07-31",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R423",
+      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
+      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -6907,7 +6928,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "ACCELERATING MULTI-SOURCE INTELLIGENCE ANALYSIS AND DECISION MAKING WITH ARTIFICIAL INTELLIGENCE-DRIVEN MODEL CHAINING",
       "start_date": "2025-08-05",
-      "end_date": "2027-05-05",
+      "end_date": "2026-07-10",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -8948,27 +8969,6 @@
       "psc_code": "DE01",
       "psc_desc": "IT and Telecom - End User: Help Desk; Tier 1-2, Workspace, Print, Output, Productivity Tools (Labor)",
       "pop_state": "DC",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA860426FB054_9700_FA800322D0003_9700",
-      "award_id": "FA860426FB054",
-      "recipient": "VANA SOLUTIONS LLC",
-      "recipient_slug": "vana-solutions-llc",
-      "amount": 520034.82,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MASINT, ANALYTICS, DATA - ARTIFICIAL INTELLIGENCE (MAD-AI)",
-      "start_date": "2026-02-04",
-      "end_date": "2026-09-04",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R423",
-      "psc_desc": "SUPPORT- PROFESSIONAL: INTELLIGENCE",
-      "pop_state": "OH",
       "matched_keywords": [
         "artificial intelligence"
       ]
