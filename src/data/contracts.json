@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-14T21:45:30.019Z",
-  "count": 758,
+  "generated_at": "2026-10-15T04:47:57.709Z",
+  "count": 762,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-14"
+    "end": "2026-10-15"
   },
   "contracts": [
     {
@@ -161,7 +161,7 @@
       "award_id": "W909MY26F0009",
       "recipient": "ENLIGHTEN IT CONSULTING LLC",
       "recipient_slug": "enlighten-it-consulting-llc",
-      "amount": 41868171.15,
+      "amount": 42570240.44,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -2752,6 +2752,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB072",
+      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
+      "recipient_slug": "black-river-systems-company-inc",
+      "amount": 2486663,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
+      "start_date": "2025-09-04",
+      "end_date": "2028-11-01",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864922P0747_9700_-NONE-_-NONE-",
       "award_id": "FA864922P0747",
       "recipient": "JUMP AERO INC",
@@ -3027,27 +3048,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB072_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB072",
-      "recipient": "BLACK RIVER SYSTEMS COMPANY, INC.",
-      "recipient_slug": "black-river-systems-company-inc",
-      "amount": 2111663,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "NEXT GENERATION COMMAND AND CONTROL (NGC2) WILL ADVANCE (DAF) CAPABILITIES IN COMMAND AND CONTROL (C2) BY LEVERAGING ARTIFICIAL INTELLIGENCE (AI) TECHNOLOGIES AND EMBRACING A DISTRIBUTED OPERATIONAL MODEL.",
-      "start_date": "2025-09-04",
-      "end_date": "2028-11-01",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "NY",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -5343,7 +5343,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "MASINT, ANALYTICS, DATA - ARTIFICIAL INTELLIGENCE (MAD-AI)",
       "start_date": "2026-02-04",
-      "end_date": "2027-07-31",
+      "end_date": "2027-09-03",
       "naics_code": "541511",
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
       "psc_code": "R423",
@@ -6970,7 +6970,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "BRINGING SECURE ARTIFICIAL INTELLIGENCE TO FLIGHTLINE QUALITY ASSURANCE",
       "start_date": "2026-02-27",
-      "end_date": "2027-06-28",
+      "end_date": "2026-06-28",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -7209,6 +7209,28 @@
       "psc_code": "AN11",
       "psc_desc": "HEALTH R&D SERVICES; HEALTH CARE SERVICES; BASIC RESEARCH",
       "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA875025CB062_9700_-NONE-_-NONE-",
+      "award_id": "FA875025CB062",
+      "recipient": "EXPEDITION TECHNOLOGY, LLC",
+      "recipient_slug": "expedition-technology-llc",
+      "amount": 1187019,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARES. THE EFFORT WILL ADDRESS CRITICAL TECHNICAL GAPS FOR DAF CAPABILITY REQUIREMENTS THROUGH THE DEVELOPMENT OF NOVEL TECHNIQUES IN ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING.",
+      "start_date": "2025-07-16",
+      "end_date": "2027-09-16",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
@@ -7570,28 +7592,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA875025CB062_9700_-NONE-_-NONE-",
-      "award_id": "FA875025CB062",
-      "recipient": "EXPEDITION TECHNOLOGY, LLC",
-      "recipient_slug": "expedition-technology-llc",
-      "amount": 1082019,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "ARES. THE EFFORT WILL ADDRESS CRITICAL TECHNICAL GAPS FOR DAF CAPABILITY REQUIREMENTS THROUGH THE DEVELOPMENT OF NOVEL TECHNIQUES IN ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING.",
-      "start_date": "2025-07-16",
-      "end_date": "2027-09-16",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -8857,7 +8857,7 @@
       "sub_agency": "Defense Logistics Agency",
       "description": "EMERGENT IV BAA0001-22 AWARD TO THE BRITE GROUP FOR DRIFT WATCH FOR ARTIFICIAL INTELLIGENCE/MACHINE LEARNING MODELS",
       "start_date": "2026-01-14",
-      "end_date": "2026-08-20",
+      "end_date": "2026-11-18",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC33",
@@ -12898,6 +12898,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0311_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0311",
+      "recipient": "FALCON AEROSPACE LLC",
+      "recipient_slug": "falcon-aerospace-llc",
+      "amount": 109929,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "REAL-TIME AERODYNAMIC AND INTERACTIVE-VEHICLE DYNAMIC SIMULATION FOR ARTIFICIAL INTELLIGENCE TRAINING OF COOPERATIVE AIRCRAFT",
+      "start_date": "2026-07-15",
+      "end_date": "2026-10-15",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "UT",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0215_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0215",
       "recipient": "RHOMAN AEROSPACE CORPORATION",
@@ -13403,6 +13424,27 @@
       "psc_code": "7A21",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION SOFTWARE (PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "DC",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0211_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0211",
+      "recipient": "JERICHO SECURITY, INC.",
+      "recipient_slug": "jericho-security-inc",
+      "amount": 108622,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SILENT SIGNAL: ARTIFICIAL INTELLIGENCE (AI)-DRIVEN DETECTION OF UNDOCUMENTED SOFTWARE VULNERABILITIES",
+      "start_date": "2026-07-15",
+      "end_date": "2026-10-14",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
       ]
@@ -14652,6 +14694,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0359_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0359",
+      "recipient": "GEMINUSAI INC",
+      "recipient_slug": "geminusai-inc",
+      "amount": 74847,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "HYBRID PHYSICS/ARTIFICIAL INTELLIGENCE (AI) PLATFORM FOR REAL-TIME MICROGRID OPTIMIZATION AND ENERGY RESILIENCE",
+      "start_date": "2026-06-30",
+      "end_date": "2026-10-15",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864924P0095_9700_-NONE-_-NONE-",
       "award_id": "FA864924P0095",
       "recipient": "STRATOM, INC.",
@@ -14753,6 +14816,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "FL",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0091_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0091",
+      "recipient": "LATAKOO, INC",
+      "recipient_slug": "latakoo-inc",
+      "amount": 74733,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE (AI)-ACCELERATED PASSIVE TARGETING FOR CONTESTED ENVIRONMENTS",
+      "start_date": "2026-07-15",
+      "end_date": "2026-10-15",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
       ]
