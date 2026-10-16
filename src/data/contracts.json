@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T21:28:08.768Z",
-  "count": 762,
+  "generated_at": "2026-10-16T04:38:13.008Z",
+  "count": 763,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-15"
+    "end": "2026-10-16"
   },
   "contracts": [
     {
@@ -97,13 +97,13 @@
       "award_id": "W911QX25C0002",
       "recipient": "ECS FEDERAL, LLC",
       "recipient_slug": "ecs-federal-llc",
-      "amount": 78498695.2,
+      "amount": 83498695.2,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
       "description": "CONTRACT TO RESEARCH, DEVELOP, MODIFY, DEPLOY, OPERATE, AND MAINTAIN ARTIFICIAL INTELLIGENCE/MACHINE LEARNING (AI/ML) ALGORITHMS AND MODELS.",
       "start_date": "2025-01-30",
-      "end_date": "2027-07-01",
+      "end_date": "2027-07-16",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC11",
@@ -925,6 +925,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_W911QX26CA003_9700_-NONE-_-NONE-",
+      "award_id": "W911QX26CA003",
+      "recipient": "ECS FEDERAL, LLC",
+      "recipient_slug": "ecs-federal-llc",
+      "amount": 9481000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "BROAD AGENCY ANNOUNCEMENT NAUTILUS ARTIFICIAL INTELLIGENCE RESEARCH AND DEVELOPMENT",
+      "start_date": "2026-05-28",
+      "end_date": "2027-05-27",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC35",
+      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_15F06725F0001855_1549_15F06724A0000296_1549",
       "award_id": "15F06725F0001855",
       "recipient": "ACCENTURE FEDERAL SERVICES LLC",
@@ -1181,27 +1202,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "large language model"
-      ]
-    },
-    {
-      "id": "CONT_AWD_W911QX26CA003_9700_-NONE-_-NONE-",
-      "award_id": "W911QX26CA003",
-      "recipient": "ECS FEDERAL, LLC",
-      "recipient_slug": "ecs-federal-llc",
-      "amount": 5981000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Army",
-      "description": "BROAD AGENCY ANNOUNCEMENT NAUTILUS ARTIFICIAL INTELLIGENCE RESEARCH AND DEVELOPMENT",
-      "start_date": "2026-05-28",
-      "end_date": "2027-05-27",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC35",
-      "psc_desc": "NATIONAL DEFENSE R&D SVCS; DEFENSE-RELATED ACTIVITIES; R&D FACILITIES & MAJ EQUIP",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -13529,6 +13529,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NY",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0207_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0207",
+      "recipient": "REVIR TECHNOLOGIES INC",
+      "recipient_slug": "revir-technologies-inc",
+      "amount": 104291,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "REVIR TECHNOLOGIES: ENHANCING DEPARTMENT OF THE AIR FORCE DATA MANAGEMENT WITH ARTIFICIAL INTELLIGENCE-POWERED INTELLIGENCE EXPLOITATION",
+      "start_date": "2026-07-16",
+      "end_date": "2026-10-19",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
       ]
