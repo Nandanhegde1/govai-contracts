@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T21:16:47.049Z",
+  "generated_at": "2026-10-17T04:35:25.658Z",
   "count": 763,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-16"
+    "end": "2026-10-17"
   },
   "contracts": [
     {
@@ -1226,6 +1226,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
+      "award_id": "75N97A26F10001",
+      "recipient": "DELOITTE CONSULTING LLP",
+      "recipient_slug": "deloitte-consulting-llp",
+      "amount": 5730279.67,
+      "agency": "Department of Health and Human Services",
+      "agency_slug": "department-of-health-and-human-services",
+      "sub_agency": "National Institutes of Health",
+      "description": "PROFESSIONAL SERVICES FOR STRATEGIC IT COMMUNICATIONS, CHANGE MANAGEMENT, AND INTEGRATION OF SUCH WITH IT PLATFORMS, ADOPTION AND USE OF ARTIFICIAL INTELLIGENCE, AND BEST PRACTICES.",
+      "start_date": "2025-12-12",
+      "end_date": "2026-12-11",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA875019C0105_9700_-NONE-_-NONE-",
       "award_id": "FA875019C0105",
       "recipient": "NEXT CENTURY CORPORATION",
@@ -1262,27 +1283,6 @@
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "R425",
       "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_75N97A26F10001_7529_HHSN316201200018W_7529",
-      "award_id": "75N97A26F10001",
-      "recipient": "DELOITTE CONSULTING LLP",
-      "recipient_slug": "deloitte-consulting-llp",
-      "amount": 5586503.16,
-      "agency": "Department of Health and Human Services",
-      "agency_slug": "department-of-health-and-human-services",
-      "sub_agency": "National Institutes of Health",
-      "description": "PROFESSIONAL SERVICES FOR STRATEGIC IT COMMUNICATIONS, CHANGE MANAGEMENT, AND INTEGRATION OF SUCH WITH IT PLATFORMS, ADOPTION AND USE OF ARTIFICIAL INTELLIGENCE, AND BEST PRACTICES.",
-      "start_date": "2025-12-12",
-      "end_date": "2026-12-11",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
@@ -8974,6 +8974,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA865022C5295_9700_-NONE-_-NONE-",
+      "award_id": "FA865022C5295",
+      "recipient": "UNIVERSITY OF UTAH",
+      "recipient_slug": "university-of-utah",
+      "amount": 525000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "DEVELOPMENT OF BEST PRACTICES GUIDE FOR USE OF ARTIFICIAL INTELLIGENCE/MACHINE LOGIC (AI/ML) IN ENGINEERING DOMAINS",
+      "start_date": "2024-02-12",
+      "end_date": "2027-03-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC12",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
+      "pop_state": "UT",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_70T04026C7573N007_7013_-NONE-_-NONE-",
       "award_id": "70T04026C7573N007",
       "recipient": "ANALYTICAL AI, INC.",
@@ -9226,27 +9247,6 @@
       "pop_state": "MD",
       "matched_keywords": [
         "large language model"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA865022C5295_9700_-NONE-_-NONE-",
-      "award_id": "FA865022C5295",
-      "recipient": "UNIVERSITY OF UTAH",
-      "recipient_slug": "university-of-utah",
-      "amount": 475000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "DEVELOPMENT OF BEST PRACTICES GUIDE FOR USE OF ARTIFICIAL INTELLIGENCE/MACHINE LOGIC (AI/ML) IN ENGINEERING DOMAINS",
-      "start_date": "2024-02-12",
-      "end_date": "2026-08-29",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC12",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; APPLIED RESEARCH",
-      "pop_state": "UT",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
