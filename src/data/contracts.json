@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T21:41:11.176Z",
-  "count": 763,
+  "generated_at": "2026-10-21T04:56:38.763Z",
+  "count": 765,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-20"
+    "end": "2026-10-21"
   },
   "contracts": [
     {
@@ -2035,7 +2035,7 @@
       "award_id": "W912CG24C0002",
       "recipient": "ACCELINT AI, LLC",
       "recipient_slug": "accelint-ai-llc",
-      "amount": 3817682.07,
+      "amount": 3850447.27,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -13408,6 +13408,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA864926P0212_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0212",
+      "recipient": "THREEZEROTHIRD GLOBAL SOLUTIONS LLC",
+      "recipient_slug": "threezerothird-global-solutions-llc",
+      "amount": 109007,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "NEAR-REAL-TIME ARTIFICIAL INTELLIGENCE (AI) RECOGNITION SOFTWARE FOR BATTLEFIELD OBJECT DETECTION AND ANDROID TEAM AWARENESS KIT (ATAK) INTEGRATION",
+      "start_date": "2026-07-21",
+      "end_date": "2026-10-19",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_2032L225F00049_2050_2032L225D00002_2050",
       "award_id": "2032L225F00049",
       "recipient": "SOKAT CONSULTING LLC",
@@ -14963,6 +14984,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NE",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0192_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0192",
+      "recipient": "COLLECT'D, INC.",
+      "recipient_slug": "collect-d-inc",
+      "amount": 74618,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARTIFICIAL INTELLIGENCE (AI) -POWERED SOLUTION FOR INTEGRATED PERSONNEL SYSTEMS",
+      "start_date": "2026-07-21",
+      "end_date": "2026-10-21",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "MA",
       "matched_keywords": [
         "artificial intelligence"
       ]
