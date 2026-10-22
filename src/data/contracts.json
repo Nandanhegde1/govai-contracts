@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T21:46:54.351Z",
-  "count": 765,
+  "generated_at": "2026-10-22T04:56:52.295Z",
+  "count": 766,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-21"
+    "end": "2026-10-22"
   },
   "contracts": [
     {
@@ -333,7 +333,7 @@
       "award_id": "HQ003425CE092",
       "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
       "recipient_slug": "leisnoi-professional-services-llc",
-      "amount": 20632119.41,
+      "amount": 19918648.73,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Washington Headquarters Services",
@@ -437,6 +437,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
+      "award_id": "FA239125CB010",
+      "recipient": "UNIVERSITY OF DAYTON",
+      "recipient_slug": "university-of-dayton",
+      "amount": 16535633.4,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
+      "start_date": "2025-08-25",
+      "end_date": "2028-02-24",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC13",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
+      "pop_state": "OH",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001124C0310_9700_-NONE-_-NONE-",
       "award_id": "HR001124C0310",
       "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
@@ -490,27 +511,6 @@
       "description": "ARTIFICIAL INTELLIGENCE ENHANCED WORKFLOWS &PROCESSES -SBIR3",
       "start_date": "2021-01-15",
       "end_date": "2026-01-15",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "AC13",
-      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEPARTMENT OF DEFENSE - MILITARY; EXPERIMENTAL DEVELOPMENT",
-      "pop_state": "OH",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA239125CB010_9700_-NONE-_-NONE-",
-      "award_id": "FA239125CB010",
-      "recipient": "UNIVERSITY OF DAYTON",
-      "recipient_slug": "university-of-dayton",
-      "amount": 14535633.4,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "HYBRID ARTIFICIAL INTELLIGENCE AND AUTONOMY RESEARCH AND DEVELOPMENT CONSIDERED OPERATIONALLY RELEVANT AND EXPLAINABLE (HAARDCORE)",
-      "start_date": "2025-08-25",
-      "end_date": "2028-02-24",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC13",
@@ -819,6 +819,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_FA830725CB031_9700_-NONE-_-NONE-",
+      "award_id": "FA830725CB031",
+      "recipient": "MIXMODE INC",
+      "recipient_slug": "mixmode-inc",
+      "amount": 10304385,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "MIXMODE SBIR PHASE III - ARTIFICIAL INTELLIGENCE FOR NETWORK VISIBILITY AND REAL-TIME THREAT DETECTION FOR PROTECTION OF DATA, NETWORKS, NET-CENTRIC CAPABILITIES, AND OTHER DESIGNATED SYSTEMS RESPONDING TO ATTACKS AGAINST FRIENDLY NETWORKS.",
+      "start_date": "2025-09-26",
+      "end_date": "2026-10-31",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "7J20",
+      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "TX",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_HR001124C0309_9700_-NONE-_-NONE-",
       "award_id": "HR001124C0309",
       "recipient": "SYSTEMS & TECHNOLOGY RESEARCH LLC",
@@ -877,27 +898,6 @@
       "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
       "psc_code": "DA01",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "TX",
-      "matched_keywords": [
-        "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_FA830725CB031_9700_-NONE-_-NONE-",
-      "award_id": "FA830725CB031",
-      "recipient": "MIXMODE INC",
-      "recipient_slug": "mixmode-inc",
-      "amount": 9511740,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Department of the Air Force",
-      "description": "MIXMODE SBIR PHASE III - ARTIFICIAL INTELLIGENCE FOR NETWORK VISIBILITY AND REAL-TIME THREAT DETECTION FOR PROTECTION OF DATA, NETWORKS, NET-CENTRIC CAPABILITIES, AND OTHER DESIGNATED SYSTEMS RESPONDING TO ATTACKS AGAINST FRIENDLY NETWORKS.",
-      "start_date": "2025-09-26",
-      "end_date": "2026-09-25",
-      "naics_code": "541715",
-      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
-      "psc_code": "7J20",
-      "psc_desc": "IT AND TELECOM - SECURITY AND COMPLIANCE PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "TX",
       "matched_keywords": [
         "artificial intelligence"
@@ -5270,6 +5270,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_HC105025F0060_9700_HC105023D0005_9700",
+      "award_id": "HC105025F0060",
+      "recipient": "AMAZON WEB SERVICES, INC.",
+      "recipient_slug": "amazon-web-services-inc",
+      "amount": 1343332.42,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Defense Information Systems Agency",
+      "description": "ARTIFICIAL INTELLIGENCE SOLUTIONS FOR CYBERSECURITY AND ENHANCED NETWORK DEFENSE FOR DEFENSIVE CYBER OPERATIONS",
+      "start_date": "2025-09-24",
+      "end_date": "2027-09-23",
+      "naics_code": "518210",
+      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
+      "psc_code": "DB10",
+      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
+      "pop_state": "PA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA877326F0039_9700_NNG15SD65B_8000",
       "award_id": "FA877326F0039",
       "recipient": "BETTER DIRECT, LLC",
@@ -8929,27 +8950,6 @@
       "pop_state": "CO",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_HC105025F0060_9700_HC105023D0005_9700",
-      "award_id": "HC105025F0060",
-      "recipient": "AMAZON WEB SERVICES, INC.",
-      "recipient_slug": "amazon-web-services-inc",
-      "amount": 545000,
-      "agency": "Department of Defense",
-      "agency_slug": "department-of-defense",
-      "sub_agency": "Defense Information Systems Agency",
-      "description": "ARTIFICIAL INTELLIGENCE SOLUTIONS FOR CYBERSECURITY AND ENHANCED NETWORK DEFENSE FOR DEFENSIVE CYBER OPERATIONS",
-      "start_date": "2025-09-24",
-      "end_date": "2026-09-23",
-      "naics_code": "518210",
-      "naics_desc": "COMPUTING INFRASTRUCTURE PROVIDERS, DATA PROCESSING, WEB HOSTING, AND RELATED SERVICES",
-      "psc_code": "DB10",
-      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
-      "pop_state": "PA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -12832,6 +12832,27 @@
       "matched_keywords": [
         "artificial intelligence",
         "ai"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0234_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0234",
+      "recipient": "SCHEMATA INC.",
+      "recipient_slug": "schemata-inc",
+      "amount": 109942,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "SCHEMATA ARTIFICIAL INTELLIGENCE ASSISTED PALLETIZATION PLATFORM FOR EDGE DEVICES",
+      "start_date": "2026-07-22",
+      "end_date": "2026-10-26",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
