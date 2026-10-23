@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-22T21:41:25.705Z",
-  "count": 766,
+  "generated_at": "2026-10-23T04:58:43.241Z",
+  "count": 768,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-22"
+    "end": "2026-10-23"
   },
   "contracts": [
     {
@@ -2035,7 +2035,7 @@
       "award_id": "W912CG24C0002",
       "recipient": "ACCELINT AI, LLC",
       "recipient_slug": "accelint-ai-llc",
-      "amount": 3850447.27,
+      "amount": 3817682.07,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
       "sub_agency": "Department of the Army",
@@ -3940,7 +3940,7 @@
       "sub_agency": "Department of the Air Force",
       "description": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING ENABLED BATTLE DAMAGE ASSESSMENT",
       "start_date": "2025-08-29",
-      "end_date": "2027-06-01",
+      "end_date": "2027-08-27",
       "naics_code": "541715",
       "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
       "psc_code": "AC32",
@@ -7994,6 +7994,27 @@
       "pop_state": "MS",
       "matched_keywords": [
         "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_W519TC26FA443_9700_W9128Z25DA001_9700",
+      "award_id": "W519TC26FA443",
+      "recipient": "ASK SAGE, INC.",
+      "recipient_slug": "ask-sage-inc",
+      "amount": 950000,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Army",
+      "description": "THIS ACTION IS A FIRM-FIXED-PRICE (FFP) TASK ORDER UNDER THE ASK SAGE DECENTRALIZED IDIQ W9128Z25DA001. CHRA G-6 REQUIRES ASK SAGE PLATFORM TOKENS TO SUPPORT A RANGE OF ARTIFICIAL INTELLIGENCE (AI)-ENABLED MISSION FUNCTIONS.",
+      "start_date": "2026-09-22",
+      "end_date": "2027-09-21",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "7B21",
+      "psc_desc": "IT AND TELECOM - COMPUTE: MAINFRAME (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
       ]
     },
     {
@@ -14921,6 +14942,27 @@
       "psc_code": "AC32",
       "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
       "pop_state": "NV",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_FA864926P0193_9700_-NONE-_-NONE-",
+      "award_id": "FA864926P0193",
+      "recipient": "ARCHAEA AI, INC.",
+      "recipient_slug": "archaea-ai-inc",
+      "amount": 74695,
+      "agency": "Department of Defense",
+      "agency_slug": "department-of-defense",
+      "sub_agency": "Department of the Air Force",
+      "description": "ARCHAEA ARTIFICIAL INTELLIGENCE (AI): MODERNIZING LEGACY CODE TO DE-RISK AND ACCELERATE ARTIFICIAL INTELLIGENCE (AI) UTILIZATION",
+      "start_date": "2026-07-23",
+      "end_date": "2026-10-23",
+      "naics_code": "541715",
+      "naics_desc": "RESEARCH AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT NANOTECHNOLOGY AND BIOTECHNOLOGY)",
+      "psc_code": "AC32",
+      "psc_desc": "NATIONAL DEFENSE R&D SERVICES; DEFENSE-RELATED ACTIVITIES; APPLIED RESEARCH",
+      "pop_state": "CA",
       "matched_keywords": [
         "artificial intelligence"
       ]
