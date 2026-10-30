@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T22:49:02.906Z",
+  "generated_at": "2026-10-30T05:56:03.855Z",
   "count": 768,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-29"
+    "end": "2026-10-30"
   },
   "contracts": [
     {
@@ -4575,7 +4575,7 @@
       "sub_agency": "National Institute of Standards and Technology",
       "description": "OU77-FY26-064-NEW - NIST ARTIFICIAL INTELLIGENCE STANDARDS DEVELOPMENT ORGANIZATION AND RISK MANAGEMENT FRAMEWORK SUPPORT SERVICES",
       "start_date": "2026-09-30",
-      "end_date": "2027-09-30",
+      "end_date": "2027-09-29",
       "naics_code": "541512",
       "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
       "psc_code": "R799",
