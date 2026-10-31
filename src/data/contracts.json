@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-30T22:26:13.201Z",
+  "generated_at": "2026-10-31T05:53:12.519Z",
   "count": 768,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-10-30"
+    "end": "2026-10-31"
   },
   "contracts": [
     {
@@ -159,8 +159,8 @@
     {
       "id": "CONT_AWD_W909MY26F0009_9700_W909MY26D0002_9700",
       "award_id": "W909MY26F0009",
-      "recipient": "ENLIGHTEN IT CONSULTING LLC",
-      "recipient_slug": "enlighten-it-consulting-llc",
+      "recipient": "ENLIGHTEN, LLC",
+      "recipient_slug": "enlighten-llc",
       "amount": 42570240.44,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
@@ -5482,8 +5482,8 @@
     {
       "id": "CONT_AWD_HT942525C0009_9700_-NONE-_-NONE-",
       "award_id": "HT942525C0009",
-      "recipient": "STAT HEALTH INFORMATICS, INC.",
-      "recipient_slug": "stat-health-informatics-inc",
+      "recipient": "LUMIA HEALTH, INC.",
+      "recipient_slug": "lumia-health-inc",
       "amount": 1299698,
       "agency": "Department of Defense",
       "agency_slug": "department-of-defense",
