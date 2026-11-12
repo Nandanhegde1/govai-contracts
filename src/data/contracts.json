@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T19:40:16.758Z",
+  "generated_at": "2026-11-12T07:19:28.309Z",
   "count": 768,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-11-11"
+    "end": "2026-11-12"
   },
   "contracts": [
     {
@@ -115,6 +115,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
+      "award_id": "47QFCA26F0023",
+      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
+      "recipient_slug": "accenture-federal-services-llc",
+      "amount": 59694523,
+      "agency": "General Services Administration",
+      "agency_slug": "general-services-administration",
+      "sub_agency": "Federal Acquisition Service",
+      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
+      "start_date": "2026-07-28",
+      "end_date": "2027-07-27",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_36C10B20F0417_3600_NNG15SC91B_8000",
       "award_id": "36C10B20F0417",
       "recipient": "SWISH DATA CORPORATION",
@@ -198,27 +219,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_47QFCA26F0023_4732_47QTCK18D0036_4732",
-      "award_id": "47QFCA26F0023",
-      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
-      "recipient_slug": "accenture-federal-services-llc",
-      "amount": 36709970,
-      "agency": "General Services Administration",
-      "agency_slug": "general-services-administration",
-      "sub_agency": "Federal Acquisition Service",
-      "description": "THIS AWARD IS IN SUPPORT OF THE CHIEF DATA ARTIFICIAL INTELLIGENCE OFFICE CDAO WAR DATA PLATFORM WDP CORE INTEGRATION CI",
-      "start_date": "2026-07-28",
-      "end_date": "2027-07-27",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -13964,12 +13964,12 @@
       "sub_agency": "Departmental Offices",
       "description": "E.O. 14398 - PEACE CORPS, OFFICE OF VOLUNTEER RECRUITMENT & SERVICE (VRS) ARTIFICIAL INTELLIGENCE (AI) CHATBOT SOLUTION TO ENHANCE AGENCY RECRUITMENT EFFORTS",
       "start_date": "2026-09-24",
-      "end_date": "2031-09-23",
+      "end_date": "2027-09-23",
       "naics_code": "541519",
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DA10",
       "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
-      "pop_state": "DC",
+      "pop_state": "WA",
       "matched_keywords": [
         "artificial intelligence"
       ]
