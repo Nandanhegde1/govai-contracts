@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14T22:30:31.765Z",
-  "count": 768,
+  "generated_at": "2026-11-15T06:42:29.700Z",
+  "count": 769,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-11-14"
+    "end": "2026-11-15"
   },
   "contracts": [
     {
@@ -11260,6 +11260,27 @@
       "naics_desc": "OTHER COMPUTER RELATED SERVICES",
       "psc_code": "DD01",
       "psc_desc": "IT AND TELECOM - SERVICE DELIVERY SUPPORT SERVICES: ITSM, OPERATIONS CENTER, PROJECT/PM (LABOR)",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_2099CH26F00017_2099_NNG15SD80B_8000",
+      "award_id": "2099CH26F00017",
+      "recipient": "AUGUST SCHELL ENTERPRISES, INC.",
+      "recipient_slug": "august-schell-enterprises-inc",
+      "amount": 195047.05,
+      "agency": "Department of the Treasury",
+      "agency_slug": "department-of-the-treasury",
+      "sub_agency": "Departmental Offices",
+      "description": "WIZ INC. CLOUD NATIVE APPLICATION PROTECTION PLATFORM (CNAPP) WITH ARTIFICIAL INTELLIGENCE (AI) AND APPLICATION PROGRAMMING INTERFACE (API) SECURITY",
+      "start_date": "2026-09-01",
+      "end_date": "2027-08-31",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA10",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SOFTWARE AS A SERVICE",
       "pop_state": "MD",
       "matched_keywords": [
         "artificial intelligence"
