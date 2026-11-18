@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T21:00:04.209Z",
+  "generated_at": "2026-11-18T07:37:33.892Z",
   "count": 769,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-11-17"
+    "end": "2026-11-18"
   },
   "contracts": [
     {
@@ -329,6 +329,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_15F06726F0001081_1549_15F06724A0000296_1549",
+      "award_id": "15F06726F0001081",
+      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
+      "recipient_slug": "accenture-federal-services-llc",
+      "amount": 20734824.97,
+      "agency": "Department of Justice",
+      "agency_slug": "department-of-justice",
+      "sub_agency": "Federal Bureau of Investigation",
+      "description": "SCOR 55 - ADAPTIVE ENGINEERING & MACHINE LEARNING OPERATIONS (MLOPS) - CYD & CTD",
+      "start_date": "2026-09-30",
+      "end_date": "2027-09-29",
+      "naics_code": "541512",
+      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
+      "psc_code": "R425",
+      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "machine learning",
+        "mlops"
+      ]
+    },
+    {
       "id": "CONT_AWD_HQ003425CE092_9700_-NONE-_-NONE-",
       "award_id": "HQ003425CE092",
       "recipient": "LEISNOI PROFESSIONAL SERVICES, LLC",
@@ -582,28 +604,6 @@
       "pop_state": "AL",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_15F06726F0001081_1549_15F06724A0000296_1549",
-      "award_id": "15F06726F0001081",
-      "recipient": "ACCENTURE FEDERAL SERVICES LLC",
-      "recipient_slug": "accenture-federal-services-llc",
-      "amount": 13399112.97,
-      "agency": "Department of Justice",
-      "agency_slug": "department-of-justice",
-      "sub_agency": "Federal Bureau of Investigation",
-      "description": "SCOR 55 - ADAPTIVE ENGINEERING & MACHINE LEARNING OPERATIONS (MLOPS) - CYD & CTD",
-      "start_date": "2026-09-30",
-      "end_date": "2027-09-29",
-      "naics_code": "541512",
-      "naics_desc": "COMPUTER SYSTEMS DESIGN SERVICES",
-      "psc_code": "R425",
-      "psc_desc": "SUPPORT- PROFESSIONAL: ENGINEERING/TECHNICAL",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "machine learning",
-        "mlops"
       ]
     },
     {
