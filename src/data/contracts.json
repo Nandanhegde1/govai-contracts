@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-18T20:38:20.057Z",
+  "generated_at": "2026-11-19T07:32:58.345Z",
   "count": 769,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-11-18"
+    "end": "2026-11-19"
   },
   "contracts": [
     {
@@ -1293,7 +1293,7 @@
       "award_id": "20341226F00011",
       "recipient": "DELOITTE & TOUCHE LLP",
       "recipient_slug": "deloitte-touche-llp",
-      "amount": 5479913.02,
+      "amount": 5477384,
       "agency": "Department of the Treasury",
       "agency_slug": "department-of-the-treasury",
       "sub_agency": "Bureau of the Fiscal Service",
@@ -2388,27 +2388,6 @@
       "pop_state": "OH",
       "matched_keywords": [
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_36C10B26F0372_3600_47QTCA25D00AX_4732",
-      "award_id": "36C10B26F0372",
-      "recipient": "WILCORE TECHNOLOGIES INC",
-      "recipient_slug": "wilcore-technologies-inc",
-      "amount": 2926310.46,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "ARTIFICIAL INTELLIGENCE VETERAN-CENTERED SUBMISSION ECOSYSTEM SUPPORT FOR THE DESIGN, DEVELOPMENT, AND DEPLOYMENT OF SECURE, ACCESSIBLE, AND INTEROPERABLE DIGITAL WORKFLOW SOLUTIONS THAT MODERNIZE VAS FORMS ECOSYSTEM.",
-      "start_date": "2026-09-22",
-      "end_date": "2026-09-29",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DA01",
-      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
@@ -8039,28 +8018,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_1333LB24F00000146_1323_47QTCA23D00C1_4732",
-      "award_id": "1333LB24F00000146",
-      "recipient": "XCELLIGEN INC.",
-      "recipient_slug": "xcelligen-inc",
-      "amount": 919680,
-      "agency": "Department of Commerce",
-      "agency_slug": "department-of-commerce",
-      "sub_agency": "U.S. Census Bureau",
-      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING SUPPORT SERVICES",
-      "start_date": "2024-07-03",
-      "end_date": "2025-07-02",
-      "naics_code": "541511",
-      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
-      "psc_code": "R799",
-      "psc_desc": "SUPPORT- MANAGEMENT: OTHER",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_80NSSC24CA155_8000_-NONE-_-NONE-",
       "award_id": "80NSSC24CA155",
       "recipient": "ADVANCED SPACE LLC",
@@ -8676,6 +8633,28 @@
       "pop_state": "DC",
       "matched_keywords": [
         "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_1333LB24F00000146_1323_47QTCA23D00C1_4732",
+      "award_id": "1333LB24F00000146",
+      "recipient": "XCELLIGEN INC.",
+      "recipient_slug": "xcelligen-inc",
+      "amount": 694813.5,
+      "agency": "Department of Commerce",
+      "agency_slug": "department-of-commerce",
+      "sub_agency": "U.S. Census Bureau",
+      "description": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING SUPPORT SERVICES",
+      "start_date": "2024-07-03",
+      "end_date": "2027-01-02",
+      "naics_code": "541511",
+      "naics_desc": "CUSTOM COMPUTER PROGRAMMING SERVICES",
+      "psc_code": "R799",
+      "psc_desc": "SUPPORT- MANAGEMENT: OTHER",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
       ]
     },
     {
@@ -15763,6 +15742,27 @@
       "psc_code": "AJ12",
       "psc_desc": "GENERAL SCIENCE AND TECHNOLOGY R&D SERVICES; GENERAL SCIENCE AND TECHNOLOGY; APPLIED RESEARCH",
       "pop_state": "MS",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "id": "CONT_AWD_36C10B26F0372_3600_47QTCA25D00AX_4732",
+      "award_id": "36C10B26F0372",
+      "recipient": "WILCORE TECHNOLOGIES INC",
+      "recipient_slug": "wilcore-technologies-inc",
+      "amount": 67098.79,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "ARTIFICIAL INTELLIGENCE VETERAN-CENTERED SUBMISSION ECOSYSTEM SUPPORT FOR THE DESIGN, DEVELOPMENT, AND DEPLOYMENT OF SECURE, ACCESSIBLE, AND INTEROPERABLE DIGITAL WORKFLOW SOLUTIONS THAT MODERNIZE VAS FORMS ECOSYSTEM.",
+      "start_date": "2026-09-22",
+      "end_date": "2026-09-29",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DA01",
+      "psc_desc": "IT AND TELECOM - BUSINESS APPLICATION/APPLICATION DEVELOPMENT SUPPORT SERVICES (LABOR)",
+      "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
       ]
