@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T20:43:57.063Z",
+  "generated_at": "2026-11-20T07:25:13.008Z",
   "count": 769,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-11-19"
+    "end": "2026-11-20"
   },
   "contracts": [
     {
@@ -15939,28 +15939,6 @@
       ]
     },
     {
-      "id": "CONT_AWD_88310325F00211_8800_88310321A00016_8800",
-      "award_id": "88310325F00211",
-      "recipient": "COMMUNICATIONS TRAINING ANALYSIS CORPORATION",
-      "recipient_slug": "communications-training-analysis-corporation",
-      "amount": 50000,
-      "agency": "National Archives and Records Administration",
-      "agency_slug": "national-archives-and-records-administration",
-      "sub_agency": "National Archives and Records Administration",
-      "description": "PLATFORM AND INFRASTRUCTURE CLOUD FOR ARCHIVES AND RECORDS DEPOSITORIES (PICARD) AZURE ARTIFICIAL INTELLIGENCE / MACHINE LEARNING SANDBOX",
-      "start_date": "2025-08-21",
-      "end_date": "2026-08-20",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DB10",
-      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
-      ]
-    },
-    {
       "id": "CONT_AWD_70CMSD26FR0000161_7012_NNG15SC86B_8000",
       "award_id": "70CMSD26FR0000161",
       "recipient": "IMPRES TECHNOLOGY SOLUTIONS, INC",
@@ -16000,28 +15978,6 @@
       "pop_state": "VA",
       "matched_keywords": [
         "artificial intelligence"
-      ]
-    },
-    {
-      "id": "CONT_AWD_88310324F00148_8800_88310321A00016_8800",
-      "award_id": "88310324F00148",
-      "recipient": "COMMUNICATIONS TRAINING ANALYSIS CORPORATION",
-      "recipient_slug": "communications-training-analysis-corporation",
-      "amount": 44452.8,
-      "agency": "National Archives and Records Administration",
-      "agency_slug": "national-archives-and-records-administration",
-      "sub_agency": "National Archives and Records Administration",
-      "description": "PLATFORM AND INFRASTRUCTURE CLOUD FOR ARCHIVES AND RECORDS DEPOSITORIES (PICARD) AZURE ARTIFICIAL INTELLIGENCE / MACHINE LEARNING SANDBOX",
-      "start_date": "2024-08-21",
-      "end_date": "2025-08-20",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "DB10",
-      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
-      "pop_state": "MD",
-      "matched_keywords": [
-        "artificial intelligence",
-        "machine learning"
       ]
     },
     {
@@ -16239,6 +16195,28 @@
       ]
     },
     {
+      "id": "CONT_AWD_88310325F00211_8800_88310321A00016_8800",
+      "award_id": "88310325F00211",
+      "recipient": "COMMUNICATIONS TRAINING ANALYSIS CORPORATION",
+      "recipient_slug": "communications-training-analysis-corporation",
+      "amount": 13204.89,
+      "agency": "National Archives and Records Administration",
+      "agency_slug": "national-archives-and-records-administration",
+      "sub_agency": "National Archives and Records Administration",
+      "description": "PLATFORM AND INFRASTRUCTURE CLOUD FOR ARCHIVES AND RECORDS DEPOSITORIES (PICARD) AZURE ARTIFICIAL INTELLIGENCE / MACHINE LEARNING SANDBOX",
+      "start_date": "2025-08-21",
+      "end_date": "2026-08-20",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DB10",
+      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
       "id": "CONT_AWD_12444123F0092_12C2_GS35F0207T_4730",
       "award_id": "12444123F0092",
       "recipient": "CHIRAL SOFTWARE, INC",
@@ -16277,6 +16255,28 @@
       "psc_desc": "IT AND TELECOM - STORAGE PRODUCTS (HARDWARE AND PERPETUAL LICENSE SOFTWARE)",
       "pop_state": "MD",
       "matched_keywords": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "CONT_AWD_88310324F00148_8800_88310321A00016_8800",
+      "award_id": "88310324F00148",
+      "recipient": "COMMUNICATIONS TRAINING ANALYSIS CORPORATION",
+      "recipient_slug": "communications-training-analysis-corporation",
+      "amount": 9966.28,
+      "agency": "National Archives and Records Administration",
+      "agency_slug": "national-archives-and-records-administration",
+      "sub_agency": "National Archives and Records Administration",
+      "description": "PLATFORM AND INFRASTRUCTURE CLOUD FOR ARCHIVES AND RECORDS DEPOSITORIES (PICARD) AZURE ARTIFICIAL INTELLIGENCE / MACHINE LEARNING SANDBOX",
+      "start_date": "2024-08-21",
+      "end_date": "2025-08-20",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "DB10",
+      "psc_desc": "IT AND TELECOM - COMPUTE AS A SERVICE: MAINFRAME/SERVERS",
+      "pop_state": "MD",
+      "matched_keywords": [
+        "artificial intelligence",
         "machine learning"
       ]
     },
