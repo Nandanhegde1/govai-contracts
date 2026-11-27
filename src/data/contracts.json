@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T21:39:33.489Z",
+  "generated_at": "2026-11-27T08:43:25.835Z",
   "count": 769,
   "window": {
     "start": "2023-10-01",
-    "end": "2026-11-26"
+    "end": "2026-11-27"
   },
   "contracts": [
     {
@@ -7066,6 +7066,27 @@
       ]
     },
     {
+      "id": "CONT_AWD_36C10B26C0045_3600_-NONE-_-NONE-",
+      "award_id": "36C10B26C0045",
+      "recipient": "HUNTRIDGE LABS, LLC",
+      "recipient_slug": "huntridge-labs-llc",
+      "amount": 1220936,
+      "agency": "Department of Veterans Affairs",
+      "agency_slug": "department-of-veterans-affairs",
+      "sub_agency": "Department of Veterans Affairs",
+      "description": "ARTIFICIAL INTELLIGENCE LITERACY SUPPORT",
+      "start_date": "2026-05-29",
+      "end_date": "2027-05-27",
+      "naics_code": "541519",
+      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
+      "psc_code": "U012",
+      "psc_desc": "EDUCATION/TRAINING- INFORMATION TECHNOLOGY/TELECOMMUNICATIONS TRAINING",
+      "pop_state": "VA",
+      "matched_keywords": [
+        "artificial intelligence"
+      ]
+    },
+    {
       "id": "CONT_AWD_FA864923P1188_9700_-NONE-_-NONE-",
       "award_id": "FA864923P1188",
       "recipient": "ATOMBEAM TECHNOLOGIES INC.",
@@ -8399,27 +8420,6 @@
       "matched_keywords": [
         "artificial intelligence",
         "machine learning"
-      ]
-    },
-    {
-      "id": "CONT_AWD_36C10B26C0045_3600_-NONE-_-NONE-",
-      "award_id": "36C10B26C0045",
-      "recipient": "HUNTRIDGE LABS, LLC",
-      "recipient_slug": "huntridge-labs-llc",
-      "amount": 762575,
-      "agency": "Department of Veterans Affairs",
-      "agency_slug": "department-of-veterans-affairs",
-      "sub_agency": "Department of Veterans Affairs",
-      "description": "ARTIFICIAL INTELLIGENCE LITERACY SUPPORT",
-      "start_date": "2026-05-29",
-      "end_date": "2027-05-28",
-      "naics_code": "541519",
-      "naics_desc": "OTHER COMPUTER RELATED SERVICES",
-      "psc_code": "U012",
-      "psc_desc": "EDUCATION/TRAINING- INFORMATION TECHNOLOGY/TELECOMMUNICATIONS TRAINING",
-      "pop_state": "VA",
-      "matched_keywords": [
-        "artificial intelligence"
       ]
     },
     {
